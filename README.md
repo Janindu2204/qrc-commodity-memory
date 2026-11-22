@@ -1,5 +1,9 @@
 # Quantum reservoirs and intraday commodity volatility: code, registrations and results
 
+[![DOI](https://zenodo.org/badge/1467702665.svg)](https://doi.org/10.5281/zenodo.24444165)
+
+Archived release v1.0: doi:10.5281/zenodo.24444166 (all versions: doi:10.5281/zenodo.24444165).
+
 Code, pre-registrations, aggregate results and manuscript for the paper:
 
 > S. J. I. Sandanayaka, M. Edirisooriya and A. Aponso, "Why Quantum Reservoirs Do Not Improve Intraday Commodity Volatility
