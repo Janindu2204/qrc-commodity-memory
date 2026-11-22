@@ -6,7 +6,7 @@ Archived release v1.0: doi:10.5281/zenodo.24444166 (all versions: doi:10.5281/ze
 
 Code, pre-registrations, aggregate results and manuscript for the paper:
 
-> S. J. I. Sandanayaka, M. Edirisooriya and A. Aponso, "Why Quantum Reservoirs Do Not Improve Intraday Commodity Volatility
+> S. J. I. Sandanayaka, M. Edirisooriya, A. Aponso and A. Gammanpila, "Why Quantum Reservoirs Do Not Improve Intraday Commodity Volatility
 > Forecasts: A Memory Mismatch Confirmed in a Publicly Pre-Registered Held-Out Test" (manuscript, 2026).
 
 The held-out test on gold and silver was registered publicly on OSF before the data were bought:
