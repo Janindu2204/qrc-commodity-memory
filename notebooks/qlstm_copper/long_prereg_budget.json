@@ -1,0 +1,24 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any budget number was computed (only a timing check on the hourly grid, values not printed). Hashes in long_prereg_budget.sha256. Later changes only as dated addenda.",
+  "approval": "Parts 1 and 2 of the five-part plan ('how big' and 'which pitfall'). Student's words, 2026-11-18: 'I approve of the 5 parts'.",
+  "questions": ["Part 1: how large an apparent quantum advantage does each evaluation pitfall produce on copper, compared with what the same selection produces when neither model is better?", "Part 2: starting from a sound protocol, how much of the apparent advantage under a protocol with all pitfalls does each pitfall contribute (Shapley decomposition), and how do they stack?"],
+  "data": "Saved intraday forecasts only (long_preds_dom, dom2, dom3, dom4; per-seed arrays seedp_*), grids F, M, H, test years 2014-2025 (2013 only to pick the 2014 reference). 2026 is not read. Daily is not included (no per-seed daily forecasts). No model is trained. Seed lottery: hourly_databento_preds_v5 seeds2_QLSTMT_h16 and seeds2_LSTM_h5, 50 seeds each.",
+  "design": "budget_lib.py docstring (six factors SEED, WINDOW, GRID, LOSS, QMODEL, REF; control and pitfall definitions; apparent ratio = minimum over the options a protocol leaves open; 64 protocols; Shapley on log ratio; week-swap null with flips shared across grids, B = 200, seeds 41000+b, for the 32 protocols with REF = control). Seed lottery: 2000 random draws of k seeds per model, k in {1,3,5,10,25}, seed 42000.",
+  "why_these_pitfalls": "They are the ones the pilot prevalence coding (PROGRESS/30d) found most often in published QML forecasting papers that can be re-enacted on saved forecasts: few or selected seeds (81%), a single test window (78%), choice of metric, reporting the best setting, and a weak baseline (81% without a naive/strong benchmark). Test-period selection of reservoir instances and features is the companion Li et al. audit's result and is NOT re-counted here.",
+  "decision_rules": {
+    "single_selection_pitfall": "Observed apparent advantage vs the null: if observed >= null 5th percentile of the ratio (i.e. the advantage is not beyond the null 95th percentile), 'within what selection alone produces'; else 'beyond what selection alone produces'.",
+    "all_selection": "The same rule for the protocol with all five selection pitfalls (REF control); headline wording: 'the apparent advantage is no larger than selection alone produces when neither model is better' or '... exceeds ...'.",
+    "REF": "Systematic, not a selection: reported as the change in apparent advantage from control, no null.",
+    "decomposition": "Shapley values of the log ratio from control to all six pitfalls, reported in points and as shares of the total. If a factor's Shapley value is positive (it reduces apparent advantage), that is reported as such.",
+    "seed_lottery": "Reported descriptively: for each k the median ratio, 5-95% range, and P(ratio < 1), P(ratio < 0.97), P(ratio > 1.03), next to the 50-seed ratio."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "Control ratio about 1.00 to 1.02 (DOM slightly worse than a past-selected classical model). All six pitfalls together: apparent advantage 3 to 6%. Largest Shapley shares: REF (weak untuned ESN) and WINDOW (best test year); SEED small at intraday sample sizes; LOSS moderate. All-selection observed advantage within the null 95th percentile. Seed lottery: at k = 3, P(ratio < 0.97) around 0.1-0.3."}
+  },
+  "known_limits": ["The week-swap null makes the two models exchangeable; it assumes the pitfall procedure acts the same under the null.", "The 'researcher' is assumed to choose the best-looking option; real papers may choose less aggressively, so the budget is an upper bound on what each choice can produce.", "Intraday only; copper only.", "The REF pitfall uses one weak reference (ESN28u).", "AI-written code not re-derived by the student."],
+  "cost_estimate": "Tables: about 2 minutes; observed: seconds; null: about 10-20 minutes; seed lottery: under a minute.",
+  "stop_rule": "One run, report, stop. No further factors, options, losses, nulls or references after results.",
+  "outputs": "budget_out/{refsel,observed,shapley,null,seed_lottery}.json; budget_report.txt; run_budget.out"
+}

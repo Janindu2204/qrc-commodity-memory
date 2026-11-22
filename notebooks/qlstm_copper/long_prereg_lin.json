@@ -1,0 +1,22 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any LIN forecast was scored (one block, H 2015, was run for shapes and deleted unscored). Hashes in long_prereg_lin.sha256.",
+  "approval": "Fix A, proposed in chat 2026-11-18 after the sixth gate run; student's words: 'go for it'.",
+  "why": "Part 4 (mech_report.txt, post-hoc note) found that a ridge regression on the last 50-200 values of ln RV beats the paper's HAR benchmark by 4-7% on 2023-2025. A reviewer will ask whether any compared model beats a strong linear benchmark.",
+  "models": "LIN200 and LIN50: HAR + ridge readout on the last 200 / 50 values of ln RV (standardised with training rows), fitted to the HAR residual with the same ridge_fit and validation-chosen penalty as every reservoir readout. Block design (rows, train Y-4..Y-2, validation Y-1, test Y, 24 h purge) copied unchanged from dom_run.py (diff-checked). Grids F, M, H; years 2013-2025 rolling and 2026 held-out. Other models are READ from long_preds_dom..dom4 (not re-run).",
+  "stop_rule_note": "This adds a benchmark on the copper data, which the stop rule of long_prereg_dom4.json forbids. It is a disclosed exception approved by the student. No quantum or classical comparison model is re-fitted.",
+  "statistics": "Pooled MSE ratio, Newey-West 95% interval and p (lags H 24, M 96, F 288). Families per grid and period: B1 LIN200, LIN50 vs HAR (Holm over 2); B2 DOM, ISING, ESN28u_t, SAS28_t, ESNb_t, SASb_t, LSTM1, GRU1, LSTM, GRU vs LIN200 (Holm over 10). Categories as dom3_report.",
+  "decision_rules": {
+    "benchmark": "If LIN200 vs HAR is 'meaningful edge' or 'detectable, below band' on a grid, the paper reports LIN200 as a stronger linear benchmark on that grid and states every model's ratio against it.",
+    "headline": "Per grid and period, the paper says which models beat LIN200 detectably and which by more than 3%. If none beats it by more than 3%: 'no model in the comparison, quantum or classical, beats a 200-lag linear benchmark by more than 3%'.",
+    "unchanged": "The quantum-vs-classical comparisons are not changed by this benchmark (all models share the HAR base); the paper says so."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "LIN200 beats HAR: meaningful edge at M, detectable at H and F (rolling). Against LIN200: quantum reservoirs and single-input networks detectably worse at M and H; the 5-channel LSTM/GRU close to LIN200, possibly still ahead at F. Held-out 2026 similar but wider intervals."}
+  },
+  "known_limits": ["Linear in lags only; ridge penalty from a 6-value grid.", "3-year training windows (the Part 4 probe used 10 years).", "Copper only; added after all results were seen."],
+  "cost_estimate": "Minutes per block; 42 blocks under 1 hour.",
+  "stop_rule": "One run, report, stop. No further lag lengths or benchmarks after results.",
+  "outputs": "long_preds_lin/<GRID>/<YEAR>.npz; lin_logs/; lin_report.txt; lin_report.csv"
+}

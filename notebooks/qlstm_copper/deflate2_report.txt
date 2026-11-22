@@ -1,0 +1,62 @@
+
+== smalln_tuned: daily copper training-size study, tuned arm ==
+  WINDOW    tuned    N= 17  G_obs +10.31  G_pred +11.35  deflated-honest +1.03  H1 pass  bound-honest +14.23
+  LOSS      tuned    N=  3  G_obs +0.00  G_pred +0.25  deflated-honest +0.25  H1 n/a  bound-honest +0.34
+  QMODEL    tuned    N=  2  G_obs +0.00  G_pred +0.53  deflated-honest +0.53  H1 n/a  bound-honest +0.67
+  TRAINSIZE tuned    N=  5  G_obs +3.57  G_pred +2.26  deflated-honest -1.31  H1 FAIL  bound-honest -0.09
+
+== smalln_fixed: daily copper training-size study, fixed arm ==
+  WINDOW    fixed    N= 17  G_obs +11.81  G_pred +9.17  deflated-honest -2.64  H1 pass  bound-honest +8.03
+  LOSS      fixed    N=  3  G_obs +1.55  G_pred +0.71  deflated-honest -0.84  H1 n/a  bound-honest -0.58
+  QMODEL    fixed    N=  3  G_obs +0.55  G_pred +0.54  deflated-honest -0.00  H1 n/a  bound-honest +0.19
+  TRAINSIZE fixed    N=  5  G_obs +58.87  G_pred +30.22  deflated-honest -28.64  H1 FAIL  bound-honest -12.38
+
+== roll_daily: daily copper rolling QLSTMT (range target) ==
+  WINDOW    range_m  N= 17  G_obs +10.18  G_pred +17.20  deflated-honest +7.02  H1 FAIL  bound-honest +27.02
+  SEED      range_m  N=120  G_obs +1.60  G_pred +2.47  deflated-honest +0.87  H1 n/a  bound-honest +8.84
+  LOSS      range_m  N=  3  G_obs +0.13  G_pred +0.18  deflated-honest +0.05  H1 n/a  bound-honest +0.12
+
+== mc_daily: daily multi-commodity rolling origins (IsingMem, QRC) ==
+  WINDOW    CL_F     N=  3  G_obs +15.87  G_pred +20.38  deflated-honest +4.52  H1 n/a  bound-honest +11.94
+  LOSS      CL_F     N=  3  G_obs +0.00  G_pred +5.55  deflated-honest +5.55  H1 n/a  bound-honest +7.58
+  QMODEL    CL_F     N=  2  G_obs +0.00  G_pred +10.76  deflated-honest +10.76  H1 n/a  bound-honest +13.48
+  WINDOW    GC_F     N=  3  G_obs +21.52  G_pred +29.98  deflated-honest +8.45  H1 n/a  bound-honest +19.38
+  LOSS      GC_F     N=  3  G_obs +0.00  G_pred +14.15  deflated-honest +14.15  H1 n/a  bound-honest +19.31
+  QMODEL    GC_F     N=  2  G_obs +0.00  G_pred +0.23  deflated-honest +0.23  H1 n/a  bound-honest +0.29
+  WINDOW    HG_F     N=  3  G_obs +16.85  G_pred +14.21  deflated-honest -2.64  H1 n/a  bound-honest +2.54
+  LOSS      HG_F     N=  3  G_obs +11.67  G_pred +5.32  deflated-honest -6.35  H1 n/a  bound-honest -4.41
+  QMODEL    HG_F     N=  2  G_obs +9.19  G_pred +3.66  deflated-honest -5.52  H1 n/a  bound-honest -4.59
+  WINDOW    HO_F     N=  3  G_obs +22.58  G_pred +25.89  deflated-honest +3.31  H1 n/a  bound-honest +12.74
+  LOSS      HO_F     N=  3  G_obs +0.00  G_pred +6.52  deflated-honest +6.52  H1 n/a  bound-honest +8.90
+  QMODEL    HO_F     N=  2  G_obs +0.00  G_pred +1.19  deflated-honest +1.19  H1 n/a  bound-honest +1.50
+  WINDOW    NG_F     N=  3  G_obs +9.37  G_pred +7.88  deflated-honest -1.48  H1 n/a  bound-honest +1.39
+  LOSS      NG_F     N=  3  G_obs +3.29  G_pred +1.42  deflated-honest -1.87  H1 n/a  bound-honest -1.35
+  QMODEL    NG_F     N=  2  G_obs +0.00  G_pred +0.51  deflated-honest +0.51  H1 n/a  bound-honest +0.64
+  WINDOW    PA_F     N=  3  G_obs +30.40  G_pred +18.47  deflated-honest -11.93  H1 n/a  bound-honest -5.20
+  LOSS      PA_F     N=  3  G_obs +2.56  G_pred +1.31  deflated-honest -1.24  H1 n/a  bound-honest -0.76
+  QMODEL    PA_F     N=  2  G_obs +20.52  G_pred +8.19  deflated-honest -12.33  H1 n/a  bound-honest -10.26
+  WINDOW    PL_F     N=  3  G_obs +37.87  G_pred +24.46  deflated-honest -13.41  H1 n/a  bound-honest -4.49
+  LOSS      PL_F     N=  3  G_obs +17.12  G_pred +7.26  deflated-honest -9.86  H1 n/a  bound-honest -7.21
+  QMODEL    PL_F     N=  2  G_obs +0.00  G_pred +16.81  deflated-honest +16.81  H1 n/a  bound-honest +21.07
+  WINDOW    SI_F     N=  3  G_obs +15.36  G_pred +41.09  deflated-honest +25.73  H1 n/a  bound-honest +40.70
+  LOSS      SI_F     N=  3  G_obs +0.00  G_pred +20.77  deflated-honest +20.77  H1 n/a  bound-honest +28.33
+  QMODEL    SI_F     N=  2  G_obs +10.17  G_pred +4.06  deflated-honest -6.11  H1 n/a  bound-honest -5.08
+  WINDOW    ZC_F     N=  3  G_obs +30.01  G_pred +27.71  deflated-honest -2.30  H1 n/a  bound-honest +7.80
+  LOSS      ZC_F     N=  3  G_obs +15.78  G_pred +6.99  deflated-honest -8.79  H1 n/a  bound-honest -6.24
+  QMODEL    ZC_F     N=  2  G_obs +8.49  G_pred +3.39  deflated-honest -5.10  H1 n/a  bound-honest -4.24
+  WINDOW    ZS_F     N=  3  G_obs +3.75  G_pred +3.11  deflated-honest -0.64  H1 n/a  bound-honest +0.49
+  LOSS      ZS_F     N=  3  G_obs +13.35  G_pred +5.65  deflated-honest -7.69  H1 n/a  bound-honest -5.63
+  QMODEL    ZS_F     N=  2  G_obs +11.00  G_pred +4.39  deflated-honest -6.61  H1 n/a  bound-honest -5.50
+  WINDOW    ZW_F     N=  3  G_obs +10.68  G_pred +7.43  deflated-honest -3.24  H1 n/a  bound-honest -0.54
+  LOSS      ZW_F     N=  3  G_obs +6.14  G_pred +2.61  deflated-honest -3.54  H1 n/a  bound-honest -2.59
+  QMODEL    ZW_F     N=  2  G_obs +4.06  G_pred +1.62  deflated-honest -2.44  H1 n/a  bound-honest -2.03
+  UNIT      all      N= 11  G_obs +58.56  G_pred +43.21  deflated-honest -15.35  H1 FAIL  bound-honest +23.56
+
+== H2 replication (Spearman across choices, unit-averaged) ==
+  smalln_tuned  ['LOSS', 'QMODEL', 'TRAINSIZE', 'WINDOW']  Spearman +0.95  pred [np.float64(0.25), np.float64(0.53), np.float64(2.26), np.float64(11.35)]  obs [np.float64(0.0), np.float64(0.0), np.float64(3.57), np.float64(10.31)]
+  smalln_fixed  ['LOSS', 'QMODEL', 'TRAINSIZE', 'WINDOW']  Spearman +1.00  pred [np.float64(0.71), np.float64(0.54), np.float64(30.22), np.float64(9.17)]  obs [np.float64(1.55), np.float64(0.55), np.float64(58.87), np.float64(11.81)]
+  roll_daily    ['LOSS', 'SEED', 'WINDOW']  Spearman +1.00  pred [np.float64(0.18), np.float64(2.47), np.float64(17.2)]  obs [np.float64(0.13), np.float64(1.6), np.float64(10.18)]
+  mc_daily      ['LOSS', 'QMODEL', 'UNIT', 'WINDOW']  Spearman +1.00  pred [np.float64(7.05), np.float64(4.98), np.float64(43.21), np.float64(20.06)]  obs [np.float64(6.36), np.float64(5.77), np.float64(58.56), np.float64(19.48)]
+  datasets with Spearman >= 0.6: 4 of 4 -> H2 REPLICATED
+
+== H1 re-test (non-seed cells, N >= 4): 2/6 pass -> NOT SUPPORTED

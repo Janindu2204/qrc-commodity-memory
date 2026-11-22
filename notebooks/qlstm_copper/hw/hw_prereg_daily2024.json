@@ -1,0 +1,54 @@
+{
+  "status": "FROZEN 2026-11-10 after student prediction and country check; amend only by dated addendum. Frozen BEFORE any hardware job; no job has been submitted.",
+  "drafted": "2026-11-10",
+  "question": "Does running the QRC test features on a real IBM chip change the daily copper forecast error compared with the exact simulator?",
+  "block": "qrc_roll.py TAG=roll, YEAR=2024, range_m. Train rows 5273, validation 497, test 252. Verified 2026-11-10: rebuilt forecast equals saved long_preds_qrc/roll/range_m/2024/QRC_angle.npz (max abs difference 0.0).",
+  "model": "QRC_angle, config chosen by the registered tuning: layers=1, scale=1.0, 6 qubits, 21 features (<Z_i>, <Z_iZ_j>), reservoir seed 0 ONLY. Readout (HAR-style inputs + 21 features, QLIKE-trained linear model, lambda on validation) is fitted on EXACT simulator features of train and validation rows. Hardware replaces the 252 test-row features only.",
+  "port_check": "Qiskit circuit equals the numpy simulator on all 252 test rows to 6.7e-16 (hw/qiskit_qrc.py, hw/noisy_daily2024.py).",
+  "arms": [
+    "exact simulator seed 0 (reference)",
+    "hardware seed 0 (2000 shots)",
+    "FakeFez noise-model simulation, same circuits and shots",
+    "context only, not part of the decision: saved 10-seed averages of QRC_angle, QRC_noent, ESN, RandFeat from the 2024 block"
+  ],
+  "primary_outcome": "ratio of mean QLIKE (validation-calibrated scale, scale fixed from the exact arm) hardware / exact, with Diebold-Mariano HAC interval (lag 10) on the 252 per-row loss differences.",
+  "decision_rule": "equivalent if the 95% interval of the ratio lies inside [0.97, 1.03]; worse if its lower bound is above 1; better if its upper bound is below 1; otherwise inconclusive.",
+  "secondary": [
+    "mean and max absolute feature error hardware vs exact",
+    "same for FakeFez simulation, to see whether the real chip is worse than IBM's own noise model",
+    "repeat of 20 pre-chosen rows (every 12th test row) in a second job to measure run-to-run drift"
+  ],
+  "run_controls": [
+    "row order shuffled with fixed seed 2024 before splitting into jobs",
+    "transpile once: optimization_level 3, seed_transpiler 1, record backend name, calibration timestamp, qubit layout",
+    "no error mitigation in the primary arm",
+    "shots 2000 per circuit"
+  ],
+  "budget": "Estimated from the fake backend: circuit about 2.4 us, 250 us rep delay assumed, so about 0.5 s per circuit at 2000 shots; 252 rows plus 20 repeats is about 2.3 minutes of QPU time, excluding overhead. Check live plan minutes before submitting. Stop rule: if more than 6 minutes of the allowance would be used, stop and report what ran; no second attempt this month.",
+  "free_simulation_result_already_seen": "Seen before drafting (so it is NOT a blind prediction): noise-model and shot-noise simulation gives ratio to exact of 1.002 to 1.004 at 500 to 8000 shots, max single-forecast change about 5% at 2000 shots.",
+  "predictions": {
+    "assistant": "Hardware ratio to exact between 0.99 and 1.02, verdict equivalent. Hardware does not beat the exact simulator or the classical controls. Real chip feature error larger than the FakeFez simulation.",
+    "student_prediction": "No advantage expected: current hardware is very noisy; the run may be fast but the results will be noisy. (Student, 2026-11-10, verbatim in substance.)"
+  },
+  "limits": "One reservoir seed, one asset, one year, simulator-trained readout. A tie shows the pipeline survives chip noise; it is not evidence of quantum advantage. The expected result is nearly uninformative about forecasting skill, since the free simulation already shows a change of about 0.3%.",
+  "not_done_yet": [
+    "IBM account and allowance check",
+    "student prediction",
+    "scoring script for real hardware results",
+    "freezing and hashing"
+  ],
+  "service_terms_checked": {
+    "source": "IBM Cloud Additional Service Description, IBM Quantum Compute Service (Beta), i126-9425-10 (08/2026), pasted by the student 2026-11-10; not legal advice",
+    "plan": "IBM Quantum Open Plan only. Never the pay-as-you-go plan (charged per second of execution including classical cluster time).",
+    "allowance": "Student's dashboard, 2026-11-10: Open plan, 10.00 RUs allocated and remaining, 0 workloads, cycle Oct 13 to Nov 10 2026 UTC (ends the day of drafting). Unit 'RU' NOT confirmed to equal one minute; IBM docs describe 10 minutes per 28-day window. Before submitting: run one tiny test job and read how many RUs it consumed, then rescale the budget. Backends listed: ibm_fez, ibm_kingston, ibm_marrakesh (156 qubit Heron r2).",
+    "rules": [
+      "one account, one user; no multiple accounts for extra runtime (5.8b); no jobs run for anyone else (5.6)",
+      "research use only, nothing commercial (5.4)",
+      "beta service: IBM may suspend or discontinue at any time, so the paper must not depend on this run (5.1, 5.8a)",
+      "student to verify the restricted-countries list (5.7) before creating the account"
+    ],
+    "data_sent": "six standardised rotation angles per row derived from daily Yahoo HG=F data; no raw prices; no Databento-derived inputs"
+  },
+  "budget_note": "If 1 RU = 1 minute, the planned 2.3 minutes of QPU time is about 23% of the allowance. If the unit is smaller, rescale or cut rows before running; stop rule unchanged. Do not time the run around the cycle reset to obtain extra time.",
+  "student_country_check_5_7": "Student reported OK on 2026-11-10 (not independently verified by the assistant)."
+}

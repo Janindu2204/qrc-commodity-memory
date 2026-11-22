@@ -1,0 +1,27 @@
+{
+  "written_on": "2026-10-13",
+  "status": "Written BEFORE any run of parts A/B/C. Extends long_prereg.json (v1); v1 results (floor method, old roll-day cleaning) stay reported unchanged.",
+  "part_A": {
+    "what": "Rerun the long-daily design with zero-variance days treated as MISSING instead of floored (versions range_m and gap_m).",
+    "why": "v1 range-only floor (1.56e-7 on 172 days) created extreme log inputs; its LSTM-beats-HAR and QLSTMT-worse findings are probably confounded by it.",
+    "rv_rule": "range: ln(H/L)^2/(4 ln2); gap: plus gap_clean^2 (0 on roll-suspect days); variance <= 0 -> missing. lvR5 = log of 5-day mean (>=3 valid), lvR22 = log of 22-day mean (>=14 valid), lvR1 = log rv, with missing lvR1 replaced by lvR5. Target: log of 5-day forward mean (>=3 valid days).",
+    "data": "data/daily_long/flagged_v2/HG_F_1d.csv: roll-suspect (ret and gap NaN) = 2005-05-27, 2005-11-29; 2004-10-13 only marked (expiry/volume check did not support a roll). Ambiguous marked: 2004-10-13, 2005-01-04, 2007-01-03, 2009-02-06.",
+    "everything_else": "as long_prereg.json: HAR primary, EWMA/GARCH(1,1)-t/LSTM/QLSTMT (10 seeds), 3 origins, purge 5, DM HAC lag 10, Holm family of 5, +/-3% margin, 2025-26 not scored. TimesFM25 added per long_prereg_addendum.json (family of 6 as secondary).",
+    "main_version": "range_m; gap_m background"
+  },
+  "part_B": {
+    "what": "Multivariate: does adding outside inputs help, and does QLSTMT gain more than LSTM? (the project's central multivariate hypothesis)",
+    "data": "Yahoo daily ^VIX (1990-), DX-Y.NYB (1971-), CL=F (2000-), pulled 2026-10-13; raw files not redistributed.",
+    "inputs": "copper lvR1/lvR5/lvR22 plus log VIX, 5-day mean log range variance of crude (CL=F) and of the dollar index; every outside input taken from the latest date STRICTLY BEFORE the copper date (outside markets close after copper; avoids the close-time artefact found in the first experiment). Ridge/standardisation on train rows only.",
+    "models": "HARx (QLIKE linear, 6 inputs), LSTMx and QLSTMTx (same architecture, 6 inputs, 10 seeds, equal seeds)",
+    "family_of_5": ["HARx vs HAR", "LSTMx vs HAR", "QLSTMTx vs HAR", "QLSTMTx vs LSTMx", "QLSTMTx vs QLSTMT (own-only)"],
+    "tests": "same DM / HAC lag 10 / Holm / 95% CI / +/-3% margin; pooled over the 3 windows",
+    "primary_question": "QLSTMTx vs LSTMx and QLSTMTx vs QLSTMT; a quantum edge from outside inputs would show as QLSTMTx clearly below both LSTMx and QLSTMT.",
+    "versions": "range_m main, gap_m background"
+  },
+  "part_C": {
+    "what": "Complete the synthetic power test exactly as registered in synth_prereg.json: QLSTMT on the 4 skipped data-seed-0 cells (B_linear 0.005, 0.02, 0.3; C_nonlinear 0.005) and all 9 cells for data seeds 1 and 2; 10 seeds. No design change.",
+    "replication_rule": "a QLSTMT-vs-LSTM difference is interpreted only if it appears with the same sign and significance on all 3 data seeds."
+  },
+  "stop_rule": "Report after each part and stop. No new variants; 2025-26 scored only in a separate final step."
+}

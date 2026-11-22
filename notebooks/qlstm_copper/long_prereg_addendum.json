@@ -1,0 +1,14 @@
+{
+  "written_on": "2026-10-12",
+  "status": "Addendum to long_prereg.json, written BEFORE any TimesFM forecast was produced. The original results and the original five-comparison Holm family stay as reported.",
+  "addition": "TimesFM 2.5 (200M, google/timesfm-2.5-200m-pytorch, Apache-2.0 per model card), zero-shot, as an extra classical-ML-tier baseline.",
+  "input": "log of the same daily variance series rv used by the other models (floored days included), context = last 512 rows ending at row t (no future rows), no covariates",
+  "forecast": "horizon 5; level forecast = mean over the 5 steps of exp(point forecast); no tuning of context length, horizon handling or ForecastConfig flags after seeing any result",
+  "rows": "validation and test rows of each origin, both versions (range, gap)",
+  "scoring": "same as other models: scale calibrated on validation rows, QLIKE on test rows, ratio vs HAR and vs EWMA, DM with HAC lag 10 pooled over the 3 test windows, 95% CI, +/-3% margin",
+  "multiplicity": "TimesFM vs HAR and vs EWMA are reported as additional comparisons with Holm over a family of 6 (the 5 original + TimesFM vs HAR). The original 5-comparison family is NOT recomputed or replaced.",
+  "deterministic": "no seeds; one run per version",
+  "environment": "separate scratch venv (CPU torch); project venv unchanged",
+  "stop_rule": "one run, report and stop; no context-length or flag sweeps",
+  "config": "ForecastConfig(max_context=512, max_horizon=5, normalize_inputs=True, use_continuous_quantile_head=True, force_flip_invariance=True, infer_is_positive=False (input is log variance, can be negative; the model card example uses True for positive series), fix_quantile_crossing=True); batch 32; fixed before any forecast"
+}

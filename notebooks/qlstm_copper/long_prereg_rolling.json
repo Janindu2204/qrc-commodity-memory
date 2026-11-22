@@ -1,0 +1,64 @@
+{
+  "written_on": "2026-10-15",
+  "status": "REGISTERED 2026-10-15: D1-D5 answered; frozen before any block was run. Extends long_prereg_v2.json; no earlier result recomputed. Any later change must be a dated addendum, not an edit.",
+  "question": "Where do the differences between models appear across market regimes, and how large are they once the data artefacts are handled? (Replaces the earlier idea of hand-picked 'calm' splits, which duplicated the 2013 origin and chose windows after seeing the outcome.)",
+  "design": {
+    "blocks": "One-year test blocks, test start years 2008..2024 (17 blocks). Training = all rows from 2000-08-30 up to 2 years before the test start (expanding window). Validation = the 2 years before the test start. Purge 5 rows between train/validation/test (as in long_core.prepare). 2025-26 NOT scored. Test years 2008-2024 only; 2025-26 is the held-out period and is not scored here (frozen-protocol re-score on or after 2026-12-04).",
+    "versions": "range_m (main) and gap_m (background); same cleaning and variance rules as long_prereg_v2.json part_A (data/daily_long/flagged_v2).",
+    "target": "log of the 5-day forward mean daily variance (>=3 valid days), as in v2.",
+    "models": {
+      "all_blocks_both_versions": [
+        "EWMA (tuned on validation)",
+        "HARq (primary reference)",
+        "GARCH11_t",
+        "TimesFM25 (zero-shot, settings exactly as long_prereg_addendum_v2.json)"
+      ],
+      "neural": "LSTM and QLSTMT (4 qubits, 1 layer, seq 5, 10 seeds, same hyperparameters as long_prereg.json). See open_decisions D2 for which blocks and versions.",
+      "univariate_only": "No outside inputs, no TimesFM covariates in this run."
+    },
+    "metric": "QLIKE with the validation-calibrated scale, ratio vs HARq (lower than 1 = better than HAR); EWMA-referenced ratios are secondary."
+  },
+  "regime_labels": {
+    "rule": "Each block gets the realised annualised range-based volatility of its own test year, sqrt(252 * mean(ln(H/L)^2 / (4 ln2))) over valid days. TERTILES over the 17 blocks: top 6 = turbulent, middle 5 = intermediate, bottom 6 = calm (ties broken by earlier year). No fixed cut-off. Labels are for reporting only; no model uses them.",
+    "disclosure": "Tertiles remove the hand-picked cut-offs, but the student and Claude had already seen the by-year volatility table, so the design is not blind.",
+    "labels_computed_2026-10-15_from_flagged_v2_data": "calm (<0.15): 2012 (0.149, on the line), 2013, 2014, 2017, 2018, 2019, 2023 = 7 blocks; intermediate: 2015, 2016, 2020, 2021, 2022, 2024 = 6 blocks; turbulent (>=0.20): 2008, 2009, 2010, 2011 = 4 blocks. CORRECTION: an earlier version of this field wrongly listed 2020-2022 and 2024 as turbulent. Consequence: the turbulent stratum is only 2008-2011, which are also the blocks with the SHORTEST training windows (5.3-8.3 years), so 'turbulent' and 'little training data' are confounded. See open_decisions D3.",
+    "second_grouping": "Independent of regime: blocks with under 10 years of training data (test years 2008-2011, training 5.3-8.3 years) are also reported as their own group, because short training and high volatility coincide there and cannot otherwise be told apart."
+  },
+  "tests": {
+    "per_block": "QLIKE ratio vs HARq for every model and block, reported in a table (no test per block).",
+    "pooled": "Within each regime stratum and also over all blocks: Diebold-Mariano on pooled per-row QLIKE differences, HAC lag 10, 95% CI on the ratio, +/-3% equivalence margin, as in v2.",
+    "family": "Holm over 5 comparisons vs HARq (EWMA, GARCH11_t, LSTM, QLSTMT, TimesFM25), separately within each of the 3 strata, plus the stated primary comparison below. Comparisons vs EWMA are secondary and reported with their own Holm family.",
+    "block_sign_count": "For each model: number of blocks with ratio < 1 out of 17, with an exact binomial p against 0.5, reported alongside (blocks are not independent; treat as descriptive).",
+    "primary_comparison": "QLSTMT vs LSTM, pooled within each stratum. A quantum edge would be QLSTMT below LSTM with the whole 95% CI inside the favourable side, and it must hold in the turbulent stratum, where the hypothesis says it should appear.",
+    "equivalence_margin_justification": "The +/-3% margin is borrowed from the synthetic power test (synth_prereg.json), where the pipeline could not detect effects below about 2% of variance; ~3% is roughly the smallest difference this pipeline can resolve anyway. It is NOT derived from theory or from a cost-of-error argument."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {
+      "written_on": "2026-10-15",
+      "before_any_block_run": true,
+      "q1_where_are_model_differences_largest": "turbulent blocks",
+      "q2_does_QLSTMT_beat_LSTM_anywhere": "Probably matches LSTM in calm and intermediate blocks; not sure for turbulent.",
+      "q3_does_anything_beat_HAR_in_calm_blocks": "Not sure.",
+      "note": "Recorded verbatim in substance from the student's reply; q1 and q2 are testable, q3 is an explicit 'unsure'."
+    },
+    "instructions": "Student writes in plain words, BEFORE any run: (a) in which stratum model differences will be largest, (b) whether QLSTMT beats LSTM anywhere, (c) whether anything beats HAR or EWMA in calm blocks. Leave null until written; do not edit after the first run starts.",
+    "baseline_from_existing_origins": "Per-origin range_m QLIKE ratios vs HAR (2013: LSTM 1.007, QLSTMT 1.019; 2019: LSTM 0.984, QLSTMT 0.954) are known and are not evidence for this registration."
+  },
+  "known_limits": [
+    "Blocks overlap in training data (expanding window), so block results are not independent.",
+    "Early blocks (2008-2010) train on only about 5-8 years; QLSTMT in particular may be unstable there (the 2007 origin showed this).",
+    "17 one-year blocks is about 250 independent 5-day targets per block pooled to roughly 4,300 rows with heavy overlap; power for gaps below about 3-5% remains low.",
+    "Regime thresholds are informed by an already-seen table (see regime_labels.disclosure).",
+    "long_core.py currently supports only the three 6-year origins; a block-based ORIGINS generalisation must be written and checked before running. Existing long_preds/ outputs are not touched.",
+    "AI-written code, not independently re-derived by the student."
+  ],
+  "open_decisions": {
+    "D1": "ANSWERED 2026-10-15: one-year blocks, first test year 2008, last 2024 (17 blocks). Early blocks reported separately (see regime_labels.second_grouping).",
+    "D2": "ANSWERED 2026-10-15: LSTM and QLSTMT on range_m for all 17 blocks; classical models and TimesFM on both versions; gap_m neural not run. Fixed; not to be changed after seeing results.",
+    "D3": "ANSWERED 2026-10-15: tertiles (option A), see regime_labels.rule.",
+    "D4": "ANSWERED 2026-10-15: keep +/-3%, justified as above with the stated caveat.",
+    "D5": "OPEN. Student writes the prediction in hypotheses_recorded_before_run.student_prediction before any run."
+  },
+  "cost_estimate": "Estimates, not measurements. Part A of v2 (60 QLSTMT + 60 LSTM fits) took about 47 min wall on 8 workers (partA_jobs.txt 03:08 to partA_run.log 03:55), so 170 QLSTMT fits is about 2-3 h. TimesFM about 250 s per version-block on CPU: 17 blocks x 2 versions is about 2.4 h, which can run in parallel only if cores are free. Classical baselines: minutes. Total about 4-6 h wall.",
+  "stop_rule": "One run of the registered design, report, and stop. No new variants, no block added or dropped after results, no threshold or model changes; 2025-26 scored only in a separate final step."
+}

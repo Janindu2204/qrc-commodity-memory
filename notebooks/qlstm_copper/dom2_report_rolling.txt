@@ -1,0 +1,173 @@
+ratio < 1 favours the first model. H, M, F: mean squared error of ln RV; D: QLIKE.
+grid      stratum        family    model      ref  ratio  ci_lo  ci_hi  p_holm      verdict                 category      n
+   H          all     A primary      DOM ESN28u_t 1.0016 0.9988 1.0045  0.2671   equivalent no detectable difference  67567
+   H          all     A primary    ISING ESN28u_t 0.9967 0.9936 0.9998  0.0705   equivalent no detectable difference  67567
+   H          all     A primary      DOM    ISING 1.0050 1.0037 1.0063  0.0000   equivalent         detectably worse  67567
+   H          all C descriptive ESN28u_t   ESN28u 1.0000 0.9988 1.0013  0.9763   equivalent                           67567
+   H          all C descriptive ESN28u_t      HAR 0.9883 0.9860 0.9906  0.0000   equivalent                           67567
+   H          all C descriptive    ISING      HAR 0.9851 0.9819 0.9882  0.0000   equivalent                           67567
+   H          all C descriptive      DOM      HAR 0.9900 0.9872 0.9927  0.0000   equivalent                           67567
+   H         calm     A primary      DOM ESN28u_t 1.0087 1.0038 1.0135  0.0009   equivalent         detectably worse  20774
+   H         calm     A primary    ISING ESN28u_t 1.0009 0.9956 1.0063  0.7368   equivalent no detectable difference  20774
+   H         calm     A primary      DOM    ISING 1.0077 1.0054 1.0100  0.0000   equivalent         detectably worse  20774
+   H         calm C descriptive ESN28u_t   ESN28u 0.9964 0.9940 0.9988  0.0068   equivalent                           20774
+   H         calm C descriptive ESN28u_t      HAR 0.9846 0.9798 0.9893  0.0000   equivalent                           20774
+   H         calm C descriptive    ISING      HAR 0.9855 0.9801 0.9908  0.0000   equivalent                           20774
+   H         calm C descriptive      DOM      HAR 0.9931 0.9885 0.9977  0.0068   equivalent                           20774
+   H intermediate     A primary      DOM ESN28u_t 0.9980 0.9931 1.0029  0.5147   equivalent no detectable difference  25852
+   H intermediate     A primary    ISING ESN28u_t 0.9968 0.9923 1.0013  0.5000   equivalent no detectable difference  25852
+   H intermediate     A primary      DOM    ISING 1.0012 0.9991 1.0032  0.5147   equivalent no detectable difference  25852
+   H intermediate C descriptive ESN28u_t   ESN28u 1.0021 1.0011 1.0031  0.0001   equivalent                           25852
+   H intermediate C descriptive ESN28u_t      HAR 0.9934 0.9916 0.9952  0.0000   equivalent                           25852
+   H intermediate C descriptive    ISING      HAR 0.9903 0.9855 0.9950  0.0001   equivalent                           25852
+   H intermediate C descriptive      DOM      HAR 0.9914 0.9864 0.9964  0.0008   equivalent                           25852
+   H    turbulent     A primary      DOM ESN28u_t 0.9974 0.9922 1.0026  0.3244   equivalent no detectable difference  20941
+   H    turbulent     A primary    ISING ESN28u_t 0.9915 0.9853 0.9977  0.0151   equivalent   detectable, below band  20941
+   H    turbulent     A primary      DOM    ISING 1.0059 1.0035 1.0083  0.0000   equivalent         detectably worse  20941
+   H    turbulent C descriptive ESN28u_t   ESN28u 1.0020 0.9993 1.0046  0.1447   equivalent                           20941
+   H    turbulent C descriptive ESN28u_t      HAR 0.9872 0.9826 0.9918  0.0000   equivalent                           20941
+   H    turbulent C descriptive    ISING      HAR 0.9789 0.9726 0.9851  0.0000   equivalent                           20941
+   H    turbulent C descriptive      DOM      HAR 0.9846 0.9799 0.9893  0.0000   equivalent                           20941
+   M          all     A primary      DOM ESN28u_t 0.9983 0.9974 0.9993  0.0009   equivalent   detectable, below band 283953
+   M          all     A primary    ISING ESN28u_t 0.9980 0.9969 0.9991  0.0009   equivalent   detectable, below band 283953
+   M          all     A primary      DOM    ISING 1.0003 0.9999 1.0007  0.1001   equivalent no detectable difference 283953
+   M          all C descriptive ESN28u_t   ESN28u 0.9980 0.9975 0.9984  0.0000   equivalent                          283953
+   M          all C descriptive ESN28u_t      HAR 0.9832 0.9824 0.9840  0.0000   equivalent                          283953
+   M          all C descriptive    ISING      HAR 0.9813 0.9800 0.9826  0.0000   equivalent                          283953
+   M          all C descriptive      DOM      HAR 0.9816 0.9804 0.9828  0.0000   equivalent                          283953
+   M         calm     A primary      DOM ESN28u_t 1.0010 0.9996 1.0023  0.2974   equivalent no detectable difference  83439
+   M         calm     A primary    ISING ESN28u_t 0.9999 0.9985 1.0012  0.8337   equivalent no detectable difference  83439
+   M         calm     A primary      DOM    ISING 1.0011 1.0006 1.0017  0.0001   equivalent         detectably worse  83439
+   M         calm C descriptive ESN28u_t   ESN28u 0.9987 0.9980 0.9993  0.0000   equivalent                           83439
+   M         calm C descriptive ESN28u_t      HAR 0.9852 0.9839 0.9866  0.0000   equivalent                           83439
+   M         calm C descriptive    ISING      HAR 0.9851 0.9833 0.9869  0.0000   equivalent                           83439
+   M         calm C descriptive      DOM      HAR 0.9862 0.9845 0.9880  0.0000   equivalent                           83439
+   M intermediate     A primary      DOM ESN28u_t 0.9998 0.9984 1.0012  0.8702   equivalent no detectable difference 112120
+   M intermediate     A primary    ISING ESN28u_t 1.0006 0.9991 1.0020  0.8702   equivalent no detectable difference 112120
+   M intermediate     A primary      DOM    ISING 0.9992 0.9987 0.9997  0.0049   equivalent   detectable, below band 112120
+   M intermediate C descriptive ESN28u_t   ESN28u 0.9967 0.9959 0.9975  0.0000   equivalent                          112120
+   M intermediate C descriptive ESN28u_t      HAR 0.9812 0.9799 0.9825  0.0000   equivalent                          112120
+   M intermediate C descriptive    ISING      HAR 0.9818 0.9800 0.9835  0.0000   equivalent                          112120
+   M intermediate C descriptive      DOM      HAR 0.9810 0.9792 0.9828  0.0000   equivalent                          112120
+   M    turbulent     A primary      DOM ESN28u_t 0.9937 0.9916 0.9958  0.0000   equivalent   detectable, below band  88394
+   M    turbulent     A primary    ISING ESN28u_t 0.9929 0.9902 0.9956  0.0000   equivalent   detectable, below band  88394
+   M    turbulent     A primary      DOM    ISING 1.0008 0.9998 1.0017  0.1037   equivalent no detectable difference  88394
+   M    turbulent C descriptive ESN28u_t   ESN28u 0.9988 0.9978 0.9997  0.0129   equivalent                           88394
+   M    turbulent C descriptive ESN28u_t      HAR 0.9836 0.9820 0.9852  0.0000   equivalent                           88394
+   M    turbulent C descriptive    ISING      HAR 0.9766 0.9734 0.9798  0.0000   equivalent                           88394
+   M    turbulent C descriptive      DOM      HAR 0.9774 0.9747 0.9801  0.0000   equivalent                           88394
+   F          all     A primary      DOM ESN28u_t 0.9975 0.9970 0.9980  0.0000   equivalent   detectable, below band 673104
+   F          all     A primary    ISING ESN28u_t 0.9966 0.9961 0.9972  0.0000   equivalent   detectable, below band 673104
+   F          all     A primary      DOM    ISING 1.0009 1.0007 1.0011  0.0000   equivalent         detectably worse 673104
+   F          all C descriptive ESN28u_t   ESN28u 1.0001 0.9999 1.0002  0.3303   equivalent                          673104
+   F          all C descriptive ESN28u_t      HAR 0.9899 0.9891 0.9907  0.0000   equivalent                          673104
+   F          all C descriptive    ISING      HAR 0.9866 0.9857 0.9875  0.0000   equivalent                          673104
+   F          all C descriptive      DOM      HAR 0.9874 0.9866 0.9883  0.0000   equivalent                          673104
+   F         calm     A primary      DOM ESN28u_t 0.9960 0.9954 0.9967  0.0000   equivalent   detectable, below band 169862
+   F         calm     A primary    ISING ESN28u_t 0.9945 0.9938 0.9953  0.0000   equivalent   detectable, below band 169862
+   F         calm     A primary      DOM    ISING 1.0015 1.0011 1.0019  0.0000   equivalent         detectably worse 169862
+   F         calm C descriptive ESN28u_t   ESN28u 0.9998 0.9996 1.0000  0.0254   equivalent                          169862
+   F         calm C descriptive ESN28u_t      HAR 0.9917 0.9907 0.9926  0.0000   equivalent                          169862
+   F         calm C descriptive    ISING      HAR 0.9863 0.9852 0.9873  0.0000   equivalent                          169862
+   F         calm C descriptive      DOM      HAR 0.9877 0.9868 0.9887  0.0000   equivalent                          169862
+   F intermediate     A primary      DOM ESN28u_t 0.9973 0.9965 0.9981  0.0000   equivalent   detectable, below band 292871
+   F intermediate     A primary    ISING ESN28u_t 0.9963 0.9954 0.9972  0.0000   equivalent   detectable, below band 292871
+   F intermediate     A primary      DOM    ISING 1.0010 1.0007 1.0013  0.0000   equivalent         detectably worse 292871
+   F intermediate C descriptive ESN28u_t   ESN28u 1.0004 1.0001 1.0006  0.0103   equivalent                          292871
+   F intermediate C descriptive ESN28u_t      HAR 0.9903 0.9893 0.9914  0.0000   equivalent                          292871
+   F intermediate C descriptive    ISING      HAR 0.9867 0.9856 0.9877  0.0000   equivalent                          292871
+   F intermediate C descriptive      DOM      HAR 0.9877 0.9866 0.9887  0.0000   equivalent                          292871
+   F    turbulent     A primary      DOM ESN28u_t 0.9989 0.9979 0.9999  0.0627   equivalent no detectable difference 210371
+   F    turbulent     A primary    ISING ESN28u_t 0.9986 0.9975 0.9997  0.0435   equivalent   detectable, below band 210371
+   F    turbulent     A primary      DOM    ISING 1.0003 0.9999 1.0006  0.1335   equivalent no detectable difference 210371
+   F    turbulent C descriptive ESN28u_t   ESN28u 0.9999 0.9997 1.0002  0.5330   equivalent                          210371
+   F    turbulent C descriptive ESN28u_t      HAR 0.9880 0.9862 0.9899  0.0000   equivalent                          210371
+   F    turbulent C descriptive    ISING      HAR 0.9867 0.9844 0.9889  0.0000   equivalent                          210371
+   F    turbulent C descriptive      DOM      HAR 0.9869 0.9848 0.9891  0.0000   equivalent                          210371
+   D          all     A primary      DOM ESN28u_t 0.9982 0.9750 1.0213  1.0000   equivalent no detectable difference   2580
+   D          all     A primary    ISING ESN28u_t 1.0018 0.9734 1.0303  1.0000 inconclusive no detectable difference   2580
+   D          all     A primary      DOM    ISING 0.9964 0.9819 1.0108  1.0000   equivalent no detectable difference   2580
+   D          all C descriptive ESN28u_t   ESN28u 0.9915 0.9784 1.0046  0.4081   equivalent                            2580
+   D          all C descriptive ESN28u_t      HAR 0.9733 0.9448 1.0019  0.2684 inconclusive                            2580
+   D          all C descriptive    ISING      HAR 0.9751 0.9336 1.0165  0.4081 inconclusive                            2580
+   D          all C descriptive      DOM      HAR 0.9715 0.9379 1.0052  0.2916 inconclusive                            2580
+   D         calm     A primary      DOM ESN28u_t 1.0047 0.9760 1.0334  1.0000 inconclusive no detectable difference    772
+   D         calm     A primary    ISING ESN28u_t 1.0040 0.9660 1.0419  1.0000 inconclusive no detectable difference    772
+   D         calm     A primary      DOM    ISING 1.0007 0.9731 1.0284  1.0000   equivalent no detectable difference    772
+   D         calm C descriptive ESN28u_t   ESN28u 0.9990 0.9730 1.0250  1.0000   equivalent                             772
+   D         calm C descriptive ESN28u_t      HAR 1.0023 0.9634 1.0412  1.0000 inconclusive                             772
+   D         calm C descriptive    ISING      HAR 1.0063 0.9550 1.0576  1.0000 inconclusive                             772
+   D         calm C descriptive      DOM      HAR 1.0070 0.9707 1.0433  1.0000 inconclusive                             772
+   D intermediate     A primary      DOM ESN28u_t 1.0215 0.9890 1.0539  0.2955 inconclusive no detectable difference   1033
+   D intermediate     A primary    ISING ESN28u_t 1.0350 1.0018 1.0681  0.1156        worse no detectable difference   1033
+   D intermediate     A primary      DOM    ISING 0.9870 0.9693 1.0046  0.2955 inconclusive no detectable difference   1033
+   D intermediate C descriptive ESN28u_t   ESN28u 0.9881 0.9655 1.0107  0.3037 inconclusive                            1033
+   D intermediate C descriptive ESN28u_t      HAR 0.9414 0.8996 0.9831  0.0178       better                            1033
+   D intermediate C descriptive    ISING      HAR 0.9743 0.9438 1.0047  0.1955 inconclusive                            1033
+   D intermediate C descriptive      DOM      HAR 0.9616 0.9356 0.9876  0.0152       better                            1033
+   D    turbulent     A primary      DOM ESN28u_t 0.9652 0.9160 1.0143  0.4948 inconclusive no detectable difference    775
+   D    turbulent     A primary    ISING ESN28u_t 0.9596 0.8941 1.0251  0.4948 inconclusive no detectable difference    775
+   D    turbulent     A primary      DOM    ISING 1.0058 0.9747 1.0369  0.7144 inconclusive no detectable difference    775
+   D    turbulent C descriptive ESN28u_t   ESN28u 0.9908 0.9718 1.0098  1.0000   equivalent                             775
+   D    turbulent C descriptive ESN28u_t      HAR 0.9961 0.9378 1.0543  1.0000 inconclusive                             775
+   D    turbulent C descriptive    ISING      HAR 0.9558 0.8452 1.0665  1.0000 inconclusive                             775
+   D    turbulent C descriptive      DOM      HAR 0.9614 0.8713 1.0514  1.0000 inconclusive                             775
+
+=== per-year ratio to the benchmark and chosen ESN configuration (descriptive) ===
+ grid  year       regime     n                esn_config  DOM/HAR  ESN28u/HAR  ISING/HAR  ESN28u_t/HAR
+   H  2013         calm  5247 {"rho": 0.6, "leak": 0.5}   0.9752      0.9735     0.9666        0.9754
+   H  2014         calm  5176 {"rho": 0.6, "leak": 1.0}   0.9921      0.9743     0.9784        0.9753
+   H  2015    turbulent  5303 {"rho": 0.6, "leak": 1.0}   0.9584      0.9571     0.9473        0.9694
+   H  2016 intermediate  5191 {"rho": 0.9, "leak": 0.5}   0.9803      0.9927     0.9845        0.9927
+   H  2017         calm  5186 {"rho": 1.2, "leak": 0.1}   1.0120      1.0185     1.0110        1.0001
+   H  2018 intermediate  5054 {"rho": 1.2, "leak": 0.1}   0.9869      0.9887     0.9899        0.9956
+   H  2019         calm  5165 {"rho": 0.9, "leak": 0.5}   0.9981      0.9932     0.9928        0.9932
+   H  2020 intermediate  5205 {"rho": 1.2, "leak": 0.5}   1.0015      0.9998     1.0007        1.0019
+   H  2021    turbulent  5220 {"rho": 0.6, "leak": 0.2}   1.0025      1.0026     0.9984        1.0010
+   H  2022    turbulent  5221 {"rho": 1.2, "leak": 0.1}   0.9978      1.0002     0.9986        0.9981
+   H  2023 intermediate  5180 {"rho": 1.2, "leak": 1.0}   0.9888      0.9831     0.9833        0.9845
+   H  2024 intermediate  5222 {"rho": 1.2, "leak": 0.1}   1.0020      0.9912     0.9927        0.9906
+   H  2025    turbulent  5197 {"rho": 0.6, "leak": 0.5}   0.9907      0.9928     0.9847        0.9883
+   M  2013         calm 19869 {"rho": 0.6, "leak": 0.5}   0.9891      0.9845     0.9878        0.9833
+   M  2014         calm 19005 {"rho": 0.6, "leak": 0.5}   0.9866      0.9820     0.9831        0.9820
+   M  2015    turbulent 20182 {"rho": 0.9, "leak": 0.5}   0.9792      0.9829     0.9761        0.9829
+   M  2016 intermediate 21368 {"rho": 0.9, "leak": 0.2}   0.9803      0.9852     0.9803        0.9843
+   M  2017         calm 22261 {"rho": 0.9, "leak": 1.0}   0.9796      0.9874     0.9802        0.9863
+   M  2018 intermediate 22427 {"rho": 0.9, "leak": 1.0}   0.9895      0.9943     0.9896        0.9923
+   M  2019         calm 22304 {"rho": 1.2, "leak": 1.0}   0.9910      0.9934     0.9906        0.9900
+   M  2020 intermediate 22637 {"rho": 0.6, "leak": 1.0}   0.9892      0.9888     0.9901        0.9911
+   M  2021    turbulent 22807 {"rho": 1.2, "leak": 1.0}   0.9796      0.9870     0.9817        0.9855
+   M  2022    turbulent 22762 {"rho": 0.9, "leak": 0.5}   0.9803      0.9862     0.9818        0.9862
+   M  2023 intermediate 22671 {"rho": 0.9, "leak": 1.0}   0.9690      0.9757     0.9705        0.9661
+   M  2024 intermediate 23017 {"rho": 1.2, "leak": 1.0}   0.9753      0.9761     0.9769        0.9686
+   M  2025    turbulent 22643 {"rho": 0.9, "leak": 1.0}   0.9706      0.9833     0.9677        0.9799
+   F  2013         calm 45374 {"rho": 1.2, "leak": 0.5}   0.9882      0.9929     0.9862        0.9925
+   F  2014         calm 35788 {"rho": 1.2, "leak": 0.5}   0.9897      0.9943     0.9893        0.9940
+   F  2015    turbulent 43846 {"rho": 0.6, "leak": 0.2}   0.9879      0.9899     0.9867        0.9896
+   F  2016    turbulent 41581 {"rho": 0.9, "leak": 0.5}   0.9861      0.9845     0.9862        0.9845
+   F  2017         calm 44300 {"rho": 0.9, "leak": 0.5}   0.9838      0.9867     0.9820        0.9867
+   F  2018 intermediate 54187 {"rho": 1.2, "leak": 0.2}   0.9897      0.9924     0.9875        0.9921
+   F  2019         calm 44400 {"rho": 1.2, "leak": 0.5}   0.9895      0.9940     0.9882        0.9940
+   F  2020 intermediate 56329 {"rho": 0.6, "leak": 0.5}   0.9877      0.9902     0.9868        0.9900
+   F  2021 intermediate 63199 {"rho": 0.6, "leak": 0.2}   0.9835      0.9843     0.9854        0.9860
+   F  2022    turbulent 64313 {"rho": 0.9, "leak": 0.5}   0.9904      0.9892     0.9909        0.9892
+   F  2023 intermediate 58431 {"rho": 0.6, "leak": 0.5}   0.9891      0.9927     0.9865        0.9930
+   F  2024 intermediate 60725 {"rho": 0.9, "leak": 0.5}   0.9891      0.9913     0.9874        0.9913
+   F  2025    turbulent 60631 {"rho": 0.9, "leak": 0.5}   0.9834      0.9879     0.9828        0.9879
+   D  2015 intermediate   258                             0.9616      0.9865     1.0079        0.9670
+   D  2016 intermediate   258                             0.9469      0.9102     0.9323        0.9102
+   D  2017         calm   257                             0.9469      0.9430     0.9083        0.9430
+   D  2018 intermediate   258                             0.9485      0.8801     0.9593        0.8801
+   D  2019         calm   258                             1.0482      1.0598     1.0920        1.0034
+   D  2020    turbulent   259                             0.9330      0.9920     0.9379        0.9920
+   D  2021    turbulent   258                             1.0020      1.0556     0.9942        1.0037
+   D  2022    turbulent   258                             0.9747      0.9814     0.9519        0.9962
+   D  2023         calm   257                             1.0566      1.0339     1.0634        1.1015
+   D  2024 intermediate   259                             0.9893      0.9953     0.9803        0.9764
+
+=== registered decision ===
+ grid                                DOM_vs_tuned_ESN  DOM_turbulent_ratio                              ISING_vs_tuned_ESN  ISING_turbulent_ratio
+   H 1.0016 [0.9988,1.0045] no detectable difference               0.9974 0.9967 [0.9936,0.9998] no detectable difference                 0.9915
+   M   0.9983 [0.9974,0.9993] detectable, below band               0.9937   0.9980 [0.9969,0.9991] detectable, below band                 0.9929
+   F   0.9975 [0.9970,0.9980] detectable, below band               0.9989   0.9966 [0.9961,0.9972] detectable, below band                 0.9986
+   D 0.9982 [0.9750,1.0213] no detectable difference               0.9652 1.0018 [0.9734,1.0303] no detectable difference                 0.9596

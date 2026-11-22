@@ -1,0 +1,14 @@
+# Licensed or provider data are never committed: rebuild them with the scripts in src/data/
+data/*
+!data/README.md
+# Prediction arrays of a fresh run (derived from licensed data; not redistributed)
+notebooks/qlstm_copper/long_preds*/
+!notebooks/qlstm_copper/long_preds_gs/
+notebooks/qlstm_copper/long_preds_gs/*
+!notebooks/qlstm_copper/long_preds_gs/gs_report.json
+*.log
+*.pid
+*.out
+__pycache__/
+.env
+*key*

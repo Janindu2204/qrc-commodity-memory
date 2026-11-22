@@ -1,0 +1,62 @@
+== A. capacity on i.i.d. input (median over seeds/configs; range) ==
+  DOM    n= 10  MC   5.26 [4.76, 5.74]  C2  10.61 [9.65, 11.02]  H90     5 [5, 6]
+  DOMG1  n= 10  MC   0.00 [0.00, 1.00]  C2   0.00 [0.00, 0.00]  H90     0 [0, 0]
+  ESN    n= 60  MC   7.38 [5.51, 10.10]  C2   0.00 [0.00, 9.54]  H90    32 [7, 155]
+  ESNB   n= 36  MC   5.44 [3.98, 7.58]  C2   4.84 [2.50, 8.37]  H90    28 [5, 168]
+  ISING  n= 10  MC   5.75 [5.35, 6.11]  C2  10.61 [10.28, 10.95]  H90     8 [7, 17]
+  SAS    n= 60  MC   3.91 [3.20, 4.68]  C2   6.50 [3.17, 9.76]  H90    14 [3, 56]
+  SASB   n= 36  MC   3.96 [3.31, 4.57]  C2   6.55 [3.18, 9.83]  H90    15 [3, 54]
+DOMG1 rule: DOMG1 has memory on some seed
+
+== B. copper HAR-residual task profile (fit 2013-2022, test 2023-2025) ==
+  F: n train 493317, test 179787
+    L(  1) p=    1  R2 -0.0005  ratio vs HAR 1.0000
+    L(  2) p=    2  R2 +0.0047  ratio vs HAR 0.9948
+    L(  5) p=    5  R2 +0.0048  ratio vs HAR 0.9947
+    L( 10) p=   10  R2 +0.0054  ratio vs HAR 0.9941
+    L( 20) p=   20  R2 +0.0092  ratio vs HAR 0.9903
+    L( 50) p=   50  R2 +0.0114  ratio vs HAR 0.9881
+    L(100) p=  100  R2 +0.0137  ratio vs HAR 0.9858
+    L(200) p=  200  R2 +0.0166  ratio vs HAR 0.9829
+    Q(  2) p=    5  R2 +0.0098  ratio vs HAR 0.9897
+    Q(  5) p=   20  R2 +0.0127  ratio vs HAR 0.9868
+    Q( 10) p=   65  R2 +0.0145  ratio vs HAR 0.9850
+    K* = 200
+    vs DOM H90 5: beyond the reservoir's memory; its memory is too short
+    vs ISING H90 8: beyond the reservoir's memory; its memory is too short
+    nonlinearity: short-lag degree-2 structure (L10 0.9941, Q10 0.9850)
+    signal: best ratio 0.9829 -> at least 1% predictable
+  H: n train 51968, test 15599
+    L(  1) p=    1  R2 -0.0006  ratio vs HAR 1.0000
+    L(  2) p=    2  R2 -0.0009  ratio vs HAR 1.0004
+    L(  5) p=    5  R2 +0.0011  ratio vs HAR 0.9984
+    L( 10) p=   10  R2 +0.0072  ratio vs HAR 0.9922
+    L( 20) p=   20  R2 +0.0095  ratio vs HAR 0.9899
+    L( 50) p=   50  R2 +0.0409  ratio vs HAR 0.9586
+    L(100) p=  100  R2 +0.0425  ratio vs HAR 0.9569
+    L(200) p=  200  R2 +0.0420  ratio vs HAR 0.9574
+    Q(  2) p=    5  R2 -0.0012  ratio vs HAR 1.0006
+    Q(  5) p=   20  R2 +0.0005  ratio vs HAR 0.9989
+    Q( 10) p=   65  R2 +0.0113  ratio vs HAR 0.9882
+    K* = 50
+    vs DOM H90 5: beyond the reservoir's memory; its memory is too short
+    vs ISING H90 8: beyond the reservoir's memory; its memory is too short
+    nonlinearity: no short-lag degree-2 structure detectable (L10 0.9922, Q10 0.9882)
+    signal: best ratio 0.9569 -> at least 1% predictable
+  M: n train 215622, test 68331
+    L(  1) p=    1  R2 -0.0000  ratio vs HAR 1.0000
+    L(  2) p=    2  R2 +0.0147  ratio vs HAR 0.9853
+    L(  5) p=    5  R2 +0.0181  ratio vs HAR 0.9819
+    L( 10) p=   10  R2 +0.0243  ratio vs HAR 0.9756
+    L( 20) p=   20  R2 +0.0237  ratio vs HAR 0.9762
+    L( 50) p=   50  R2 +0.0316  ratio vs HAR 0.9684
+    L(100) p=  100  R2 +0.0519  ratio vs HAR 0.9481
+    L(200) p=  200  R2 +0.0661  ratio vs HAR 0.9338
+    Q(  2) p=    5  R2 +0.0176  ratio vs HAR 0.9824
+    Q(  5) p=   20  R2 +0.0250  ratio vs HAR 0.9750
+    Q( 10) p=   65  R2 +0.0316  ratio vs HAR 0.9684
+    K* = 200
+    vs DOM H90 5: beyond the reservoir's memory; its memory is too short
+    vs ISING H90 8: beyond the reservoir's memory; its memory is too short
+    nonlinearity: short-lag degree-2 structure (L10 0.9756, Q10 0.9684)
+    signal: best ratio 0.9338 -> at least 1% predictable

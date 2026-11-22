@@ -1,0 +1,73 @@
+== R1 (no meaningful quantum edge), rolling years ==
+  GC F DOM   vs LIN200 0.9955 [0.9948, 0.9963] p_holm 8.24e-32  detectable, below band
+  GC F DOM   vs LSTM1  1.0040 [1.0036, 1.0044] p_holm 4.39e-78  detectably worse
+  GC F ISING vs LIN200 0.9945 [0.9937, 0.9953] p_holm 1.31e-43  detectable, below band
+  GC F ISING vs LSTM1  1.0030 [1.0025, 1.0034] p_holm 1.32e-38  detectably worse
+  GC M DOM   vs LIN200 1.0049 [1.0033, 1.0066] p_holm 1.2e-08  detectably worse
+  GC M DOM   vs LSTM1  1.0016 [1.0011, 1.0021] p_holm 1.53e-08  detectably worse
+  GC M ISING vs LIN200 1.0042 [1.0025, 1.0059] p_holm 2.41e-06  detectably worse
+  GC M ISING vs LSTM1  1.0009 [1.0003, 1.0015] p_holm 0.00171  detectably worse
+  GC H DOM   vs LIN200 1.0180 [1.0135, 1.0224] p_holm 1.24e-14  detectably worse
+  GC H DOM   vs LSTM1  1.0027 [1.0009, 1.0044] p_holm 0.00559  detectably worse
+  GC H ISING vs LIN200 1.0159 [1.0114, 1.0203] p_holm 1.05e-11  detectably worse
+  GC H ISING vs LSTM1  1.0006 [0.9988, 1.0024] p_holm 0.517  no detectable difference
+  SI F DOM   vs LIN200 0.9963 [0.9953, 0.9973] p_holm 2.14e-12  detectable, below band
+  SI F DOM   vs LSTM1  1.0054 [1.0049, 1.0060] p_holm 6.49e-79  detectably worse
+  SI F ISING vs LIN200 0.9960 [0.9949, 0.9971] p_holm 7.4e-13  detectable, below band
+  SI F ISING vs LSTM1  1.0051 [1.0045, 1.0057] p_holm 4.11e-57  detectably worse
+  SI M DOM   vs LIN200 1.0102 [1.0082, 1.0123] p_holm 5.32e-23  detectably worse
+  SI M DOM   vs LSTM1  1.0027 [1.0021, 1.0032] p_holm 4.72e-23  detectably worse
+  SI M ISING vs LIN200 1.0099 [1.0079, 1.0120] p_holm 8.33e-22  detectably worse
+  SI M ISING vs LSTM1  1.0023 [1.0017, 1.0030] p_holm 1.77e-12  detectably worse
+  SI H DOM   vs LIN200 1.0199 [1.0148, 1.0250] p_holm 6.92e-14  detectably worse
+  SI H DOM   vs LSTM1  1.0010 [0.9991, 1.0028] p_holm 0.596  no detectable difference
+  SI H ISING vs LIN200 1.0183 [1.0132, 1.0235] p_holm 1.25e-11  detectably worse
+  SI H ISING vs LSTM1  0.9994 [0.9973, 1.0015] p_holm 0.596  no detectable difference
+  R1: SUPPORTED
+== R2 (K* > 8) ==
+  GC F K* = 200  pass
+  GC M K* = 200  pass
+  GC H K* = 200  pass
+  SI F K* = 200  pass
+  SI M K* = 200  pass
+  SI H K* = 100  pass
+  R2: SUPPORTED
+== R3 (combination with DOM vs with ESNb_t) ==
+  GC F A/B 1.0007 90% [1.0005, 1.0010] margin +/-0.25%  pass
+  GC M A/B 0.9988 90% [0.9985, 0.9990] margin +/-0.50%  pass
+  GC H A/B 0.9993 90% [0.9984, 1.0002] margin +/-0.50%  pass
+  SI F A/B 1.0018 90% [1.0014, 1.0021] margin +/-0.25%  pass
+  SI M A/B 0.9993 90% [0.9991, 0.9995] margin +/-0.50%  pass
+  SI H A/B 1.0018 90% [1.0004, 1.0031] margin +/-0.50%  pass
+  R3: SUPPORTED
+== Sensitivity (never-touched years; reported, not a decision) ==
+  GC F DOM   vs LIN200 0.9953 [0.9938, 0.9968]  detectable, below band
+  GC F DOM   vs LSTM1  1.0040 [1.0032, 1.0048]  detectably worse
+  GC F ISING vs LIN200 0.9952 [0.9937, 0.9967]  detectable, below band
+  GC F ISING vs LSTM1  1.0039 [1.0029, 1.0050]  detectably worse
+  GC F R3 A/B 1.0018 [1.0013, 1.0024]  pass
+  GC M DOM   vs LIN200 1.0056 [1.0025, 1.0087]  detectably worse
+  GC M DOM   vs LSTM1  1.0006 [0.9996, 1.0015]  no detectable difference
+  GC M ISING vs LIN200 1.0046 [1.0014, 1.0078]  detectably worse
+  GC M ISING vs LSTM1  0.9996 [0.9986, 1.0005]  no detectable difference
+  GC M R3 A/B 1.0004 [0.9997, 1.0010]  pass
+  GC H DOM   vs LIN200 0.9966 [0.9885, 1.0047]  no detectable difference
+  GC H DOM   vs LSTM1  1.0016 [0.9985, 1.0046]  no detectable difference
+  GC H ISING vs LIN200 0.9943 [0.9859, 1.0026]  no detectable difference
+  GC H ISING vs LSTM1  0.9993 [0.9963, 1.0022]  no detectable difference
+  GC H R3 A/B 0.9992 [0.9967, 1.0016]  pass
+  SI F DOM   vs LIN200 0.9902 [0.9892, 0.9912]  detectable, below band
+  SI F DOM   vs LSTM1  1.0035 [1.0030, 1.0040]  detectably worse
+  SI F ISING vs LIN200 0.9894 [0.9884, 0.9905]  detectable, below band
+  SI F ISING vs LSTM1  1.0027 [1.0022, 1.0032]  detectably worse
+  SI F R3 A/B 1.0029 [1.0025, 1.0034]  FAIL
+  SI M DOM   vs LIN200 0.9962 [0.9943, 0.9982]  detectable, below band
+  SI M DOM   vs LSTM1  1.0012 [1.0007, 1.0017]  detectably worse
+  SI M ISING vs LIN200 0.9960 [0.9940, 0.9980]  detectable, below band
+  SI M ISING vs LSTM1  1.0009 [1.0004, 1.0015]  detectably worse
+  SI M R3 A/B 0.9996 [0.9993, 0.9999]  pass
+  SI H DOM   vs LIN200 0.9833 [0.9764, 0.9902]  detectable, below band
+  SI H DOM   vs LSTM1  1.0022 [0.9992, 1.0052]  no detectable difference
+  SI H ISING vs LIN200 0.9803 [0.9727, 0.9880]  detectable, below band
+  SI H ISING vs LSTM1  0.9992 [0.9951, 1.0033]  no detectable difference
+  SI H R3 A/B 1.0034 [1.0000, 1.0068]  FAIL

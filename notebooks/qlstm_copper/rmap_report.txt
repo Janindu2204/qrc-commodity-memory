@@ -1,0 +1,593 @@
+datasets read: 500  (cells: 50; reps per cell min 10)
+best classical chosen by validation: {'ESN28u_t': 180, 'SAS28_t': 172, 'LSTM1': 148}
+
+== Q1 DOM vs best classical ==
+  long  CESN   share 0.02  ratio 0.9998 [0.9978, 1.0018]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 1.0000 [0.9986, 1.0013]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 1.0008 [0.9989, 1.0026]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 1.0028 [0.9998, 1.0059]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 0.9984 [0.9950, 1.0017]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 0.9982 [0.9947, 1.0018]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9989 [0.9950, 1.0029]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 1.0003 [0.9979, 1.0027]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 0.9995 [0.9972, 1.0018]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 1.1139 [0.8724, 1.4221]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 1.0811 [0.9038, 1.2932]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.9455 [0.8435, 1.0599]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 1.0036 [0.9877, 1.0196]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 0.9960 [0.9897, 1.0023]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 0.9989 [0.9974, 1.0005]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 0.9986 [0.9957, 1.0016]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 0.9988 [0.9962, 1.0013]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9977 [0.9956, 0.9998]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9986 [0.9955, 1.0017]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 1.0013 [0.9903, 1.0124]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 1.0171 [0.9867, 1.0484]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 0.9987 [0.9958, 1.0015]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 1.0003 [0.9986, 1.0020]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9990 [0.9967, 1.0013]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 1.0013 [0.9982, 1.0045]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0009 [0.9986, 1.0031]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 1.0016 [0.9995, 1.0038]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 1.0048 [1.0014, 1.0082]  p_holm 0.567  no detectable difference
+  short CESN   share 0.30  ratio 1.0071 [1.0014, 1.0128]  p_holm 0.981  no detectable difference
+  short CSAS   share 0.02  ratio 0.9989 [0.9957, 1.0022]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 1.0008 [0.9991, 1.0026]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 1.0016 [0.9981, 1.0051]  p_holm 1  no detectable difference
+  short CSAS   share 0.30  ratio 1.0070 [0.9970, 1.0170]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 0.9997 [0.9972, 1.0021]  p_holm 1  no detectable difference
+  short POLY2  share 0.02  ratio 0.9988 [0.9974, 1.0001]  p_holm 1  no detectable difference
+  short POLY2  share 0.05  ratio 0.9974 [0.9946, 1.0002]  p_holm 1  no detectable difference
+  short POLY2  share 0.15  ratio 1.0117 [0.9954, 1.0282]  p_holm 1  no detectable difference
+  short POLY2  share 0.30  ratio 1.0009 [0.9991, 1.0027]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 1.0020 [0.9991, 1.0049]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 1.0100 [1.0033, 1.0167]  p_holm 0.403  no detectable difference
+  short POLY3  share 0.15  ratio 1.0143 [0.9897, 1.0395]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0003 [0.9989, 1.0017]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9980 [0.9948, 1.0011]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9970 [0.9933, 1.0007]  p_holm 1  no detectable difference
+  short QDOM   share 0.15  ratio 0.9971 [0.9897, 1.0046]  p_holm 1  no detectable difference
+  short QDOM   share 0.30  ratio 1.0231 [0.9804, 1.0676]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 0.9999 [0.9979, 1.0019]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 0.9999 [0.9975, 1.0022]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 0.9975 [0.9931, 1.0020]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0033 [0.9957, 1.0110]  p_holm 1  no detectable difference
+
+== Q1 ISING vs best classical ==
+  long  CESN   share 0.02  ratio 1.0018 [0.9973, 1.0064]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 1.0015 [0.9984, 1.0047]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 1.0021 [0.9986, 1.0056]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 1.0033 [0.9993, 1.0072]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 0.9985 [0.9953, 1.0016]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 0.9982 [0.9948, 1.0016]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9987 [0.9950, 1.0025]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 1.0001 [0.9980, 1.0021]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0005 [0.9988, 1.0022]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 1.0254 [0.9692, 1.0849]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 1.0662 [0.9214, 1.2338]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.8942 [0.6766, 1.1819]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 1.0423 [0.9925, 1.0947]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 0.9960 [0.9896, 1.0025]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 0.9986 [0.9973, 0.9998]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 0.9983 [0.9950, 1.0015]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 0.9987 [0.9966, 1.0008]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9994 [0.9966, 1.0022]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 1.0012 [0.9988, 1.0035]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 1.0045 [0.9933, 1.0158]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 1.0178 [0.9884, 1.0481]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 0.9989 [0.9972, 1.0005]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9996 [0.9983, 1.0009]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9988 [0.9960, 1.0015]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 1.0044 [0.9953, 1.0136]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0014 [0.9991, 1.0037]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 1.0018 [0.9993, 1.0042]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 1.0054 [1.0015, 1.0093]  p_holm 0.562  no detectable difference
+  short CESN   share 0.30  ratio 1.0072 [1.0008, 1.0136]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 0.9991 [0.9951, 1.0032]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 1.0009 [0.9991, 1.0027]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 1.0036 [0.9970, 1.0102]  p_holm 1  no detectable difference
+  short CSAS   share 0.30  ratio 1.0090 [0.9942, 1.0240]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 0.9992 [0.9971, 1.0014]  p_holm 1  no detectable difference
+  short POLY2  share 0.02  ratio 0.9982 [0.9969, 0.9996]  p_holm 0.765  no detectable difference
+  short POLY2  share 0.05  ratio 1.0000 [0.9971, 1.0030]  p_holm 1  no detectable difference
+  short POLY2  share 0.15  ratio 1.0184 [0.9979, 1.0393]  p_holm 1  no detectable difference
+  short POLY2  share 0.30  ratio 1.0009 [0.9999, 1.0019]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 1.0040 [1.0002, 1.0078]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 1.0136 [1.0063, 1.0209]  p_holm 0.107  no detectable difference
+  short POLY3  share 0.15  ratio 1.0408 [0.9477, 1.1431]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0009 [0.9993, 1.0025]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9980 [0.9955, 1.0005]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9979 [0.9957, 1.0002]  p_holm 1  no detectable difference
+  short QDOM   share 0.15  ratio 1.0015 [0.9939, 1.0092]  p_holm 1  no detectable difference
+  short QDOM   share 0.30  ratio 1.0242 [0.9820, 1.0682]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0003 [0.9990, 1.0016]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 1.0003 [0.9987, 1.0020]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 0.9976 [0.9916, 1.0037]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0043 [0.9973, 1.0113]  p_holm 1  no detectable difference
+
+== Q2 DOM vs LSTM1 ==
+  long  CESN   share 0.02  ratio 0.9995 [0.9974, 1.0016]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 0.9989 [0.9966, 1.0013]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 0.9997 [0.9970, 1.0023]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 1.0002 [0.9982, 1.0022]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 1.0003 [0.9987, 1.0019]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 1.0001 [0.9989, 1.0012]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 1.0009 [1.0000, 1.0017]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 1.0013 [0.9998, 1.0029]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0014 [1.0001, 1.0026]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 0.9929 [0.9765, 1.0096]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 0.9937 [0.9833, 1.0041]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.9852 [0.9581, 1.0130]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 0.9948 [0.9830, 1.0068]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 1.0008 [1.0002, 1.0015]  p_holm 0.775  no detectable difference
+  long  POLY3  share 0.05  ratio 1.0005 [0.9998, 1.0013]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 1.0007 [0.9999, 1.0015]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 1.0005 [0.9998, 1.0013]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9991 [0.9975, 1.0007]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9994 [0.9964, 1.0025]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 1.0001 [0.9860, 1.0143]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 1.0183 [0.9883, 1.0493]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0002 [0.9990, 1.0014]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 1.0005 [0.9991, 1.0019]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9996 [0.9973, 1.0019]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 1.0019 [0.9988, 1.0051]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0015 [1.0001, 1.0030]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 1.0005 [0.9986, 1.0024]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 0.9998 [0.9973, 1.0023]  p_holm 1  no detectable difference
+  short CESN   share 0.30  ratio 1.0014 [0.9994, 1.0033]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 1.0000 [0.9979, 1.0021]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 1.0001 [0.9987, 1.0016]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 0.9973 [0.9867, 1.0080]  p_holm 1  no detectable difference
+  short CSAS   share 0.30  ratio 1.0047 [0.9940, 1.0154]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 1.0028 [1.0013, 1.0043]  p_holm 0.113  no detectable difference
+  short POLY2  share 0.02  ratio 0.9959 [0.9928, 0.9991]  p_holm 0.787  no detectable difference
+  short POLY2  share 0.05  ratio 0.9934 [0.9888, 0.9981]  p_holm 0.534  no detectable difference
+  short POLY2  share 0.15  ratio 1.0115 [0.9960, 1.0273]  p_holm 1  no detectable difference
+  short POLY2  share 0.30  ratio 1.0009 [0.9989, 1.0029]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 0.9994 [0.9983, 1.0005]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 0.9997 [0.9977, 1.0017]  p_holm 1  no detectable difference
+  short POLY3  share 0.15  ratio 1.0050 [0.9778, 1.0329]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0008 [0.9996, 1.0020]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 1.0000 [0.9970, 1.0030]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9979 [0.9937, 1.0021]  p_holm 1  no detectable difference
+  short QDOM   share 0.15  ratio 0.9964 [0.9875, 1.0053]  p_holm 1  no detectable difference
+  short QDOM   share 0.30  ratio 1.0219 [0.9816, 1.0638]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0014 [1.0003, 1.0024]  p_holm 0.842  no detectable difference
+  short QISING share 0.05  ratio 1.0013 [1.0002, 1.0024]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 0.9985 [0.9941, 1.0029]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0038 [0.9966, 1.0110]  p_holm 1  no detectable difference
+
+== Q2 ISING vs LSTM1 ==
+  long  CESN   share 0.02  ratio 1.0015 [0.9969, 1.0062]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 1.0005 [0.9965, 1.0044]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 1.0009 [0.9973, 1.0045]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 1.0006 [0.9959, 1.0053]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 1.0004 [0.9983, 1.0024]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 1.0000 [0.9985, 1.0016]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 1.0007 [0.9992, 1.0022]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 1.0011 [1.0001, 1.0022]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0024 [1.0003, 1.0046]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 0.9141 [0.7450, 1.1214]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 0.9800 [0.9386, 1.0232]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.9317 [0.7677, 1.1308]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 1.0333 [0.9889, 1.0796]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 1.0009 [0.9995, 1.0023]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 1.0002 [0.9989, 1.0014]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 1.0003 [0.9992, 1.0014]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 1.0004 [0.9992, 1.0016]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 1.0008 [0.9983, 1.0034]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 1.0020 [0.9993, 1.0047]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 1.0033 [0.9896, 1.0171]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 1.0191 [0.9899, 1.0492]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0004 [0.9988, 1.0020]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9998 [0.9994, 1.0002]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9993 [0.9966, 1.0021]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 1.0050 [0.9957, 1.0143]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0021 [1.0003, 1.0038]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 1.0006 [0.9986, 1.0027]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 1.0004 [0.9967, 1.0041]  p_holm 1  no detectable difference
+  short CESN   share 0.30  ratio 1.0015 [0.9981, 1.0049]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 1.0002 [0.9971, 1.0033]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 1.0002 [0.9975, 1.0030]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 0.9993 [0.9858, 1.0131]  p_holm 1  no detectable difference
+  short CSAS   share 0.30  ratio 1.0067 [0.9913, 1.0222]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 1.0024 [1.0013, 1.0035]  p_holm 0.0436  detectably worse
+  short POLY2  share 0.02  ratio 0.9954 [0.9923, 0.9985]  p_holm 0.433  no detectable difference
+  short POLY2  share 0.05  ratio 0.9960 [0.9906, 1.0015]  p_holm 1  no detectable difference
+  short POLY2  share 0.15  ratio 1.0183 [0.9984, 1.0385]  p_holm 1  no detectable difference
+  short POLY2  share 0.30  ratio 1.0008 [0.9998, 1.0019]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 1.0013 [0.9995, 1.0032]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 1.0033 [1.0016, 1.0050]  p_holm 0.0965  no detectable difference
+  short POLY3  share 0.15  ratio 1.0313 [0.9364, 1.1358]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0014 [1.0000, 1.0028]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 1.0000 [0.9975, 1.0025]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9988 [0.9960, 1.0017]  p_holm 1  no detectable difference
+  short QDOM   share 0.15  ratio 1.0007 [0.9922, 1.0093]  p_holm 1  no detectable difference
+  short QDOM   share 0.30  ratio 1.0230 [0.9813, 1.0664]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0018 [1.0004, 1.0032]  p_holm 0.872  no detectable difference
+  short QISING share 0.05  ratio 1.0018 [1.0005, 1.0030]  p_holm 0.585  no detectable difference
+  short QISING share 0.15  ratio 0.9985 [0.9925, 1.0046]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0048 [0.9985, 1.0112]  p_holm 1  no detectable difference
+
+== Q2 DOM vs SAS28_t ==
+  long  CESN   share 0.02  ratio 0.9996 [0.9976, 1.0015]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 0.9994 [0.9977, 1.0010]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 0.9995 [0.9971, 1.0019]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 1.0005 [0.9984, 1.0026]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 0.9984 [0.9950, 1.0018]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 0.9986 [0.9950, 1.0023]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9990 [0.9951, 1.0029]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 1.0004 [0.9980, 1.0027]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 0.9993 [0.9976, 1.0011]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 1.1139 [0.8725, 1.4222]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 1.0815 [0.9042, 1.2936]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.9449 [0.8431, 1.0589]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 0.9923 [0.9770, 1.0078]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 0.9989 [0.9967, 1.0012]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 0.9995 [0.9974, 1.0015]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 0.9987 [0.9955, 1.0019]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 0.9993 [0.9964, 1.0022]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9969 [0.9951, 0.9987]  p_holm 0.185  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9960 [0.9925, 0.9996]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 0.9939 [0.9885, 0.9993]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 0.9938 [0.9875, 1.0001]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0007 [0.9993, 1.0020]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9992 [0.9953, 1.0031]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 1.0008 [0.9993, 1.0022]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 1.0004 [0.9984, 1.0024]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0010 [0.9989, 1.0030]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 1.0013 [0.9994, 1.0032]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 1.0014 [0.9986, 1.0043]  p_holm 1  no detectable difference
+  short CESN   share 0.30  ratio 1.0019 [0.9984, 1.0054]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 1.0002 [0.9990, 1.0015]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 1.0011 [0.9987, 1.0035]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 0.9982 [0.9948, 1.0017]  p_holm 1  no detectable difference
+  short CSAS   share 0.30  ratio 1.0013 [0.9982, 1.0044]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 0.9997 [0.9973, 1.0020]  p_holm 1  no detectable difference
+  short POLY2  share 0.02  ratio 0.9990 [0.9975, 1.0004]  p_holm 1  no detectable difference
+  short POLY2  share 0.05  ratio 0.9965 [0.9942, 0.9988]  p_holm 0.374  no detectable difference
+  short POLY2  share 0.15  ratio 1.0146 [1.0049, 1.0243]  p_holm 0.374  no detectable difference
+  short POLY2  share 0.30  ratio 1.0001 [0.9978, 1.0023]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 0.9974 [0.9946, 1.0002]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 0.9937 [0.9864, 1.0011]  p_holm 1  no detectable difference
+  short POLY3  share 0.15  ratio 1.0156 [0.9916, 1.0402]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0000 [0.9990, 1.0010]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9988 [0.9955, 1.0021]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9965 [0.9901, 1.0030]  p_holm 1  no detectable difference
+  short QDOM   share 0.15  ratio 0.9931 [0.9835, 1.0028]  p_holm 1  no detectable difference
+  short QDOM   share 0.30  ratio 1.0072 [0.9734, 1.0421]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 0.9997 [0.9980, 1.0015]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 0.9992 [0.9972, 1.0011]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 1.0003 [0.9970, 1.0037]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0000 [0.9970, 1.0029]  p_holm 1  no detectable difference
+
+== Q2 ISING vs SAS28_t ==
+  long  CESN   share 0.02  ratio 1.0016 [0.9971, 1.0062]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 1.0009 [0.9977, 1.0042]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 1.0007 [0.9970, 1.0045]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 1.0009 [0.9968, 1.0050]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 0.9985 [0.9957, 1.0013]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 0.9986 [0.9952, 1.0020]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9988 [0.9953, 1.0023]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 1.0002 [0.9985, 1.0018]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0003 [0.9989, 1.0018]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 1.0255 [0.9693, 1.0850]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 1.0667 [0.9219, 1.2342]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.8936 [0.6762, 1.1809]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 1.0307 [0.9830, 1.0806]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 0.9990 [0.9968, 1.0011]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 0.9991 [0.9973, 1.0009]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 0.9983 [0.9949, 1.0017]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 0.9991 [0.9970, 1.0013]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9986 [0.9968, 1.0005]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9986 [0.9964, 1.0008]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 0.9971 [0.9934, 1.0008]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 0.9946 [0.9879, 1.0012]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0009 [0.9996, 1.0021]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9984 [0.9941, 1.0028]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 1.0005 [0.9988, 1.0023]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 1.0034 [0.9949, 1.0120]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0015 [0.9992, 1.0038]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 1.0014 [0.9995, 1.0034]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 1.0021 [0.9998, 1.0043]  p_holm 1  no detectable difference
+  short CESN   share 0.30  ratio 1.0020 [0.9987, 1.0053]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 1.0004 [0.9991, 1.0018]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 1.0012 [0.9992, 1.0031]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 1.0002 [0.9960, 1.0045]  p_holm 1  no detectable difference
+  short CSAS   share 0.30  ratio 1.0033 [0.9966, 1.0100]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 0.9992 [0.9972, 1.0012]  p_holm 1  no detectable difference
+  short POLY2  share 0.02  ratio 0.9984 [0.9970, 0.9999]  p_holm 1  no detectable difference
+  short POLY2  share 0.05  ratio 0.9991 [0.9971, 1.0011]  p_holm 1  no detectable difference
+  short POLY2  share 0.15  ratio 1.0213 [1.0135, 1.0291]  p_holm 0.00775  detectably worse
+  short POLY2  share 0.30  ratio 1.0000 [0.9984, 1.0017]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 0.9993 [0.9963, 1.0024]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 0.9973 [0.9897, 1.0049]  p_holm 1  no detectable difference
+  short POLY3  share 0.15  ratio 1.0422 [0.9496, 1.1437]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0006 [0.9993, 1.0018]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9988 [0.9975, 1.0002]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9975 [0.9939, 1.0011]  p_holm 1  no detectable difference
+  short QDOM   share 0.15  ratio 0.9974 [0.9881, 1.0068]  p_holm 1  no detectable difference
+  short QDOM   share 0.30  ratio 1.0083 [0.9917, 1.0251]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0002 [0.9990, 1.0013]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 0.9996 [0.9982, 1.0011]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 1.0004 [0.9981, 1.0027]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0010 [0.9968, 1.0051]  p_holm 1  no detectable difference
+
+== R best classical vs HAR ==
+  long  CESN   share 0.02  ratio 1.0004 [0.9986, 1.0021]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 0.9986 [0.9964, 1.0008]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 0.9909 [0.9817, 1.0002]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 0.9719 [0.9447, 1.0000]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 1.0024 [0.9993, 1.0055]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 1.0018 [0.9980, 1.0056]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9983 [0.9926, 1.0041]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 0.9947 [0.9870, 1.0024]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0017 [1.0004, 1.0031]  p_holm 0.673  no detectable difference
+  long  POLY2  share 0.02  ratio 0.8832 [0.6679, 1.1680]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 0.8738 [0.6489, 1.1767]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 1.0192 [0.9378, 1.1077]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 0.8962 [0.8656, 0.9279]  p_holm 0.00257  meaningful edge
+  long  POLY3  share 0.02  ratio 1.0052 [0.9986, 1.0119]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 1.0021 [1.0009, 1.0033]  p_holm 0.161  no detectable difference
+  long  POLY3  share 0.15  ratio 1.0022 [0.9990, 1.0055]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 1.0020 [0.9996, 1.0044]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9991 [0.9954, 1.0027]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9791 [0.9583, 1.0004]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 0.9139 [0.8225, 1.0154]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 0.8336 [0.6706, 1.0362]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0015 [0.9992, 1.0039]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9993 [0.9965, 1.0021]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9944 [0.9795, 1.0095]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 0.9799 [0.9351, 1.0268]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 0.9995 [0.9970, 1.0020]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 0.9963 [0.9915, 1.0011]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 0.9807 [0.9652, 0.9964]  p_holm 0.832  no detectable difference
+  short CESN   share 0.30  ratio 0.9593 [0.9188, 1.0016]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 0.9981 [0.9932, 1.0030]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 0.9879 [0.9776, 0.9982]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 0.9456 [0.9101, 0.9825]  p_holm 0.394  no detectable difference
+  short CSAS   share 0.30  ratio 0.9606 [0.9137, 1.0099]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 1.0022 [0.9997, 1.0047]  p_holm 1  no detectable difference
+  short POLY2  share 0.02  ratio 0.9907 [0.9873, 0.9941]  p_holm 0.00692  detectable, below band
+  short POLY2  share 0.05  ratio 0.9641 [0.9595, 0.9687]  p_holm 1.6e-06  meaningful edge
+  short POLY2  share 0.15  ratio 0.9265 [0.9083, 0.9449]  p_holm 0.000529  meaningful edge
+  short POLY2  share 0.30  ratio 1.0000 [0.9995, 1.0006]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 0.9975 [0.9950, 0.9999]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 0.9824 [0.9765, 0.9884]  p_holm 0.00449  detectable, below band
+  short POLY3  share 0.15  ratio 0.9757 [0.9692, 0.9823]  p_holm 0.000807  detectable, below band
+  short POLY3  share 0.30  ratio 1.0006 [0.9994, 1.0019]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9979 [0.9940, 1.0018]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9869 [0.9767, 0.9972]  p_holm 0.73  no detectable difference
+  short QDOM   share 0.15  ratio 0.9332 [0.8889, 0.9796]  p_holm 0.441  no detectable difference
+  short QDOM   share 0.30  ratio 0.8585 [0.7450, 0.9894]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0009 [0.9998, 1.0021]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 1.0003 [0.9982, 1.0024]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 0.9944 [0.9834, 1.0055]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 0.9701 [0.9212, 1.0215]  p_holm 1  no detectable difference
+
+== R DOM vs HAR ==
+  long  CESN   share 0.02  ratio 1.0002 [0.9982, 1.0021]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 0.9986 [0.9958, 1.0014]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 0.9917 [0.9826, 1.0009]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 0.9747 [0.9467, 1.0035]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 1.0007 [0.9993, 1.0022]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 1.0000 [0.9983, 1.0017]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9972 [0.9934, 1.0011]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 0.9949 [0.9886, 1.0013]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0012 [0.9998, 1.0027]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 0.9838 [0.9497, 1.0191]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 0.9446 [0.8390, 1.0635]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.9637 [0.9275, 1.0014]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 0.8994 [0.8635, 0.9367]  p_holm 0.0106  meaningful edge
+  long  POLY3  share 0.02  ratio 1.0012 [1.0005, 1.0019]  p_holm 0.179  no detectable difference
+  long  POLY3  share 0.05  ratio 1.0010 [1.0003, 1.0018]  p_holm 0.571  no detectable difference
+  long  POLY3  share 0.15  ratio 1.0009 [1.0002, 1.0016]  p_holm 0.859  no detectable difference
+  long  POLY3  share 0.30  ratio 1.0008 [1.0001, 1.0014]  p_holm 0.958  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9968 [0.9936, 1.0000]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9777 [0.9562, 0.9998]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 0.9151 [0.8284, 1.0109]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 0.8478 [0.6983, 1.0294]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0002 [0.9992, 1.0013]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9997 [0.9977, 1.0017]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9934 [0.9771, 1.0099]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 0.9812 [0.9391, 1.0252]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0003 [0.9977, 1.0029]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 0.9979 [0.9931, 1.0026]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 0.9854 [0.9709, 1.0001]  p_holm 1  no detectable difference
+  short CESN   share 0.30  ratio 0.9661 [0.9293, 1.0043]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 0.9970 [0.9926, 1.0015]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 0.9887 [0.9794, 0.9980]  p_holm 0.859  no detectable difference
+  short CSAS   share 0.15  ratio 0.9471 [0.9111, 0.9844]  p_holm 0.471  no detectable difference
+  short CSAS   share 0.30  ratio 0.9673 [0.9283, 1.0079]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 1.0018 [1.0011, 1.0026]  p_holm 0.0196  detectably worse
+  short POLY2  share 0.02  ratio 0.9895 [0.9859, 0.9930]  p_holm 0.00465  detectable, below band
+  short POLY2  share 0.05  ratio 0.9616 [0.9564, 0.9669]  p_holm 2.75e-06  meaningful edge
+  short POLY2  share 0.15  ratio 0.9373 [0.9232, 0.9515]  p_holm 0.000225  meaningful edge
+  short POLY2  share 0.30  ratio 1.0010 [0.9993, 1.0027]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 0.9995 [0.9981, 1.0009]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 0.9922 [0.9893, 0.9952]  p_holm 0.0101  detectable, below band
+  short POLY3  share 0.15  ratio 0.9896 [0.9669, 1.0129]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0009 [1.0003, 1.0016]  p_holm 0.491  no detectable difference
+  short QDOM   share 0.02  ratio 0.9958 [0.9906, 1.0011]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9839 [0.9719, 0.9960]  p_holm 0.59  no detectable difference
+  short QDOM   share 0.15  ratio 0.9305 [0.8870, 0.9761]  p_holm 0.335  no detectable difference
+  short QDOM   share 0.30  ratio 0.8783 [0.7878, 0.9793]  p_holm 0.883  no detectable difference
+  short QISING share 0.02  ratio 1.0008 [0.9992, 1.0025]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 1.0002 [0.9976, 1.0027]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 0.9919 [0.9796, 1.0044]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 0.9733 [0.9304, 1.0181]  p_holm 1  no detectable difference
+
+== R ISING vs HAR ==
+  long  CESN   share 0.02  ratio 1.0022 [0.9980, 1.0064]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 1.0001 [0.9963, 1.0040]  p_holm 1  no detectable difference
+  long  CESN   share 0.15  ratio 0.9930 [0.9842, 1.0019]  p_holm 1  no detectable difference
+  long  CESN   share 0.30  ratio 0.9751 [0.9482, 1.0027]  p_holm 1  no detectable difference
+  long  CSAS   share 0.02  ratio 1.0008 [0.9990, 1.0027]  p_holm 1  no detectable difference
+  long  CSAS   share 0.05  ratio 1.0000 [0.9979, 1.0020]  p_holm 1  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9971 [0.9932, 1.0010]  p_holm 1  no detectable difference
+  long  CSAS   share 0.30  ratio 0.9947 [0.9886, 1.0009]  p_holm 1  no detectable difference
+  long  NULL   share 0.00  ratio 1.0022 [1.0003, 1.0042]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 0.9057 [0.7246, 1.1321]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 0.9317 [0.8006, 1.0842]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.9114 [0.7444, 1.1159]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 0.9341 [0.8775, 0.9944]  p_holm 1  no detectable difference
+  long  POLY3  share 0.02  ratio 1.0012 [1.0000, 1.0025]  p_holm 1  no detectable difference
+  long  POLY3  share 0.05  ratio 1.0007 [0.9995, 1.0018]  p_holm 1  no detectable difference
+  long  POLY3  share 0.15  ratio 1.0005 [0.9997, 1.0013]  p_holm 1  no detectable difference
+  long  POLY3  share 0.30  ratio 1.0006 [0.9998, 1.0015]  p_holm 1  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9985 [0.9950, 1.0020]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9803 [0.9601, 1.0008]  p_holm 1  no detectable difference
+  long  QDOM   share 0.15  ratio 0.9180 [0.8323, 1.0126]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 0.8485 [0.6974, 1.0323]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 1.0004 [0.9993, 1.0015]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9989 [0.9965, 1.0014]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9931 [0.9764, 1.0101]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 0.9842 [0.9394, 1.0311]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 1.0009 [0.9981, 1.0037]  p_holm 1  no detectable difference
+  short CESN   share 0.05  ratio 0.9980 [0.9932, 1.0029]  p_holm 1  no detectable difference
+  short CESN   share 0.15  ratio 0.9860 [0.9713, 1.0009]  p_holm 1  no detectable difference
+  short CESN   share 0.30  ratio 0.9662 [0.9289, 1.0050]  p_holm 1  no detectable difference
+  short CSAS   share 0.02  ratio 0.9972 [0.9921, 1.0024]  p_holm 1  no detectable difference
+  short CSAS   share 0.05  ratio 0.9888 [0.9781, 0.9996]  p_holm 1  no detectable difference
+  short CSAS   share 0.15  ratio 0.9490 [0.9106, 0.9890]  p_holm 0.796  no detectable difference
+  short CSAS   share 0.30  ratio 0.9692 [0.9345, 1.0052]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 1.0014 [1.0002, 1.0026]  p_holm 1  no detectable difference
+  short POLY2  share 0.02  ratio 0.9889 [0.9860, 0.9919]  p_holm 0.000714  detectable, below band
+  short POLY2  share 0.05  ratio 0.9642 [0.9597, 0.9686]  p_holm 1.27e-06  meaningful edge
+  short POLY2  share 0.15  ratio 0.9435 [0.9300, 0.9572]  p_holm 0.000374  meaningful edge
+  short POLY2  share 0.30  ratio 1.0009 [0.9999, 1.0020]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 1.0015 [0.9994, 1.0036]  p_holm 1  no detectable difference
+  short POLY3  share 0.05  ratio 0.9957 [0.9927, 0.9988]  p_holm 0.548  no detectable difference
+  short POLY3  share 0.15  ratio 1.0155 [0.9256, 1.1142]  p_holm 1  no detectable difference
+  short POLY3  share 0.30  ratio 1.0015 [1.0007, 1.0023]  p_holm 0.128  no detectable difference
+  short QDOM   share 0.02  ratio 0.9959 [0.9917, 1.0000]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9849 [0.9746, 0.9952]  p_holm 0.418  no detectable difference
+  short QDOM   share 0.15  ratio 0.9345 [0.8924, 0.9787]  p_holm 0.411  no detectable difference
+  short QDOM   share 0.30  ratio 0.8793 [0.7854, 0.9844]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0012 [1.0002, 1.0023]  p_holm 1  no detectable difference
+  short QISING share 0.05  ratio 1.0007 [0.9990, 1.0023]  p_holm 1  no detectable difference
+  short QISING share 0.15  ratio 0.9920 [0.9785, 1.0057]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 0.9743 [0.9314, 1.0191]  p_holm 1  no detectable difference
+
+== R oracle vs HAR ==
+  long  CESN   share 0.02  ratio 0.9952 [0.9889, 1.0015]  p_holm 1  no detectable difference
+  long  CESN   share 0.05  ratio 0.9936 [0.9884, 0.9988]  p_holm 0.586  no detectable difference
+  long  CESN   share 0.15  ratio 0.9844 [0.9744, 0.9944]  p_holm 0.238  no detectable difference
+  long  CESN   share 0.30  ratio 0.9629 [0.9331, 0.9936]  p_holm 0.59  no detectable difference
+  long  CSAS   share 0.02  ratio 0.9978 [0.9955, 1.0001]  p_holm 0.88  no detectable difference
+  long  CSAS   share 0.05  ratio 0.9970 [0.9940, 0.9999]  p_holm 0.788  no detectable difference
+  long  CSAS   share 0.15  ratio 0.9939 [0.9883, 0.9996]  p_holm 0.745  no detectable difference
+  long  CSAS   share 0.30  ratio 0.9917 [0.9840, 0.9995]  p_holm 0.758  no detectable difference
+  long  NULL   share 0.00  ratio 0.9997 [0.9988, 1.0007]  p_holm 1  no detectable difference
+  long  POLY2  share 0.02  ratio 0.8805 [0.6643, 1.1670]  p_holm 1  no detectable difference
+  long  POLY2  share 0.05  ratio 0.7604 [0.4168, 1.3872]  p_holm 1  no detectable difference
+  long  POLY2  share 0.15  ratio 0.6928 [0.3294, 1.4573]  p_holm 1  no detectable difference
+  long  POLY2  share 0.30  ratio 0.8635 [0.8266, 0.9021]  p_holm 0.00147  meaningful edge
+  long  POLY3  share 0.02  ratio 0.9988 [0.9976, 0.9999]  p_holm 0.733  no detectable difference
+  long  POLY3  share 0.05  ratio 0.9988 [0.9977, 0.9999]  p_holm 0.758  no detectable difference
+  long  POLY3  share 0.15  ratio 0.9986 [0.9975, 0.9997]  p_holm 0.492  no detectable difference
+  long  POLY3  share 0.30  ratio 0.9985 [0.9974, 0.9996]  p_holm 0.431  no detectable difference
+  long  QDOM   share 0.02  ratio 0.9938 [0.9899, 0.9978]  p_holm 0.238  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9713 [0.9473, 0.9958]  p_holm 0.62  no detectable difference
+  long  QDOM   share 0.15  ratio 0.8991 [0.8016, 1.0085]  p_holm 0.983  no detectable difference
+  long  QDOM   share 0.30  ratio 0.8120 [0.6385, 1.0328]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 0.9958 [0.9921, 0.9995]  p_holm 0.656  no detectable difference
+  long  QISING share 0.05  ratio 0.9931 [0.9833, 1.0031]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9870 [0.9648, 1.0098]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 0.9709 [0.9155, 1.0296]  p_holm 1  no detectable difference
+  short CESN   share 0.02  ratio 0.9959 [0.9929, 0.9989]  p_holm 0.431  no detectable difference
+  short CESN   share 0.05  ratio 0.9918 [0.9867, 0.9970]  p_holm 0.226  no detectable difference
+  short CESN   share 0.15  ratio 0.9757 [0.9615, 0.9901]  p_holm 0.167  no detectable difference
+  short CESN   share 0.30  ratio 0.9520 [0.9136, 0.9920]  p_holm 0.59  no detectable difference
+  short CSAS   share 0.02  ratio 0.9929 [0.9883, 0.9975]  p_holm 0.242  no detectable difference
+  short CSAS   share 0.05  ratio 0.9831 [0.9725, 0.9937]  p_holm 0.225  no detectable difference
+  short CSAS   share 0.15  ratio 0.9322 [0.8895, 0.9769]  p_holm 0.263  no detectable difference
+  short CSAS   share 0.30  ratio 0.9496 [0.8955, 1.0070]  p_holm 1  no detectable difference
+  short NULL   share 0.00  ratio 0.9979 [0.9963, 0.9996]  p_holm 0.515  no detectable difference
+  short POLY2  share 0.02  ratio 0.9804 [0.9757, 0.9852]  p_holm 0.000306  detectable, below band
+  short POLY2  share 0.05  ratio 0.9449 [0.9390, 0.9507]  p_holm 3.28e-07  meaningful edge
+  short POLY2  share 0.15  ratio 0.8644 [0.8367, 0.8931]  p_holm 0.000151  meaningful edge
+  short POLY2  share 0.30  ratio 0.9987 [0.9972, 1.0003]  p_holm 1  no detectable difference
+  short POLY3  share 0.02  ratio 0.9848 [0.9821, 0.9874]  p_holm 2.01e-05  detectable, below band
+  short POLY3  share 0.05  ratio 0.9553 [0.9493, 0.9614]  p_holm 2.74e-06  meaningful edge
+  short POLY3  share 0.15  ratio 0.9165 [0.9024, 0.9308]  p_holm 2.14e-05  meaningful edge
+  short POLY3  share 0.30  ratio 0.9988 [0.9966, 1.0009]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9902 [0.9851, 0.9953]  p_holm 0.0815  no detectable difference
+  short QDOM   share 0.05  ratio 0.9757 [0.9631, 0.9885]  p_holm 0.0845  no detectable difference
+  short QDOM   share 0.15  ratio 0.9091 [0.8611, 0.9598]  p_holm 0.129  no detectable difference
+  short QDOM   share 0.30  ratio 0.8239 [0.7035, 0.9650]  p_holm 0.586  no detectable difference
+  short QISING share 0.02  ratio 0.9978 [0.9968, 0.9988]  p_holm 0.0411  detectable, below band
+  short QISING share 0.05  ratio 0.9969 [0.9944, 0.9994]  p_holm 0.575  no detectable difference
+  short QISING share 0.15  ratio 0.9780 [0.9524, 1.0042]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 0.9584 [0.8980, 1.0229]  p_holm 1  no detectable difference
+
+== R teacher circuit vs best classical ==
+  long  QDOM   share 0.02  ratio 0.9990 [0.9962, 1.0018]  p_holm 1  no detectable difference
+  long  QDOM   share 0.05  ratio 0.9963 [0.9923, 1.0003]  p_holm 0.877  no detectable difference
+  long  QDOM   share 0.15  ratio 0.9955 [0.9876, 1.0034]  p_holm 1  no detectable difference
+  long  QDOM   share 0.30  ratio 0.9960 [0.9885, 1.0036]  p_holm 1  no detectable difference
+  long  QISING share 0.02  ratio 0.9993 [0.9967, 1.0018]  p_holm 1  no detectable difference
+  long  QISING share 0.05  ratio 0.9995 [0.9963, 1.0027]  p_holm 1  no detectable difference
+  long  QISING share 0.15  ratio 0.9974 [0.9914, 1.0033]  p_holm 1  no detectable difference
+  long  QISING share 0.30  ratio 0.9982 [0.9947, 1.0018]  p_holm 1  no detectable difference
+  short QDOM   share 0.02  ratio 0.9973 [0.9933, 1.0014]  p_holm 1  no detectable difference
+  short QDOM   share 0.05  ratio 0.9952 [0.9905, 1.0000]  p_holm 0.693  no detectable difference
+  short QDOM   share 0.15  ratio 0.9918 [0.9829, 1.0008]  p_holm 0.877  no detectable difference
+  short QDOM   share 0.30  ratio 0.9915 [0.9630, 1.0209]  p_holm 1  no detectable difference
+  short QISING share 0.02  ratio 1.0013 [1.0001, 1.0026]  p_holm 0.651  no detectable difference
+  short QISING share 0.05  ratio 1.0015 [1.0000, 1.0029]  p_holm 0.671  no detectable difference
+  short QISING share 0.15  ratio 1.0039 [0.9988, 1.0090]  p_holm 1  no detectable difference
+  short QISING share 0.30  ratio 1.0065 [0.9934, 1.0198]  p_holm 1  no detectable difference
+
+== decision ==
+pipeline check (teacher's own circuit beats best classical, detectably, in at least one quantum-generated cell with share >= 0.15): FAILED -> map inconclusive
+win region (meaningful edge, Q1): none
+detectable but below band (Q1): none
+secondary (detectable, below band): no edge anywhere
+outcome rule: W0 inconclusive
+
+== descriptive: share of attainable gain captured (mean over datasets; cells with share >= 0.05) ==
+                          DOM   ISING  ESN28u_t  SAS28_t  LSTM1      CB
+memory structure share                                                 
+long   CESN      0.05   0.183  -0.011     0.405   -0.391 -0.566  -0.229
+                 0.15   0.481   0.605     0.777   -0.205  0.182   0.254
+                 0.30   0.510   0.709     0.764    0.289  0.158   0.319
+       CSAS      0.05  -6.724 -11.621    -1.083  -51.783  0.394 -52.372
+                 0.15  -5.511  -9.647    -0.484  -48.910  0.739 -49.046
+                 0.30  -3.871  -5.104     0.529  -16.764  0.908 -16.334
+       POLY2     0.05   1.593   1.004     0.985    1.039  0.659   1.078
+                 0.15   0.447   0.068     0.531    0.314  0.434   0.350
+                 0.30   0.685   0.382     0.457    0.716  0.644   0.776
+       POLY3     0.05  -1.858  -1.166    -1.360   -0.974 -0.820  -1.819
+                 0.15  -1.165  -0.388    -1.718   -2.317 -0.360  -3.283
+                 0.30  -1.030  -0.485    -2.799   -0.550 -0.465  -1.581
+       QDOM      0.05  -0.426  -3.264    -1.067   -3.030  0.756  -3.019
+                 0.15  -6.757  -8.409    -6.375   -8.819  0.073  -8.247
+                 0.30   3.540   0.349     1.654   -0.944  1.062  -0.388
+       QISING    0.05  -0.085   0.137    -0.421   -0.044  0.046  -0.478
+                 0.15  -0.142  -0.104    -0.413    0.092  0.006  -0.531
+                 0.30  -0.090  -1.241    -0.210    0.058  0.044  -0.121
+short  CESN      0.05  -0.187  -0.042     0.157    0.031  0.202   0.029
+                 0.15   0.445   0.421     0.558    0.472  0.485   0.639
+                 0.30   0.491   0.448     0.631    0.564  0.510   0.704
+       CSAS      0.05   0.259   0.139    -0.162    0.289  0.554   0.295
+                 0.15   0.718   0.644     0.411    0.648  0.759   0.718
+                 0.30   1.346   0.825     0.658    1.213  0.409   0.379
+       POLY2     0.05   0.693   0.649     0.106    0.633  0.578   0.651
+                 0.15   0.468   0.417     0.458    0.566  0.581   0.579
+                 0.30  -4.016  -1.953     0.537    0.732  0.592   0.521
+       POLY3     0.05   0.180   0.100     0.402    0.011  0.171   0.393
+                 0.15   0.164  -0.083     0.225    0.321  0.179   0.302
+                 0.30  -4.203  -2.092     0.702   -0.572 -0.395   0.207
+       QDOM      0.05   0.254   0.305    -0.274    0.374  0.528  -0.016
+                 0.15   0.346   0.368    -0.080    0.454  0.622   0.119
+                 0.30   0.611   0.585    -0.109    0.464  0.845   0.335
+       QISING    0.05  -0.488  -0.699    -0.177   -1.048 -0.035  -0.359
+                 0.15  -0.348  -0.460     0.018   -0.612  0.032  -0.323
+                 0.30  -0.290  -0.276     0.147   -0.422  0.104   0.007
+
+== copper placement (copper numbers read from dom4_report_rolling.csv; nothing recomputed) ==
+  D: copper best single-input network / HAR = 1.0208; synthetic cells within +/-0.01: 1; their Q1 categories: {'no detectable difference': 2}
+  F: copper best single-input network / HAR = 0.9840; synthetic cells within +/-0.01: 9; their Q1 categories: {'no detectable difference': 18}
+  H: copper best single-input network / HAR = 0.9837; synthetic cells within +/-0.01: 9; their Q1 categories: {'no detectable difference': 18}
+  M: copper best single-input network / HAR = 0.9752; synthetic cells within +/-0.01: 7; their Q1 categories: {'no detectable difference': 14}

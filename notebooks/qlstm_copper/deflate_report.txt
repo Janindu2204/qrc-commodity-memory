@@ -1,0 +1,146 @@
+
+== copper ladder (DOM/ISING) (in-sample) ==
+  WINDOW F          N= 12  G_obs +0.66  G_pred +0.69  deflated-honest +0.03 (tol 1.00)  H1 pass  | null median +2.79 vs rms rule +3.72
+  SEED   F          N=120  G_obs +0.03  G_pred +0.09  deflated-honest +0.06 (tol 1.00)  H1 pass  | null median +2.40 vs rms rule +5.98
+  LOSS   F          N=  3  G_obs +6.25  G_pred +2.81  deflated-honest -3.44 (tol 1.00)  H1 n/a (N<4)  | null median +2.48 vs rms rule +2.30
+  QMODEL F          N=  2  G_obs +0.08  G_pred +0.03  deflated-honest -0.05 (tol 1.00)  H1 n/a (N<4)  | null median +2.24 vs rms rule +1.26
+  WINDOW M          N= 12  G_obs +5.20  G_pred +3.77  deflated-honest -1.43 (tol 1.13)  H1 FAIL  | null median +7.96 vs rms rule +9.94
+  SEED   M          N=120  G_obs +0.10  G_pred +0.22  deflated-honest +0.12 (tol 1.00)  H1 pass  | null median +5.92 vs rms rule +14.72
+  LOSS   M          N=  3  G_obs +2.85  G_pred +1.27  deflated-honest -1.58 (tol 1.00)  H1 n/a (N<4)  | null median +4.52 vs rms rule +3.95
+  QMODEL M          N=  2  G_obs +0.02  G_pred +0.01  deflated-honest -0.01 (tol 1.00)  H1 n/a (N<4)  | null median +5.65 vs rms rule +3.19
+  WINDOW H          N= 12  G_obs +3.40  G_pred +4.59  deflated-honest +1.18 (tol 1.38)  H1 pass  | null median +5.79 vs rms rule +5.54
+  SEED   H          N=120  G_obs +0.20  G_pred +0.30  deflated-honest +0.11 (tol 1.00)  H1 pass  | null median +2.65 vs rms rule +6.31
+  LOSS   H          N=  3  G_obs +5.29  G_pred +2.34  deflated-honest -2.95 (tol 1.00)  H1 n/a (N<4)  | null median +2.18 vs rms rule +1.91
+  QMODEL H          N=  2  G_obs +0.45  G_pred +0.18  deflated-honest -0.27 (tol 1.00)  H1 n/a (N<4)  | null median +2.13 vs rms rule +1.21
+  UNIT   all        N=  3  G_obs +1.15  G_pred +1.63  deflated-honest +0.48 (tol 1.00)  H1 n/a (N<4)  | null median +3.80 vs rms rule +3.19
+
+== commodity panel (QLSTMT, QRC, Ising, kernels, QKAN) (in-sample) ==
+  WINDOW CL_F       N=  6  G_obs +8.13  G_pred +7.19  deflated-honest -0.94 (tol 2.16)  H1 pass  | null median +9.00 vs rms rule +8.79
+  SEED   CL_F       N=120  G_obs +1.27  G_pred +2.68  deflated-honest +1.41 (tol 1.00)  H1 FAIL  | null median +4.79 vs rms rule +7.58
+  LOSS   CL_F       N=  3  G_obs +6.70  G_pred +2.94  deflated-honest -3.76 (tol 1.00)  H1 n/a (N<4)  | null median +7.47 vs rms rule +5.95
+  QMODEL CL_F       N=  6  G_obs +0.00  G_pred +5.25  deflated-honest +5.25 (tol 1.58)  H1 FAIL  | null median +5.27 vs rms rule +4.85
+  WINDOW GC_F       N=  6  G_obs +13.04  G_pred +19.33  deflated-honest +6.29 (tol 5.80)  H1 FAIL  | null median +19.35 vs rms rule +19.24
+  SEED   GC_F       N=120  G_obs +12.16  G_pred +26.98  deflated-honest +14.82 (tol 8.09)  H1 FAIL  | null median +37.78 vs rms rule +34.63
+  LOSS   GC_F       N=  3  G_obs +0.00  G_pred +2.62  deflated-honest +2.62 (tol 1.00)  H1 n/a (N<4)  | null median +6.62 vs rms rule +5.54
+  QMODEL GC_F       N=  6  G_obs +0.42  G_pred +7644.49  deflated-honest +7644.07 (tol 2293.35)  H1 FAIL  | null median +4199.73 vs rms rule +7857.38
+  WINDOW HG_F       N=  6  G_obs +30.85  G_pred +26.42  deflated-honest -4.43 (tol 7.93)  H1 pass  | null median +23.75 vs rms rule +24.13
+  SEED   HG_F       N=120  G_obs +5.25  G_pred +6.86  deflated-honest +1.61 (tol 2.06)  H1 pass  | null median +11.13 vs rms rule +15.50
+  LOSS   HG_F       N=  3  G_obs +17.61  G_pred +7.57  deflated-honest -10.04 (tol 2.27)  H1 n/a (N<4)  | null median +7.88 vs rms rule +7.42
+  QMODEL HG_F       N=  6  G_obs +1.31  G_pred +108.39  deflated-honest +107.08 (tol 32.52)  H1 FAIL  | null median +167.61 vs rms rule +119.09
+  WINDOW HO_F       N=  6  G_obs +23.55  G_pred +19.73  deflated-honest -3.81 (tol 5.92)  H1 pass  | null median +18.34 vs rms rule +18.51
+  SEED   HO_F       N=120  G_obs +3.06  G_pred +4.81  deflated-honest +1.75 (tol 1.44)  H1 FAIL  | null median +10.54 vs rms rule +17.03
+  LOSS   HO_F       N=  3  G_obs +18.66  G_pred +8.79  deflated-honest -9.87 (tol 2.64)  H1 n/a (N<4)  | null median +10.19 vs rms rule +8.95
+  QMODEL HO_F       N=  6  G_obs +0.00  G_pred +4.92  deflated-honest +4.92 (tol 1.48)  H1 FAIL  | null median +12.59 vs rms rule +12.56
+  WINDOW NG_F       N=  6  G_obs +25.63  G_pred +16.47  deflated-honest -9.17 (tol 4.94)  H1 FAIL  | null median +15.64 vs rms rule +15.05
+  SEED   NG_F       N=120  G_obs +10.42  G_pred +13.14  deflated-honest +2.71 (tol 3.94)  H1 pass  | null median +26.18 vs rms rule +39.62
+  LOSS   NG_F       N=  3  G_obs +20.04  G_pred +9.08  deflated-honest -10.96 (tol 2.72)  H1 n/a (N<4)  | null median +8.47 vs rms rule +7.56
+  QMODEL NG_F       N=  6  G_obs +19.41  G_pred +9.68  deflated-honest -9.73 (tol 2.91)  H1 FAIL  | null median +12.80 vs rms rule +12.27
+  WINDOW PA_F       N=  6  G_obs +79.24  G_pred +112.89  deflated-honest +33.64 (tol 33.87)  H1 pass  | null median +150.06 vs rms rule +134.17
+  SEED   PA_F       N=120  G_obs +0.86  G_pred +4.21  deflated-honest +3.35 (tol 1.26)  H1 FAIL  | null median +115.73 vs rms rule +289.27
+  LOSS   PA_F       N=  3  G_obs +0.00  G_pred +36.34  deflated-honest +36.34 (tol 10.90)  H1 n/a (N<4)  | null median +74.58 vs rms rule +67.02
+  QMODEL PA_F       N=  6  G_obs +5.68  G_pred +1587.73  deflated-honest +1582.05 (tol 476.32)  H1 FAIL  | null median +1258.64 vs rms rule +1613.64
+  WINDOW PL_F       N=  6  G_obs +16.13  G_pred +10.79  deflated-honest -5.34 (tol 3.24)  H1 FAIL  | null median +42.53 vs rms rule +50.44
+  SEED   PL_F       N=120  G_obs +14.09  G_pred +35.18  deflated-honest +21.10 (tol 10.55)  H1 FAIL  | null median +52.28 vs rms rule +91.93
+  LOSS   PL_F       N=  3  G_obs +0.00  G_pred +12.90  deflated-honest +12.90 (tol 3.87)  H1 n/a (N<4)  | null median +24.65 vs rms rule +22.53
+  QMODEL PL_F       N=  6  G_obs +0.00  G_pred +2129.89  deflated-honest +2129.89 (tol 638.97)  H1 FAIL  | null median +736.73 vs rms rule +2124.20
+  WINDOW SI_F       N=  6  G_obs +29.37  G_pred +37.85  deflated-honest +8.48 (tol 11.36)  H1 pass  | null median +35.50 vs rms rule +34.93
+  SEED   SI_F       N=120  G_obs +1.78  G_pred +5.05  deflated-honest +3.27 (tol 1.51)  H1 FAIL  | null median +6.27 vs rms rule +6.67
+  LOSS   SI_F       N=  3  G_obs +0.00  G_pred +9.80  deflated-honest +9.80 (tol 2.94)  H1 n/a (N<4)  | null median +17.46 vs rms rule +13.19
+  QMODEL SI_F       N=  5  G_obs +0.00  G_pred +55.55  deflated-honest +55.55 (tol 16.67)  H1 FAIL  | null median +76.61 vs rms rule +69.01
+  WINDOW ZC_F       N=  6  G_obs +53.75  G_pred +47.27  deflated-honest -6.49 (tol 14.18)  H1 pass  | null median +54.62 vs rms rule +50.18
+  SEED   ZC_F       N=120  G_obs +5.95  G_pred +12.59  deflated-honest +6.64 (tol 3.78)  H1 FAIL  | null median +40.54 vs rms rule +78.46
+  LOSS   ZC_F       N=  3  G_obs +6.25  G_pred +11.72  deflated-honest +5.47 (tol 3.52)  H1 n/a (N<4)  | null median +28.21 vs rms rule +27.02
+  QMODEL ZC_F       N=  6  G_obs +17.64  G_pred +8.28  deflated-honest -9.36 (tol 2.48)  H1 FAIL  | null median +19.54 vs rms rule +19.43
+  WINDOW ZS_F       N=  6  G_obs +30.61  G_pred +25.05  deflated-honest -5.56 (tol 7.51)  H1 pass  | null median +22.27 vs rms rule +23.17
+  SEED   ZS_F       N=120  G_obs +9.15  G_pred +16.76  deflated-honest +7.60 (tol 5.03)  H1 FAIL  | null median +19.35 vs rms rule +28.50
+  LOSS   ZS_F       N=  3  G_obs +12.61  G_pred +5.39  deflated-honest -7.23 (tol 1.62)  H1 n/a (N<4)  | null median +4.21 vs rms rule +4.48
+  QMODEL ZS_F       N=  6  G_obs +4.83  G_pred +21987.69  deflated-honest +21982.87 (tol 6596.31)  H1 FAIL  | null median +35418.21 vs rms rule +21990.04
+  WINDOW ZW_F       N=  6  G_obs +47.38  G_pred +58.07  deflated-honest +10.70 (tol 17.42)  H1 pass  | null median +57.76 vs rms rule +63.03
+  SEED   ZW_F       N=120  G_obs +30.76  G_pred +33.82  deflated-honest +3.06 (tol 10.15)  H1 pass  | null median +45.02 vs rms rule +58.04
+  LOSS   ZW_F       N=  3  G_obs +0.00  G_pred +12.15  deflated-honest +12.15 (tol 3.65)  H1 n/a (N<4)  | null median +28.96 vs rms rule +24.01
+  QMODEL ZW_F       N=  6  G_obs +19.91  G_pred +9.68  deflated-honest -10.23 (tol 2.90)  H1 FAIL  | null median +9.74 vs rms rule +9.62
+  UNIT   all        N= 11  G_obs +107.35  G_pred +62.16  deflated-honest -45.19 (tol 18.65)  H1 FAIL  | null median +51.28 vs rms rule +60.48
+
+== daily quantum kernels (Q_L1-Q_L3) (OUT-OF-SAMPLE) ==
+  WINDOW AAPL       N= 17  G_obs +12.98  G_pred +13.07  deflated-honest +0.09 (tol 3.92)  H1 pass  | null median +17.53 vs rms rule +14.68
+  LOSS   AAPL       N=  3  G_obs +0.95  G_pred +1.43  deflated-honest +0.48 (tol 1.00)  H1 n/a (N<4)  | null median +3.53 vs rms rule +3.50
+  QMODEL AAPL       N=  3  G_obs +0.77  G_pred +0.33  deflated-honest -0.44 (tol 1.00)  H1 n/a (N<4)  | null median +2.38 vs rms rule +2.64
+  WINDOW CL         N= 17  G_obs +45.14  G_pred +27.02  deflated-honest -18.13 (tol 8.10)  H1 FAIL  | null median +36.53 vs rms rule +26.97
+  LOSS   CL         N=  3  G_obs +0.00  G_pred +0.39  deflated-honest +0.39 (tol 1.00)  H1 n/a (N<4)  | null median +1.56 vs rms rule +1.43
+  QMODEL CL         N=  3  G_obs +0.00  G_pred +0.90  deflated-honest +0.90 (tol 1.00)  H1 n/a (N<4)  | null median +2.50 vs rms rule +1.97
+  WINDOW GARAN      N= 17  G_obs +16.42  G_pred +14.25  deflated-honest -2.17 (tol 4.27)  H1 pass  | null median +18.26 vs rms rule +14.05
+  LOSS   GARAN      N=  3  G_obs +0.00  G_pred +0.77  deflated-honest +0.77 (tol 1.00)  H1 n/a (N<4)  | null median +1.33 vs rms rule +1.00
+  QMODEL GARAN      N=  3  G_obs +0.00  G_pred +0.93  deflated-honest +0.93 (tol 1.00)  H1 n/a (N<4)  | null median +1.72 vs rms rule +1.24
+  WINDOW GC         N=  8  G_obs +17.95  G_pred +18.40  deflated-honest +0.46 (tol 5.52)  H1 pass  | null median +15.60 vs rms rule +18.41
+  LOSS   GC         N=  3  G_obs +5.07  G_pred +2.17  deflated-honest -2.90 (tol 1.00)  H1 n/a (N<4)  | null median +6.37 vs rms rule +5.10
+  QMODEL GC         N=  3  G_obs +4.78  G_pred +2.70  deflated-honest -2.08 (tol 1.00)  H1 n/a (N<4)  | null median +7.76 vs rms rule +6.17
+  WINDOW HG         N= 17  G_obs +8.72  G_pred +11.07  deflated-honest +2.36 (tol 3.32)  H1 pass  | null median +13.55 vs rms rule +11.96
+  LOSS   HG         N=  3  G_obs +1.28  G_pred +0.57  deflated-honest -0.71 (tol 1.00)  H1 n/a (N<4)  | null median +1.75 vs rms rule +1.53
+  QMODEL HG         N=  3  G_obs +0.37  G_pred +0.48  deflated-honest +0.11 (tol 1.00)  H1 n/a (N<4)  | null median +2.27 vs rms rule +2.24
+  WINDOW HO         N= 17  G_obs +39.31  G_pred +21.23  deflated-honest -18.08 (tol 6.37)  H1 FAIL  | null median +36.21 vs rms rule +20.84
+  LOSS   HO         N=  3  G_obs +0.00  G_pred +0.58  deflated-honest +0.58 (tol 1.00)  H1 n/a (N<4)  | null median +1.29 vs rms rule +1.24
+  QMODEL HO         N=  3  G_obs +0.00  G_pred +0.70  deflated-honest +0.70 (tol 1.00)  H1 n/a (N<4)  | null median +1.40 vs rms rule +1.14
+  WINDOW KCHOL      N= 17  G_obs +13.48  G_pred +15.89  deflated-honest +2.41 (tol 4.77)  H1 pass  | null median +24.50 vs rms rule +15.96
+  LOSS   KCHOL      N=  3  G_obs +0.00  G_pred +0.69  deflated-honest +0.69 (tol 1.00)  H1 n/a (N<4)  | null median +2.29 vs rms rule +2.13
+  QMODEL KCHOL      N=  3  G_obs +0.00  G_pred +0.29  deflated-honest +0.29 (tol 1.00)  H1 n/a (N<4)  | null median +1.79 vs rms rule +1.87
+  WINDOW NG         N= 17  G_obs +10.65  G_pred +11.14  deflated-honest +0.49 (tol 3.34)  H1 pass  | null median +11.31 vs rms rule +10.97
+  LOSS   NG         N=  3  G_obs +0.00  G_pred +0.20  deflated-honest +0.20 (tol 1.00)  H1 n/a (N<4)  | null median +0.87 vs rms rule +0.94
+  QMODEL NG         N=  3  G_obs +0.00  G_pred +1.37  deflated-honest +1.37 (tol 1.00)  H1 n/a (N<4)  | null median +1.42 vs rms rule +1.12
+  WINDOW SPX        N= 17  G_obs +13.50  G_pred +14.48  deflated-honest +0.98 (tol 4.34)  H1 pass  | null median +22.34 vs rms rule +14.99
+  LOSS   SPX        N=  3  G_obs +2.43  G_pred +1.23  deflated-honest -1.21 (tol 1.00)  H1 n/a (N<4)  | null median +3.45 vs rms rule +2.83
+  QMODEL SPX        N=  3  G_obs +1.54  G_pred +0.69  deflated-honest -0.85 (tol 1.00)  H1 n/a (N<4)  | null median +2.89 vs rms rule +2.82
+  WINDOW ZC         N= 17  G_obs +5.43  G_pred +5.24  deflated-honest -0.19 (tol 1.57)  H1 pass  | null median +6.43 vs rms rule +6.30
+  LOSS   ZC         N=  3  G_obs +0.73  G_pred +0.55  deflated-honest -0.18 (tol 1.00)  H1 n/a (N<4)  | null median +1.68 vs rms rule +1.61
+  QMODEL ZC         N=  3  G_obs +0.28  G_pred +0.12  deflated-honest -0.16 (tol 1.00)  H1 n/a (N<4)  | null median +1.28 vs rms rule +1.46
+  WINDOW ZS         N= 17  G_obs +15.48  G_pred +18.48  deflated-honest +3.00 (tol 5.54)  H1 pass  | null median +29.48 vs rms rule +20.72
+  LOSS   ZS         N=  3  G_obs +8.29  G_pred +3.75  deflated-honest -4.54 (tol 1.13)  H1 n/a (N<4)  | null median +11.22 vs rms rule +9.12
+  QMODEL ZS         N=  3  G_obs +8.68  G_pred +4.03  deflated-honest -4.65 (tol 1.21)  H1 n/a (N<4)  | null median +9.24 vs rms rule +7.46
+  WINDOW ZW         N= 17  G_obs +16.33  G_pred +26.67  deflated-honest +10.34 (tol 8.00)  H1 FAIL  | null median +41.12 vs rms rule +28.37
+  LOSS   ZW         N=  3  G_obs +4.48  G_pred +1.90  deflated-honest -2.58 (tol 1.00)  H1 n/a (N<4)  | null median +4.93 vs rms rule +3.93
+  QMODEL ZW         N=  3  G_obs +2.51  G_pred +1.07  deflated-honest -1.44 (tol 1.00)  H1 n/a (N<4)  | null median +4.44 vs rms rule +4.55
+  UNIT   all        N= 12  G_obs +5.37  G_pred +7.05  deflated-honest +1.68 (tol 2.12)  H1 pass  | null median +10.14 vs rms rule +8.57
+
+== daily quantum reservoirs, 8 assets (QRC fixed/adaptive) (OUT-OF-SAMPLE) ==
+  WINDOW HG         N= 17  G_obs +26.41  G_pred +18.20  deflated-honest -8.21 (tol 5.46)  H1 FAIL  | null median +19.38 vs rms rule +18.27
+  LOSS   HG         N=  3  G_obs +2.95  G_pred +1.27  deflated-honest -1.67 (tol 1.00)  H1 n/a (N<4)  | null median +1.65 vs rms rule +1.42
+  QMODEL HG         N=  2  G_obs +0.00  G_pred +0.40  deflated-honest +0.40 (tol 1.00)  H1 n/a (N<4)  | null median +2.94 vs rms rule +1.68
+  WINDOW CL         N= 17  G_obs +30.89  G_pred +27.44  deflated-honest -3.44 (tol 8.23)  H1 pass  | null median +34.77 vs rms rule +29.63
+  LOSS   CL         N=  3  G_obs +0.00  G_pred +1.20  deflated-honest +1.20 (tol 1.00)  H1 n/a (N<4)  | null median +4.74 vs rms rule +4.37
+  QMODEL CL         N=  2  G_obs +4.65  G_pred +1.86  deflated-honest -2.80 (tol 1.00)  H1 n/a (N<4)  | null median +1.37 vs rms rule +1.52
+  WINDOW GC         N=  8  G_obs +12.44  G_pred +13.99  deflated-honest +1.55 (tol 4.20)  H1 pass  | null median +14.52 vs rms rule +13.34
+  LOSS   GC         N=  3  G_obs +0.11  G_pred +0.89  deflated-honest +0.78 (tol 1.00)  H1 n/a (N<4)  | null median +1.84 vs rms rule +1.54
+  QMODEL GC         N=  2  G_obs +0.00  G_pred +0.33  deflated-honest +0.33 (tol 1.00)  H1 n/a (N<4)  | null median +1.46 vs rms rule +0.85
+  WINDOW HO         N= 17  G_obs +12.11  G_pred +21.97  deflated-honest +9.86 (tol 6.59)  H1 FAIL  | null median +30.21 vs rms rule +23.04
+  LOSS   HO         N=  3  G_obs +0.00  G_pred +1.57  deflated-honest +1.57 (tol 1.00)  H1 n/a (N<4)  | null median +4.87 vs rms rule +4.09
+  QMODEL HO         N=  2  G_obs +2.59  G_pred +1.03  deflated-honest -1.56 (tol 1.00)  H1 n/a (N<4)  | null median +1.56 vs rms rule +1.14
+  WINDOW NG         N= 17  G_obs +120.59  G_pred +61.22  deflated-honest -59.37 (tol 18.37)  H1 FAIL  | null median +33.06 vs rms rule +61.55
+  LOSS   NG         N=  3  G_obs +0.00  G_pred +5.45  deflated-honest +5.45 (tol 1.64)  H1 n/a (N<4)  | null median +10.53 vs rms rule +9.43
+  QMODEL NG         N=  2  G_obs +0.00  G_pred +2.36  deflated-honest +2.36 (tol 1.00)  H1 n/a (N<4)  | null median +13.52 vs rms rule +7.81
+  WINDOW ZC         N= 17  G_obs +17.26  G_pred +17.82  deflated-honest +0.56 (tol 5.35)  H1 pass  | null median +18.84 vs rms rule +17.57
+  LOSS   ZC         N=  3  G_obs +1.89  G_pred +0.89  deflated-honest -1.00 (tol 1.00)  H1 n/a (N<4)  | null median +0.83 vs rms rule +0.73
+  QMODEL ZC         N=  2  G_obs +0.00  G_pred +0.26  deflated-honest +0.26 (tol 1.00)  H1 n/a (N<4)  | null median +1.64 vs rms rule +0.95
+  WINDOW ZS         N= 17  G_obs +36.14  G_pred +38.61  deflated-honest +2.47 (tol 11.58)  H1 pass  | null median +37.10 vs rms rule +37.76
+  LOSS   ZS         N=  3  G_obs +5.90  G_pred +2.63  deflated-honest -3.26 (tol 1.00)  H1 n/a (N<4)  | null median +2.37 vs rms rule +2.20
+  QMODEL ZS         N=  2  G_obs +3.27  G_pred +1.30  deflated-honest -1.96 (tol 1.00)  H1 n/a (N<4)  | null median +2.44 vs rms rule +1.66
+  WINDOW ZW         N= 17  G_obs +34.20  G_pred +33.52  deflated-honest -0.68 (tol 10.06)  H1 pass  | null median +32.54 vs rms rule +32.96
+  LOSS   ZW         N=  3  G_obs +3.29  G_pred +1.46  deflated-honest -1.83 (tol 1.00)  H1 n/a (N<4)  | null median +1.84 vs rms rule +1.55
+  QMODEL ZW         N=  2  G_obs +0.94  G_pred +0.37  deflated-honest -0.56 (tol 1.00)  H1 n/a (N<4)  | null median +2.66 vs rms rule +1.52
+  UNIT   all        N=  8  G_obs +16.74  G_pred +9.75  deflated-honest -6.99 (tol 2.92)  H1 FAIL  | null median +12.69 vs rms rule +9.12
+
+== hourly rolling QLSTMT (Databento copper, 5 seeds) (OUT-OF-SAMPLE) ==
+  WINDOW HG_hourly  N=  4  G_obs +2.00  G_pred +1.74  deflated-honest -0.26 (tol 1.00)  H1 pass  | null median +3.58 vs rms rule +3.37
+  SEED   HG_hourly  N= 10  G_obs -0.37  G_pred +1.06  deflated-honest +1.44 (tol 1.00)  H1 FAIL  | null median +4.70 vs rms rule +5.97
+  LOSS   HG_hourly  N=  3  G_obs +5.98  G_pred +2.65  deflated-honest -3.33 (tol 1.00)  H1 n/a (N<4)  | null median +2.45 vs rms rule +2.17
+
+== H1 (deflation recovers the honest result), cells with N >= 4 ==
+  in-sample (copper, panel): 16/40 pass (40%)
+  OUT-OF-SAMPLE (kernels, adaptive, hourly_roll): 16/24 pass (67%)
+  per out-of-sample dataset: {'kernels': '77%', 'adaptive': '56%', 'hourly_roll': '50%'} -> H1 NOT SUPPORTED
+
+== H2 (ranking of choices by G_pred matches ranking by G_obs; unit-averaged per choice) ==
+  copper       choices ['LOSS', 'QMODEL', 'SEED', 'UNIT', 'WINDOW']  Spearman +0.80  pred [np.float64(2.14), np.float64(0.07), np.float64(0.2), np.float64(1.63), np.float64(3.02)]  obs [np.float64(4.8), np.float64(0.18), np.float64(0.11), np.float64(1.15), np.float64(3.09)]
+  panel        choices ['LOSS', 'QMODEL', 'SEED', 'UNIT', 'WINDOW']  Spearman +0.00  pred [np.float64(10.84), np.float64(3050.14), np.float64(14.73), np.float64(62.16), np.float64(34.64)]  obs [np.float64(7.44), np.float64(6.29), np.float64(8.61), np.float64(107.35), np.float64(32.52)]
+  kernels      choices ['LOSS', 'QMODEL', 'UNIT', 'WINDOW']  Spearman +1.00  pred [np.float64(1.19), np.float64(1.14), np.float64(7.05), np.float64(16.41)]  obs [np.float64(1.94), np.float64(1.58), np.float64(5.37), np.float64(17.95)]
+  adaptive     choices ['LOSS', 'QMODEL', 'UNIT', 'WINDOW']  Spearman +1.00  pred [np.float64(1.92), np.float64(0.99), np.float64(9.75), np.float64(29.1)]  obs [np.float64(1.77), np.float64(1.43), np.float64(16.74), np.float64(36.25)]
+  hourly_roll  choices ['LOSS', 'SEED', 'WINDOW']  Spearman +1.00  pred [np.float64(2.65), np.float64(1.06), np.float64(1.74)]  obs [np.float64(5.98), np.float64(-0.37), np.float64(2.0)]
+  out-of-sample datasets with Spearman >= 0.6: 3 of 3 -> H2 SUPPORTED

@@ -1,0 +1,1121 @@
+grid,period,stratum,quantum,reference,ref_class,loss,ratio,ci_lo,ci_hi,label,n
+F,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.9975758990308163,0.9970764232511963,0.9980753748104364,interval below 1,673104
+F,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,second,0.9986064843164422,0.9983243904043018,0.9988885782285826,interval below 1,673104
+F,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9975018194061834,0.9969990885685159,0.9980045502438509,interval below 1,673104
+F,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9985721515944318,0.9982867794561285,0.9988575237327351,interval below 1,673104
+F,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,primary,1.0001958224085865,0.9997878371277674,1.0006038076894055,interval contains 1,673104
+F,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,second,0.9997518093418288,0.9995239526494292,0.9999796660342285,interval below 1,673104
+F,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0003256598829895,1.0000101584562515,1.0006411613097275,interval above 1,673104
+F,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,second,1.0002368023400394,1.0000917169961459,1.000381887683933,interval above 1,673104
+F,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9997843143600866,0.9994139872332886,1.0001546414868847,interval contains 1,673104
+F,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,second,0.9994881266582063,0.9992793493238231,0.9996969039925895,interval below 1,673104
+F,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,primary,1.000525814953493,1.0001796312880353,1.0008719986189507,interval above 1,673104
+F,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,second,1.0003815536003073,1.0002269737348903,1.0005361334657243,interval above 1,673104
+F,rolling,rolling/all,DOM,LSTM1,"network, same single input",primary,1.0034935386645636,1.0031505158762417,1.0038365614528855,interval above 1,673104
+F,rolling,rolling/all,DOM,LSTM1,"network, same single input",second,1.0016376175918704,1.001447938625068,1.0018272965586728,interval above 1,673104
+F,rolling,rolling/all,DOM,GRU1,"network, same single input",primary,1.0031958160551118,1.002874071127628,1.0035175609825955,interval above 1,673104
+F,rolling,rolling/all,DOM,GRU1,"network, same single input",second,1.0015973856343836,1.0014168249526414,1.0017779463161258,interval above 1,673104
+F,rolling,rolling/all,DOM,LSTM,"network, more inputs",primary,1.0222052279721907,1.0211956582653514,1.02321479767903,interval above 1,673104
+F,rolling,rolling/all,DOM,LSTM,"network, more inputs",second,1.0104428593546224,1.0098905515724532,1.0109951671367916,interval above 1,673104
+F,rolling,rolling/all,DOM,GRU,"network, more inputs",primary,1.0228609682463692,1.0219006423106487,1.0238212941820897,interval above 1,673104
+F,rolling,rolling/all,DOM,GRU,"network, more inputs",second,1.0108744554920868,1.0103439471888735,1.0114049637953,interval above 1,673104
+F,rolling,rolling/all,DOM,HAR,benchmark,primary,0.9874403278189176,0.9865815236429688,0.9882991319948663,interval below 1,673104
+F,rolling,rolling/all,DOM,HAR,benchmark,second,0.9936236028907411,0.9932384513078598,0.9940087544736225,interval below 1,673104
+F,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.9966913821224025,0.9961301453748913,0.9972526188699137,interval below 1,673104
+F,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,second,0.9977864575579682,0.9974745856674371,0.9980983294484994,interval below 1,673104
+F,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9966173681816746,0.9960577532937225,0.9971769830696267,interval below 1,673104
+F,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9977521530289961,0.9974395437591214,0.9980647622988709,interval below 1,673104
+F,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9993089825024654,0.9988477621585357,0.9997702028463951,interval below 1,673104
+F,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.9989308420755746,0.9986730925234157,0.9991885916277334,interval below 1,673104
+F,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9994387048543583,0.9990926882650422,0.9997847214436744,interval below 1,673104
+F,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,second,0.9994154368115644,0.9992557406911057,0.9995751329320232,interval below 1,673104
+F,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9988978393242748,0.9984679693768539,0.9993277092716957,interval below 1,673104
+F,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9986673759205444,0.998425602242134,0.9989091495989549,interval below 1,673104
+F,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9996386824541107,0.9992683046707269,1.0000090602374945,interval contains 1,673104
+F,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,second,0.9995600692062846,0.9993950192678978,0.9997251191446714,interval below 1,673104
+F,rolling,rolling/all,ISING,LSTM1,"network, same single input",primary,1.0026037747846472,1.002205498774463,1.0030020507948314,interval above 1,673104
+F,rolling,rolling/all,ISING,LSTM1,"network, same single input",second,1.0008151017544316,1.0005985912941422,1.001031612214721,interval above 1,673104
+F,rolling,rolling/all,ISING,GRU1,"network, same single input",primary,1.002306316155793,1.0019310289289738,1.0026816033826123,interval above 1,673104
+F,rolling,rolling/all,ISING,GRU1,"network, same single input",second,1.0007749028342645,1.000566629460364,1.0009831762081651,interval above 1,673104
+F,rolling,rolling/all,ISING,LSTM,"network, more inputs",primary,1.0212988730683796,1.020277282796104,1.0223204633406553,interval above 1,673104
+F,rolling,rolling/all,ISING,LSTM,"network, more inputs",second,1.0096131129073551,1.009060833956852,1.0101653918578581,interval above 1,673104
+F,rolling,rolling/all,ISING,GRU,"network, more inputs",primary,1.0219540319197704,1.0209866065123068,1.022921457327234,interval above 1,673104
+F,rolling,rolling/all,ISING,GRU,"network, more inputs",second,1.010044354630556,1.0095148251253172,1.0105738841357947,interval above 1,673104
+F,rolling,rolling/all,ISING,HAR,benchmark,primary,0.9865647977796955,0.9856746522117372,0.9874549433476538,interval below 1,673104
+F,rolling,rolling/all,ISING,HAR,benchmark,second,0.9928076679303555,0.9924061397289988,0.9932091961317121,interval below 1,673104
+F,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,primary,1.0046024214388474,1.0040819091196633,1.0051229337580314,interval above 1,673104
+F,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,second,1.0017662932325486,1.0014777872744904,1.0020547991906068,interval above 1,673104
+F,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,primary,1.0049739142316183,1.0045251605739387,1.005422667889298,interval above 1,673104
+F,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,second,1.0023028030631385,1.0020848929430723,1.0025207131832046,interval above 1,673104
+F,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0041121685375727,1.0037591003768462,1.0044652366982991,interval above 1,673104
+F,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,second,1.0019053205883395,1.001715099162434,1.002095542014245,interval above 1,673104
+F,rolling,rolling/all,QRC,LSTM,"network, more inputs",primary,1.0163451520643811,1.0153358739598057,1.0173544301689565,interval above 1,673104
+F,rolling,rolling/all,QRC,LSTM,"network, more inputs",second,1.0077122137333119,1.007223743832534,1.0082006836340898,interval above 1,673104
+F,rolling,rolling/all,QRC,GRU,"network, more inputs",primary,1.0169971331249719,1.0160328370998482,1.0179614291500956,interval above 1,673104
+F,rolling,rolling/all,QRC,GRU,"network, more inputs",second,1.008142643514765,1.0076759385301994,1.0086093484993304,interval above 1,673104
+F,rolling,rolling/all,QRC,HAR,benchmark,primary,0.9817795513749054,0.9810816511666509,0.9824774515831598,interval below 1,673104
+F,rolling,rolling/all,QRC,HAR,benchmark,second,0.9909384100415409,0.9905501823756664,0.9913266377074155,interval below 1,673104
+F,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,primary,0.9958226194194539,0.9951131155613993,0.9965321232775086,interval below 1,169862
+F,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,second,0.9979882773502078,0.9975843428327656,0.9983922118676499,interval below 1,169862
+F,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9960155209595151,0.9953588400435712,0.9966722018754589,interval below 1,169862
+F,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9981637365200803,0.997789909381487,0.9985375636586735,interval below 1,169862
+F,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9979140354991605,0.9972341443436544,0.9985939266546665,interval below 1,169862
+F,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,second,0.9981908760188682,0.9977821913977402,0.9985995606399963,interval below 1,169862
+F,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0012186405365286,1.0008092698934454,1.0016280111796119,interval above 1,169862
+F,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,second,1.0007482111234824,1.0005195927594197,1.0009768294875452,interval above 1,169862
+F,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9980893383651283,0.9974628358141041,0.9987158409161524,interval below 1,169862
+F,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,second,0.998363785576252,0.9979925832140989,0.9987349879384052,interval below 1,169862
+F,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,primary,1.0014174100525448,1.0009839115911563,1.0018509085139333,interval above 1,169862
+F,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,second,1.0008444405425692,1.0006007292920447,1.0010881517930936,interval above 1,169862
+F,rolling,rolling/calm,DOM,LSTM1,"network, same single input",primary,1.0023334151973704,1.001755787762335,1.0029110426324057,interval above 1,169862
+F,rolling,rolling/calm,DOM,LSTM1,"network, same single input",second,1.0011833345183645,1.0008695200034723,1.0014971490332567,interval above 1,169862
+F,rolling,rolling/calm,DOM,GRU1,"network, same single input",primary,1.0023523805760794,1.0017690999564062,1.0029356611957527,interval above 1,169862
+F,rolling,rolling/calm,DOM,GRU1,"network, same single input",second,1.0013275090617597,1.0010072469599278,1.0016477711635916,interval above 1,169862
+F,rolling,rolling/calm,DOM,LSTM,"network, more inputs",primary,1.0164552503146245,1.01460103059449,1.018309470034759,interval above 1,169862
+F,rolling,rolling/calm,DOM,LSTM,"network, more inputs",second,1.008831112884633,1.007853716909088,1.009808508860178,interval above 1,169862
+F,rolling,rolling/calm,DOM,GRU,"network, more inputs",primary,1.017467404013075,1.0155722464344719,1.019362561591678,interval above 1,169862
+F,rolling,rolling/calm,DOM,GRU,"network, more inputs",second,1.009513340402735,1.008521563873778,1.010505116931692,interval above 1,169862
+F,rolling,rolling/calm,DOM,HAR,benchmark,primary,0.9877244645134141,0.9867543708408647,0.9886945581859635,interval below 1,169862
+F,rolling,rolling/calm,DOM,HAR,benchmark,second,0.993964874847312,0.9934355630386618,0.9944941866559622,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,primary,0.9943529474147113,0.9935368999210951,0.9951689949083274,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,second,0.9968136670895131,0.996346581166438,0.9972807530125882,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9945455642635157,0.9937789719157718,0.9953121566112596,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9969889197478004,0.9965491665073003,0.9974286729883004,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,primary,0.996441276904896,0.9956463252628277,0.9972362285469644,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,second,0.9970160273039949,0.9965271254184248,0.9975049291895649,interval below 1,169862
+F,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9997410048834233,0.9993141837197711,1.0001678260470754,interval contains 1,169862
+F,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,second,0.9995703524814166,0.9993216562932095,0.9998190486696237,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9966163210523838,0.9958583970881627,0.997374245016605,interval below 1,169862
+F,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,second,0.9971887333506313,0.9967304862668316,0.997646980434431,interval below 1,169862
+F,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,primary,0.9999394810480057,0.9994974580694963,1.0003815040265152,interval contains 1,169862
+F,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,second,0.9996664686405927,0.9994098173057393,0.9999231199754461,interval below 1,169862
+F,rolling,rolling/calm,ISING,LSTM1,"network, same single input",primary,1.0008541343184199,1.0002511131097958,1.001457155527044,interval above 1,169862
+F,rolling,rolling/calm,ISING,LSTM1,"network, same single input",second,1.0000049637456294,0.9996558446145495,1.0003540828767092,interval contains 1,169862
+F,rolling,rolling/calm,ISING,GRU1,"network, same single input",primary,1.0008730717073187,1.0002906302378587,1.0014555131767786,interval above 1,169862
+F,rolling,rolling/calm,ISING,GRU1,"network, same single input",second,1.000148968598757,0.9998054353073892,1.000492501890125,interval contains 1,169862
+F,rolling,rolling/calm,ISING,LSTM,"network, more inputs",primary,1.014955127906949,1.0131601984826324,1.0167500573312658,interval above 1,169862
+F,rolling,rolling/calm,ISING,LSTM,"network, more inputs",second,1.0076437408449046,1.0066837072997683,1.008603774390041,interval above 1,169862
+F,rolling,rolling/calm,ISING,GRU,"network, more inputs",primary,1.015965787831382,1.01414351333119,1.0177880623315738,interval above 1,169862
+F,rolling,rolling/calm,ISING,GRU,"network, more inputs",second,1.0083251653962173,1.007357856304853,1.0092924744875815,interval above 1,169862
+F,rolling,rolling/calm,ISING,HAR,benchmark,primary,0.9862667440664323,0.9851855120061106,0.9873479761267541,interval below 1,169862
+F,rolling,rolling/calm,ISING,HAR,benchmark,second,0.9927950000429048,0.9922001290469595,0.99338987103885,interval below 1,169862
+F,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,primary,1.0004733507356118,0.9994460210567859,1.0015006804144377,interval contains 1,169862
+F,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,second,0.9996556957323062,0.9990974130619292,1.0002139784026831,interval contains 1,169862
+F,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,primary,1.0040583298122343,1.0033539363495625,1.0047627232749061,interval above 1,169862
+F,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,second,1.0019870678660363,1.0016002795466943,1.0023738561853783,interval above 1,169862
+F,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0033577572678947,1.002770952472792,1.0039445620629974,interval above 1,169862
+F,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,second,1.0016444993919869,1.0013082487007614,1.0019807500832123,interval above 1,169862
+F,rolling,rolling/calm,QRC,LSTM,"network, more inputs",primary,1.0129894938718118,1.0116702011186096,1.014308786625014,interval above 1,169862
+F,rolling,rolling/calm,QRC,LSTM,"network, more inputs",second,1.005422242815081,1.0046955148576,1.006148970772562,interval above 1,169862
+F,rolling,rolling/calm,QRC,GRU,"network, more inputs",primary,1.0139981964806049,1.0126076795383723,1.0153887134228374,interval above 1,169862
+F,rolling,rolling/calm,QRC,GRU,"network, more inputs",second,1.0061021650662882,1.0053581861773646,1.0068461439552119,interval above 1,169862
+F,rolling,rolling/calm,QRC,HAR,benchmark,primary,0.9843566699887152,0.9830098791847292,0.9857034607927012,interval below 1,169862
+F,rolling,rolling/calm,QRC,HAR,benchmark,second,0.9906062382343268,0.989861189089202,0.9913512873794517,interval below 1,169862
+F,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,primary,0.9976758946732448,0.9968817579767066,0.998470031369783,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,second,0.9988915583274481,0.9984415662640528,0.9993415503908435,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9973169663020239,0.9965038387166587,0.9981300938873892,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9986243637555869,0.9981586205202884,0.9990901069908855,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,primary,1.000005552043665,0.9994562835173679,1.0005548205699621,interval contains 1,292871
+F,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,second,0.9998571975958497,0.999530701293962,1.0001836938977373,interval contains 1,292871
+F,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0000919709862683,0.999705045739873,1.0004788962326638,interval contains 1,292871
+F,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,second,1.000054771763566,0.9998504710587569,1.000259072468375,interval contains 1,292871
+F,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9989876860176452,0.9984314991858192,0.9995438728494712,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,second,0.9991609656803412,0.9988300023099106,0.9994919290507718,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,primary,1.0002593254380296,0.999875081398658,1.0006435694774012,interval contains 1,292871
+F,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,second,1.0001395064632497,0.9999293799609885,1.0003496329655108,interval contains 1,292871
+F,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",primary,1.0038785171803968,1.0033776390403892,1.0043793953204043,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",second,1.0020968393113154,1.0018114568515633,1.0023822217710676,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",primary,1.0032832562016638,1.0028016681714322,1.0037648442318954,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",second,1.001806530488519,1.0015303170904513,1.002082743886587,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",primary,1.026018942479786,1.0245380063711143,1.027499878588458,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",second,1.0132815767715442,1.012462618166877,1.0141005353762114,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",primary,1.0263922848142324,1.0249896750101286,1.0277948946183362,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",second,1.0134788824359062,1.0127007240737884,1.014257040798024,interval above 1,292871
+F,rolling,rolling/intermediate,DOM,HAR,benchmark,primary,0.9876636420470969,0.9866290096223072,0.9886982744718866,interval below 1,292871
+F,rolling,rolling/intermediate,DOM,HAR,benchmark,second,0.9937540606528551,0.9931957133294868,0.9943124079762234,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,primary,0.9966760110989848,0.995785251541967,0.9975667706560027,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,second,0.99802584149575,0.9975308811546076,0.9985208018368924,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.99631744245038,0.9954209385157549,0.9972139463850052,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9977588784954106,0.9972544852667771,0.998263271724044,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9990033336569166,0.9983492128576654,0.9996574544561678,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,second,0.9989906438663311,0.9986059563536485,0.9993753313790137,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9990896659893476,0.9986428593036427,0.9995364726750524,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,second,0.9991880468009631,0.9989447314596794,0.9994313621422467,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9979864877492796,0.9973610805112505,0.9986118949873086,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,second,0.9982950153593538,0.9979204486159771,0.9986695821027306,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,primary,0.9992568527163312,0.9988237289846711,0.9996899764479914,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,second,0.9992727080629896,0.9990303952784395,0.9995150208475397,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",primary,1.0028724172583274,1.0022631346347797,1.0034816998818752,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",second,1.0012283445347292,1.0008900478324534,1.001566641237005,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",primary,1.0022777528577802,1.0016900808541067,1.0028654248614537,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",second,1.0009382873160557,1.0006069610793848,1.0012696135527266,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",primary,1.0249906531395878,1.023471220181359,1.0265100860978167,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",second,1.0124033884347345,1.0115706471975434,1.0132361296719257,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",primary,1.0253636213055595,1.0239282011601931,1.0267990414509258,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",second,1.012600523098718,1.0118110302388506,1.0133900159585856,interval above 1,292871
+F,rolling,rolling/intermediate,ISING,HAR,benchmark,primary,0.9866737928808001,0.9856258673562255,0.9877217184053748,interval below 1,292871
+F,rolling,rolling/intermediate,ISING,HAR,benchmark,second,0.9928927963747626,0.9923242972367631,0.9934612955127621,interval below 1,292871
+F,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,primary,1.0066845267731894,1.0059474477847044,1.0074216057616745,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,second,1.0031138228970071,1.0026824604914673,1.003545185302547,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,primary,1.0056444485176392,1.0050378044723929,1.0062510925628856,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,second,1.0027954205701746,1.0024804603759638,1.0031103807643853,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,primary,1.004849433344679,1.0043238381594939,1.005375028529864,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,second,1.002279446586164,1.001988059019012,1.002570834153316,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",primary,1.0181938701360331,1.0168589814267923,1.019528758845274,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",second,1.009037532370604,1.008328383526743,1.009746681214465,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",primary,1.0185643651246312,1.0172861370607444,1.019842593188518,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",second,1.0092340116368361,1.00854670662136,1.0099213166523122,interval above 1,292871
+F,rolling,rolling/intermediate,QRC,HAR,benchmark,primary,0.9801310915937553,0.9791821171041564,0.9810800660833543,interval below 1,292871
+F,rolling,rolling/intermediate,QRC,HAR,benchmark,second,0.9895918056057802,0.9890479142346387,0.9901356969769217,interval below 1,292871
+F,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,primary,0.9988166443275323,0.9978273884451722,0.9998059002098924,interval below 1,210371
+F,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,second,0.9987200601448467,0.9981601127473767,0.9992800075423167,interval below 1,210371
+F,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.998898860171415,0.9978962723440213,0.9999014479988088,interval below 1,210371
+F,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9988294455150991,0.9982617414635249,0.9993971495666734,interval below 1,210371
+F,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,primary,1.0022234565065964,1.0013616281473612,1.0030852848658316,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,second,1.000863730248249,1.000419776626558,1.0013076838699402,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9999303431204658,0.9991693473635693,1.0006913388773622,interval contains 1,210371
+F,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,second,1.0000714209907056,0.9997589296775561,1.000383912303855,interval contains 1,210371
+F,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,primary,1.0021310993698893,1.0014272471285601,1.0028349516112185,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,second,1.000829626104581,1.0004706953648523,1.0011885568443097,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,primary,1.000173517099525,0.9993017755592043,1.0010452586398457,interval contains 1,210371
+F,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,second,1.0003353913977957,0.9999932951873537,1.0006774876082376,interval contains 1,210371
+F,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",primary,1.0039055312752538,1.0032129974334456,1.004598065117062,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",second,1.0013867361749562,1.001008972347849,1.0017645000020634,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",primary,1.00374133321572,1.0031279160151956,1.0043547504162442,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",second,1.0015334453609088,1.001190309805935,1.0018765809158827,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",primary,1.0218464322369891,1.0199265540709614,1.0237663104030168,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",second,1.0079497157413642,1.0068979594667746,1.0090014720159537,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",primary,1.0225802513818203,1.0208258624947406,1.0243346402689,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",second,1.0084916501704984,1.0074982891532347,1.009485011187762,interval above 1,210371
+F,rolling,rolling/turbulent,DOM,HAR,benchmark,primary,0.9869339237032871,0.9847983163324265,0.9890695310741477,interval below 1,210371
+F,rolling,rolling/turbulent,DOM,HAR,benchmark,second,0.9931758995594081,0.9923265719389728,0.9940252271798434,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,primary,0.998536688700065,0.9974367551364296,0.9996366222637003,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,second,0.9982453614626113,0.9976341405091771,0.9988565824160456,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9986188814998903,0.9975117231979541,0.9997260398018265,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9983546948412265,0.9977395443773582,0.9989698453050948,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,primary,1.0019425459929179,1.0010259985592436,1.0028590934265922,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,second,1.0003880126645077,0.999929494134168,1.0008465311948473,interval contains 1,210371
+F,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,primary,0.999650075337363,0.9988253172959798,1.0004748333787463,interval contains 1,210371
+F,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,second,0.9995960799971377,0.999272128228438,0.9999200317658374,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,primary,1.001850214742744,1.0010306494754724,1.0026697800100155,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,second,1.0003539247307798,0.9999480228225879,1.0007598266389717,interval contains 1,210371
+F,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,primary,0.9998931811578425,0.998968705181121,1.000817657134564,interval contains 1,210371
+F,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,second,0.9998599249372333,0.999513497513897,1.0002063523605695,interval contains 1,210371
+F,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",primary,1.0036241492973683,1.0028264311140926,1.004421867480644,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",second,1.0009107700028126,1.0004929043571786,1.0013286356484465,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",primary,1.003459997260466,1.0027323865816888,1.0041876079392433,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",second,1.0010574094568554,1.0006669191314301,1.0014478997822807,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",primary,1.021560021652287,1.019603210256658,1.0235168330479163,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",second,1.0074706301387855,1.0064259567223073,1.0085153035552636,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",primary,1.0222936351169263,1.0205073611715156,1.024079909062337,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",second,1.0080123069826668,1.0070222954749286,1.009002318490405,interval above 1,210371
+F,rolling,rolling/turbulent,ISING,HAR,benchmark,primary,0.986657298651584,0.9844446264496025,0.9888699708535655,interval below 1,210371
+F,rolling,rolling/turbulent,ISING,HAR,benchmark,second,0.992703836055767,0.991819191945725,0.9935884801658089,interval below 1,210371
+F,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,primary,1.0051845682010425,1.0042298982252449,1.0061392381768401,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,second,1.0016590472309446,1.0011524672964411,1.002165627165448,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,primary,1.0048335499936971,1.0038461692974565,1.0058209306899377,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,second,1.0018981432222593,1.0014605104117553,1.0023357760327634,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0037610151408733,1.0030535826581801,1.0044684476235666,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,second,1.0016146769380452,1.0012536796990237,1.0019756741770667,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",primary,1.016615934533976,1.014269385163231,1.018962483904721,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",second,1.0077782763446734,1.0067387406323731,1.0088178120569737,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",primary,1.0173459974985921,1.015152739195105,1.0195392558020793,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",second,1.00832011859767,1.007359776356962,1.009280460838378,interval above 1,210371
+F,rolling,rolling/turbulent,QRC,HAR,benchmark,primary,0.981882131713707,0.9804865272528569,0.983277736174557,interval below 1,210371
+F,rolling,rolling/turbulent,QRC,HAR,benchmark,second,0.9930069730005043,0.9922524847482859,0.9937614612527228,interval below 1,210371
+F,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.9948169942828637,0.9927538520480075,0.99688013651772,interval below 1,49865
+F,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,second,0.9959070025338672,0.9947274908198762,0.9970865142478582,interval below 1,49865
+F,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9948043566303965,0.9925430105530468,0.9970657027077461,interval below 1,49865
+F,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9957917694628041,0.9945230991989348,0.9970604397266735,interval below 1,49865
+F,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,primary,1.0003766233372278,0.9988368140210157,1.00191643265344,interval contains 1,49865
+F,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,second,0.9999714061498218,0.9990789537805079,1.0008638585191358,interval contains 1,49865
+F,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9979211492835811,0.9962711834311625,0.9995711151359997,interval below 1,49865
+F,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,second,0.9995708711297997,0.9988543695945873,1.000287372665012,interval contains 1,49865
+F,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,primary,1.0006824131162517,0.9990477321895717,1.0023170940429318,interval contains 1,49865
+F,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,second,0.9995305085361513,0.9985795505276035,1.000481466544699,interval contains 1,49865
+F,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,primary,0.9982081336449208,0.9969084321568326,0.999507835133009,interval below 1,49865
+F,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,second,0.9997472776303227,0.9991181310117605,1.0003764242488848,interval contains 1,49865
+F,heldout,heldout/all,DOM,LSTM1,"network, same single input",primary,1.0062324545597325,1.0045698698354466,1.0078950392840185,interval above 1,49865
+F,heldout,heldout/all,DOM,LSTM1,"network, same single input",second,1.0019313649078694,1.0009814824045014,1.0028812474112374,interval above 1,49865
+F,heldout,heldout/all,DOM,GRU1,"network, same single input",primary,1.0051264789710188,1.0037061818453612,1.0065467760966764,interval above 1,49865
+F,heldout,heldout/all,DOM,GRU1,"network, same single input",second,1.0018064282637027,1.0010089035956269,1.0026039529317785,interval above 1,49865
+F,heldout,heldout/all,DOM,LSTM,"network, more inputs",primary,1.0330143111008432,1.0292267190174835,1.0368019031842028,interval above 1,49865
+F,heldout,heldout/all,DOM,LSTM,"network, more inputs",second,1.014240992785069,1.0120942747640278,1.0163877108061103,interval above 1,49865
+F,heldout,heldout/all,DOM,GRU,"network, more inputs",primary,1.0309039590291105,1.027571764897357,1.034236153160864,interval above 1,49865
+F,heldout,heldout/all,DOM,GRU,"network, more inputs",second,1.0127673558504617,1.0108525753342672,1.0146821363666563,interval above 1,49865
+F,heldout,heldout/all,DOM,HAR,benchmark,primary,0.9866938090655107,0.9836475347544782,0.9897400833765433,interval below 1,49865
+F,heldout,heldout/all,DOM,HAR,benchmark,second,0.99182372741848,0.9903326195705172,0.9933148352664428,interval below 1,49865
+F,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.9958917367535105,0.9933714222345902,0.9984120512724308,interval below 1,49865
+F,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,second,0.9957883572860883,0.9944338357971393,0.9971428787750373,interval below 1,49865
+F,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9958790854480579,0.9931803663815361,0.9985778045145798,interval below 1,49865
+F,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9956731379430703,0.9942098147047758,0.9971364611813649,interval below 1,49865
+F,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,primary,1.0014573721080282,0.9995963131823131,1.0033184310337433,interval contains 1,49865
+F,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.999852276698023,0.9988547238153186,1.0008498295807275,interval contains 1,49865
+F,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9989992453029045,0.9975157448599928,1.000482745745816,interval contains 1,49865
+F,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,second,0.9994517893948827,0.9987237210223513,1.000179857767414,interval contains 1,49865
+F,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,primary,1.0017634922445597,0.9996187972323015,1.0039081872568179,interval contains 1,49865
+F,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9994114316097455,0.9982419793695751,1.000580883849916,interval contains 1,49865
+F,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9992865397054713,0.9981166817547663,1.0004563976561762,interval contains 1,49865
+F,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,second,0.999628174879595,0.9989804680493444,1.0002758817098456,interval contains 1,49865
+F,heldout,heldout/all,ISING,LSTM1,"network, same single input",primary,1.0073195296302968,1.0051871724093744,1.0094518868512192,interval above 1,49865
+F,heldout,heldout/all,ISING,LSTM1,"network, same single input",second,1.0018120019605818,1.0006552307719752,1.0029687731491885,interval above 1,49865
+F,heldout,heldout/all,ISING,GRU1,"network, same single input",primary,1.0062123592098267,1.0043866587220558,1.0080380596975975,interval above 1,49865
+F,heldout,heldout/all,ISING,GRU1,"network, same single input",second,1.0016870802004745,1.000699918084203,1.0026742423167458,interval above 1,49865
+F,heldout,heldout/all,ISING,LSTM,"network, more inputs",primary,1.0341303197328893,1.0299275533142218,1.0383330861515567,interval above 1,49865
+F,heldout,heldout/all,ISING,LSTM,"network, more inputs",second,1.0141201633566281,1.0118337021191406,1.0164066245941157,interval above 1,49865
+F,heldout,heldout/all,ISING,GRU,"network, more inputs",primary,1.0320176877594136,1.028308404203372,1.035726971315455,interval above 1,49865
+F,heldout,heldout/all,ISING,GRU,"network, more inputs",second,1.0126467019806007,1.010602525487802,1.0146908784733994,interval above 1,49865
+F,heldout,heldout/all,ISING,HAR,benchmark,primary,0.9877597757188965,0.9846821892954394,0.9908373621423536,interval below 1,49865
+F,heldout,heldout/all,ISING,HAR,benchmark,second,0.9917055686229367,0.9902042876366116,0.9932068496092618,interval below 1,49865
+F,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,primary,1.0096648401094077,1.0076406939602502,1.0116889862585652,interval above 1,49865
+F,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,second,1.004496322953894,1.0033128887696967,1.005679757138091,interval above 1,49865
+F,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,primary,1.0063813354050557,1.0046899390822692,1.0080727317278422,interval above 1,49865
+F,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,second,1.0028548629762506,1.0020088461258783,1.003700879826623,interval above 1,49865
+F,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0054405643189885,1.0042361321363271,1.00664499650165,interval above 1,49865
+F,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,second,1.0025664468784907,1.0018900213340063,1.0032428724229752,interval above 1,49865
+F,heldout,heldout/all,QRC,LSTM,"network, more inputs",primary,1.0258475643515645,1.0217869835328788,1.0299081451702503,interval above 1,49865
+F,heldout,heldout/all,QRC,LSTM,"network, more inputs",second,1.0146962904013406,1.0126081589430624,1.0167844218596187,interval above 1,49865
+F,heldout,heldout/all,QRC,GRU,"network, more inputs",primary,1.0237518532762706,1.020165675186313,1.0273380313662281,interval above 1,49865
+F,heldout,heldout/all,QRC,GRU,"network, more inputs",second,1.0132219919440888,1.0113665687285265,1.015077415159651,interval above 1,49865
+F,heldout,heldout/all,QRC,HAR,benchmark,primary,0.979848420214007,0.9775218283641849,0.9821750120638291,interval below 1,49865
+F,heldout,heldout/all,QRC,HAR,benchmark,second,0.9922689618174714,0.9908448295065441,0.9936930941283987,interval below 1,49865
+M,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.9963072227776517,0.9954123648003568,0.9972020807549467,interval below 1,283953
+M,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,second,0.9979605541308771,0.9975009920570137,0.9984201162047406,interval below 1,283953
+M,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9983308063997339,0.9974029104972266,0.9992587023022412,interval below 1,283953
+M,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9991063285232399,0.998675763624225,0.9995368934222547,interval below 1,283953
+M,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9952219259410329,0.9946080507965083,0.9958358010855575,interval below 1,283953
+M,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,second,0.997354695713201,0.9970253267867853,0.9976840646396167,interval below 1,283953
+M,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9961198547188381,0.9951108345102953,0.997128874927381,interval below 1,283953
+M,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,second,0.9979681167090269,0.9975617209342376,0.9983745124838161,interval below 1,283953
+M,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9948223633661879,0.9941693730528425,0.9954753536795333,interval below 1,283953
+M,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,second,0.997106077444472,0.9967733639151196,0.9974387909738244,interval below 1,283953
+M,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,primary,0.9965458760176995,0.9957375365150228,0.9973542155203762,interval below 1,283953
+M,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,second,0.9982261453519884,0.9978412222845437,0.998611068419433,interval below 1,283953
+M,rolling,rolling/all,DOM,LSTM1,"network, same single input",primary,1.0057091306062966,1.005055438668746,1.0063628225438472,interval above 1,283953
+M,rolling,rolling/all,DOM,LSTM1,"network, same single input",second,1.0030486724738776,1.0026898351750873,1.003407509772668,interval above 1,283953
+M,rolling,rolling/all,DOM,GRU1,"network, same single input",primary,1.0065270290427102,1.0058660335940017,1.0071880244914186,interval above 1,283953
+M,rolling,rolling/all,DOM,GRU1,"network, same single input",second,1.0033351113257882,1.0029686338743937,1.0037015887771827,interval above 1,283953
+M,rolling,rolling/all,DOM,LSTM,"network, more inputs",primary,1.0555450650546205,1.0532208603437874,1.0578692697654537,interval above 1,283953
+M,rolling,rolling/all,DOM,LSTM,"network, more inputs",second,1.0272084140684585,1.0259755639947057,1.0284412641422114,interval above 1,283953
+M,rolling,rolling/all,DOM,GRU,"network, more inputs",primary,1.0556017599884568,1.053206611371051,1.0579969086058627,interval above 1,283953
+M,rolling,rolling/all,DOM,GRU,"network, more inputs",second,1.0265244813073886,1.025281512964893,1.0277674496498843,interval above 1,283953
+M,rolling,rolling/all,DOM,HAR,benchmark,primary,0.9815906197917167,0.9803856395189479,0.9827956000644855,interval below 1,283953
+M,rolling,rolling/all,DOM,HAR,benchmark,second,0.9898590089748633,0.9892496707547433,0.9904683471949833,interval below 1,283953
+M,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.9959895114431824,0.9949815720873065,0.9969974507990582,interval below 1,283953
+M,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,second,0.9981905369966027,0.997707927412235,0.9986731465809703,interval below 1,283953
+M,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9980124497668684,0.9969312770070109,0.999093622526726,interval below 1,283953
+M,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9993365754359532,0.9988615720234436,0.9998115788484628,interval below 1,283953
+M,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9949045606957,0.9941700769870365,0.9956390444043635,interval below 1,283953
+M,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.9975845389571202,0.9972267560296043,0.997942321884636,interval below 1,283953
+M,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9958022031339667,0.9948442234203589,0.9967601828475745,interval below 1,283953
+M,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,second,0.9981981013175701,0.9978209425370751,0.9985752600980652,interval below 1,283953
+M,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.994505125536933,0.9937133965774618,0.9952968544964043,interval below 1,283953
+M,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9973358633935997,0.9969729064382117,0.9976988203489877,interval below 1,283953
+M,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9962280885793562,0.9954705768969522,0.9969856002617602,interval below 1,283953
+M,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,second,0.9984561894239709,0.9981047404235428,0.9988076384243989,interval below 1,283953
+M,rolling,rolling/all,ISING,LSTM1,"network, same single input",primary,1.005388421107592,1.0046426946975773,1.0061341475176069,interval above 1,283953
+M,rolling,rolling/all,ISING,LSTM1,"network, same single input",second,1.0032798279110369,1.0028673892242619,1.0036922665978119,interval above 1,283953
+M,rolling,rolling/all,ISING,GRU1,"network, same single input",primary,1.0062060587252564,1.0054606604020895,1.0069514570484233,interval above 1,283953
+M,rolling,rolling/all,ISING,GRU1,"network, same single input",second,1.0035663327736006,1.00314935609089,1.0039833094563113,interval above 1,283953
+M,rolling,rolling/all,ISING,LSTM,"network, more inputs",primary,1.055208463428592,1.0528919310150904,1.0575249958420938,interval above 1,283953
+M,rolling,rolling/all,ISING,LSTM,"network, more inputs",second,1.0274451371872102,1.0262093530146672,1.0286809213597532,interval above 1,283953
+M,rolling,rolling/all,ISING,GRU,"network, more inputs",primary,1.0552651402830422,1.0528843632572016,1.0576459173088828,interval above 1,283953
+M,rolling,rolling/all,ISING,GRU,"network, more inputs",second,1.026761046811878,1.0255178611922355,1.0280042324315204,interval above 1,283953
+M,rolling,rolling/all,ISING,HAR,benchmark,primary,0.9812776014188827,0.9799685792165556,0.9825866236212097,interval below 1,283953
+M,rolling,rolling/all,ISING,HAR,benchmark,second,0.9900871248163221,0.9894768734837824,0.9906973761488618,interval below 1,283953
+M,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,primary,1.0027265254701612,1.0019554883338628,1.0034975626064595,interval above 1,283953
+M,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,second,1.0014939702094279,1.001036619760851,1.0019513206580049,interval above 1,283953
+M,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,primary,1.0042205171047152,1.0036544037316484,1.004786630477782,interval above 1,283953
+M,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,second,1.0019570185866837,1.0016529673922665,1.002261069781101,interval above 1,283953
+M,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0029624939609365,1.002488865974304,1.003436121947569,interval above 1,283953
+M,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,second,1.0012863224823934,1.0009988722862664,1.0015737726785203,interval above 1,283953
+M,rolling,rolling/all,QRC,LSTM,"network, more inputs",primary,1.0578826403306247,1.0554301512978952,1.0603351293633543,interval above 1,283953
+M,rolling,rolling/all,QRC,LSTM,"network, more inputs",second,1.029445569056307,1.0281935613779845,1.0306975767346294,interval above 1,283953
+M,rolling,rolling/all,QRC,GRU,"network, more inputs",primary,1.057939460819191,1.055384319747995,1.060494601890387,interval above 1,283953
+M,rolling,rolling/all,QRC,GRU,"network, more inputs",second,1.0287601467595526,1.0274795398608358,1.0300407536582694,interval above 1,283953
+M,rolling,rolling/all,QRC,HAR,benchmark,primary,0.9837644179931833,0.9829937763984258,0.9845350595879407,interval below 1,283953
+M,rolling,rolling/all,QRC,HAR,benchmark,second,0.9920148207739742,0.9915791682875195,0.9924504732604289,interval below 1,283953
+M,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,primary,0.9996465408458767,0.9982581105104864,1.001034971181267,interval contains 1,83439
+M,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,second,0.9994858538595868,0.9986898706599896,1.000281837059184,interval contains 1,83439
+M,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,primary,1.0009943040205154,0.9996448066093762,1.0023438014316546,interval contains 1,83439
+M,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,second,1.0002720805546703,0.9995008978355575,1.0010432632737831,interval contains 1,83439
+M,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9961327798582682,0.9951623543544267,0.9971032053621097,interval below 1,83439
+M,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,second,0.9983267780382287,0.9977463086547559,0.9989072474217014,interval below 1,83439
+M,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9996771436047202,0.9987891031168535,1.0005651840925869,interval contains 1,83439
+M,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,second,1.0001774371984125,0.9996226858274438,1.0007321885693812,interval contains 1,83439
+M,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9955057289014745,0.9944669139982127,0.9965445438047362,interval below 1,83439
+M,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,second,0.9978432827439938,0.9972213219654015,0.9984652435225861,interval below 1,83439
+M,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,primary,0.9997621077177116,0.9988888264870927,1.0006353889483304,interval contains 1,83439
+M,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,second,1.0002569218550428,0.9997096437555621,1.0008041999545234,interval contains 1,83439
+M,rolling,rolling/calm,DOM,LSTM1,"network, same single input",primary,1.0058070625869842,1.0046873809568608,1.0069267442171075,interval above 1,83439
+M,rolling,rolling/calm,DOM,LSTM1,"network, same single input",second,1.0030936931117846,1.0024773062041359,1.0037100800194334,interval above 1,83439
+M,rolling,rolling/calm,DOM,GRU1,"network, same single input",primary,1.0083738585649231,1.0071550922977361,1.00959262483211,interval above 1,83439
+M,rolling,rolling/calm,DOM,GRU1,"network, same single input",second,1.0040377461716126,1.0033753042152704,1.0047001881279547,interval above 1,83439
+M,rolling,rolling/calm,DOM,LSTM,"network, more inputs",primary,1.0398266369402713,1.036284627183873,1.0433686466966696,interval above 1,83439
+M,rolling,rolling/calm,DOM,LSTM,"network, more inputs",second,1.0187733531030099,1.0168524927116127,1.020694213494407,interval above 1,83439
+M,rolling,rolling/calm,DOM,GRU,"network, more inputs",primary,1.0436134067799216,1.0396472226328732,1.04757959092697,interval above 1,83439
+M,rolling,rolling/calm,DOM,GRU,"network, more inputs",second,1.0189105214282435,1.016800723679856,1.021020319176631,interval above 1,83439
+M,rolling,rolling/calm,DOM,HAR,benchmark,primary,0.9862234727380942,0.9844705886795521,0.9879763567966363,interval below 1,83439
+M,rolling,rolling/calm,DOM,HAR,benchmark,second,0.992372488841387,0.9913460960313631,0.9933988816514108,interval below 1,83439
+M,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,primary,0.9985055582575745,0.9970983396062609,0.999912776908888,interval below 1,83439
+M,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,second,0.999271169879302,0.9984703657807502,1.0000719739778539,interval contains 1,83439
+M,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9998517831141652,0.9984682333134501,1.0012353329148802,interval contains 1,83439
+M,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,second,1.0000572276972817,0.9992633366663932,1.0008511187281701,interval contains 1,83439
+M,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9949958078276407,0.9939110478116132,0.9960805678436683,interval below 1,83439
+M,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,second,0.998112343020958,0.9974550027633086,0.9987696832786074,interval below 1,83439
+M,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9985361260868568,0.9976601420128682,0.9994121101608454,interval below 1,83439
+M,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,second,0.9999626046698883,0.99940895953232,1.0005162498074565,interval contains 1,83439
+M,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9943694725780439,0.993218652597302,0.9955202925587857,interval below 1,83439
+M,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,second,0.9976289515788126,0.9969474789773489,0.9983104241802763,interval below 1,83439
+M,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,primary,0.9986209932229974,0.9977581599788052,0.9994838264671895,interval below 1,83439
+M,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,second,1.000042072253658,0.9994959881122228,1.0005881563950931,interval contains 1,83439
+M,rolling,rolling/calm,ISING,LSTM1,"network, same single input",primary,1.0046590484652806,1.0034403964020366,1.0058777005285247,interval above 1,83439
+M,rolling,rolling/calm,ISING,LSTM1,"network, same single input",second,1.0028782341877747,1.0022016576745345,1.0035548107010148,interval above 1,83439
+M,rolling,rolling/calm,ISING,GRU1,"network, same single input",primary,1.00722291473817,1.0059336451654675,1.0085121843108724,interval above 1,83439
+M,rolling,rolling/calm,ISING,GRU1,"network, same single input",second,1.0038220844702768,1.0031133491627289,1.0045308197778247,interval above 1,83439
+M,rolling,rolling/calm,ISING,LSTM,"network, more inputs",primary,1.0386397933519387,1.0350730510355421,1.0422065356683352,interval above 1,83439
+M,rolling,rolling/calm,ISING,LSTM,"network, more inputs",second,1.0185545262755888,1.0166202647466003,1.0204887878045774,interval above 1,83439
+M,rolling,rolling/calm,ISING,GRU,"network, more inputs",primary,1.0424222410254271,1.03846348698677,1.0463809950640843,interval above 1,83439
+M,rolling,rolling/calm,ISING,GRU,"network, more inputs",second,1.0186916651378322,1.0165873409620396,1.0207959893136247,interval above 1,83439
+M,rolling,rolling/calm,ISING,HAR,benchmark,primary,0.9850978110520978,0.983317758064562,0.9868778640396336,interval below 1,83439
+M,rolling,rolling/calm,ISING,HAR,benchmark,second,0.992159332772187,0.9911211986748854,0.9931974668694887,interval below 1,83439
+M,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,primary,1.0022685961478452,1.0009635217893509,1.0035736705063396,interval above 1,83439
+M,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,second,1.0004551398246841,0.9996114521133129,1.0012988275360553,interval contains 1,83439
+M,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,primary,1.0026921632164434,1.0019173130729333,1.0034670133599535,interval above 1,83439
+M,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,second,1.0010516964386826,1.0005486554040548,1.0015547374733105,interval above 1,83439
+M,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,primary,1.00200843293824,1.0012470216627818,1.002769844213698,interval above 1,83439
+M,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,second,1.000667434325274,1.0001732492485036,1.0011616194020443,interval above 1,83439
+M,rolling,rolling/calm,QRC,LSTM,"network, more inputs",primary,1.0419603262608825,1.0384260482307397,1.0454946042910254,interval above 1,83439
+M,rolling,rolling/calm,QRC,LSTM,"network, more inputs",second,1.02126794686576,1.0193434922239288,1.023192401507591,interval above 1,83439
+M,rolling,rolling/calm,QRC,GRU,"network, more inputs",primary,1.0457548664250076,1.0417107402846197,1.0497989925653954,interval above 1,83439
+M,rolling,rolling/calm,QRC,GRU,"network, more inputs",second,1.0214054510647652,1.0192583593599076,1.0235525427696228,interval above 1,83439
+M,rolling,rolling/calm,QRC,HAR,benchmark,primary,0.9882471701668399,0.9870464420347957,0.9894478982988841,interval below 1,83439
+M,rolling,rolling/calm,QRC,HAR,benchmark,second,0.9948024367914863,0.9940936056055321,0.9955112679774405,interval below 1,83439
+M,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,primary,0.9965001896406973,0.9950597451927655,0.9979406340886291,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,second,0.9978576595963461,0.9971100557406346,0.9986052634520576,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.999790588414005,0.9984114351885768,1.0011697416394334,interval contains 1,112120
+M,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9996025786963191,0.9989111010642632,1.000294056328375,interval contains 1,112120
+M,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9952171271466451,0.9942424203074997,0.9961918339857906,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,second,0.9967229481457666,0.9961759120272407,0.9972699842642925,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,primary,0.99407281314835,0.9918048629499262,0.9963407633467739,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,second,0.9968895915790562,0.9961053455554875,0.997673837602625,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9949837392281475,0.994049598914293,0.9959178795420021,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,second,0.9966627413771165,0.9961382662376776,0.9971872165165554,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,primary,0.9943483727716365,0.9926404629219503,0.9960562826213226,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,second,0.9968244801665439,0.9960639021807468,0.997585058152341,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",primary,1.0074855158285516,1.0064374913115595,1.0085335403455438,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",second,1.0042043240121798,1.0036006522664773,1.0048079957578824,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",primary,1.008053169190002,1.00694928307287,1.0091570553071343,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",second,1.0045419970016836,1.0039069486055743,1.0051770453977928,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",primary,1.0635375607907949,1.0598494336100175,1.0672256879715722,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",second,1.0319786878128434,1.029949612362455,1.0340077632632318,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",primary,1.0604026883781494,1.0568336065148218,1.063971770241477,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",second,1.0302494810688088,1.0283017174251399,1.0321972447124776,interval above 1,112120
+M,rolling,rolling/intermediate,DOM,HAR,benchmark,primary,0.981001566502921,0.9792006130889883,0.9828025199168537,interval below 1,112120
+M,rolling,rolling/intermediate,DOM,HAR,benchmark,second,0.9890967633260028,0.9881033539181687,0.9900901727338369,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,primary,0.9972781363998299,0.9958352245104972,0.9987210482891625,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,second,0.9986555536889897,0.9979098683551844,0.9994012390227951,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,primary,1.0005711039183207,0.9991369331298595,1.0020052747067818,interval contains 1,112120
+M,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,second,1.0004018680387046,0.9996649862047943,1.001138749872615,interval contains 1,112120
+M,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,primary,0.995994072245849,0.9950143319303267,0.9969738125613713,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,second,0.9975199349150514,0.9969789873786343,0.9980608824514685,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9948488649056603,0.9926923073339003,0.9970054224774202,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,second,0.9976867115976173,0.9969773691276925,0.9983960540675422,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9957605021263074,0.9947973952089272,0.9967236090436876,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,second,0.9974596800046402,0.9969335382428784,0.997985821766402,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,primary,0.9951246396525544,0.9935485732776479,0.9967007060274609,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,second,0.9976215481215557,0.9969436949290049,0.9982994013141064,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",primary,1.0082720386010102,1.0070832441742565,1.009460833027764,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",second,1.0050072929428995,1.0043147713466294,1.0056998145391696,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",primary,1.0088401351175125,1.0075827117234437,1.0100975585115812,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",second,1.005345235938131,1.0046139933227487,1.0060764785535132,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",primary,1.0643678422169645,1.0606430812595056,1.0680926031744233,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",second,1.032803865322703,1.030751365431814,1.034856365213592,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",primary,1.0612305224752976,1.057628161506313,1.0648328834442822,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",second,1.031073275892638,1.0290991712869226,1.0330473804983533,interval above 1,112120
+M,rolling,rolling/intermediate,ISING,HAR,benchmark,primary,0.9817674138126342,0.9800152711920481,0.9835195564332203,interval below 1,112120
+M,rolling,rolling/intermediate,ISING,HAR,benchmark,second,0.9898876521435822,0.988948119350338,0.9908271849368264,interval below 1,112120
+M,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,primary,1.0013247583018994,1.0001371635385194,1.0025123530652793,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,second,1.0013275803312107,1.0006457144899037,1.0020094461725177,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,primary,1.0041586368184583,1.0033079868901589,1.0050092867467577,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,second,1.0018364682978884,1.0013573861627934,1.0023155504329835,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0026114259768202,1.0018179898696042,1.0034048620840361,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,second,1.0010326412524628,1.000560185571733,1.0015050969331927,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",primary,1.0644831660612104,1.0606629071078977,1.0683034250145231,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",second,1.0343839917670803,1.0322649573878582,1.0365030261463024,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",primary,1.0613455063921624,1.05761096025235,1.0650800525319748,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",second,1.0326507546415384,1.0305839456521637,1.0347175636309132,interval above 1,112120
+M,rolling,rolling/intermediate,QRC,HAR,benchmark,primary,0.9818737879323938,0.9806774908391055,0.983070085025682,interval below 1,112120
+M,rolling,rolling/intermediate,QRC,HAR,benchmark,second,0.9914021194191535,0.990712469606417,0.9920917692318899,interval below 1,112120
+M,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,primary,0.992500984996003,0.9906934746433227,0.9943084953486834,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,second,0.9965493668146426,0.9957075779936809,0.9973911556356042,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9937084132241434,0.9916438805510605,0.9957729458972263,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,second,0.997309875176256,0.9965379695320449,0.9980817808204672,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9942485265752022,0.9929898920541071,0.9955071610962973,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,second,0.9971626356548151,0.9965820519920451,0.9977432193175851,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9948119980858511,0.9932714543972905,0.9963525417744117,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,second,0.9970882205104133,0.9964166764173196,0.9977597646035071,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9938903465267536,0.9924482632721832,0.995332429781324,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,second,0.9969153595329691,0.9963240146488075,0.9975067044171306,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,primary,0.9957865397117867,0.9944496868548098,0.9971233925687635,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,second,0.9979309930164092,0.9973501730100014,0.998511813022817,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",primary,1.003440266113752,1.0022079656665122,1.004672566560992,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",second,1.0015606272834803,1.000931207957521,1.0021900466094396,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",primary,1.0026925433208227,1.0016393884085517,1.0037456982330937,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",second,1.001120459415811,1.0005566283484972,1.0016842904831247,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",primary,1.063084833125508,1.058241681109806,1.06792798514121,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",second,1.0298838108907773,1.027503579062343,1.0322640427192116,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",primary,1.0628684305647642,1.057871692295353,1.0678651688341754,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",second,1.0296554557063966,1.0272631839574535,1.0320477274553397,interval above 1,88394
+M,rolling,rolling/turbulent,DOM,HAR,benchmark,primary,0.9773629023006443,0.974668934783436,0.9800568698178526,interval below 1,88394
+M,rolling,rolling/turbulent,DOM,HAR,benchmark,second,0.9882778553549854,0.9871350725939899,0.9894206381159808,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,primary,0.9917292066331295,0.9893804221195158,0.9940779911467431,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,second,0.996518412446754,0.9955511090226339,0.9974857158708741,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9929356959534045,0.9902478487369643,0.9956235431698447,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9972788971857989,0.9963407249009381,0.9982170694706597,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9934753893070989,0.9917285569585469,0.9952222216556509,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,second,0.9971316622378458,0.9964525157913344,0.9978108086843571,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9940384226568526,0.992596959745315,0.9954798855683902,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,second,0.9970572494048938,0.9964303359961442,0.9976841628136435,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9931174877829194,0.9911490689875957,0.9950859065782431,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,second,0.9968843937967793,0.9961822477714042,0.9975865398221544,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,primary,0.9950122064697966,0.9937370117377575,0.9962874012018357,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,second,0.9978999957330693,0.9973757203096161,0.9984242711565225,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",primary,1.0026599812601045,1.0011936819843763,1.0041262805358326,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",second,1.0015295172580745,1.0007781030715848,1.0022809314445642,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",primary,1.001912839903649,1.0006332807796607,1.0031923990276372,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",second,1.0010893630627014,1.0004127516013697,1.001765974524033,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",primary,1.062258168079822,1.057533730270975,1.066982605888669,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",second,1.0298518211033905,1.027508258558233,1.032195383648548,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",primary,1.0620419337958018,1.057156713170777,1.0669271544208265,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",second,1.0296234730120757,1.0272668887898417,1.0319800572343096,interval above 1,88394
+M,rolling,rolling/turbulent,ISING,HAR,benchmark,primary,0.9766028954572517,0.973405678237806,0.9798001126766973,interval below 1,88394
+M,rolling,rolling/turbulent,ISING,HAR,benchmark,second,0.9882471579130627,0.9870390051304119,0.9894553106957136,interval below 1,88394
+M,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,primary,1.0049351861399012,1.0033969341456663,1.006473438134136,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,second,1.0027576273420042,1.0018845275913608,1.0036307270926477,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,primary,1.0059444598254275,1.0046446109934406,1.0072443086574143,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,second,1.0030272666415188,1.0024293543536187,1.0036251789294188,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0044193745516787,1.0035158965161637,1.0053228525871938,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,second,1.0022324422325466,1.0017085094756581,1.002756374989435,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",primary,1.0673484555445245,1.0619844573847512,1.0727124537042978,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",second,1.0316474548845818,1.0292776024577714,1.034017307311392,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",primary,1.0671311850767418,1.0615576588040658,1.0727047113494177,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",second,1.0314187086490505,1.0289966045049548,1.0338408127931462,interval above 1,88394
+M,rolling,rolling/turbulent,QRC,HAR,benchmark,primary,0.9812827271837747,0.9796759290317335,0.982889525335816,interval below 1,88394
+M,rolling,rolling/turbulent,QRC,HAR,benchmark,second,0.9899702504439997,0.989122093915646,0.9908184069723533,interval below 1,88394
+M,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.9890363589572918,0.9845850391672312,0.9934876787473524,interval below 1,17908
+M,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,second,0.99336558307387,0.9912303847753384,0.9955007813724016,interval below 1,17908
+M,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9913106098439555,0.9866391632855905,0.9959820564023204,interval below 1,17908
+M,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9941799864067349,0.9919839362505892,0.9963760365628805,interval below 1,17908
+M,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9962489828391173,0.9922874596253318,1.000210506052903,interval contains 1,17908
+M,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,second,0.9966196192666272,0.9947696360758403,0.9984696024574141,interval below 1,17908
+M,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9960748575598307,0.9932284987418228,0.9989212163778386,interval below 1,17908
+M,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,second,0.997334647541552,0.9955689598779708,0.9991003352051332,interval below 1,17908
+M,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9971612593183883,0.9927859162775352,1.0015366023592414,interval contains 1,17908
+M,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,second,0.9970954909974449,0.9949437006713319,0.9992472813235579,interval below 1,17908
+M,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,primary,0.9967498372328172,0.9944802261513296,0.9990194483143048,interval below 1,17908
+M,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,second,0.9972397030815969,0.9958971216139504,0.9985822845492435,interval below 1,17908
+M,heldout,heldout/all,DOM,LSTM1,"network, same single input",primary,1.0070954297381798,1.003041074745221,1.0111497847311386,interval above 1,17908
+M,heldout,heldout/all,DOM,LSTM1,"network, same single input",second,1.0035065823402511,1.0015358407149135,1.0054773239655888,interval above 1,17908
+M,heldout,heldout/all,DOM,GRU1,"network, same single input",primary,1.0081399392600912,1.0041238718552068,1.0121560066649755,interval above 1,17908
+M,heldout,heldout/all,DOM,GRU1,"network, same single input",second,1.0044052457437718,1.0023931468389942,1.0064173446485494,interval above 1,17908
+M,heldout,heldout/all,DOM,LSTM,"network, more inputs",primary,1.0845904732585065,1.072967836401725,1.096213110115288,interval above 1,17908
+M,heldout,heldout/all,DOM,LSTM,"network, more inputs",second,1.0423456351011104,1.03668401470728,1.048007255494941,interval above 1,17908
+M,heldout,heldout/all,DOM,GRU,"network, more inputs",primary,1.0796356676594938,1.068485178162189,1.0907861571567987,interval above 1,17908
+M,heldout,heldout/all,DOM,GRU,"network, more inputs",second,1.0405004631871555,1.0351040805722123,1.0458968458020987,interval above 1,17908
+M,heldout,heldout/all,DOM,HAR,benchmark,primary,0.9806241779163798,0.9754702332662607,0.9857781225664989,interval below 1,17908
+M,heldout,heldout/all,DOM,HAR,benchmark,second,0.9889665718326535,0.9862459438953434,0.9916871997699636,interval below 1,17908
+M,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.9873379879429263,0.9825163797953127,0.9921595960905398,interval below 1,17908
+M,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,second,0.9923593213329364,0.9901011604741832,0.9946174821916896,interval below 1,17908
+M,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.989608333491075,0.984585755432125,0.994630911550025,interval below 1,17908
+M,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9931728996896498,0.9908592479557825,0.9954865514235172,interval below 1,17908
+M,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9945382263232205,0.9909385510292488,0.9981379016171923,interval below 1,17908
+M,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.9956100612446664,0.9939155030809717,0.9973046194083612,interval below 1,17908
+M,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9943644000514724,0.9914953978274673,0.9972334022754775,interval below 1,17908
+M,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,second,0.9963243652086136,0.9946640043431058,0.9979847260741214,interval below 1,17908
+M,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.99544893624337,0.9913819168686914,0.9995159556180487,interval below 1,17908
+M,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9960854509258495,0.9941585845785132,0.9980123172731858,interval below 1,17908
+M,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9950382206508803,0.9930600158327082,0.9970164254690524,interval below 1,17908
+M,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,second,0.9962295169257147,0.9950157590259501,0.9974432748254793,interval below 1,17908
+M,heldout,heldout/all,ISING,LSTM1,"network, same single input",primary,1.0053660477280275,1.0010575471556535,1.0096745483004015,interval above 1,17908
+M,heldout,heldout/all,ISING,LSTM1,"network, same single input",second,1.0024900479466803,1.000371995616884,1.0046081002764766,interval above 1,17908
+M,heldout,heldout/all,ISING,GRU1,"network, same single input",primary,1.0064087636205337,1.0021830292716802,1.010634497969387,interval above 1,17908
+M,heldout,heldout/all,ISING,GRU1,"network, same single input",second,1.0033878010200905,1.0012104312957295,1.0055651707444515,interval above 1,17908
+M,heldout,heldout/all,ISING,LSTM,"network, more inputs",primary,1.0827280169336642,1.0710351365276987,1.0944208973396297,interval above 1,17908
+M,heldout,heldout/all,ISING,LSTM,"network, more inputs",second,1.041289757435019,1.035603073964908,1.04697644090513,interval above 1,17908
+M,heldout,heldout/all,ISING,GRU,"network, more inputs",primary,1.0777817197156982,1.066591265644012,1.0889721737873845,interval above 1,17908
+M,heldout,heldout/all,ISING,GRU,"network, more inputs",second,1.0394464546475308,1.0340427106124812,1.0448501986825804,interval above 1,17908
+M,heldout,heldout/all,ISING,HAR,benchmark,primary,0.9789402522804053,0.9736140738810005,0.98426643067981,interval below 1,17908
+M,heldout,heldout/all,ISING,HAR,benchmark,second,0.9879647662121909,0.9852595056033383,0.9906700268210434,interval below 1,17908
+M,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,primary,1.0085626056280426,1.005221412705256,1.0119037985508292,interval above 1,17908
+M,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,second,1.0052349579064965,1.003339978264588,1.007129937548405,interval above 1,17908
+M,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,primary,1.0114615754221006,1.0079116247534678,1.0150115260907333,interval above 1,17908
+M,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,second,1.0058199289811172,1.0042276172828024,1.007412240679432,interval above 1,17908
+M,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0086478869736861,1.006588041749672,1.0107077321977003,interval above 1,17908
+M,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,second,1.004539762920223,1.003295460495691,1.0057840653447552,interval above 1,17908
+M,heldout,heldout/all,QRC,LSTM,"network, more inputs",primary,1.08097041582643,1.0697065866589701,1.0922342449938898,interval above 1,17908
+M,heldout,heldout/all,QRC,LSTM,"network, more inputs",second,1.040810303249554,1.035373775100634,1.0462468313984739,interval above 1,17908
+M,heldout,heldout/all,QRC,GRU,"network, more inputs",primary,1.0760321479725619,1.0654406893033468,1.086623606641777,interval above 1,17908
+M,heldout,heldout/all,QRC,GRU,"network, more inputs",second,1.038967849197233,1.033936248041587,1.0439994503528789,interval above 1,17908
+M,heldout,heldout/all,QRC,HAR,benchmark,primary,0.977351130687157,0.9729109165874428,0.9817913447868711,interval below 1,17908
+M,heldout,heldout/all,QRC,HAR,benchmark,second,0.9875098651254661,0.9852587846186371,0.9897609456322951,interval below 1,17908
+H,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,primary,1.0016453840769521,0.9989931895959826,1.0042975785579218,interval contains 1,67567
+H,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,second,1.0012102674158594,0.999982678962391,1.0024378558693279,interval contains 1,67567
+H,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,1.0016266703619536,0.9987537232048606,1.0044996175190468,interval contains 1,67567
+H,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,second,1.0019054524326714,1.0006376843833424,1.0031732204820003,interval above 1,67567
+H,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9993320377087013,0.9972977379040783,1.0013663375133242,interval contains 1,67567
+H,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,second,1.0005285539647248,0.9994241149106802,1.0016329930187695,interval contains 1,67567
+H,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0065751527922653,1.004308024936421,1.0088422806481097,interval above 1,67567
+H,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,second,1.0034248044703786,1.0022527334654374,1.0045968754753198,interval above 1,67567
+H,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,primary,1.000487588856156,0.9982816193112484,1.0026935584010634,interval contains 1,67567
+H,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,second,1.0008205233739864,0.9996278571803114,1.0020131895676614,interval contains 1,67567
+H,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,primary,1.0084512962488434,1.0062549408861283,1.0106476516115586,interval above 1,67567
+H,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,second,1.0048554435206518,1.00370480723981,1.0060060798014936,interval above 1,67567
+H,rolling,rolling/all,DOM,LSTM1,"network, same single input",primary,1.003969738728481,1.0024422118841974,1.0054972655727645,interval above 1,67567
+H,rolling,rolling/all,DOM,LSTM1,"network, same single input",second,1.0025019459788744,1.001648999873707,1.0033548920840418,interval above 1,67567
+H,rolling,rolling/all,DOM,GRU1,"network, same single input",primary,1.006338663335108,1.0046527742536018,1.008024552416614,interval above 1,67567
+H,rolling,rolling/all,DOM,GRU1,"network, same single input",second,1.0043657795139118,1.0034240013260356,1.005307557701788,interval above 1,67567
+H,rolling,rolling/all,DOM,LSTM,"network, more inputs",primary,1.023628078229841,1.0201623245123292,1.0270938319473528,interval above 1,67567
+H,rolling,rolling/all,DOM,LSTM,"network, more inputs",second,1.0114447085819744,1.009684076562921,1.013205340601028,interval above 1,67567
+H,rolling,rolling/all,DOM,GRU,"network, more inputs",primary,1.0221562523721712,1.0188110084452362,1.0255014962991063,interval above 1,67567
+H,rolling,rolling/all,DOM,GRU,"network, more inputs",second,1.0110388763063427,1.0092575566540094,1.012820195958676,interval above 1,67567
+H,rolling,rolling/all,DOM,HAR,benchmark,primary,0.9899512001388544,0.9871790253502033,0.9927233749275055,interval below 1,67567
+H,rolling,rolling/all,DOM,HAR,benchmark,second,0.9959823782925717,0.9946503335073948,0.9973144230777486,interval below 1,67567
+H,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.9967004953366841,0.993821225408734,0.9995797652646343,interval below 1,67567
+H,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,second,0.9984854114054207,0.9972227340073594,0.999748088803482,interval below 1,67567
+H,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9966818740069152,0.9935932081731262,0.9997705398407042,interval below 1,67567
+H,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9991787044329741,0.9978775735770397,1.0004798352889084,interval contains 1,67567
+H,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9943985694178165,0.9921769644551834,0.9966201743804495,interval below 1,67567
+H,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.9978055532798408,0.9966887585167888,0.9989223480428927,interval below 1,67567
+H,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,primary,1.0016059269380846,0.9995024241824959,1.0037094296936733,interval contains 1,67567
+H,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,second,1.0006939214596184,0.9995918017357153,1.0017960411835216,interval contains 1,67567
+H,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.995548415879812,0.9932581742560049,0.9978386575036191,interval below 1,67567
+H,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9980967280761966,0.9969227527529495,0.9992707033994438,interval below 1,67567
+H,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,primary,1.00347280831369,1.001397045649638,1.0055485709777419,interval above 1,67567
+H,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,second,1.0021206669367417,1.0010851419485902,1.0031561919248932,interval above 1,67567
+H,rolling,rolling/all,ISING,LSTM1,"network, same single input",primary,0.9990133751935129,0.9970880514329274,1.0009386989540983,interval contains 1,67567
+H,rolling,rolling/all,ISING,LSTM1,"network, same single input",second,0.9997735745848938,0.9988384434207904,1.0007087057489972,interval contains 1,67567
+H,rolling,rolling/all,ISING,GRU1,"network, same single input",primary,1.0013706049740065,0.9994228521160479,1.003318357831965,interval contains 1,67567
+H,rolling,rolling/all,ISING,GRU1,"network, same single input",second,1.0016323355810492,1.000650637920679,1.0026140332414195,interval above 1,67567
+H,rolling,rolling/all,ISING,LSTM,"network, more inputs",primary,1.0185746660754733,1.015080339834437,1.0220689923165096,interval above 1,67567
+H,rolling,rolling/all,ISING,LSTM,"network, more inputs",second,1.0086919989033976,1.0069604168657627,1.0104235809410325,interval above 1,67567
+H,rolling,rolling/all,ISING,GRU,"network, more inputs",primary,1.017110106277456,1.0137533667011982,1.0204668458537136,interval above 1,67567
+H,rolling,rolling/all,ISING,GRU,"network, more inputs",second,1.008287271125544,1.006538540962006,1.0100360012890819,interval above 1,67567
+H,rolling,rolling/all,ISING,HAR,benchmark,primary,0.9850640428466633,0.981925889488602,0.9882021962047245,interval below 1,67567
+H,rolling,rolling/all,ISING,HAR,benchmark,second,0.993271750307517,0.9918181511844018,0.9947253494306323,interval below 1,67567
+H,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,primary,0.9973002444043615,0.9958090172355762,0.9987914715731467,interval below 1,67567
+H,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,second,0.9982829408861891,0.9974130907895838,0.9991527909827943,interval below 1,67567
+H,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,primary,0.9982362724797662,0.9970452141871831,0.9994273307723494,interval below 1,67567
+H,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,second,0.9980069583888183,0.9973914118981764,0.9986225048794601,interval below 1,67567
+H,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,primary,0.9962275870308462,0.9951614459074998,0.9972937281541927,interval below 1,67567
+H,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,second,0.9968992688850191,0.9962950668425697,0.9975034709274685,interval below 1,67567
+H,rolling,rolling/all,QRC,LSTM,"network, more inputs",primary,1.0230498102561063,1.0194746184103154,1.0266250021018972,interval above 1,67567
+H,rolling,rolling/all,QRC,LSTM,"network, more inputs",second,1.0104880781145114,1.0088172098219241,1.0121589464070986,interval above 1,67567
+H,rolling,rolling/all,QRC,GRU,"network, more inputs",primary,1.0215788158622998,1.0181455496361898,1.0250120820884099,interval above 1,67567
+H,rolling,rolling/all,QRC,GRU,"network, more inputs",second,1.0100826296774785,1.0083773321899776,1.0117879271649795,interval above 1,67567
+H,rolling,rolling/all,QRC,HAR,benchmark,primary,0.9893919569070837,0.9877958800614846,0.9909880337526829,interval below 1,67567
+H,rolling,rolling/all,QRC,HAR,benchmark,second,0.9950403721897699,0.9941984559400171,0.9958822884395228,interval below 1,67567
+H,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,primary,1.0050484903025698,1.0006308820499767,1.009466098555163,interval above 1,20774
+H,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,second,1.0023123180414493,0.9999311309871253,1.0046935050957733,interval contains 1,20774
+H,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,primary,1.0086670351464673,1.0038342010136683,1.0134998692792663,interval above 1,20774
+H,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,second,1.0064043057139151,1.0039745855288962,1.0088340258989341,interval above 1,20774
+H,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9995840032811255,0.9952669886150263,1.0039010179472247,interval contains 1,20774
+H,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,second,1.001058906295335,0.998646373042523,1.003471439548147,interval contains 1,20774
+H,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0102771168532634,1.0060447404961341,1.0145094932103926,interval above 1,20774
+H,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,second,1.004466657172332,1.0020385028551644,1.0068948114894996,interval above 1,20774
+H,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9973828393769555,0.9928438847267277,1.0019217940271832,interval contains 1,20774
+H,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,second,1.0001927960867016,0.9975594883647148,1.0028261038086885,interval contains 1,20774
+H,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,primary,1.011289866307212,1.0070417166084176,1.0155380160060066,interval above 1,20774
+H,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,second,1.006099550251486,1.0037530655212383,1.0084460349817337,interval above 1,20774
+H,rolling,rolling/calm,DOM,LSTM1,"network, same single input",primary,1.0083759670708696,1.0057107395685523,1.011041194573187,interval above 1,20774
+H,rolling,rolling/calm,DOM,LSTM1,"network, same single input",second,1.0057902521596087,1.0041691021485692,1.0074114021706482,interval above 1,20774
+H,rolling,rolling/calm,DOM,GRU1,"network, same single input",primary,1.0116867675690193,1.0088697881860134,1.0145037469520253,interval above 1,20774
+H,rolling,rolling/calm,DOM,GRU1,"network, same single input",second,1.0085074137992527,1.006852501368675,1.0101623262298303,interval above 1,20774
+H,rolling,rolling/calm,DOM,LSTM,"network, more inputs",primary,1.041932691900328,1.0352629230151142,1.0486024607855418,interval above 1,20774
+H,rolling,rolling/calm,DOM,LSTM,"network, more inputs",second,1.0198872792154876,1.0164972336740978,1.0232773247568774,interval above 1,20774
+H,rolling,rolling/calm,DOM,GRU,"network, more inputs",primary,1.033631015306981,1.0281427923385156,1.0391192382754464,interval above 1,20774
+H,rolling,rolling/calm,DOM,GRU,"network, more inputs",second,1.0149941289293496,1.0119869741543992,1.0180012837043,interval above 1,20774
+H,rolling,rolling/calm,DOM,HAR,benchmark,primary,0.9930958484743543,0.9884559813000275,0.997735715648681,interval below 1,20774
+H,rolling,rolling/calm,DOM,HAR,benchmark,second,0.9981704884421999,0.9956522958361677,1.000688681048232,interval contains 1,20774
+H,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,primary,0.997324310686816,0.9924765977557582,1.002172023617874,interval contains 1,20774
+H,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,second,0.9976323157695716,0.9951712860025095,1.0000933455366336,interval contains 1,20774
+H,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,primary,1.0009150456383633,0.9955778099593976,1.006252281317329,interval contains 1,20774
+H,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,second,1.0017051971103492,0.999208025180732,1.0042023690399664,interval contains 1,20774
+H,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9919018203249049,0.9874174236593206,0.9963862169904892,interval below 1,20774
+H,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,second,0.9963847564605807,0.994081746890726,0.9986877660304353,interval below 1,20774
+H,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,primary,1.0025127532553326,0.9987975940899388,1.0062279124207265,interval contains 1,20774
+H,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,second,0.9997765958481553,0.997735477333737,1.0018177143625735,interval contains 1,20774
+H,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9897175732018888,0.9849815114201029,0.9944536349836747,interval below 1,20774
+H,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,second,0.9955226902985694,0.9930204306285911,0.9980249499685477,interval below 1,20774
+H,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,primary,1.0035177193448332,0.9992956246383767,1.0077398140512897,interval contains 1,20774
+H,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,second,1.001401864613827,0.9992440102576403,1.0035597189700136,interval contains 1,20774
+H,rolling,rolling/calm,ISING,LSTM1,"network, same single input",primary,1.0006262145315468,0.9973406820159421,1.0039117470471515,interval contains 1,20774
+H,rolling,rolling/calm,ISING,LSTM1,"network, same single input",second,1.0010940106983273,0.9994138984255876,1.002774122971067,interval contains 1,20774
+H,rolling,rolling/calm,ISING,GRU1,"network, same single input",primary,1.0039115702696015,1.0004228005879354,1.0074003399512677,interval above 1,20774
+H,rolling,rolling/calm,ISING,GRU1,"network, same single input",second,1.0037984853516717,1.0020916847140342,1.0055052859893092,interval above 1,20774
+H,rolling,rolling/calm,ISING,LSTM,"network, more inputs",primary,1.0339250431774878,1.0271286199552048,1.0407214663997708,interval above 1,20774
+H,rolling,rolling/calm,ISING,LSTM,"network, more inputs",second,1.0151252158367652,1.0119224600190195,1.0183279716545108,interval above 1,20774
+H,rolling,rolling/calm,ISING,GRU,"network, more inputs",primary,1.0256871681238053,1.0200256194861266,1.031348716761484,interval above 1,20774
+H,rolling,rolling/calm,ISING,GRU,"network, more inputs",second,1.0102549126752642,1.0074885400574003,1.0130212852931282,interval above 1,20774
+H,rolling,rolling/calm,ISING,HAR,benchmark,primary,0.9854635294536411,0.9801267669404288,0.9908002919668535,interval below 1,20774
+H,rolling,rolling/calm,ISING,HAR,benchmark,second,0.9935098252242132,0.990759138203576,0.9962605122448503,interval below 1,20774
+H,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,primary,0.9903966117929202,0.9877219484449262,0.9930712751409141,interval below 1,20774
+H,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,second,0.9926762095468502,0.9910504662153935,0.9943019528783069,interval below 1,20774
+H,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,primary,0.9928555341647427,0.9910293259687769,0.9946817423607085,interval below 1,20774
+H,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,second,0.9939587371816595,0.9928588479116369,0.9950586264516821,interval below 1,20774
+H,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,primary,0.989389848480331,0.9873717685119655,0.9914079284486964,interval below 1,20774
+H,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,second,0.9919471635003296,0.9907204191153959,0.9931739078852634,interval below 1,20774
+H,rolling,rolling/calm,QRC,LSTM,"network, more inputs",primary,1.0340177405896183,1.0270549232007793,1.0409805579784572,interval above 1,20774
+H,rolling,rolling/calm,QRC,LSTM,"network, more inputs",second,1.0136587275388864,1.0103756431255038,1.016941811952269,interval above 1,20774
+H,rolling,rolling/calm,QRC,GRU,"network, more inputs",primary,1.0257791269623768,1.0202522691094746,1.031305984815279,interval above 1,20774
+H,rolling,rolling/calm,QRC,GRU,"network, more inputs",second,1.008795460201619,1.0060054937341016,1.0115854266691362,interval above 1,20774
+H,rolling,rolling/calm,QRC,HAR,benchmark,primary,0.9855518820083377,0.9830267388681501,0.9880770251485252,interval below 1,20774
+H,rolling,rolling/calm,QRC,HAR,benchmark,second,0.992074563337513,0.9906096699742074,0.9935394567008186,interval below 1,20774
+H,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,primary,1.000072614140821,0.9953468470673735,1.0047983812142682,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,second,1.0001131573702868,0.9981282741198051,1.0020980406207685,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9979892539127558,0.9931038251545161,1.0028746826709956,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9990033295187088,0.9969007957449982,1.0011058632924195,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,primary,1.0013077407853446,0.9988959036355753,1.0037195779351138,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,second,1.0011431328376832,0.9997347637530967,1.0025515019222697,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0041332181219764,1.0018101006691273,1.0064563355748255,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,second,1.002412332103593,1.0010328033997473,1.0037918608074385,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,primary,1.0034939101134641,1.0009675674428222,1.006020252784106,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,second,1.0017248154808365,1.0002912625049138,1.003158368456759,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,primary,1.0084641268429027,1.0061053054118996,1.0108229482739057,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,second,1.0049064873056968,1.0034229386453104,1.0063900359660831,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",primary,0.9990359596063516,0.9969345178578386,1.0011374013548646,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",second,0.999440995484177,0.9983185371419443,1.0005634538264097,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",primary,0.9995758862367163,0.9967322428418853,1.0024195296315475,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",second,1.0004073071430444,0.99891613537666,1.0018984789094287,interval contains 1,25852
+H,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",primary,1.0079455881871677,1.0038832993093723,1.0120078770649632,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",second,1.005420431617213,1.0031404077480321,1.007700455486394,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",primary,1.0109255649437932,1.0067101807608885,1.0151409491266978,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",second,1.0074375285283268,1.005050827416195,1.0098242296404587,interval above 1,25852
+H,rolling,rolling/intermediate,DOM,HAR,benchmark,primary,0.9914123959844144,0.9864142530851574,0.9964105388836715,interval below 1,25852
+H,rolling,rolling/intermediate,DOM,HAR,benchmark,second,0.9953825296075627,0.9932054483977794,0.997559610817346,interval below 1,25852
+H,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,primary,0.9989029307545717,0.9945433037718525,1.003262557737291,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,second,0.9991569211218144,0.9972105038304037,1.0011033384132253,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9968220072214145,0.9923180657836052,1.0013259486592239,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9980481544077822,0.99599968491107,1.0000966239044942,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,primary,1.0001366127968778,0.997461068467874,1.0028121571258817,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,second,1.0001859118007699,0.9986175141364734,1.0017543094650663,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,primary,1.0029587854595767,0.9998808514678349,1.0060367194513187,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,second,1.0014538975496532,0.9996653429430757,1.0032424521562306,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,primary,1.0023202251847247,0.9996329751713543,1.0050074751980953,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,second,1.0007670382808285,0.9991766447771142,1.0023574317845427,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,primary,1.0072846287563462,1.0048680178305716,1.0097012396821208,interval above 1,25852
+H,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,second,1.0039456680199934,1.00257781570427,1.0053135203357169,interval above 1,25852
+H,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",primary,0.9978674886896461,0.9952647385014275,1.0004702388778648,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",second,0.9984854019085416,0.9969713084551207,0.9999994953619625,interval below 1,25852
+H,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",primary,0.9984067838226571,0.9953171867220821,1.001496380923232,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",second,0.9994507896497216,0.9977053487353496,1.0011962305640936,interval contains 1,25852
+H,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",primary,1.006766696582623,1.0023584493886966,1.0111749437765494,interval above 1,25852
+H,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",second,1.0044591209349347,1.0019791267414413,1.0069391151284282,interval above 1,25852
+H,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",primary,1.0097431879630323,1.005196741922839,1.0142896340032257,interval above 1,25852
+H,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",second,1.006474289243101,1.0038829501316606,1.0090656283545412,interval above 1,25852
+H,rolling,rolling/intermediate,ISING,HAR,benchmark,primary,0.9902528415759569,0.9855277547977751,0.9949779283541388,interval below 1,25852
+H,rolling,rolling/intermediate,ISING,HAR,benchmark,second,0.9944308164450144,0.9922527848750882,0.9966088480149407,interval below 1,25852
+H,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,primary,1.0013719491365982,0.9990729143433303,1.003670983929866,interval contains 1,25852
+H,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,second,1.0011244821775218,0.9998057784290543,1.0024431859259895,interval contains 1,25852
+H,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,primary,1.0008834417940624,0.9987553854312711,1.0030114981568539,interval contains 1,25852
+H,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,second,0.999741779159746,0.9987362353683823,1.0007473229511097,interval contains 1,25852
+H,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0007380723474217,0.9992172431871539,1.0022589015076897,interval contains 1,25852
+H,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,second,0.9995904120915227,0.9987778265940911,1.0004029975889543,interval contains 1,25852
+H,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",primary,1.0091001351788143,1.0053489800732693,1.0128512902843592,interval above 1,25852
+H,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",second,1.0071974052526056,1.0052086967305416,1.0091861137746696,interval above 1,25852
+H,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",primary,1.012083525337155,1.008002350797313,1.0161646998769969,interval above 1,25852
+H,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",second,1.009218067167889,1.00696646917407,1.0114696651617079,interval above 1,25852
+H,rolling,rolling/intermediate,QRC,HAR,benchmark,primary,0.992548005101295,0.9901320141023644,0.9949639961002257,interval below 1,25852
+H,rolling,rolling/intermediate,QRC,HAR,benchmark,second,0.9971417623191934,0.9958975909357255,0.9983859337026613,interval below 1,25852
+H,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,primary,0.9993694315497406,0.9947574891269488,1.0039813739725323,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,second,1.0012959907510592,0.9993454316692816,1.003246549832837,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9973914919427276,0.9922034115185216,1.0025795723669335,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,second,1.000387519623297,0.9984435173394656,1.0023315219071285,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9968445452492691,0.9934537662378295,1.0002353242607087,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,second,0.9992003117843502,0.9973858884380775,1.001014735130623,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0049147289223554,1.000027713951139,1.0098017438935718,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,second,1.0034759870254348,1.0012397226959824,1.0057122513548873,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,primary,1.0008568135236326,0.9968838541817325,1.0048297728655327,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,second,1.00043969930804,0.9984339147060837,1.0024454839099963,interval contains 1,20941
+H,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,primary,1.0050815919950271,1.0006083831544996,1.0095548008355546,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,second,1.003405815545683,1.0012858833813307,1.0055257477100354,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",primary,1.0042690280227378,1.001163042991269,1.0073750130542065,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",second,1.0025175643918383,1.0008470590522252,1.0041880697314514,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",primary,1.0075888530881614,1.004550455212184,1.0106272509641387,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",second,1.0045177771179277,1.0028060876778546,1.0062294665580007,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",primary,1.0199739912455257,1.0133254785144064,1.026622503976645,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",second,1.009350040732433,1.005945423420848,1.0127546580440179,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",primary,1.0212959373295691,1.0138438587100735,1.0287480159490647,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",second,1.0109658655485283,1.0070620437766569,1.0148696873203997,interval above 1,20941
+H,rolling,rolling/turbulent,DOM,HAR,benchmark,primary,0.9846280498307464,0.9799080463433393,0.9893480533181535,interval below 1,20941
+H,rolling,rolling/turbulent,DOM,HAR,benchmark,second,0.9942621769493534,0.992079794841365,0.9964445590573417,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,primary,0.9935137271697617,0.9877254385539168,0.9993020157856066,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,second,0.9986325588609813,0.9965089637381458,1.0007561539838168,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9915473771003657,0.9853475237959433,0.9977472304047881,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9977265042524054,0.9955441830213301,0.9999088254834807,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9910036351858883,0.9869836533903045,0.9950236169814721,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,second,0.9965424543679973,0.9946700187334384,0.9984148900025561,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9990265324317638,0.9949069569710857,1.003146107892442,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,second,1.0008067563788945,0.9989226898817726,1.0026908228760165,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9949923939790069,0.9910105518874687,0.998974236070545,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,second,0.997778545139992,0.9958781517455989,0.999678938534385,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,primary,0.9991924177870923,0.9953935746883051,1.0029912608858795,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,second,1.0007367715541964,0.9989310626544733,1.0025424804539196,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",primary,0.9983846149514369,0.994287053435047,1.002482176467827,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",second,0.9998508831347191,0.9981845228540923,1.001517243415346,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",primary,1.001684987836753,0.9981796503152305,1.0051903253582757,interval contains 1,20941
+H,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",second,1.0018457753258112,1.000259012543222,1.0034325381084004,interval above 1,20941
+H,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",primary,1.0139975565263457,1.0075252263942154,1.020469886658476,interval above 1,20941
+H,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",second,1.006665185193641,1.003357932832224,1.009972437555058,interval above 1,20941
+H,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",primary,1.0153117568006518,1.0081626744813954,1.0224608391199081,interval above 1,20941
+H,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",second,1.0082767119406502,1.0044846341894518,1.0120687896918485,interval above 1,20941
+H,rolling,rolling/turbulent,ISING,HAR,benchmark,primary,0.9788587210900195,0.9726180585227552,0.9850993836572838,interval below 1,20941
+H,rolling,rolling/turbulent,ISING,HAR,benchmark,second,0.9916174548954892,0.9889792335891585,0.99425567620182,interval below 1,20941
+H,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,primary,1.0009803263320316,0.9983202484114254,1.003640404252638,interval contains 1,20941
+H,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,second,1.0011525290129624,0.9996544056468798,1.002650652379045,interval contains 1,20941
+H,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,primary,1.0016723791999669,0.9994728085218925,1.0038719498780413,interval contains 1,20941
+H,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,second,1.0004486373992347,0.9994233659152194,1.00147390888325,interval contains 1,20941
+H,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,primary,0.9993437562751929,0.9975444073859355,1.0011431051644504,interval contains 1,20941
+H,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,second,0.9992108074439303,0.9982337083264516,1.000187906561409,interval contains 1,20941
+H,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",primary,1.0259869194976332,1.0187628417319397,1.0332109972633268,interval above 1,20941
+H,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",second,1.0109397590534963,1.0075507653972178,1.0143287527097749,interval above 1,20941
+H,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",primary,1.0273166586891724,1.0193183731315756,1.0353149442467693,interval above 1,20941
+H,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",second,1.0125581287808814,1.0086864919750083,1.0164297655867545,interval above 1,20941
+H,rolling,rolling/turbulent,QRC,HAR,benchmark,primary,0.9904326074660005,0.9870881736693895,0.9937770412626115,interval below 1,20941
+H,rolling,rolling/turbulent,QRC,HAR,benchmark,second,0.9958281320044401,0.9941597657692683,0.9974964982396118,interval below 1,20941
+H,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.9937837096576433,0.9892803480673062,0.9982870712479803,interval below 1,4151
+H,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,second,0.996471451120083,0.9937707967272537,0.9991721055129122,interval below 1,4151
+H,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9957023427227872,0.9908329496887887,1.0005717357567858,interval contains 1,4151
+H,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9982221580745468,0.995605172257925,1.0008391438911686,interval contains 1,4151
+H,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9991945402553312,0.9953354009234993,1.0030536795871632,interval contains 1,4151
+H,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,second,1.0002988406165965,0.9978956612222444,1.0027020200109484,interval contains 1,4151
+H,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,primary,1.0001804291764853,0.9943943648490806,1.00596649350389,interval contains 1,4151
+H,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,second,1.002358384630556,0.9986068058581704,1.0061099634029416,interval contains 1,4151
+H,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9968774359123598,0.9901515412631675,1.0036033305615522,interval contains 1,4151
+H,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,second,0.9961806559715964,0.9920423394697221,1.0003189724734707,interval contains 1,4151
+H,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,primary,1.0002553934177565,0.9943756472283177,1.0061351396071954,interval contains 1,4151
+H,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,second,1.0022403426282989,0.998506873793561,1.0059738114630368,interval contains 1,4151
+H,heldout,heldout/all,DOM,LSTM1,"network, same single input",primary,1.006069867334723,1.0016661171592067,1.0104736175102393,interval above 1,4151
+H,heldout,heldout/all,DOM,LSTM1,"network, same single input",second,1.0015121288338036,0.9992340623037075,1.0037901953638997,interval contains 1,4151
+H,heldout,heldout/all,DOM,GRU1,"network, same single input",primary,1.0057358702234764,1.0017932638390223,1.0096784766079305,interval above 1,4151
+H,heldout,heldout/all,DOM,GRU1,"network, same single input",second,1.0021730970596303,1.0000070113341175,1.0043391827851431,interval above 1,4151
+H,heldout,heldout/all,DOM,LSTM,"network, more inputs",primary,1.0730911125031968,1.0578270347229721,1.0883551902834214,interval above 1,4151
+H,heldout,heldout/all,DOM,LSTM,"network, more inputs",second,1.0405591092587458,1.031983348224013,1.0491348702934786,interval above 1,4151
+H,heldout,heldout/all,DOM,GRU,"network, more inputs",primary,1.0647322601481481,1.0504694938037151,1.0789950264925812,interval above 1,4151
+H,heldout,heldout/all,DOM,GRU,"network, more inputs",second,1.0343624156412805,1.0265364067643086,1.0421884245182524,interval above 1,4151
+H,heldout,heldout/all,DOM,HAR,benchmark,primary,0.9883349779676172,0.9830806636595466,0.9935892922756877,interval below 1,4151
+H,heldout,heldout/all,DOM,HAR,benchmark,second,0.9929170821506274,0.9897324411302522,0.9961017231710025,interval below 1,4151
+H,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.986821631601974,0.9825292803425374,0.9911139828614106,interval below 1,4151
+H,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,second,0.992338799480602,0.9896460175149213,0.9950315814462827,interval below 1,4151
+H,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.988726823439384,0.9840191296832488,0.9934345171955192,interval below 1,4151
+H,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9940822457534302,0.9914175304170191,0.9967469610898413,interval below 1,4151
+H,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9921945559383687,0.9880659527819978,0.9963231590947396,interval below 1,4151
+H,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.9961503157000035,0.9936418732024458,0.9986587581975611,interval below 1,4151
+H,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9931735380894111,0.9879017205938452,0.998445355584977,interval below 1,4151
+H,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,second,0.9982013181968564,0.9947254543264488,1.001677182067264,interval contains 1,4151
+H,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9898936843643008,0.9831182263001305,0.9966691424284712,interval below 1,4151
+H,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9920492103426297,0.9881044638539079,0.9959939568313515,interval below 1,4151
+H,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9932479771591646,0.9877888655297236,0.9987070887886056,interval below 1,4151
+H,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,second,0.9980837657484886,0.9946105614686895,1.0015569700282876,interval contains 1,4151
+H,heldout,heldout/all,ISING,LSTM1,"network, same single input",primary,0.999021717040275,0.9946167379243782,1.0034266961561717,interval contains 1,4151
+H,heldout,heldout/all,ISING,LSTM1,"network, same single input",second,0.9973585720645326,0.9946911848678733,1.000025959261192,interval contains 1,4151
+H,heldout,heldout/all,ISING,GRU1,"network, same single input",primary,0.9986900597882314,0.9945765594683916,1.0028035601080714,interval contains 1,4151
+H,heldout,heldout/all,ISING,GRU1,"network, same single input",second,0.9980167990663944,0.9952908693644688,1.0007427287683202,interval contains 1,4151
+H,heldout,heldout/all,ISING,LSTM,"network, more inputs",primary,1.0655734363594955,1.0499458179696335,1.0812010547493576,interval above 1,4151
+H,heldout,heldout/all,ISING,LSTM,"network, more inputs",second,1.036243613512208,1.027343441844011,1.0451437851804048,interval above 1,4151
+H,heldout,heldout/all,ISING,GRU,"network, more inputs",primary,1.0572731430067588,1.0425248481321285,1.072021437881389,interval above 1,4151
+H,heldout,heldout/all,ISING,GRU,"network, more inputs",second,1.0300726193525735,1.0219120857574597,1.0382331529476874,interval above 1,4151
+H,heldout,heldout/all,ISING,HAR,benchmark,primary,0.9814110716941593,0.9762173355074107,0.9866048078809079,interval below 1,4151
+H,heldout,heldout/all,ISING,HAR,benchmark,second,0.9887991714941744,0.9855024207659802,0.9920959222223686,interval below 1,4151
+H,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,primary,0.9996559220056769,0.9948335375328692,1.0044783064784846,interval contains 1,4151
+H,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,second,1.0010761555770706,0.9979953824380762,1.0041569287160652,interval contains 1,4151
+H,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,primary,1.014960196565982,1.0101610098495297,1.0197593832824343,interval above 1,4151
+H,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,second,1.0093189787583996,1.006931763210625,1.0117061943061743,interval above 1,4151
+H,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0092985004723671,1.0062314193276842,1.01236558161705,interval above 1,4151
+H,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,second,1.0060527691643093,1.0041087930561334,1.0079967452724852,interval above 1,4151
+H,heldout,heldout/all,QRC,LSTM,"network, more inputs",primary,1.0614804449191177,1.0488905757020255,1.07407031413621,interval above 1,4151
+H,heldout,heldout/all,QRC,LSTM,"network, more inputs",second,1.0341133237312998,1.0265548779570752,1.0416717695055244,interval above 1,4151
+H,heldout,heldout/all,QRC,GRU,"network, more inputs",primary,1.0532120339580457,1.040963568301377,1.0654604996147146,interval above 1,4151
+H,heldout,heldout/all,QRC,GRU,"network, more inputs",second,1.0279550157833097,1.0207763599718318,1.0351336715947876,interval above 1,4151
+H,heldout,heldout/all,QRC,HAR,benchmark,primary,0.9776413576802103,0.9715608898890681,0.9837218254713526,interval below 1,4151
+H,heldout,heldout/all,QRC,HAR,benchmark,second,0.9867664170888033,0.9836841845053103,0.9898486496722964,interval below 1,4151
+D,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.989670657643058,0.96701240937517,1.012328905910946,interval contains 1,2580
+D,rolling,rolling/all,DOM,ESN28u,matched reservoir or stand-in,second,0.9967268600713314,0.9806997364447841,1.0127539836978787,interval contains 1,2580
+D,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9981503724751927,0.9750073682060727,1.0212933767443126,interval contains 1,2580
+D,rolling,rolling/all,DOM,ESN28u_t,matched reservoir or stand-in,second,1.0074203483556503,0.9908759807742827,1.023964715937018,interval contains 1,2580
+D,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,primary,0.980967682177867,0.955073654531578,1.006861709824156,interval contains 1,2580
+D,rolling,rolling/all,DOM,ESNq_t,matched reservoir or stand-in,second,0.9760547539716102,0.9522126865996324,0.999896821343588,interval below 1,2580
+D,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9593293926231412,0.9285810695758364,0.990077715670446,interval below 1,2580
+D,rolling,rolling/all,DOM,SAS28_t,matched reservoir or stand-in,second,0.9769764243349324,0.9547836425718422,0.9991692060980225,interval below 1,2580
+D,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9845094296702285,0.9568501779182091,1.012168681422248,interval contains 1,2580
+D,rolling,rolling/all,DOM,ESNb_t,matched reservoir or stand-in,second,1.0038634049983166,0.9789147013288642,1.028812108667769,interval contains 1,2580
+D,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,primary,0.9581680660536331,0.9253760296531494,0.9909601024541169,interval below 1,2580
+D,rolling,rolling/all,DOM,SASb_t,matched reservoir or stand-in,second,0.9766035633073086,0.9529413146267725,1.0002658119878447,interval contains 1,2580
+D,rolling,rolling/all,DOM,LSTM1,"network, same single input",primary,0.9323545905855569,0.9082328017849166,0.9564763793861972,interval below 0.97,2580
+D,rolling,rolling/all,DOM,LSTM1,"network, same single input",second,0.916951544820454,0.8905833868642055,0.9433197027767026,interval below 0.97,2580
+D,rolling,rolling/all,DOM,GRU1,"network, same single input",primary,0.9517120178448457,0.9236254248146408,0.9797986108750506,interval below 1,2580
+D,rolling,rolling/all,DOM,GRU1,"network, same single input",second,0.9382745286254122,0.9160669802544804,0.9604820769963439,interval below 0.97,2580
+D,rolling,rolling/all,DOM,LSTM,"network, more inputs",primary,0.982779637144289,0.9640538337387645,1.0015054405498134,interval contains 1,2580
+D,rolling,rolling/all,DOM,LSTM,"network, more inputs",second,0.9875182499530928,0.9693642297825049,1.0056722701236807,interval contains 1,2580
+D,rolling,rolling/all,DOM,GRU,"network, more inputs",primary,0.9878968045883325,0.96522384844634,1.010569760730325,interval contains 1,2580
+D,rolling,rolling/all,DOM,GRU,"network, more inputs",second,0.9998921482242725,0.9812464173509732,1.0185378790975719,interval contains 1,2580
+D,rolling,rolling/all,DOM,HAR,benchmark,primary,0.9715318543529619,0.9378910964683979,1.005172612237526,interval contains 1,2580
+D,rolling,rolling/all,DOM,HAR,benchmark,second,0.9840640889684348,0.961547787677415,1.0065803902594546,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,primary,0.9932935171830888,0.9656113328786551,1.0209757014875225,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESN28u,matched reservoir or stand-in,second,1.0012749854397005,0.9803954401106749,1.022154530768726,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,1.001804273468801,0.9733502492090144,1.0302582977285877,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESN28u_t,matched reservoir or stand-in,second,1.01201726876235,0.9907728404195215,1.0332616971051787,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9845586829804004,0.9534913353561346,1.015626030604666,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESNq_t,matched reservoir or stand-in,second,0.9805085512608074,0.956554920336898,1.0044621821847168,interval contains 1,2580
+D,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9628411827477203,0.9317614832067728,0.9939208822886679,interval below 1,2580
+D,rolling,rolling/all,ISING,SAS28_t,matched reservoir or stand-in,second,0.9814344272621318,0.9586352259332633,1.0042336285910003,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9881133956481887,0.9553723161356508,1.0208544751607265,interval contains 1,2580
+D,rolling,rolling/all,ISING,ESNb_t,matched reservoir or stand-in,second,1.0084440948558404,0.9814340582254012,1.0354541314862797,interval contains 1,2580
+D,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9616756049427039,0.9284793527254663,0.9948718571599414,interval below 1,2580
+D,rolling,rolling/all,ISING,SASb_t,matched reservoir or stand-in,second,0.9810598648469298,0.9570959756519161,1.0050237540419433,interval contains 1,2580
+D,rolling,rolling/all,ISING,LSTM1,"network, same single input",primary,0.9357676348110356,0.912808624938959,0.9587266446831123,interval below 0.97,2580
+D,rolling,rolling/all,ISING,LSTM1,"network, same single input",second,0.9211356505666007,0.894382693426616,0.9478886077065855,interval below 0.97,2580
+D,rolling,rolling/all,ISING,GRU1,"network, same single input",primary,0.9551959232598274,0.9317940077116025,0.9785978388080523,interval below 1,2580
+D,rolling,rolling/all,ISING,GRU1,"network, same single input",second,0.9425559324453417,0.9206221008682569,0.9644897640224266,interval below 0.97,2580
+D,rolling,rolling/all,ISING,LSTM,"network, more inputs",primary,0.9863772709194032,0.9621372678215738,1.0106172740172326,interval contains 1,2580
+D,rolling,rolling/all,ISING,LSTM,"network, more inputs",second,0.9920243558726402,0.9715149842328851,1.0125337275123951,interval contains 1,2580
+D,rolling,rolling/all,ISING,GRU,"network, more inputs",primary,0.9915131706343789,0.9620211246018591,1.0210052166668988,interval contains 1,2580
+D,rolling,rolling/all,ISING,GRU,"network, more inputs",second,1.004454716995266,0.9814599833566785,1.0274494506338534,interval contains 1,2580
+D,rolling,rolling/all,ISING,HAR,benchmark,primary,0.9750883136859775,0.9336448704470643,1.0165317569248906,interval contains 1,2580
+D,rolling,rolling/all,ISING,HAR,benchmark,second,0.9885544333410327,0.9598299907971946,1.0172788758848708,interval contains 1,2580
+D,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,primary,1.0215209751001737,0.9859325163393691,1.0571094338609783,interval contains 1,2580
+D,rolling,rolling/all,QRC,ESN_s,matched reservoir or stand-in,second,1.0150327853612582,0.9860304625008475,1.044035108221669,interval contains 1,2580
+D,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,primary,1.0009906792053036,0.9928500399060557,1.0091313185045514,interval contains 1,2580
+D,rolling,rolling/all,QRC,RandFeat,matched reservoir or stand-in,second,1.000338029179134,0.9937687355644833,1.0069073227937846,interval contains 1,2580
+D,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0003638234849304,0.9893915172835851,1.0113361296862755,interval contains 1,2580
+D,rolling,rolling/all,QRC,TrigFeat,matched reservoir or stand-in,second,0.9981584656481205,0.9901281610655351,1.006188770230706,interval contains 1,2580
+D,rolling,rolling/all,QRC,LSTM,"network, more inputs",primary,1.0066731390816703,0.9926926714859418,1.0206536066773988,interval contains 1,2580
+D,rolling,rolling/all,QRC,LSTM,"network, more inputs",second,0.9978560904794482,0.9826928115723443,1.0130193693865521,interval contains 1,2580
+D,rolling,rolling/all,QRC,GRU,"network, more inputs",primary,1.0119147159514053,0.9943961697177602,1.0294332621850502,interval contains 1,2580
+D,rolling,rolling/all,QRC,GRU,"network, more inputs",second,1.0103595249764372,0.9947099612873512,1.026009088665523,interval contains 1,2580
+D,rolling,rolling/all,QRC,HAR,benchmark,primary,0.995151898325039,0.969206380029378,1.0210974166207,interval contains 1,2580
+D,rolling,rolling/all,QRC,HAR,benchmark,second,0.9943657695904913,0.9775296037736436,1.011201935407339,interval contains 1,2580
+D,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,primary,1.0036476858240329,0.9797552832970834,1.0275400883509824,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESN28u,matched reservoir or stand-in,second,1.0036514198286095,0.9786848739206832,1.0286179657365357,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,primary,1.0046875338189287,0.9760237883370031,1.0333512793008544,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESN28u_t,matched reservoir or stand-in,second,1.0076826528126532,0.9775515871313292,1.0378137184939773,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9728548530758764,0.923814629382813,1.0218950767689399,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESNq_t,matched reservoir or stand-in,second,0.9592884372994419,0.9080675058773703,1.0105093687215134,interval contains 1,772
+D,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9991229243418129,0.9755108416391386,1.0227350070444872,interval contains 1,772
+D,rolling,rolling/calm,DOM,SAS28_t,matched reservoir or stand-in,second,0.997643524253331,0.9719448420764997,1.0233422064301623,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,primary,1.0118104489859003,0.9737921915826768,1.0498287063891238,interval contains 1,772
+D,rolling,rolling/calm,DOM,ESNb_t,matched reservoir or stand-in,second,1.0167111896284071,0.9774584463183313,1.055963932938483,interval contains 1,772
+D,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,primary,0.9991460586576225,0.9726341943805591,1.0256579229346858,interval contains 1,772
+D,rolling,rolling/calm,DOM,SASb_t,matched reservoir or stand-in,second,0.9976637904245913,0.9692605783796668,1.0260670024695158,interval contains 1,772
+D,rolling,rolling/calm,DOM,LSTM1,"network, same single input",primary,0.8957643861613319,0.8581887584068749,0.9333400139157889,interval below 0.97,772
+D,rolling,rolling/calm,DOM,LSTM1,"network, same single input",second,0.8659893952812336,0.8234376939824936,0.9085410965799737,interval below 0.97,772
+D,rolling,rolling/calm,DOM,GRU1,"network, same single input",primary,0.916587342484423,0.8835947980157974,0.9495798869530485,interval below 0.97,772
+D,rolling,rolling/calm,DOM,GRU1,"network, same single input",second,0.8933415414439889,0.8588058023312293,0.9278772805567486,interval below 0.97,772
+D,rolling,rolling/calm,DOM,LSTM,"network, more inputs",primary,0.994268255580045,0.9669989594631266,1.0215375516969631,interval contains 1,772
+D,rolling,rolling/calm,DOM,LSTM,"network, more inputs",second,0.9776135922245688,0.9475517207443723,1.0076754637047651,interval contains 1,772
+D,rolling,rolling/calm,DOM,GRU,"network, more inputs",primary,0.9978797035919481,0.9760967715608253,1.019662635623071,interval contains 1,772
+D,rolling,rolling/calm,DOM,GRU,"network, more inputs",second,0.9876295376606544,0.9641775198305342,1.0110815554907746,interval contains 1,772
+D,rolling,rolling/calm,DOM,HAR,benchmark,primary,1.0070050279570584,0.9706668547427005,1.043343201171416,interval contains 1,772
+D,rolling,rolling/calm,DOM,HAR,benchmark,second,1.0062377892221908,0.9654579239148644,1.0470176545295171,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,primary,1.0029129871262468,0.9662100572922432,1.0396159169602504,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESN28u,matched reservoir or stand-in,second,1.0126046452025428,0.9753059673581929,1.0499033230468928,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,primary,1.0039520739227872,0.9659712604179841,1.0419328874275902,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESN28u_t,matched reservoir or stand-in,second,1.0166718394144871,0.9771901736744175,1.0561535051545567,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9721426956088833,0.9337105473069686,1.010574843910798,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESNq_t,matched reservoir or stand-in,second,0.9678459159300375,0.9251522940951611,1.010539537764914,interval contains 1,772
+D,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9983915378983323,0.9755608569120549,1.0212222188846098,interval contains 1,772
+D,rolling,rolling/calm,ISING,SAS28_t,matched reservoir or stand-in,second,1.0065431552796196,0.984101467166436,1.0289848433928033,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,primary,1.01106977491294,0.9669879991442197,1.0551515506816604,interval contains 1,772
+D,rolling,rolling/calm,ISING,ESNb_t,matched reservoir or stand-in,second,1.025780916668197,0.9774221315696597,1.0741397017667345,interval contains 1,772
+D,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,primary,0.9984146552791637,0.9716401581203982,1.0251891524379293,interval contains 1,772
+D,rolling,rolling/calm,ISING,SASb_t,matched reservoir or stand-in,second,1.0065636022383477,0.9796642059632179,1.0334629985134776,interval contains 1,772
+D,rolling,rolling/calm,ISING,LSTM1,"network, same single input",primary,0.8951086611122618,0.8489110857131423,0.9413062365113813,interval below 0.97,772
+D,rolling,rolling/calm,ISING,LSTM1,"network, same single input",second,0.8737145855955294,0.8229839887521642,0.9244451824388946,interval below 0.97,772
+D,rolling,rolling/calm,ISING,GRU1,"network, same single input",primary,0.9159163744381231,0.8789346490691328,0.9528980998071135,interval below 0.97,772
+D,rolling,rolling/calm,ISING,GRU1,"network, same single input",second,0.9013107307446038,0.8645956951280303,0.9380257663611773,interval below 0.97,772
+D,rolling,rolling/calm,ISING,LSTM,"network, more inputs",primary,0.9935404228923971,0.9646046346913711,1.0224762110934231,interval contains 1,772
+D,rolling,rolling/calm,ISING,LSTM,"network, more inputs",second,0.9863345431910925,0.9526070098809476,1.0200620765012374,interval contains 1,772
+D,rolling,rolling/calm,ISING,GRU,"network, more inputs",primary,0.9971492272214731,0.969588364487005,1.0247100899559412,interval contains 1,772
+D,rolling,rolling/calm,ISING,GRU,"network, more inputs",second,0.996439837394141,0.9652707046033665,1.0276089701849154,interval contains 1,772
+D,rolling,rolling/calm,ISING,HAR,benchmark,primary,1.0062678715891873,0.9549666367803042,1.0575691063980703,interval contains 1,772
+D,rolling,rolling/calm,ISING,HAR,benchmark,second,1.0152140866982737,0.9571087573336272,1.0733194160629203,interval contains 1,772
+D,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,primary,1.0411701667290718,0.9869820355198836,1.0953582979382601,interval contains 1,772
+D,rolling,rolling/calm,QRC,ESN_s,matched reservoir or stand-in,second,1.0566914638443115,0.9950589037968929,1.11832402389173,interval contains 1,772
+D,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,primary,0.9999888577429626,0.9898931300345531,1.0100845854513723,interval contains 1,772
+D,rolling,rolling/calm,QRC,RandFeat,matched reservoir or stand-in,second,0.9970760441264223,0.9864569232183276,1.007695165034517,interval contains 1,772
+D,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,primary,0.9941571954518192,0.9829847790876503,1.0053296118159882,interval contains 1,772
+D,rolling,rolling/calm,QRC,TrigFeat,matched reservoir or stand-in,second,0.9900989291149329,0.9793451035126118,1.000852754717254,interval contains 1,772
+D,rolling,rolling/calm,QRC,LSTM,"network, more inputs",primary,1.0168662598107299,0.9887007060559501,1.0450318135655097,interval contains 1,772
+D,rolling,rolling/calm,QRC,LSTM,"network, more inputs",second,1.0097258668462996,0.9779905107378419,1.0414612229547573,interval contains 1,772
+D,rolling,rolling/calm,QRC,GRU,"network, more inputs",primary,1.0205597898130756,0.9978763212917885,1.0432432583343627,interval contains 1,772
+D,rolling,rolling/calm,QRC,GRU,"network, more inputs",second,1.020070812199119,0.994990955610325,1.0451506687879133,interval contains 1,772
+D,rolling,rolling/calm,QRC,HAR,benchmark,primary,1.029892517077204,1.0042734536637428,1.0555115804906652,interval above 1,772
+D,rolling,rolling/calm,QRC,HAR,benchmark,second,1.0392903004385483,1.0127398647179104,1.0658407361591862,interval above 1,772
+D,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,primary,1.009354952644115,0.9795962485340239,1.039113656754206,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,ESN28u,matched reservoir or stand-in,second,1.0145686355612276,0.9929245515042802,1.036212719618175,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,primary,1.0214698503805564,0.9890114890328287,1.0539282117282842,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,ESN28u_t,matched reservoir or stand-in,second,1.024313408031216,1.0000695327120233,1.0485572833504087,interval above 1,1033
+D,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9733140283636741,0.9316831603916104,1.0149448963357377,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,ESNq_t,matched reservoir or stand-in,second,0.9633046247246152,0.9264101162046208,1.0001991332446096,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9505789815071687,0.8993145801493276,1.0018433828650097,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,SAS28_t,matched reservoir or stand-in,second,0.9751804899556761,0.9406906408298638,1.0096703390814885,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,primary,0.9705480204495357,0.9207816223756347,1.0203144185234367,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,ESNb_t,matched reservoir or stand-in,second,0.9902248106889486,0.9431637144345094,1.0372859069433877,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,primary,0.9484083643282109,0.8924656754644646,1.004351053191957,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,SASb_t,matched reservoir or stand-in,second,0.9748004972866986,0.9378162670748462,1.011784727498551,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",primary,0.9469649734528306,0.9190081966172287,0.9749217502884325,interval below 1,1033
+D,rolling,rolling/intermediate,DOM,LSTM1,"network, same single input",second,0.9370934149447449,0.9019211575168067,0.972265672372683,interval below 1,1033
+D,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",primary,0.9575587378774599,0.9165590808454336,0.9985583949094863,interval below 1,1033
+D,rolling,rolling/intermediate,DOM,GRU1,"network, same single input",second,0.9562714958937826,0.9249792336843297,0.9875637581032355,interval below 1,1033
+D,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",primary,0.9713868457266682,0.9451298870848147,0.9976438043685217,interval below 1,1033
+D,rolling,rolling/intermediate,DOM,LSTM,"network, more inputs",second,0.9828657673172562,0.9530921433455218,1.0126393912889906,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",primary,0.9900099515206706,0.9636463539461766,1.0163735490951646,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,GRU,"network, more inputs",second,1.0102757414570314,0.9833193121324121,1.0372321707816505,interval contains 1,1033
+D,rolling,rolling/intermediate,DOM,HAR,benchmark,primary,0.9615801304296782,0.9355703430010114,0.9875899178583449,interval below 1,1033
+D,rolling,rolling/intermediate,DOM,HAR,benchmark,second,0.9725097427001771,0.9484903182399107,0.9965291671604435,interval below 1,1033
+D,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,primary,1.0226863301507478,0.9954964376852763,1.0498762226162195,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,ESN28u,matched reservoir or stand-in,second,1.0341883800176068,1.0080384868110033,1.0603382732242104,interval above 1,1033
+D,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,primary,1.03496123926352,1.0018448439082672,1.0680776346187726,interval above 1,1033
+D,rolling,rolling/intermediate,ISING,ESN28u_t,matched reservoir or stand-in,second,1.0441215970530444,1.013525957127613,1.0747172369784759,interval above 1,1033
+D,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,primary,0.986169383866341,0.9382919509480545,1.0340468167846275,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,ESNq_t,matched reservoir or stand-in,second,0.981933024921799,0.9423475711226738,1.0215184787209242,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9631340566263282,0.9118904030294654,1.014377710223191,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,SAS28_t,matched reservoir or stand-in,second,0.9940385458241127,0.9567697013790618,1.0313073902691634,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9833668430203603,0.9297373334888742,1.0369963525518464,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,ESNb_t,matched reservoir or stand-in,second,1.0093737938716751,0.9611893086895523,1.057558279053798,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,primary,0.9609347703285839,0.9046839068185283,1.0171856338386394,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,SASb_t,matched reservoir or stand-in,second,0.9936512048508418,0.9552983552243064,1.0320040544773772,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",primary,0.9594723154077963,0.935664052112414,0.9832805787031786,interval below 1,1033
+D,rolling,rolling/intermediate,ISING,LSTM1,"network, same single input",second,0.9552149423491489,0.9232679138484821,0.9871619708498158,interval below 1,1033
+D,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",primary,0.9702060003553211,0.9344079635089092,1.006004037201733,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,GRU1,"network, same single input",second,0.9747638893334607,0.9425042414525134,1.0070235372144078,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",primary,0.9842167473499137,0.9580452205998448,1.0103882740999826,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,LSTM,"network, more inputs",second,1.0018724412018876,0.9712349940241211,1.032509888379654,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",primary,1.0030858237541909,0.9748414625417839,1.0313301849665977,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,GRU,"network, more inputs",second,1.0298124698587539,0.9959003779829987,1.063724561734509,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,HAR,benchmark,primary,0.9742805067324387,0.9438379558444131,1.0047230576204642,interval contains 1,1033
+D,rolling,rolling/intermediate,ISING,HAR,benchmark,second,0.9913161516155897,0.9609945912953697,1.0216377119358098,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,primary,1.0765763656548737,1.0082246927556546,1.1449280385540928,interval above 1,1033
+D,rolling,rolling/intermediate,QRC,ESN_s,matched reservoir or stand-in,second,1.0437581822490474,0.9979269030427106,1.0895894614553843,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,primary,0.9984901071373886,0.9845834151879291,1.012396799086848,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,RandFeat,matched reservoir or stand-in,second,1.0027240147742777,0.9927232796829005,1.0127247498656549,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,primary,0.9960805020551916,0.986531721668529,1.0056292824418542,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,TrigFeat,matched reservoir or stand-in,second,0.9989410325013065,0.991604273732102,1.006277791270511,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",primary,1.0132442458972506,0.9916934282498041,1.034795063544697,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,LSTM,"network, more inputs",second,1.0017438292558989,0.978288738464616,1.0251989200471818,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",primary,1.0326698278572293,1.0077139443528054,1.0576257113616532,interval above 1,1033
+D,rolling,rolling/intermediate,QRC,GRU,"network, more inputs",second,1.0296802712072042,1.0073412722770627,1.0520192701373456,interval above 1,1033
+D,rolling,rolling/intermediate,QRC,HAR,benchmark,primary,1.0030149557956387,0.9788009232126578,1.0272289883786196,interval contains 1,1033
+D,rolling,rolling/intermediate,QRC,HAR,benchmark,second,0.9911888947971506,0.9710912813498462,1.0112865082444549,interval contains 1,1033
+D,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,primary,0.9562930280854283,0.9055064321173999,1.0070796240534567,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESN28u,matched reservoir or stand-in,second,0.9675825047013729,0.9320764893369975,1.0030885200657482,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.9651704333448928,0.9160109980614816,1.014329868628304,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESN28u_t,matched reservoir or stand-in,second,0.9855170569030756,0.9534911991316606,1.0175429146744905,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9968509151791073,0.9531064241951903,1.0405954061630243,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESNq_t,matched reservoir or stand-in,second,1.0110207337711934,0.9764292384631896,1.0456122290791972,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9449589334387692,0.8862969236622484,1.00362094321529,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,SAS28_t,matched reservoir or stand-in,second,0.9600439716282894,0.9098255026406895,1.0102624406158893,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,primary,0.984813226960644,0.9420944950881569,1.027531958833131,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,ESNb_t,matched reservoir or stand-in,second,1.0100195161275562,0.9734443216371325,1.04659471061798,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,primary,0.9443772240565368,0.8839516925934414,1.0048027555196322,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,SASb_t,matched reservoir or stand-in,second,0.9593277876181768,0.9064560389774534,1.0121995362589002,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",primary,0.9396840549081784,0.8829667773580422,0.9964013324583146,interval below 1,775
+D,rolling,rolling/turbulent,DOM,LSTM1,"network, same single input",second,0.9437890126214694,0.8844669749468237,1.0031110502961151,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",primary,0.9693684272727374,0.907944583595697,1.0307922709497779,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,GRU1,"network, same single input",second,0.9610571290982,0.9121958125657003,1.0099184456306995,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",primary,0.9900891847645195,0.9501705503659919,1.030007819163047,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,LSTM,"network, more inputs",second,1.0037105159572197,0.9697345421792903,1.037686489735149,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",primary,0.9784933995388357,0.9227160492009345,1.034270749876737,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,GRU,"network, more inputs",second,0.9982430448363481,0.9540341239784984,1.0424519656941977,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,HAR,benchmark,primary,0.9613648296570452,0.8712884978132334,1.051441161500857,interval contains 1,775
+D,rolling,rolling/turbulent,DOM,HAR,benchmark,second,0.9786403930964994,0.9243623839515753,1.0329184022414235,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,primary,0.9507733511709384,0.8837044181665203,1.0178422841753565,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,ESN28u,matched reservoir or stand-in,second,0.9488617104787967,0.9054681251049389,0.9922552958526546,interval below 1,775
+D,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.959599516478388,0.8941302330153524,1.0250687999414236,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9664492648176704,0.9270413212919911,1.0058572083433497,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,primary,0.9910971401100594,0.9271172538071649,1.055077026412954,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,ESNq_t,matched reservoir or stand-in,second,0.9914594963369447,0.9495032705594961,1.0334157221143934,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,primary,0.9395046763681247,0.8792099332332475,0.999799419503002,interval below 1,775
+D,rolling,rolling/turbulent,ISING,SAS28_t,matched reservoir or stand-in,second,0.9414690330053292,0.8913962432078683,0.9915418228027902,interval below 1,775
+D,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9791289328433671,0.9185893101374619,1.0396685555492724,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,ESNb_t,matched reservoir or stand-in,second,0.9904776502604739,0.9506470498539892,1.0303082506669585,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,primary,0.9389263245841951,0.8771869961173137,1.0006656530510765,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,SASb_t,matched reservoir or stand-in,second,0.9407667057293078,0.8885149868616548,0.9930184245969608,interval below 1,775
+D,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",primary,0.9342602441802311,0.8825122931171662,0.9860081952432961,interval below 1,775
+D,rolling,rolling/turbulent,ISING,LSTM1,"network, same single input",second,0.925528575078453,0.8681821195307262,0.9828750306261798,interval below 1,775
+D,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",primary,0.9637732797891623,0.9182571292871777,1.0092894302911468,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,GRU1,"network, same single input",second,0.9424625878962174,0.898521067976534,0.9864041078159008,interval below 1,775
+D,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",primary,0.9843744380750323,0.9235242865420804,1.0452245896079841,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,LSTM,"network, more inputs",second,0.9842907166770849,0.9415572633840077,1.027024169970162,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",primary,0.9728455831585068,0.8961749109594739,1.0495162553575397,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,GRU,"network, more inputs",second,0.978929030232222,0.9274733852027177,1.0303846752617263,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,HAR,benchmark,primary,0.9558158785502027,0.8451595842335144,1.0664721728668909,interval contains 1,775
+D,rolling,rolling/turbulent,ISING,HAR,benchmark,second,0.9597056507587232,0.8950519363325162,1.02435936518493,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,primary,0.943614481111861,0.9009059930166086,0.9863229692071134,interval below 1,775
+D,rolling,rolling/turbulent,QRC,ESN_s,matched reservoir or stand-in,second,0.9410120227086606,0.9017807272502887,0.9802433181670325,interval below 1,775
+D,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,primary,1.0051089240865383,0.99057925084765,1.0196385973254265,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,RandFeat,matched reservoir or stand-in,second,1.0003850231538565,0.9865672711043453,1.0142027752033675,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,primary,1.0106632804874882,0.9806109179824859,1.0407156429924904,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,TrigFeat,matched reservoir or stand-in,second,1.0054540855538374,0.9825312895107159,1.028376881596959,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",primary,0.9910213072275795,0.967154536152019,1.01488807830314,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,LSTM,"network, more inputs",second,0.980747619630497,0.9571033213955951,1.0043919178653988,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",primary,0.9794146051147589,0.9429562560178372,1.0158729542116804,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,GRU,"network, more inputs",second,0.9754052333528364,0.9425912898488829,1.0082191768567899,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,HAR,benchmark,primary,0.9622699094889519,0.8950543161944251,1.0294855027834786,interval contains 1,775
+D,rolling,rolling/turbulent,QRC,HAR,benchmark,second,0.9562510512189892,0.9169454970054283,0.9955566054325502,interval below 1,775
+D,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,primary,0.9579947831031413,0.8831223096868189,1.0328672565194639,interval contains 1,455
+D,heldout,heldout/all,DOM,ESN28u,matched reservoir or stand-in,second,1.0128603287982256,0.9591043098700192,1.066616347726432,interval contains 1,455
+D,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,primary,0.8834082388593474,0.6949913205679314,1.0718251571507633,interval contains 1,455
+D,heldout,heldout/all,DOM,ESN28u_t,matched reservoir or stand-in,second,1.0203159794434449,0.9274451698184785,1.1131867890684113,interval contains 1,455
+D,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,primary,0.9463811871514445,0.8627162927061149,1.030046081596774,interval contains 1,455
+D,heldout,heldout/all,DOM,ESNq_t,matched reservoir or stand-in,second,1.0336785702029292,0.9571505686141156,1.1102065717917429,interval contains 1,455
+D,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,primary,0.9335814186673175,0.8153546822393944,1.0518081550952405,interval contains 1,455
+D,heldout,heldout/all,DOM,SAS28_t,matched reservoir or stand-in,second,1.0549085503342879,0.9516302458452679,1.1581868548233079,interval contains 1,455
+D,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,primary,0.884822003393443,0.7342144267429421,1.0354295800439437,interval contains 1,455
+D,heldout,heldout/all,DOM,ESNb_t,matched reservoir or stand-in,second,1.0114013143669998,0.9128962301120962,1.1099063986219033,interval contains 1,455
+D,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,primary,0.8575563985800154,0.6278586934171213,1.0872541037429095,interval contains 1,455
+D,heldout,heldout/all,DOM,SASb_t,matched reservoir or stand-in,second,1.0317532719252784,0.9121816465144896,1.1513248973360672,interval contains 1,455
+D,heldout,heldout/all,DOM,LSTM1,"network, same single input",primary,0.884507346228402,0.7685213541045022,1.0004933383523018,interval contains 1,455
+D,heldout,heldout/all,DOM,LSTM1,"network, same single input",second,0.8385448063699743,0.6446323193141461,1.0324572934258025,interval contains 1,455
+D,heldout,heldout/all,DOM,GRU1,"network, same single input",primary,0.898751075335721,0.7921639484575538,1.0053382022138881,interval contains 1,455
+D,heldout,heldout/all,DOM,GRU1,"network, same single input",second,0.8666090593426958,0.703476448116358,1.0297416705690337,interval contains 1,455
+D,heldout,heldout/all,DOM,LSTM,"network, more inputs",primary,1.0095260199560112,0.9455207859686677,1.0735312539433548,interval contains 1,455
+D,heldout,heldout/all,DOM,LSTM,"network, more inputs",second,0.9160873693177021,0.8008647963439798,1.0313099422914243,interval contains 1,455
+D,heldout,heldout/all,DOM,GRU,"network, more inputs",primary,1.0008706452904312,0.9482536575163569,1.0534876330645055,interval contains 1,455
+D,heldout,heldout/all,DOM,GRU,"network, more inputs",second,0.8999133747773519,0.7675763955921134,1.0322503539625905,interval contains 1,455
+D,heldout,heldout/all,DOM,HAR,benchmark,primary,1.0432942469630389,0.9068181210169626,1.1797703729091151,interval contains 1,455
+D,heldout,heldout/all,DOM,HAR,benchmark,second,0.941221435975349,0.8517191592621832,1.030723712688515,interval contains 1,455
+D,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,primary,1.0352252935739141,0.9489768506636652,1.121473736484163,interval contains 1,455
+D,heldout,heldout/all,ISING,ESN28u,matched reservoir or stand-in,second,0.9857029917426178,0.9536420136415413,1.0177639698436942,interval contains 1,455
+D,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,primary,0.9546258179574251,0.8935833269220272,1.015668308992823,interval contains 1,455
+D,heldout,heldout/all,ISING,ESN28u_t,matched reservoir or stand-in,second,0.9929587376114486,0.9596121082493729,1.0263053669735243,interval contains 1,455
+D,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,primary,1.0226754462359149,0.947960549644087,1.0973903428277427,interval contains 1,455
+D,heldout,heldout/all,ISING,ESNq_t,matched reservoir or stand-in,second,1.005963043649068,0.9660405568060536,1.0458855304920827,interval contains 1,455
+D,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,primary,1.0088438008863057,0.9583159246775901,1.0593716770950212,interval contains 1,455
+D,heldout,heldout/all,ISING,SAS28_t,matched reservoir or stand-in,second,1.0266237945296421,0.982025947455286,1.0712216416039981,interval contains 1,455
+D,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,primary,0.9561535557182851,0.9144610465172912,0.997846064919279,interval below 1,455
+D,heldout,heldout/all,ISING,ESNb_t,matched reservoir or stand-in,second,0.9842830971639039,0.9416473469687265,1.0269188473590813,interval contains 1,455
+D,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,primary,0.9266898840519103,0.8247431812159115,1.028636586887909,interval contains 1,455
+D,heldout,heldout/all,ISING,SASb_t,matched reservoir or stand-in,second,1.0040893674685338,0.9506781842851452,1.0575005506519224,interval contains 1,455
+D,heldout,heldout/all,ISING,LSTM1,"network, same single input",primary,0.9558135318874668,0.8644907926169274,1.0471362711580061,interval contains 1,455
+D,heldout,heldout/all,ISING,LSTM1,"network, same single input",second,0.8160613076136958,0.5967496058741734,1.035373009353218,interval contains 1,455
+D,heldout,heldout/all,ISING,GRU1,"network, same single input",primary,0.9712055454002627,0.889071258629997,1.0533398321705283,interval contains 1,455
+D,heldout,heldout/all,ISING,GRU1,"network, same single input",second,0.843373087263567,0.6556328287454339,1.0311133457816999,interval contains 1,455
+D,heldout,heldout/all,ISING,LSTM,"network, more inputs",primary,1.0909108158128131,0.87828114534606,1.3035404862795663,interval contains 1,455
+D,heldout,heldout/all,ISING,LSTM,"network, more inputs",second,0.8915247591002946,0.7260037371532788,1.0570457810473104,interval contains 1,455
+D,heldout,heldout/all,ISING,GRU,"network, more inputs",primary,1.081557672207852,0.8826265909850444,1.2804887534306595,interval contains 1,455
+D,heldout,heldout/all,ISING,GRU,"network, more inputs",second,0.8757844300997815,0.6967412704360287,1.0548275897635342,interval contains 1,455
+D,heldout,heldout/all,ISING,HAR,benchmark,primary,1.12740133051435,0.8307828968666839,1.424019764162016,interval contains 1,455
+D,heldout,heldout/all,ISING,HAR,benchmark,second,0.9159849181120475,0.7629627572994568,1.0690070789246382,interval contains 1,455
+D,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,primary,1.0124302966655732,0.9678472345488001,1.0570133587823463,interval contains 1,455
+D,heldout,heldout/all,QRC,ESN_s,matched reservoir or stand-in,second,1.0554997755637607,0.9896742093227677,1.1213253418047537,interval contains 1,455
+D,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,primary,0.8985580902322563,0.7463414688023655,1.050774711662147,interval contains 1,455
+D,heldout,heldout/all,QRC,RandFeat,matched reservoir or stand-in,second,0.6543974686904872,0.13247680575937193,1.1763181316216025,interval contains 1,455
+D,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,primary,1.019748048746198,0.9932552706897767,1.0462408268026195,interval contains 1,455
+D,heldout,heldout/all,QRC,TrigFeat,matched reservoir or stand-in,second,1.0113023811638433,0.9830538549299996,1.039550907397687,interval contains 1,455
+D,heldout,heldout/all,QRC,LSTM,"network, more inputs",primary,1.0465334027517872,1.0051798667689855,1.0878869387345889,interval above 1,455
+D,heldout,heldout/all,QRC,LSTM,"network, more inputs",second,1.0150778377946241,0.913754155914295,1.1164015196749533,interval contains 1,455
+D,heldout,heldout/all,QRC,GRU,"network, more inputs",primary,1.0375607378359728,0.9958509268911282,1.0792705487808174,interval contains 1,455
+D,heldout,heldout/all,QRC,GRU,"network, more inputs",second,0.9971561155262028,0.880668354816108,1.1136438762362975,interval contains 1,455
+D,heldout,heldout/all,QRC,HAR,benchmark,primary,1.0815395113770006,0.9860706426594655,1.1770083800945357,interval contains 1,455
+D,heldout,heldout/all,QRC,HAR,benchmark,second,1.0429278386704492,0.9961959313790875,1.0896597459618111,interval contains 1,455

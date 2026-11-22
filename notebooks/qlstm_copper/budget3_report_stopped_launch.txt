@@ -1,0 +1,20 @@
+CL_F refs (best, worst by validation): ('LGBM_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 3s
+GC_F refs (best, worst by validation): ('GARCH11_t', 'KAN_ctrl_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 3s
+HG_F refs (best, worst by validation): ('GARCH11_t', 'KAN_ctrl_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 4s
+HO_F refs (best, worst by validation): ('MLP_ctrl_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 4s
+NG_F refs (best, worst by validation): ('RBF_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 4s
+PA_F refs (best, worst by validation): ('RBF_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 5s
+PL_F refs (best, worst by validation): ('GARCH11_t', 'KAN_ctrl_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 5s
+/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/notebooks/qlstm_copper/budget3_lib.py:31: RuntimeWarning: overflow encountered in square
+  return {"QLIKE": np.exp(e) - e - 1, "MSE": e ** 2, "MAE": np.abs(e)}[kind]
+SI_F refs (best, worst by validation): ('RBF_q', 'KAN_ctrl_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 5s
+ZC_F refs (best, worst by validation): ('RBF_q', 'ESN_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 6s
+/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/notebooks/qlstm_copper/budget3_lib.py:31: RuntimeWarning: overflow encountered in square
+  return {"QLIKE": np.exp(e) - e - 1, "MSE": e ** 2, "MAE": np.abs(e)}[kind]
+ZS_F refs (best, worst by validation): ('RBF_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 6s
+ZW_F refs (best, worst by validation): ('LGBM_q', 'RandFeat_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 6s
+/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/notebooks/qlstm_copper/budget3_lib.py:73: RuntimeWarning: invalid value encountered in scalar divide
+  c = np.ones(len(qa), bool) if w is None else np.isin(T["qm"], w); vals.append(np.log(qa[c].sum() / ra[c].sum()))
+/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/notebooks/qlstm_copper/budget3_lib.py:73: RuntimeWarning: divide by zero encountered in log
+  c = np.ones(len(qa), bool) if w is None else np.isin(T["qm"], w); vals.append(np.log(qa[c].sum() / ra[c].sum()))
+null 0 14s

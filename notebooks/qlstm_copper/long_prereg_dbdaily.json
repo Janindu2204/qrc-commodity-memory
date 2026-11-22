@@ -1,0 +1,43 @@
+{
+  "written_on": "2026-11-08",
+  "status": "REGISTERED 2026-11-08: frozen BEFORE any block of this design was run. Hashes of this file and the scripts are in long_prereg_dbdaily.sha256. Any later change must be a dated addendum, not an edit.",
+  "extends": "long_prereg_qrc.json and long_prereg_mvtrig.json (Yahoo-based daily target). Same models, grids, tuning protocol, readout, calibration, statistics and verdict words; only the DATA and the block years change.",
+  "motivation": "PROGRESS/20 found the Yahoo range-variance 5-day target correlates only 0.76 (vs Databento range) and 0.70 (vs Databento hourly realised variance) while the two Databento measures correlate 0.92. This run repeats the central comparison on Databento-derived targets, so the headline result does not rest on the noisier proxy.",
+  "data": {
+    "source": "data/databento/HG_v0_ohlcv-1h_2010-06-07_2026-10-17.csv (HG.v.0 hourly bars). db_build.py aggregates by CME trade date (timestamp in America/New_York plus 6 hours), drops days with fewer than 6 hourly bars and weekends, ends 2026-10-09.",
+    "target_range": "PRIMARY. Daily high/low = max/min of the hourly highs/lows; range-variance estimator and 5-day forward log mean target exactly as long_core.prepare (range_m version).",
+    "target_rv": "SECONDARY. Daily realised variance = sum of squared hourly log returns (no returns across gaps over 3 hours); the same estimator code runs on it through synthesised high/low whose range-variance equals the realised variance.",
+    "blocks": "Ten one-year test blocks 2015-2024 (expanding window from 2010-06-07, validation = 2 years before, purge 5 rows; 2015 block trains on 646 rows). Earlier years are impossible: Databento hourly starts 2010-06, so there is no 2008-2009 block and the 2008-2014 Yahoo blocks cannot be reproduced. 2025-26 not scored.",
+    "regimes": "Tertiles of each block's own annualised range volatility on the Databento range data: top 3 turbulent, middle 4 intermediate, bottom 3 calm (ties to the earlier year). The same labels are used for the Yahoo comparison on the same years.",
+    "inputs": "Univariate, exactly as qrc_roll.py (today and previous day of standardised lvR1, lvR5, lvR22). No outside inputs."
+  },
+  "models": "HARq, EWMA (tuned on 5 decay values on validation), QRC_angle, QRC_noent, ESN, RandFeat, TrigFeat. 12 configurations each for the five reservoir models, tuned on the validation window only (tuning seeds 100-102), refit with 10 final seeds; grids and readout as in long_prereg_qrc.json and long_prereg_mvtrig.json part B. NOT run here: GARCH, LSTM, QLSTMT, multivariate models, noise, selection audit.",
+  "comparisons": {
+    "primary_holm_per_stratum": ["QRC_angle vs ESN", "QRC_angle vs QRC_noent", "QRC_angle vs RandFeat", "QRC_angle vs TrigFeat", "QRC_angle vs HARq"],
+    "secondary_own_holm": ["QRC_angle vs EWMA", "ESN vs HARq", "TrigFeat vs HARq", "EWMA vs HARq"],
+    "agreement_with_yahoo": "The same comparisons are computed from the stored Yahoo-run outputs on the SAME test years 2015-2024 (QRC_angle, QRC_noent, ESN, RandFeat from the roll run; TrigFeat from the mvtrig run; HARq and EWMA from the rolling run), pooled with the same statistics, and printed side by side. Descriptive: ratios and verdict words."
+  },
+  "decision_rules": {
+    "quantum_edge": "As long_prereg_qrc.json: an edge is claimed only if QRC_angle vs ESN has its whole 95% interval below 1 with Holm p below 0.05 AND QRC_angle vs QRC_noent favours entanglement AND QRC_angle vs TrigFeat is not worse AND it holds in the turbulent stratum. Evaluated on the PRIMARY (range) target; the rv target is a robustness check.",
+    "agreement": "The Yahoo result is called ROBUST to the data source if, for the primary comparisons pooled over all ten blocks, the Databento verdict word equals the Yahoo verdict word for at least four of the five primary comparisons and no comparison flips between 'better' and 'worse'. Otherwise it is called SENSITIVE to the data source and the Databento result is the one reported as the headline.",
+    "mechanism": "The trigonometric-feature hypothesis (long_prereg_mvtrig.json part B) is supported on this data if TrigFeat vs QRC_angle (reported here as QRC_angle vs TrigFeat) pooled has its interval inside +/-3% or favours TrigFeat."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. The student said 'draft and run do not wait'. Left null and not filled in on the student's behalf."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {
+      "written_on": "2026-11-08",
+      "text": "No quantum edge on either target. The Databento target is less noisy, so intervals narrow slightly and the HARq reference becomes harder to beat; ESN, TrigFeat and QRC stay within a few percent of each other. I expect verdict words to agree with Yahoo for most primary comparisons, with some flips between 'inconclusive' and 'equivalent'/'worse' because there are only ten blocks and fewer rows."
+    }
+  },
+  "known_limits": [
+    "Not blind: results on the Yahoo target were seen before designing this run.",
+    "Ten blocks and about 2,500 test rows, three blocks per tertile: wider intervals than the 17-block run, and 2008-2014 (including the 2008-09 crisis) are not covered.",
+    "Databento is not ground truth. It is internally more consistent (daily range vs hourly RV correlation 0.83 and 0.92 over 5-day targets), but HG.v.0 is a volume-rolled continuous contract whose roll days may carry spread jumps; roll handling is not changed here. Daily bars use a 23-hour session; the Yahoo bars use an unknown session definition.",
+    "The rv target is built with a synthesised high/low trick so the same code runs; the estimator therefore equals realised variance exactly, with no range-estimator error.",
+    "Yahoo comparison uses outputs produced earlier on different rows (Yahoo calendar days); pooled ratios are comparable in direction and size, not row-for-row.",
+    "Small tuning budget (12 configs), exact simulation of 6 qubits, 10 seeds, AI-written code not independently re-derived by the student."
+  ],
+  "cost_estimate": "Estimate, not measurement: 20 blocks (2 targets x 10 years), about 3 minutes in parallel.",
+  "stop_rule": "One run of the registered design (both targets), report and stop. No new models, years, targets or grids after results. A crashed block is re-run unchanged.",
+  "outputs": "long_preds_qrc/dbdaily/<target>/<year>/*.npz; qrc_dbdaily_configs.csv; db_report_range.txt, db_report_rv.txt (+ .csv)."
+}

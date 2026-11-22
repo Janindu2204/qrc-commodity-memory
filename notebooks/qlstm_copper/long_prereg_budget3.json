@@ -1,0 +1,21 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any budget3 number was computed (only a timing check on HG_F, no values printed). Hashes in long_prereg_budget3.sha256.",
+  "approval": "Student's words after the Stage 4 draft gate: 'we need to do better' and 'I cannot go with 70% we need to come to at least 80%'. Fixes 2 (typical researcher) and 3 (second dataset) of the Stage 4 list.",
+  "why": "Reviewer weaknesses 2 and 3 in PROGRESS/27 Stage 4: the budget assumes a researcher who always picks the best option, and it uses one asset and one quantum family.",
+  "design": "budget3_lib.py docstring. Part A: 11 commodity futures (Yahoo hourly, test 2025-05-01 to 2026-10-08), saved v2 forecasts of six quantum models (QLSTMT with 10 seeds, QRCangle, Ising, QKernel, QKernelPS, QKAN) and ten classical models; six factors SEED, WINDOW (calendar quarters with >= 500 rows), ASSET, LOSS (QLIKE control), QMODEL (QLSTMT control), REF (validation-best vs validation-worst classical); 64 protocols with 'best' and 'typical' statistics; Shapley on 'best'; month-block null B = 1000. Part B: copper typical statistic with budget_lib tables unchanged.",
+  "data_note": "These v2 forecasts were made and scored in October 2026 (memory: hourly multi-commodity results); their headline results were seen before this registration. Only the budget statistics are new.",
+  "decision_rules": {
+    "replication": "Part A REPLICATES the copper budget if (a) the all-five-selection 'best' apparent advantage exceeds 5% AND (b) LOSS or WINDOW is among the two factors with the largest positive contribution (most negative Shapley value of the log ratio). Otherwise DOES NOT REPLICATE. The paper reports either outcome.",
+    "null": "As long_prereg_budget2.json: per selection pitfall, 'beyond chance' if the observed gain over control exceeds the null 95th percentile.",
+    "typical": "Reported for both datasets: the apparent advantage when each open option is chosen at random. The paper states the typical value next to the best value for every protocol it reports."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "Control: QLSTMT 3-10% worse than the validation-best classical model. ALL5 best apparent advantage 15-30% (more options: 11 assets, 6 quantum models), so REPLICATES; QMODEL and ASSET large; typical values near the control (within 2 points) on both datasets."}
+  },
+  "known_limits": ["Different target, data source and period from copper; only 17 months of test data (6 quarters).", "Forecasts already seen in earlier exploratory work.", "Weak reference defined as the validation-worst classical model, which may be very weak.", "Overlapping 24-bar targets."],
+  "cost_estimate": "Under 15 minutes.",
+  "stop_rule": "One run, report, stop.",
+  "outputs": "budget_out/budget3.json; budget3_report.txt"
+}

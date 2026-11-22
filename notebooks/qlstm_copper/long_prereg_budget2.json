@@ -1,0 +1,15 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE this null was computed. Hashes in long_prereg_budget2.sha256.",
+  "approval": "Fix B, proposed in chat 2026-11-18; student's words: 'go for it'.",
+  "why": "long_prereg_budget_addendum_2026-11-18.md: the registered week-swap null was too narrow (it averages out the models' real year-to-year differences) and the registered single-pitfall rule compared levels, not gains.",
+  "design": "budget2_run.py with budget_lib.py unchanged: whole test years (2014-2025) swapped between the quantum model and its reference with probability 1/2, flips shared across grids; B = 1000 (seeds 43000+b); protocols: control, SEED, WINDOW, GRID, LOSS, QMODEL (each alone, REF control), ALL5. Statistic: gain = log ratio(control) - log ratio(protocol), in the same replicate.",
+  "decision_rule": "Per protocol: 'beyond chance' if the observed gain exceeds the null 95th percentile of the gain, else 'within chance'. The share of null gains >= observed is reported as a one-sided p-value.",
+  "known_limits": ["Only 12 test years, so 4096 possible flips; 1000 random draws.", "The null assumes yearly log ratios are symmetric around zero under no true difference.", "Designed after seeing the week-swap result."],
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "Wider null than the week swap. WINDOW and LOSS gains within chance; SEED and QMODEL tiny and within; GRID borderline; ALL5 within chance."}
+  },
+  "stop_rule": "One run, report, stop.",
+  "outputs": "budget_out/null_year.json; budget2_report.txt"
+}

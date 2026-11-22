@@ -1,0 +1,20 @@
+tables 59s
+replicate 0 59s
+replicate 100 63s
+replicate 200 68s
+replicate 300 72s
+replicate 400 77s
+replicate 500 81s
+replicate 600 87s
+replicate 700 91s
+replicate 800 95s
+replicate 900 98s
+
+== year-block sign-flip null (B = 1000): gain a pitfall adds over the control, in log points ==
+  SEED   observed gain   0.11  null median   0.01  null 95th   0.07  share of null >= observed 0.005  -> beyond chance
+  WINDOW observed gain   3.09  null median   5.66  null 95th   7.26  share of null >= observed 0.997  -> within chance
+  GRID   observed gain   1.15  null median   0.74  null 95th   1.74  share of null >= observed 0.208  -> within chance
+  LOSS   observed gain   4.80  null median   3.10  null 95th   4.14  share of null >= observed 0.002  -> beyond chance
+  QMODEL observed gain   0.18  null median   0.02  null 95th   0.16  share of null >= observed 0.016  -> beyond chance
+  ALL5   observed gain  25.54  null median  20.96  null 95th  23.70  share of null >= observed 0.001  -> beyond chance
+  null control ratio median 1.0001 (observed control 1.0349)

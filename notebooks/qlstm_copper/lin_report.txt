@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/notebooks/qlstm_copper/lin_report.py", line 37, in <module>
+    L = np.load(HERE / "long_preds_lin" / g / f"{Y}.npz"); y = L["y"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/janindu/Dev/FYP/IMPLEMENTATION/FYP-copper-qml/notebooks/qlstm_copper/long_preds_lin/H/2013.npz'

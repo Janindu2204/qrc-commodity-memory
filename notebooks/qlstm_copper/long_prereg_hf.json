@@ -1,0 +1,40 @@
+{
+  "written_on": "2026-11-08",
+  "status": "REGISTERED 2026-11-08: frozen BEFORE any block of this design was scored. Hashes of this file and of hf_build.py, hf_run.py, hf_report.py, hf_jobs.txt, run_hf.sh are in long_prereg_hf.sha256. Any later change must be a dated addendum, not an edit.",
+  "question": "Does a higher sampling frequency (hourly and 15-minute bars of Databento copper, 16 years) give an exact 8-qubit quantum reservoir an edge over matched classical reservoirs and over the HAR + hour-of-day benchmark, including the new cosine-feature (trigonometric) control, across rolling one-year blocks 2013-2025?",
+  "motivation": "The daily studies leave open whether the null result is a small-sample problem. Databento gives about 97,700 hourly and 386,000 fifteen-minute bins. Earlier hourly Databento work (protocols v1-v7) covered 2020-2026 with a single 2026 test year and a 2-4 year training span, and did not include the cosine control or regime-stratified rolling blocks. This registration closes those three gaps (cosine control; rolling blocks over 2013-2025 with regimes; a finer grid than hourly).",
+  "not_done_and_why": "Multi-asset hourly: not possible. Databento hourly/minute data exist for copper only; the other commodities have only about 730 days of hourly Yahoo data. 1-minute bins are not forecast directly: the finest grid is 15 minutes, built from 1-minute bars (the 1-minute file is 5.3 million bars; 1-minute targets have mostly zero or one tick per bin and are dominated by microstructure noise). Pre-2013 blocks are not run (data start 2010-06-07; blocks need a validation year and at least one year of training).",
+  "data": {"file": "data/databento/HG_v0_ohlcv-1m_2010-06-07_2026-10-17.csv (licensed Databento; not redistributed)", "built_by": "hf_build.py -> data/hf/H.npz (60-minute bins) and data/hf/M.npz (15-minute bins)", "check_done_before_registration": "The 60-minute bins built from the 1-minute file number 97,709, equal to the number of rows of the Databento hourly file. No model has been scored.", "bins": "ret = log close change to the previous bin if adjacent (or across the routine daily break), same contract; lrv = ln sum of squared 1-minute log changes inside the bin; lvol = ln(1+volume); hour-of-day sin/cos. Target bin needs rv>0 and at least 5 (hourly) or 3 (15-minute) 1-minute bars.", "2026": "Not scored (reserved)."},
+  "task": "One-step-ahead: ln realised variance of the NEXT bin from the last 10 bins (inputs ret, lrv, lvol, sin and cos of hour-of-day).",
+  "blocks": "Test year Y in 2013..2025 (13 blocks) on each grid. Validation = year Y-1. Training = years Y-4..Y-2 (rolling three years; data start 2010-06-07 so early blocks have less). 24 hours purged between training end and validation start, and between validation end and test start. Regimes: tertiles of mean ln RV in the test year (4 calm, 5 intermediate, 4 turbulent).",
+  "models": {
+    "benchmark": "HAR + hour-of-day: OLS on train of next-bin ln RV on [1, lrv_t, mean of last 10 lrv, mean of last 24 (H) or 96 (M) lrv, mean of last 120 (H) or 480 (M) lrv, 23 hour-of-day dummies].",
+    "reservoir_add_ons": "Each model below is a ridge readout (lambda in {1e-2,1e-1,1,10,100,1000} chosen on validation) on 36 features fitted to the residual of the benchmark and added back; forecasts averaged over 10 seeds. NO hyperparameter tuning (circuit/ESN settings fixed as in hourly_databento_qrc.py).",
+    "QRC": "8 qubits, exact statevector, RY(arctan z) angle encoding of 8 standardised inputs [ret_t, lrv_t, lvol_t, hs_t, hc_t, ret_t-1, lrv_t-1, lvol_t-1], 2 layers of random RX/RY/RZ plus CZ ring, features 8 Z + 28 ZZ = 36.",
+    "QRC_noent": "same without the CZ layer.",
+    "RandFeat": "36 random tanh features of the same 8 inputs.",
+    "ESN": "36-unit leaky echo state network over all 10 steps x 5 channels.",
+    "TrigFeat": "NEW control: 8 single cosines cos(theta_i + phi_i) and 28 pair cosines cos(theta_i + s_ij theta_j + phi_ij), theta = arctan(z), frequency 1, random phases and signs per seed (the trigonometric structure that angle-encoded circuits generate; same as the daily TrigFeat but on these 8 inputs)."
+  },
+  "statistics": "Per-row squared error, pooled over the 13 blocks; ratio of mean squared errors with a Diebold-Mariano HAC interval (lag 24 hourly, 96 for 15-minute); equivalence band +/-3%; Holm within each family and stratum. Families: A = each model vs the benchmark (5 tests); B = QRC vs QRC_noent, RandFeat, ESN, TrigFeat (4 tests). Strata: all, calm, intermediate, turbulent. Per-year ratios are descriptive.",
+  "decision_rules": {
+    "quantum_edge": "On a grid, a quantum edge is claimed only if QRC beats RandFeat, ESN and TrigFeat AND the benchmark pooled over all 13 blocks (whole 95% interval below 1, Holm p<0.05 for each), AND QRC is below 1 against all four in the turbulent stratum. Evaluated separately for H and M; the program hf_report.py prints the result.",
+    "trigonometric_mechanism": "Supported on a grid if QRC vs TrigFeat pooled is 'equivalent' (interval inside +/-3%) or TrigFeat is better.",
+    "frequency_effect": "Descriptive only: whether QRC vs controls ratios move from H to M. No test and no claim of a trend from two points.",
+    "otherwise": "No quantum edge shown at that frequency."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. The student said 'run all 3' without a prediction for this design (earlier prediction on related work: no significant advantage). Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-08", "text": "No quantum edge on either grid. QRC vs TrigFeat equivalent or inconclusive; QRC and all reservoirs within about 3% of the benchmark pooled, with the 15-minute grid giving narrower intervals; no clear improvement from H to M. The data volume reduces uncertainty but does not create an edge."}
+  },
+  "known_limits": [
+    "Not blind: the earlier hourly and daily results (ties, no edge) were seen before designing this run.",
+    "One asset (copper) only; the blocks overlap in training data; 4 turbulent blocks.",
+    "Exact simulation of 8 qubits; no shots or device noise. No hyperparameter tuning, so a tuned model might do better; this is the same for quantum and classical models.",
+    "Target is the next bin's realised variance from 1-minute bars; microstructure noise is larger at 15 minutes than at 60 minutes. Errors are strongly autocorrelated, so HAC intervals depend on the lag choice.",
+    "Training rows differ from the 2020-2026 v3-v7 design, so absolute ratios are not comparable with those.",
+    "AI-written code, not independently re-derived by the student. Licensed data are not committed."
+  ],
+  "stop_rule": "One run of 26 blocks (13 per grid), report and stop. No new models, grids, seeds or hyperparameters after seeing results. A crashed block is re-run unchanged. 2026 is not scored.",
+  "outputs": "long_preds_hf/{H,M}/<year>.npz; hf_report.txt, hf_report_pooled.csv, hf_report_blocks.csv"
+}

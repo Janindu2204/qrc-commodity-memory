@@ -1,0 +1,7 @@
+dom_run.py F 2026
+dom_run.py M 2026
+dom_run.py H 2026
+dom_daily.py 2025
+dom_daily.py 2026
+dom_dbheldout.py range 2025
+dom_dbheldout.py range 2026

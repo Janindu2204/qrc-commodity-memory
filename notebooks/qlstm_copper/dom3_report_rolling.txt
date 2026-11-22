@@ -1,0 +1,404 @@
+ratio < 1 favours the first model. H, M, F: mean squared error of ln RV; D: QLIKE.
+grid      stratum                      family   model      ref  ratio  ci_lo  ci_hi  p_holm      verdict                 category      n
+   H          all                 M mechanism     DOM   ESNq_t 0.9993 0.9973 1.0014  0.5199   equivalent no detectable difference  67567
+   H          all                 M mechanism     DOM  SAS28_t 1.0066 1.0043 1.0088  0.0000   equivalent         detectably worse  67567
+   H          all                 M mechanism   ISING   ESNq_t 0.9944 0.9922 0.9966  0.0000   equivalent   detectable, below band  67567
+   H          all                 M mechanism   ISING  SAS28_t 1.0016 0.9995 1.0037  0.2691   equivalent no detectable difference  67567
+   H          all   T quantum vs classical ML     DOM     LSTM 1.0236 1.0202 1.0271  0.0000   equivalent         detectably worse  67567
+   H          all   T quantum vs classical ML     DOM      GRU 1.0222 1.0188 1.0255  0.0000   equivalent         detectably worse  67567
+   H          all   T quantum vs classical ML   ISING     LSTM 1.0186 1.0151 1.0221  0.0000   equivalent         detectably worse  67567
+   H          all   T quantum vs classical ML   ISING      GRU 1.0171 1.0138 1.0205  0.0000   equivalent         detectably worse  67567
+   H          all   T quantum vs classical ML     QRC     LSTM 1.0230 1.0195 1.0266  0.0000   equivalent         detectably worse  67567
+   H          all   T quantum vs classical ML     QRC      GRU 1.0216 1.0181 1.0250  0.0000   equivalent         detectably worse  67567
+   H          all L classical ML vs benchmark    LSTM      HAR 0.9671 0.9627 0.9715  0.0000       better   detectable, below band  67567
+   H          all L classical ML vs benchmark     GRU      HAR 0.9685 0.9642 0.9728  0.0000       better   detectable, below band  67567
+   H          all L classical ML vs benchmark    LSTM      GRU 0.9986 0.9967 1.0005  0.1374   equivalent no detectable difference  67567
+   H          all               C descriptive  ESNq_t ESN28u_t 1.0023 0.9993 1.0053  0.2614   equivalent                           67567
+   H          all               C descriptive SAS28_t ESN28u_t 0.9951 0.9916 0.9985  0.0213   equivalent                           67567
+   H          all               C descriptive  ESNq_t      HAR 0.9906 0.9878 0.9934  0.0000   equivalent                           67567
+   H          all               C descriptive SAS28_t      HAR 0.9835 0.9802 0.9868  0.0000   equivalent                           67567
+   H          all               C descriptive    LSTM ESN28u_t 0.9785 0.9745 0.9826  0.0000   equivalent                           67567
+   H          all               C descriptive     GRU ESN28u_t 0.9799 0.9760 0.9838  0.0000   equivalent                           67567
+   H          all               C descriptive     DOM ESN28u_t 1.0016 0.9988 1.0045  0.2671   equivalent                           67567
+   H          all               C descriptive   ISING ESN28u_t 0.9967 0.9936 0.9998  0.1057   equivalent                           67567
+   H         calm                 M mechanism     DOM   ESNq_t 0.9996 0.9953 1.0039  0.8502   equivalent no detectable difference  20774
+   H         calm                 M mechanism     DOM  SAS28_t 1.0103 1.0060 1.0145  0.0000   equivalent         detectably worse  20774
+   H         calm                 M mechanism   ISING   ESNq_t 0.9919 0.9874 0.9964  0.0012   equivalent   detectable, below band  20774
+   H         calm                 M mechanism   ISING  SAS28_t 1.0025 0.9988 1.0062  0.3699   equivalent no detectable difference  20774
+   H         calm   T quantum vs classical ML     DOM     LSTM 1.0419 1.0353 1.0486  0.0000        worse         detectably worse  20774
+   H         calm   T quantum vs classical ML     DOM      GRU 1.0336 1.0281 1.0391  0.0000        worse         detectably worse  20774
+   H         calm   T quantum vs classical ML   ISING     LSTM 1.0339 1.0271 1.0407  0.0000        worse         detectably worse  20774
+   H         calm   T quantum vs classical ML   ISING      GRU 1.0257 1.0200 1.0313  0.0000        worse         detectably worse  20774
+   H         calm   T quantum vs classical ML     QRC     LSTM 1.0340 1.0271 1.0410  0.0000        worse         detectably worse  20774
+   H         calm   T quantum vs classical ML     QRC      GRU 1.0258 1.0203 1.0313  0.0000        worse         detectably worse  20774
+   H         calm L classical ML vs benchmark    LSTM      HAR 0.9531 0.9453 0.9610  0.0000       better          meaningful edge  20774
+   H         calm L classical ML vs benchmark     GRU      HAR 0.9608 0.9541 0.9675  0.0000       better          meaningful edge  20774
+   H         calm L classical ML vs benchmark    LSTM      GRU 0.9920 0.9887 0.9953  0.0000   equivalent   detectable, below band  20774
+   H         calm               C descriptive  ESNq_t ESN28u_t 1.0091 1.0033 1.0148  0.0078   equivalent                           20774
+   H         calm               C descriptive SAS28_t ESN28u_t 0.9984 0.9927 1.0041  1.0000   equivalent                           20774
+   H         calm               C descriptive  ESNq_t      HAR 0.9935 0.9881 0.9989  0.0529   equivalent                           20774
+   H         calm               C descriptive SAS28_t      HAR 0.9830 0.9779 0.9881  0.0000   equivalent                           20774
+   H         calm               C descriptive    LSTM ESN28u_t 0.9681 0.9613 0.9749  0.0000       better                           20774
+   H         calm               C descriptive     GRU ESN28u_t 0.9758 0.9701 0.9816  0.0000   equivalent                           20774
+   H         calm               C descriptive     DOM ESN28u_t 1.0087 1.0038 1.0135  0.0022   equivalent                           20774
+   H         calm               C descriptive   ISING ESN28u_t 1.0009 0.9956 1.0063  1.0000   equivalent                           20774
+   H intermediate                 M mechanism     DOM   ESNq_t 1.0013 0.9989 1.0037  0.5758   equivalent no detectable difference  25852
+   H intermediate                 M mechanism     DOM  SAS28_t 1.0041 1.0018 1.0065  0.0020   equivalent         detectably worse  25852
+   H intermediate                 M mechanism   ISING   ESNq_t 1.0001 0.9975 1.0028  0.9203   equivalent no detectable difference  25852
+   H intermediate                 M mechanism   ISING  SAS28_t 1.0030 0.9999 1.0060  0.1786   equivalent no detectable difference  25852
+   H intermediate   T quantum vs classical ML     DOM     LSTM 1.0079 1.0039 1.0120  0.0003   equivalent         detectably worse  25852
+   H intermediate   T quantum vs classical ML     DOM      GRU 1.0109 1.0067 1.0151  0.0000   equivalent         detectably worse  25852
+   H intermediate   T quantum vs classical ML   ISING     LSTM 1.0068 1.0024 1.0112  0.0026   equivalent         detectably worse  25852
+   H intermediate   T quantum vs classical ML   ISING      GRU 1.0097 1.0052 1.0143  0.0001   equivalent         detectably worse  25852
+   H intermediate   T quantum vs classical ML     QRC     LSTM 1.0091 1.0053 1.0129  0.0000   equivalent         detectably worse  25852
+   H intermediate   T quantum vs classical ML     QRC      GRU 1.0121 1.0080 1.0162  0.0000   equivalent         detectably worse  25852
+   H intermediate L classical ML vs benchmark    LSTM      HAR 0.9836 0.9786 0.9886  0.0000   equivalent   detectable, below band  25852
+   H intermediate L classical ML vs benchmark     GRU      HAR 0.9807 0.9754 0.9860  0.0000   equivalent   detectable, below band  25852
+   H intermediate L classical ML vs benchmark    LSTM      GRU 1.0030 1.0001 1.0058  0.0408   equivalent         detectably worse  25852
+   H intermediate               C descriptive  ESNq_t ESN28u_t 0.9967 0.9921 1.0012  0.4607   equivalent                           25852
+   H intermediate               C descriptive SAS28_t ESN28u_t 0.9939 0.9888 0.9989  0.0709   equivalent                           25852
+   H intermediate               C descriptive  ESNq_t      HAR 0.9901 0.9853 0.9949  0.0003   equivalent                           25852
+   H intermediate               C descriptive SAS28_t      HAR 0.9873 0.9821 0.9925  0.0000   equivalent                           25852
+   H intermediate               C descriptive    LSTM ESN28u_t 0.9901 0.9851 0.9951  0.0005   equivalent                           25852
+   H intermediate               C descriptive     GRU ESN28u_t 0.9872 0.9820 0.9925  0.0000   equivalent                           25852
+   H intermediate               C descriptive     DOM ESN28u_t 0.9980 0.9931 1.0029  0.4607   equivalent                           25852
+   H intermediate               C descriptive   ISING ESN28u_t 0.9968 0.9923 1.0013  0.4607   equivalent                           25852
+   H    turbulent                 M mechanism     DOM   ESNq_t 0.9968 0.9935 1.0002  0.1461   equivalent no detectable difference  20941
+   H    turbulent                 M mechanism     DOM  SAS28_t 1.0049 1.0000 1.0098  0.1461   equivalent no detectable difference  20941
+   H    turbulent                 M mechanism   ISING   ESNq_t 0.9910 0.9870 0.9950  0.0000   equivalent   detectable, below band  20941
+   H    turbulent                 M mechanism   ISING  SAS28_t 0.9990 0.9949 1.0031  0.6433   equivalent no detectable difference  20941
+   H    turbulent   T quantum vs classical ML     DOM     LSTM 1.0200 1.0133 1.0266  0.0000   equivalent         detectably worse  20941
+   H    turbulent   T quantum vs classical ML     DOM      GRU 1.0213 1.0138 1.0287  0.0000   equivalent         detectably worse  20941
+   H    turbulent   T quantum vs classical ML   ISING     LSTM 1.0140 1.0075 1.0205  0.0000   equivalent         detectably worse  20941
+   H    turbulent   T quantum vs classical ML   ISING      GRU 1.0153 1.0082 1.0225  0.0000   equivalent         detectably worse  20941
+   H    turbulent   T quantum vs classical ML     QRC     LSTM 1.0260 1.0188 1.0332  0.0000        worse         detectably worse  20941
+   H    turbulent   T quantum vs classical ML     QRC      GRU 1.0273 1.0193 1.0353  0.0000        worse         detectably worse  20941
+   H    turbulent L classical ML vs benchmark    LSTM      HAR 0.9653 0.9561 0.9746  0.0000       better   detectable, below band  20941
+   H    turbulent L classical ML vs benchmark     GRU      HAR 0.9641 0.9542 0.9740  0.0000       better   detectable, below band  20941
+   H    turbulent L classical ML vs benchmark    LSTM      GRU 1.0013 0.9976 1.0050  0.4884   equivalent no detectable difference  20941
+   H    turbulent               C descriptive  ESNq_t ESN28u_t 1.0005 0.9956 1.0055  0.8263   equivalent                           20941
+   H    turbulent               C descriptive SAS28_t ESN28u_t 0.9925 0.9853 0.9997  0.1261   equivalent                           20941
+   H    turbulent               C descriptive  ESNq_t      HAR 0.9877 0.9835 0.9920  0.0000   equivalent                           20941
+   H    turbulent               C descriptive SAS28_t      HAR 0.9798 0.9728 0.9869  0.0000   equivalent                           20941
+   H    turbulent               C descriptive    LSTM ESN28u_t 0.9779 0.9689 0.9868  0.0000       better                           20941
+   H    turbulent               C descriptive     GRU ESN28u_t 0.9766 0.9673 0.9858  0.0000       better                           20941
+   H    turbulent               C descriptive     DOM ESN28u_t 0.9974 0.9922 1.0026  0.6488   equivalent                           20941
+   H    turbulent               C descriptive   ISING ESN28u_t 0.9915 0.9853 0.9977  0.0301   equivalent                           20941
+   M          all                 M mechanism     DOM   ESNq_t 0.9952 0.9946 0.9958  0.0000   equivalent   detectable, below band 283953
+   M          all                 M mechanism     DOM  SAS28_t 0.9961 0.9951 0.9971  0.0000   equivalent   detectable, below band 283953
+   M          all                 M mechanism   ISING   ESNq_t 0.9949 0.9942 0.9956  0.0000   equivalent   detectable, below band 283953
+   M          all                 M mechanism   ISING  SAS28_t 0.9958 0.9948 0.9968  0.0000   equivalent   detectable, below band 283953
+   M          all   T quantum vs classical ML     DOM     LSTM 1.0555 1.0532 1.0579  0.0000        worse         detectably worse 283953
+   M          all   T quantum vs classical ML     DOM      GRU 1.0556 1.0532 1.0580  0.0000        worse         detectably worse 283953
+   M          all   T quantum vs classical ML   ISING     LSTM 1.0552 1.0529 1.0575  0.0000        worse         detectably worse 283953
+   M          all   T quantum vs classical ML   ISING      GRU 1.0553 1.0529 1.0576  0.0000        worse         detectably worse 283953
+   M          all   T quantum vs classical ML     QRC     LSTM 1.0579 1.0554 1.0603  0.0000        worse         detectably worse 283953
+   M          all   T quantum vs classical ML     QRC      GRU 1.0579 1.0554 1.0605  0.0000        worse         detectably worse 283953
+   M          all L classical ML vs benchmark    LSTM      HAR 0.9299 0.9273 0.9326  0.0000       better          meaningful edge 283953
+   M          all L classical ML vs benchmark     GRU      HAR 0.9299 0.9271 0.9327  0.0000       better          meaningful edge 283953
+   M          all L classical ML vs benchmark    LSTM      GRU 1.0001 0.9992 1.0009  0.9051   equivalent no detectable difference 283953
+   M          all               C descriptive  ESNq_t ESN28u_t 1.0031 1.0022 1.0040  0.0000   equivalent                          283953
+   M          all               C descriptive SAS28_t ESN28u_t 1.0022 1.0010 1.0035  0.0009   equivalent                          283953
+   M          all               C descriptive  ESNq_t      HAR 0.9863 0.9852 0.9874  0.0000   equivalent                          283953
+   M          all               C descriptive SAS28_t      HAR 0.9854 0.9840 0.9868  0.0000   equivalent                          283953
+   M          all               C descriptive    LSTM ESN28u_t 0.9458 0.9433 0.9483  0.0000       better                          283953
+   M          all               C descriptive     GRU ESN28u_t 0.9457 0.9431 0.9484  0.0000       better                          283953
+   M          all               C descriptive     DOM ESN28u_t 0.9983 0.9974 0.9993  0.0009   equivalent                          283953
+   M          all               C descriptive   ISING ESN28u_t 0.9980 0.9969 0.9991  0.0009   equivalent                          283953
+   M         calm                 M mechanism     DOM   ESNq_t 0.9961 0.9952 0.9971  0.0000   equivalent   detectable, below band  83439
+   M         calm                 M mechanism     DOM  SAS28_t 0.9997 0.9988 1.0006  0.4761   equivalent no detectable difference  83439
+   M         calm                 M mechanism   ISING   ESNq_t 0.9950 0.9939 0.9961  0.0000   equivalent   detectable, below band  83439
+   M         calm                 M mechanism   ISING  SAS28_t 0.9985 0.9977 0.9994  0.0021   equivalent   detectable, below band  83439
+   M         calm   T quantum vs classical ML     DOM     LSTM 1.0398 1.0363 1.0434  0.0000        worse         detectably worse  83439
+   M         calm   T quantum vs classical ML     DOM      GRU 1.0436 1.0396 1.0476  0.0000        worse         detectably worse  83439
+   M         calm   T quantum vs classical ML   ISING     LSTM 1.0386 1.0351 1.0422  0.0000        worse         detectably worse  83439
+   M         calm   T quantum vs classical ML   ISING      GRU 1.0424 1.0385 1.0464  0.0000        worse         detectably worse  83439
+   M         calm   T quantum vs classical ML     QRC     LSTM 1.0420 1.0384 1.0455  0.0000        worse         detectably worse  83439
+   M         calm   T quantum vs classical ML     QRC      GRU 1.0458 1.0417 1.0498  0.0000        worse         detectably worse  83439
+   M         calm L classical ML vs benchmark    LSTM      HAR 0.9484 0.9446 0.9523  0.0000       better          meaningful edge  83439
+   M         calm L classical ML vs benchmark     GRU      HAR 0.9450 0.9406 0.9494  0.0000       better          meaningful edge  83439
+   M         calm L classical ML vs benchmark    LSTM      GRU 1.0036 1.0019 1.0054  0.0000   equivalent         detectably worse  83439
+   M         calm               C descriptive  ESNq_t ESN28u_t 1.0049 1.0036 1.0062  0.0000   equivalent                           83439
+   M         calm               C descriptive SAS28_t ESN28u_t 1.0013 0.9999 1.0027  0.1825   equivalent                           83439
+   M         calm               C descriptive  ESNq_t      HAR 0.9901 0.9886 0.9915  0.0000   equivalent                           83439
+   M         calm               C descriptive SAS28_t      HAR 0.9865 0.9849 0.9881  0.0000   equivalent                           83439
+   M         calm               C descriptive    LSTM ESN28u_t 0.9627 0.9589 0.9664  0.0000       better                           83439
+   M         calm               C descriptive     GRU ESN28u_t 0.9592 0.9551 0.9633  0.0000       better                           83439
+   M         calm               C descriptive     DOM ESN28u_t 1.0010 0.9996 1.0023  0.2974   equivalent                           83439
+   M         calm               C descriptive   ISING ESN28u_t 0.9999 0.9985 1.0012  0.8337   equivalent                           83439
+   M intermediate                 M mechanism     DOM   ESNq_t 0.9952 0.9942 0.9962  0.0000   equivalent   detectable, below band 112120
+   M intermediate                 M mechanism     DOM  SAS28_t 0.9941 0.9918 0.9963  0.0000   equivalent   detectable, below band 112120
+   M intermediate                 M mechanism   ISING   ESNq_t 0.9960 0.9950 0.9970  0.0000   equivalent   detectable, below band 112120
+   M intermediate                 M mechanism   ISING  SAS28_t 0.9948 0.9927 0.9970  0.0000   equivalent   detectable, below band 112120
+   M intermediate   T quantum vs classical ML     DOM     LSTM 1.0635 1.0598 1.0672  0.0000        worse         detectably worse 112120
+   M intermediate   T quantum vs classical ML     DOM      GRU 1.0604 1.0568 1.0640  0.0000        worse         detectably worse 112120
+   M intermediate   T quantum vs classical ML   ISING     LSTM 1.0644 1.0606 1.0681  0.0000        worse         detectably worse 112120
+   M intermediate   T quantum vs classical ML   ISING      GRU 1.0612 1.0576 1.0648  0.0000        worse         detectably worse 112120
+   M intermediate   T quantum vs classical ML     QRC     LSTM 1.0645 1.0607 1.0683  0.0000        worse         detectably worse 112120
+   M intermediate   T quantum vs classical ML     QRC      GRU 1.0613 1.0576 1.0651  0.0000        worse         detectably worse 112120
+   M intermediate L classical ML vs benchmark    LSTM      HAR 0.9224 0.9183 0.9264  0.0000       better          meaningful edge 112120
+   M intermediate L classical ML vs benchmark     GRU      HAR 0.9251 0.9211 0.9291  0.0000       better          meaningful edge 112120
+   M intermediate L classical ML vs benchmark    LSTM      GRU 0.9971 0.9958 0.9983  0.0000   equivalent   detectable, below band 112120
+   M intermediate               C descriptive  ESNq_t ESN28u_t 1.0046 1.0030 1.0062  0.0000   equivalent                          112120
+   M intermediate               C descriptive SAS28_t ESN28u_t 1.0058 1.0037 1.0078  0.0000   equivalent                          112120
+   M intermediate               C descriptive  ESNq_t      HAR 0.9857 0.9839 0.9875  0.0000   equivalent                          112120
+   M intermediate               C descriptive SAS28_t      HAR 0.9869 0.9847 0.9890  0.0000   equivalent                          112120
+   M intermediate               C descriptive    LSTM ESN28u_t 0.9401 0.9363 0.9439  0.0000       better                          112120
+   M intermediate               C descriptive     GRU ESN28u_t 0.9428 0.9391 0.9466  0.0000       better                          112120
+   M intermediate               C descriptive     DOM ESN28u_t 0.9998 0.9984 1.0012  0.8702   equivalent                          112120
+   M intermediate               C descriptive   ISING ESN28u_t 1.0006 0.9991 1.0020  0.8702   equivalent                          112120
+   M    turbulent                 M mechanism     DOM   ESNq_t 0.9942 0.9930 0.9955  0.0000   equivalent   detectable, below band  88394
+   M    turbulent                 M mechanism     DOM  SAS28_t 0.9948 0.9933 0.9964  0.0000   equivalent   detectable, below band  88394
+   M    turbulent                 M mechanism   ISING   ESNq_t 0.9935 0.9917 0.9952  0.0000   equivalent   detectable, below band  88394
+   M    turbulent                 M mechanism   ISING  SAS28_t 0.9940 0.9926 0.9955  0.0000   equivalent   detectable, below band  88394
+   M    turbulent   T quantum vs classical ML     DOM     LSTM 1.0631 1.0582 1.0679  0.0000        worse         detectably worse  88394
+   M    turbulent   T quantum vs classical ML     DOM      GRU 1.0629 1.0579 1.0679  0.0000        worse         detectably worse  88394
+   M    turbulent   T quantum vs classical ML   ISING     LSTM 1.0623 1.0575 1.0670  0.0000        worse         detectably worse  88394
+   M    turbulent   T quantum vs classical ML   ISING      GRU 1.0620 1.0572 1.0669  0.0000        worse         detectably worse  88394
+   M    turbulent   T quantum vs classical ML     QRC     LSTM 1.0673 1.0620 1.0727  0.0000        worse         detectably worse  88394
+   M    turbulent   T quantum vs classical ML     QRC      GRU 1.0671 1.0616 1.0727  0.0000        worse         detectably worse  88394
+   M    turbulent L classical ML vs benchmark    LSTM      HAR 0.9194 0.9134 0.9253  0.0000       better          meaningful edge  88394
+   M    turbulent L classical ML vs benchmark     GRU      HAR 0.9196 0.9134 0.9257  0.0000       better          meaningful edge  88394
+   M    turbulent L classical ML vs benchmark    LSTM      GRU 0.9998 0.9983 1.0013  0.7948   equivalent no detectable difference  88394
+   M    turbulent               C descriptive  ESNq_t ESN28u_t 0.9995 0.9978 1.0011  0.9093   equivalent                           88394
+   M    turbulent               C descriptive SAS28_t ESN28u_t 0.9989 0.9960 1.0018  0.9093   equivalent                           88394
+   M    turbulent               C descriptive  ESNq_t      HAR 0.9830 0.9808 0.9852  0.0000   equivalent                           88394
+   M    turbulent               C descriptive SAS28_t      HAR 0.9825 0.9792 0.9858  0.0000   equivalent                           88394
+   M    turbulent               C descriptive    LSTM ESN28u_t 0.9347 0.9292 0.9403  0.0000       better                           88394
+   M    turbulent               C descriptive     GRU ESN28u_t 0.9349 0.9292 0.9406  0.0000       better                           88394
+   M    turbulent               C descriptive     DOM ESN28u_t 0.9937 0.9916 0.9958  0.0000   equivalent                           88394
+   M    turbulent               C descriptive   ISING ESN28u_t 0.9929 0.9902 0.9956  0.0000   equivalent                           88394
+   F          all                 M mechanism     DOM   ESNq_t 1.0002 0.9998 1.0006  0.3468   equivalent no detectable difference 673104
+   F          all                 M mechanism     DOM  SAS28_t 1.0003 1.0000 1.0006  0.0861   equivalent no detectable difference 673104
+   F          all                 M mechanism   ISING   ESNq_t 0.9993 0.9988 0.9998  0.0100   equivalent   detectable, below band 673104
+   F          all                 M mechanism   ISING  SAS28_t 0.9994 0.9991 0.9998  0.0059   equivalent   detectable, below band 673104
+   F          all   T quantum vs classical ML     DOM     LSTM 1.0222 1.0212 1.0232  0.0000   equivalent         detectably worse 673104
+   F          all   T quantum vs classical ML     DOM      GRU 1.0229 1.0219 1.0238  0.0000   equivalent         detectably worse 673104
+   F          all   T quantum vs classical ML   ISING     LSTM 1.0213 1.0203 1.0223  0.0000   equivalent         detectably worse 673104
+   F          all   T quantum vs classical ML   ISING      GRU 1.0220 1.0210 1.0229  0.0000   equivalent         detectably worse 673104
+   F          all   T quantum vs classical ML     QRC     LSTM 1.0163 1.0153 1.0174  0.0000   equivalent         detectably worse 673104
+   F          all   T quantum vs classical ML     QRC      GRU 1.0170 1.0160 1.0180  0.0000   equivalent         detectably worse 673104
+   F          all L classical ML vs benchmark    LSTM      HAR 0.9660 0.9645 0.9675  0.0000       better          meaningful edge 673104
+   F          all L classical ML vs benchmark     GRU      HAR 0.9654 0.9639 0.9668  0.0000       better          meaningful edge 673104
+   F          all L classical ML vs benchmark    LSTM      GRU 1.0006 1.0004 1.0009  0.0000   equivalent         detectably worse 673104
+   F          all               C descriptive  ESNq_t ESN28u_t 0.9973 0.9968 0.9978  0.0000   equivalent                          673104
+   F          all               C descriptive SAS28_t ESN28u_t 0.9972 0.9966 0.9978  0.0000   equivalent                          673104
+   F          all               C descriptive  ESNq_t      HAR 0.9872 0.9862 0.9882  0.0000   equivalent                          673104
+   F          all               C descriptive SAS28_t      HAR 0.9871 0.9861 0.9881  0.0000   equivalent                          673104
+   F          all               C descriptive    LSTM ESN28u_t 0.9758 0.9747 0.9769  0.0000   equivalent                          673104
+   F          all               C descriptive     GRU ESN28u_t 0.9752 0.9742 0.9762  0.0000   equivalent                          673104
+   F          all               C descriptive     DOM ESN28u_t 0.9975 0.9970 0.9980  0.0000   equivalent                          673104
+   F          all               C descriptive   ISING ESN28u_t 0.9966 0.9961 0.9972  0.0000   equivalent                          673104
+   F         calm                 M mechanism     DOM   ESNq_t 0.9979 0.9972 0.9986  0.0000   equivalent   detectable, below band 169862
+   F         calm                 M mechanism     DOM  SAS28_t 1.0012 1.0008 1.0016  0.0000   equivalent         detectably worse 169862
+   F         calm                 M mechanism   ISING   ESNq_t 0.9964 0.9956 0.9972  0.0000   equivalent   detectable, below band 169862
+   F         calm                 M mechanism   ISING  SAS28_t 0.9997 0.9993 1.0002  0.2343   equivalent no detectable difference 169862
+   F         calm   T quantum vs classical ML     DOM     LSTM 1.0165 1.0146 1.0183  0.0000   equivalent         detectably worse 169862
+   F         calm   T quantum vs classical ML     DOM      GRU 1.0175 1.0156 1.0194  0.0000   equivalent         detectably worse 169862
+   F         calm   T quantum vs classical ML   ISING     LSTM 1.0150 1.0132 1.0168  0.0000   equivalent         detectably worse 169862
+   F         calm   T quantum vs classical ML   ISING      GRU 1.0160 1.0141 1.0178  0.0000   equivalent         detectably worse 169862
+   F         calm   T quantum vs classical ML     QRC     LSTM 1.0130 1.0117 1.0143  0.0000   equivalent         detectably worse 169862
+   F         calm   T quantum vs classical ML     QRC      GRU 1.0140 1.0126 1.0154  0.0000   equivalent         detectably worse 169862
+   F         calm L classical ML vs benchmark    LSTM      HAR 0.9717 0.9695 0.9740  0.0000       better   detectable, below band 169862
+   F         calm L classical ML vs benchmark     GRU      HAR 0.9708 0.9684 0.9731  0.0000       better   detectable, below band 169862
+   F         calm L classical ML vs benchmark    LSTM      GRU 1.0010 1.0006 1.0014  0.0000   equivalent         detectably worse 169862
+   F         calm               C descriptive  ESNq_t ESN28u_t 0.9981 0.9973 0.9989  0.0000   equivalent                          169862
+   F         calm               C descriptive SAS28_t ESN28u_t 0.9948 0.9940 0.9956  0.0000   equivalent                          169862
+   F         calm               C descriptive  ESNq_t      HAR 0.9898 0.9886 0.9910  0.0000   equivalent                          169862
+   F         calm               C descriptive SAS28_t      HAR 0.9865 0.9853 0.9877  0.0000   equivalent                          169862
+   F         calm               C descriptive    LSTM ESN28u_t 0.9799 0.9779 0.9819  0.0000   equivalent                          169862
+   F         calm               C descriptive     GRU ESN28u_t 0.9789 0.9769 0.9810  0.0000   equivalent                          169862
+   F         calm               C descriptive     DOM ESN28u_t 0.9960 0.9954 0.9967  0.0000   equivalent                          169862
+   F         calm               C descriptive   ISING ESN28u_t 0.9945 0.9938 0.9953  0.0000   equivalent                          169862
+   F intermediate                 M mechanism     DOM   ESNq_t 1.0000 0.9995 1.0006  1.0000   equivalent no detectable difference 292871
+   F intermediate                 M mechanism     DOM  SAS28_t 1.0001 0.9997 1.0005  1.0000   equivalent no detectable difference 292871
+   F intermediate                 M mechanism   ISING   ESNq_t 0.9990 0.9983 0.9997  0.0085   equivalent   detectable, below band 292871
+   F intermediate                 M mechanism   ISING  SAS28_t 0.9991 0.9986 0.9995  0.0003   equivalent   detectable, below band 292871
+   F intermediate   T quantum vs classical ML     DOM     LSTM 1.0260 1.0245 1.0275  0.0000   equivalent         detectably worse 292871
+   F intermediate   T quantum vs classical ML     DOM      GRU 1.0264 1.0250 1.0278  0.0000   equivalent         detectably worse 292871
+   F intermediate   T quantum vs classical ML   ISING     LSTM 1.0250 1.0235 1.0265  0.0000   equivalent         detectably worse 292871
+   F intermediate   T quantum vs classical ML   ISING      GRU 1.0254 1.0239 1.0268  0.0000   equivalent         detectably worse 292871
+   F intermediate   T quantum vs classical ML     QRC     LSTM 1.0182 1.0169 1.0195  0.0000   equivalent         detectably worse 292871
+   F intermediate   T quantum vs classical ML     QRC      GRU 1.0186 1.0173 1.0198  0.0000   equivalent         detectably worse 292871
+   F intermediate L classical ML vs benchmark    LSTM      HAR 0.9626 0.9607 0.9646  0.0000       better          meaningful edge 292871
+   F intermediate L classical ML vs benchmark     GRU      HAR 0.9623 0.9604 0.9641  0.0000       better          meaningful edge 292871
+   F intermediate L classical ML vs benchmark    LSTM      GRU 1.0004 1.0000 1.0007  0.0349   equivalent         detectably worse 292871
+   F intermediate               C descriptive  ESNq_t ESN28u_t 0.9973 0.9966 0.9980  0.0000   equivalent                          292871
+   F intermediate               C descriptive SAS28_t ESN28u_t 0.9972 0.9963 0.9981  0.0000   equivalent                          292871
+   F intermediate               C descriptive  ESNq_t      HAR 0.9877 0.9865 0.9889  0.0000   equivalent                          292871
+   F intermediate               C descriptive SAS28_t      HAR 0.9876 0.9864 0.9888  0.0000   equivalent                          292871
+   F intermediate               C descriptive    LSTM ESN28u_t 0.9720 0.9705 0.9735  0.0000   equivalent                          292871
+   F intermediate               C descriptive     GRU ESN28u_t 0.9717 0.9702 0.9731  0.0000   equivalent                          292871
+   F intermediate               C descriptive     DOM ESN28u_t 0.9973 0.9965 0.9981  0.0000   equivalent                          292871
+   F intermediate               C descriptive   ISING ESN28u_t 0.9963 0.9954 0.9972  0.0000   equivalent                          292871
+   F    turbulent                 M mechanism     DOM   ESNq_t 1.0022 1.0014 1.0031  0.0000   equivalent         detectably worse 210371
+   F    turbulent                 M mechanism     DOM  SAS28_t 0.9999 0.9992 1.0007  0.8576   equivalent no detectable difference 210371
+   F    turbulent                 M mechanism   ISING   ESNq_t 1.0019 1.0010 1.0029  0.0001   equivalent         detectably worse 210371
+   F    turbulent                 M mechanism   ISING  SAS28_t 0.9997 0.9988 1.0005  0.8113   equivalent no detectable difference 210371
+   F    turbulent   T quantum vs classical ML     DOM     LSTM 1.0218 1.0199 1.0238  0.0000   equivalent         detectably worse 210371
+   F    turbulent   T quantum vs classical ML     DOM      GRU 1.0226 1.0208 1.0243  0.0000   equivalent         detectably worse 210371
+   F    turbulent   T quantum vs classical ML   ISING     LSTM 1.0216 1.0196 1.0235  0.0000   equivalent         detectably worse 210371
+   F    turbulent   T quantum vs classical ML   ISING      GRU 1.0223 1.0205 1.0241  0.0000   equivalent         detectably worse 210371
+   F    turbulent   T quantum vs classical ML     QRC     LSTM 1.0166 1.0143 1.0190  0.0000   equivalent         detectably worse 210371
+   F    turbulent   T quantum vs classical ML     QRC      GRU 1.0173 1.0152 1.0195  0.0000   equivalent         detectably worse 210371
+   F    turbulent L classical ML vs benchmark    LSTM      HAR 0.9658 0.9625 0.9692  0.0000       better          meaningful edge 210371
+   F    turbulent L classical ML vs benchmark     GRU      HAR 0.9651 0.9620 0.9683  0.0000       better          meaningful edge 210371
+   F    turbulent L classical ML vs benchmark    LSTM      GRU 1.0007 1.0002 1.0012  0.0048   equivalent         detectably worse 210371
+   F    turbulent               C descriptive  ESNq_t ESN28u_t 0.9967 0.9955 0.9978  0.0000   equivalent                          210371
+   F    turbulent               C descriptive SAS28_t ESN28u_t 0.9990 0.9976 1.0003  0.1396   equivalent                          210371
+   F    turbulent               C descriptive  ESNq_t      HAR 0.9847 0.9823 0.9872  0.0000   equivalent                          210371
+   F    turbulent               C descriptive SAS28_t      HAR 0.9870 0.9846 0.9894  0.0000   equivalent                          210371
+   F    turbulent               C descriptive    LSTM ESN28u_t 0.9775 0.9754 0.9797  0.0000   equivalent                          210371
+   F    turbulent               C descriptive     GRU ESN28u_t 0.9768 0.9748 0.9789  0.0000   equivalent                          210371
+   F    turbulent               C descriptive     DOM ESN28u_t 0.9989 0.9979 0.9999  0.0627   equivalent                          210371
+   F    turbulent               C descriptive   ISING ESN28u_t 0.9986 0.9975 0.9997  0.0435   equivalent                          210371
+   D          all                 M mechanism     DOM   ESNq_t 0.9810 0.9551 1.0069  0.2994 inconclusive no detectable difference   2580
+   D          all                 M mechanism     DOM  SAS28_t 0.9593 0.9286 0.9901  0.0381       better   detectable, below band   2580
+   D          all                 M mechanism   ISING   ESNq_t 0.9846 0.9535 1.0156  0.3300 inconclusive no detectable difference   2580
+   D          all                 M mechanism   ISING  SAS28_t 0.9628 0.9318 0.9939  0.0573       better no detectable difference   2580
+   D          all   T quantum vs classical ML     DOM     LSTM 0.9828 0.9641 1.0015  0.4289 inconclusive no detectable difference   2580
+   D          all   T quantum vs classical ML     DOM      GRU 0.9879 0.9652 1.0106  1.0000 inconclusive no detectable difference   2580
+   D          all   T quantum vs classical ML   ISING     LSTM 0.9864 0.9621 1.0106  1.0000 inconclusive no detectable difference   2580
+   D          all   T quantum vs classical ML   ISING      GRU 0.9915 0.9620 1.0210  1.0000 inconclusive no detectable difference   2580
+   D          all   T quantum vs classical ML     QRC     LSTM 1.0067 0.9927 1.0207  1.0000   equivalent no detectable difference   2580
+   D          all   T quantum vs classical ML     QRC      GRU 1.0119 0.9944 1.0294  0.9126   equivalent no detectable difference   2580
+   D          all L classical ML vs benchmark    LSTM      HAR 0.9886 0.9615 1.0156  0.8152 inconclusive no detectable difference   2580
+   D          all L classical ML vs benchmark     GRU      HAR 0.9834 0.9614 1.0054  0.4200 inconclusive no detectable difference   2580
+   D          all L classical ML vs benchmark    LSTM      GRU 1.0052 0.9919 1.0185  0.8152   equivalent no detectable difference   2580
+   D          all               C descriptive  ESNq_t ESN28u_t 1.0175 0.9845 1.0505  1.0000 inconclusive                            2580
+   D          all               C descriptive SAS28_t ESN28u_t 1.0405 1.0049 1.0760  0.2057        worse                            2580
+   D          all               C descriptive  ESNq_t      HAR 0.9904 0.9598 1.0210  1.0000 inconclusive                            2580
+   D          all               C descriptive SAS28_t      HAR 1.0127 0.9772 1.0482  1.0000 inconclusive                            2580
+   D          all               C descriptive    LSTM ESN28u_t 1.0156 0.9888 1.0425  1.0000 inconclusive                            2580
+   D          all               C descriptive     GRU ESN28u_t 1.0104 0.9871 1.0336  1.0000 inconclusive                            2580
+   D          all               C descriptive     DOM ESN28u_t 0.9982 0.9750 1.0213  1.0000   equivalent                            2580
+   D          all               C descriptive   ISING ESN28u_t 1.0018 0.9734 1.0303  1.0000 inconclusive                            2580
+   D         calm                 M mechanism     DOM   ESNq_t 0.9729 0.9238 1.0219  0.8339 inconclusive no detectable difference    772
+   D         calm                 M mechanism     DOM  SAS28_t 0.9991 0.9755 1.0227  1.0000   equivalent no detectable difference    772
+   D         calm                 M mechanism   ISING   ESNq_t 0.9721 0.9337 1.0106  0.6216 inconclusive no detectable difference    772
+   D         calm                 M mechanism   ISING  SAS28_t 0.9984 0.9756 1.0212  1.0000   equivalent no detectable difference    772
+   D         calm   T quantum vs classical ML     DOM     LSTM 0.9943 0.9670 1.0215  1.0000 inconclusive no detectable difference    772
+   D         calm   T quantum vs classical ML     DOM      GRU 0.9979 0.9761 1.0197  1.0000   equivalent no detectable difference    772
+   D         calm   T quantum vs classical ML   ISING     LSTM 0.9935 0.9646 1.0225  1.0000 inconclusive no detectable difference    772
+   D         calm   T quantum vs classical ML   ISING      GRU 0.9971 0.9696 1.0247  1.0000 inconclusive no detectable difference    772
+   D         calm   T quantum vs classical ML     QRC     LSTM 1.0169 0.9887 1.0450  1.0000 inconclusive no detectable difference    772
+   D         calm   T quantum vs classical ML     QRC      GRU 1.0206 0.9979 1.0432  0.4539 inconclusive no detectable difference    772
+   D         calm L classical ML vs benchmark    LSTM      HAR 1.0128 0.9702 1.0554  1.0000 inconclusive no detectable difference    772
+   D         calm L classical ML vs benchmark     GRU      HAR 1.0091 0.9731 1.0452  1.0000 inconclusive no detectable difference    772
+   D         calm L classical ML vs benchmark    LSTM      GRU 1.0036 0.9838 1.0234  1.0000   equivalent no detectable difference    772
+   D         calm               C descriptive  ESNq_t ESN28u_t 1.0327 0.9867 1.0787  1.0000 inconclusive                             772
+   D         calm               C descriptive SAS28_t ESN28u_t 1.0056 0.9811 1.0300  1.0000 inconclusive                             772
+   D         calm               C descriptive  ESNq_t      HAR 1.0351 0.9735 1.0967  1.0000 inconclusive                             772
+   D         calm               C descriptive SAS28_t      HAR 1.0079 0.9643 1.0514  1.0000 inconclusive                             772
+   D         calm               C descriptive    LSTM ESN28u_t 1.0105 0.9709 1.0501  1.0000 inconclusive                             772
+   D         calm               C descriptive     GRU ESN28u_t 1.0068 0.9765 1.0372  1.0000 inconclusive                             772
+   D         calm               C descriptive     DOM ESN28u_t 1.0047 0.9760 1.0334  1.0000 inconclusive                             772
+   D         calm               C descriptive   ISING ESN28u_t 1.0040 0.9660 1.0419  1.0000 inconclusive                             772
+   D intermediate                 M mechanism     DOM   ESNq_t 0.9733 0.9317 1.0149  0.4756 inconclusive no detectable difference   1033
+   D intermediate                 M mechanism     DOM  SAS28_t 0.9506 0.8993 1.0018  0.2353 inconclusive no detectable difference   1033
+   D intermediate                 M mechanism   ISING   ESNq_t 0.9862 0.9383 1.0340  0.5713 inconclusive no detectable difference   1033
+   D intermediate                 M mechanism   ISING  SAS28_t 0.9631 0.9119 1.0144  0.4756 inconclusive no detectable difference   1033
+   D intermediate   T quantum vs classical ML     DOM     LSTM 0.9714 0.9451 0.9976  0.1634       better no detectable difference   1033
+   D intermediate   T quantum vs classical ML     DOM      GRU 0.9900 0.9636 1.0164  0.9153 inconclusive no detectable difference   1033
+   D intermediate   T quantum vs classical ML   ISING     LSTM 0.9842 0.9580 1.0104  0.9135 inconclusive no detectable difference   1033
+   D intermediate   T quantum vs classical ML   ISING      GRU 1.0031 0.9748 1.0313  0.9153 inconclusive no detectable difference   1033
+   D intermediate   T quantum vs classical ML     QRC     LSTM 1.0132 0.9917 1.0348  0.9135 inconclusive no detectable difference   1033
+   D intermediate   T quantum vs classical ML     QRC      GRU 1.0327 1.0077 1.0576  0.0618        worse no detectable difference   1033
+   D intermediate L classical ML vs benchmark    LSTM      HAR 0.9899 0.9619 1.0179  0.4803 inconclusive no detectable difference   1033
+   D intermediate L classical ML vs benchmark     GRU      HAR 0.9713 0.9418 1.0008  0.1127 inconclusive no detectable difference   1033
+   D intermediate L classical ML vs benchmark    LSTM      GRU 1.0192 1.0020 1.0363  0.0854        worse no detectable difference   1033
+   D intermediate               C descriptive  ESNq_t ESN28u_t 1.0495 0.9866 1.1123  0.6147 inconclusive                            1033
+   D intermediate               C descriptive SAS28_t ESN28u_t 1.0746 0.9999 1.1492  0.3016 inconclusive                            1033
+   D intermediate               C descriptive  ESNq_t      HAR 0.9879 0.9498 1.0261  1.0000 inconclusive                            1033
+   D intermediate               C descriptive SAS28_t      HAR 1.0116 0.9697 1.0534  1.0000 inconclusive                            1033
+   D intermediate               C descriptive    LSTM ESN28u_t 1.0516 1.0064 1.0967  0.2012        worse                            1033
+   D intermediate               C descriptive     GRU ESN28u_t 1.0318 0.9896 1.0739  0.6147 inconclusive                            1033
+   D intermediate               C descriptive     DOM ESN28u_t 1.0215 0.9890 1.0539  0.6147 inconclusive                            1033
+   D intermediate               C descriptive   ISING ESN28u_t 1.0350 1.0018 1.0681  0.2697        worse                            1033
+   D    turbulent                 M mechanism     DOM   ESNq_t 0.9969 0.9531 1.0406  1.0000 inconclusive no detectable difference    775
+   D    turbulent                 M mechanism     DOM  SAS28_t 0.9450 0.8863 1.0036  0.1977 inconclusive no detectable difference    775
+   D    turbulent                 M mechanism   ISING   ESNq_t 0.9911 0.9271 1.0551  1.0000 inconclusive no detectable difference    775
+   D    turbulent                 M mechanism   ISING  SAS28_t 0.9395 0.8792 0.9998  0.1970       better no detectable difference    775
+   D    turbulent   T quantum vs classical ML     DOM     LSTM 0.9901 0.9502 1.0300  1.0000 inconclusive no detectable difference    775
+   D    turbulent   T quantum vs classical ML     DOM      GRU 0.9785 0.9227 1.0343  1.0000 inconclusive no detectable difference    775
+   D    turbulent   T quantum vs classical ML   ISING     LSTM 0.9844 0.9235 1.0452  1.0000 inconclusive no detectable difference    775
+   D    turbulent   T quantum vs classical ML   ISING      GRU 0.9728 0.8962 1.0495  1.0000 inconclusive no detectable difference    775
+   D    turbulent   T quantum vs classical ML     QRC     LSTM 0.9910 0.9672 1.0149  1.0000 inconclusive no detectable difference    775
+   D    turbulent   T quantum vs classical ML     QRC      GRU 0.9794 0.9430 1.0159  1.0000 inconclusive no detectable difference    775
+   D    turbulent L classical ML vs benchmark    LSTM      HAR 0.9710 0.9055 1.0364  1.0000 inconclusive no detectable difference    775
+   D    turbulent L classical ML vs benchmark     GRU      HAR 0.9825 0.9360 1.0290  1.0000 inconclusive no detectable difference    775
+   D    turbulent L classical ML vs benchmark    LSTM      GRU 0.9883 0.9592 1.0173  1.0000 inconclusive no detectable difference    775
+   D    turbulent               C descriptive  ESNq_t ESN28u_t 0.9682 0.9235 1.0130  1.0000 inconclusive                             775
+   D    turbulent               C descriptive SAS28_t ESN28u_t 1.0214 0.9801 1.0626  1.0000 inconclusive                             775
+   D    turbulent               C descriptive  ESNq_t      HAR 0.9644 0.9009 1.0279  1.0000 inconclusive                             775
+   D    turbulent               C descriptive SAS28_t      HAR 1.0174 0.9324 1.1023  1.0000 inconclusive                             775
+   D    turbulent               C descriptive    LSTM ESN28u_t 0.9748 0.9291 1.0206  1.0000 inconclusive                             775
+   D    turbulent               C descriptive     GRU ESN28u_t 0.9864 0.9495 1.0233  1.0000 inconclusive                             775
+   D    turbulent               C descriptive     DOM ESN28u_t 0.9652 0.9160 1.0143  1.0000 inconclusive                             775
+   D    turbulent               C descriptive   ISING ESN28u_t 0.9596 0.8941 1.0251  1.0000 inconclusive                             775
+
+=== mean loss relative to the benchmark, all blocks pooled (descriptive) ===
+ grid    DOM  ESN28u  ISING  ESN28u_t  ESNq_t  SAS28_t   LSTM    GRU    QRC
+   H 0.9900  0.9883 0.9851    0.9883  0.9906   0.9835 0.9671 0.9685 0.9894
+   M 0.9816  0.9852 0.9813    0.9832  0.9863   0.9854 0.9299 0.9299 0.9838
+   F 0.9874  0.9898 0.9866    0.9899  0.9872   0.9871 0.9660 0.9654 0.9818
+   D 0.9715  0.9817 0.9751    0.9733  0.9904   1.0127 0.9886 0.9834 0.9952
+
+=== per-year ratio to the benchmark and chosen configurations (descriptive) ===
+ grid  year       regime     n  DOM/HAR  ESN28u/HAR  ISING/HAR  ESN28u_t/HAR  ESNq_t/HAR  SAS28_t/HAR  LSTM/HAR  GRU/HAR  QRC/HAR                                                                                                                                                 config
+   H  2013         calm  5247   0.9752      0.9735     0.9666        0.9754      0.9824       0.9773    0.9366   0.9534   0.9769   {"ESNq_t": {"rho": 0.9, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.2}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.01}}
+   H  2014         calm  5176   0.9921      0.9743     0.9784        0.9753      0.9974       0.9649    0.9056   0.9192   0.9815  {"ESNq_t": {"rho": 0.6, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.2}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.003}}
+   H  2015    turbulent  5303   0.9584      0.9571     0.9473        0.9694      0.9672       0.9467    0.9156   0.9189   0.9803  {"ESNq_t": {"rho": 1.2, "leak": 0.1}, "SAS28_t": {"gain": 0.65, "leak": 0.2}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 16, "lr": 0.01}}
+   H  2016 intermediate  5191   0.9803      0.9927     0.9845        0.9927      0.9918       0.9829    0.9833   0.9950   0.9931   {"ESNq_t": {"rho": 0.6, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.01}}
+   H  2017         calm  5186   1.0120      1.0185     1.0110        1.0001      0.9964       1.0008    0.9946   0.9954   0.9951  {"ESNq_t": {"rho": 1.2, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.1}, "LSTM": {"hidden": 16, "lr": 0.003}, "GRU": {"hidden": 8, "lr": 0.003}}
+   H  2018 intermediate  5054   0.9869      0.9887     0.9899        0.9956      0.9891       0.9958    0.9821   0.9827   0.9980    {"ESNq_t": {"rho": 0.9, "leak": 0.1}, "SAS28_t": {"gain": 0.3, "leak": 0.1}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.01}}
+   H  2019         calm  5165   0.9981      0.9932     0.9928        0.9932      1.0007       0.9971    0.9990   0.9923   0.9930  {"ESNq_t": {"rho": 0.6, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 8, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   H  2020 intermediate  5205   1.0015      0.9998     1.0007        1.0019      0.9964       0.9962    0.9933   0.9853   0.9930   {"ESNq_t": {"rho": 0.6, "leak": 0.2}, "SAS28_t": {"gain": 0.3, "leak": 1.0}, "LSTM": {"hidden": 8, "lr": 0.0003}, "GRU": {"hidden": 16, "lr": 0.01}}
+   H  2021    turbulent  5220   1.0025      1.0026     0.9984        1.0010      0.9953       0.9945    0.9834   0.9852   0.9939   {"ESNq_t": {"rho": 0.9, "leak": 0.1}, "SAS28_t": {"gain": 0.3, "leak": 0.1}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 16, "lr": 0.01}}
+   H  2022    turbulent  5221   0.9978      1.0002     0.9986        0.9981      1.0005       0.9982    1.0087   1.0156   1.0029  {"ESNq_t": {"rho": 0.6, "leak": 0.1}, "SAS28_t": {"gain": 0.65, "leak": 0.1}, "LSTM": {"hidden": 16, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.01}}
+   H  2023 intermediate  5180   0.9888      0.9831     0.9833        0.9845      0.9949       0.9953    0.9877   0.9850   0.9831    {"ESNq_t": {"rho": 1.2, "leak": 1.0}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 8, "lr": 0.01}}
+   H  2024 intermediate  5222   1.0020      0.9912     0.9927        0.9906      0.9772       0.9643    0.9705   0.9502   0.9941    {"ESNq_t": {"rho": 1.2, "leak": 0.1}, "SAS28_t": {"gain": 0.3, "leak": 0.1}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.01}}
+   H  2025    turbulent  5197   0.9907      0.9928     0.9847        0.9883      0.9960       0.9929    0.9752   0.9591   0.9895    {"ESNq_t": {"rho": 0.6, "leak": 0.1}, "SAS28_t": {"gain": 0.65, "leak": 0.1}, "LSTM": {"hidden": 8, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.01}}
+   M  2013         calm 19869   0.9891      0.9845     0.9878        0.9833      0.9913       0.9876    0.9856   0.9859   0.9896  {"ESNq_t": {"rho": 1.2, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 16, "lr": 0.003}}
+   M  2014         calm 19005   0.9866      0.9820     0.9831        0.9820      0.9941       0.9877    0.9595   0.9358   0.9857  {"ESNq_t": {"rho": 1.2, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2015    turbulent 20182   0.9792      0.9829     0.9761        0.9829      0.9858       0.9828    0.9118   0.9061   0.9798 {"ESNq_t": {"rho": 1.2, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2016 intermediate 21368   0.9803      0.9852     0.9803        0.9843      0.9780       0.9873    0.9259   0.9266   0.9780  {"ESNq_t": {"rho": 0.9, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.2}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2017         calm 22261   0.9796      0.9874     0.9802        0.9863      0.9874       0.9847    0.9036   0.9053   0.9860  {"ESNq_t": {"rho": 0.9, "leak": 1.0}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2018 intermediate 22427   0.9895      0.9943     0.9896        0.9923      0.9937       0.9923    0.9302   0.9361   0.9918 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2019         calm 22304   0.9910      0.9934     0.9906        0.9900      0.9873       0.9864    0.9498   0.9595   0.9927   {"ESNq_t": {"rho": 0.6, "leak": 1.0}, "SAS28_t": {"gain": 0.65, "leak": 1.0}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.01}}
+   M  2020 intermediate 22637   0.9892      0.9888     0.9901        0.9911      0.9919       0.9925    0.9546   0.9460   0.9835  {"ESNq_t": {"rho": 0.6, "leak": 1.0}, "SAS28_t": {"gain": 0.3, "leak": 1.0}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2021    turbulent 22807   0.9796      0.9870     0.9817        0.9855      0.9853       0.9854    0.9072   0.9128   0.9829  {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 1.0}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.01}}
+   M  2022    turbulent 22762   0.9803      0.9862     0.9818        0.9862      0.9858       0.9843    0.9413   0.9426   0.9875 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2023 intermediate 22671   0.9690      0.9757     0.9705        0.9661      0.9799       0.9772    0.8962   0.9100   0.9755  {"ESNq_t": {"rho": 0.6, "leak": 1.0}, "SAS28_t": {"gain": 0.65, "leak": 1.0}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.01}}
+   M  2024 intermediate 23017   0.9753      0.9761     0.9769        0.9686      0.9860       0.9834    0.9003   0.9033   0.9801  {"ESNq_t": {"rho": 0.9, "leak": 1.0}, "SAS28_t": {"gain": 0.65, "leak": 1.0}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.003}}
+   M  2025    turbulent 22643   0.9706      0.9833     0.9677        0.9799      0.9753       0.9776    0.9200   0.9207   0.9760  {"ESNq_t": {"rho": 0.9, "leak": 1.0}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.01}, "GRU": {"hidden": 32, "lr": 0.003}}
+   F  2013         calm 45374   0.9882      0.9929     0.9862        0.9925      0.9942       0.9863    0.9784   0.9766   0.9864 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   F  2014         calm 35788   0.9897      0.9943     0.9893        0.9940      0.9911       0.9891    0.9739   0.9739   0.9876  {"ESNq_t": {"rho": 0.6, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 16, "lr": 0.003}}
+   F  2015    turbulent 43846   0.9879      0.9899     0.9867        0.9896      0.9875       0.9868    0.9664   0.9655   0.9799 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   F  2016    turbulent 41581   0.9861      0.9845     0.9862        0.9845      0.9850       0.9853    0.9667   0.9665   0.9786  {"ESNq_t": {"rho": 0.9, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 16, "lr": 0.01}}
+   F  2017         calm 44300   0.9838      0.9867     0.9820        0.9867      0.9843       0.9822    0.9627   0.9603   0.9788 {"ESNq_t": {"rho": 0.9, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.003}}
+   F  2018 intermediate 54187   0.9897      0.9924     0.9875        0.9921      0.9898       0.9885    0.9683   0.9680   0.9866  {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.01}, "GRU": {"hidden": 16, "lr": 0.003}}
+   F  2019         calm 44400   0.9895      0.9940     0.9882        0.9940      0.9889       0.9892    0.9711   0.9719   0.9848 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 16, "lr": 0.001}}
+   F  2020 intermediate 56329   0.9877      0.9902     0.9868        0.9900      0.9869       0.9883    0.9603   0.9592   0.9791 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.001}, "GRU": {"hidden": 32, "lr": 0.001}}
+   F  2021 intermediate 63199   0.9835      0.9843     0.9854        0.9860      0.9794       0.9833    0.9542   0.9555   0.9762  {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.5, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.003}, "GRU": {"hidden": 32, "lr": 0.001}}
+   F  2022    turbulent 64313   0.9904      0.9892     0.9909        0.9892      0.9863       0.9916    0.9743   0.9707   0.9876  {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.3, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.001}, "GRU": {"hidden": 32, "lr": 0.003}}
+   F  2023 intermediate 58431   0.9891      0.9927     0.9865        0.9930      0.9915       0.9897    0.9647   0.9648   0.9794  {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 32, "lr": 0.001}, "GRU": {"hidden": 32, "lr": 0.01}}
+   F  2024 intermediate 60725   0.9891      0.9913     0.9874        0.9913      0.9921       0.9888    0.9672   0.9651   0.9803 {"ESNq_t": {"rho": 0.9, "leak": 0.5}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.001}, "GRU": {"hidden": 16, "lr": 0.003}}
+   F  2025    turbulent 60631   0.9834      0.9879     0.9828        0.9879      0.9812       0.9838    0.9569   0.9587   0.9797  {"ESNq_t": {"rho": 0.6, "leak": 0.2}, "SAS28_t": {"gain": 0.65, "leak": 0.5}, "LSTM": {"hidden": 16, "lr": 0.001}, "GRU": {"hidden": 16, "lr": 0.01}}
+   D  2015 intermediate   258   0.9616      0.9865     1.0079        0.9670      0.9278       1.0293    1.0032   0.9904   1.0555                                                                                                                                                       
+   D  2016 intermediate   258   0.9469      0.9102     0.9323        0.9102      1.0588       1.0270    0.9653   0.9392   0.9624                                                                                                                                                       
+   D  2017         calm   257   0.9469      0.9430     0.9083        0.9430      0.9640       0.9232    0.9822   0.9757   1.0134                                                                                                                                                       
+   D  2018 intermediate   258   0.9485      0.8801     0.9593        0.8801      0.9730       1.0078    0.9551   0.9370   0.9766                                                                                                                                                       
+   D  2019         calm   258   1.0482      1.0598     1.0920        1.0034      0.9893       1.0445    1.0361   1.0091   1.0212                                                                                                                                                       
+   D  2020    turbulent   259   0.9330      0.9920     0.9379        0.9920      0.9272       1.0377    0.9469   0.9614   0.9274                                                                                                                                                       
+   D  2021    turbulent   258   1.0020      1.0556     0.9942        1.0037      1.0202       1.0063    0.9952   1.0332   0.9946                                                                                                                                                       
+   D  2022    turbulent   258   0.9747      0.9814     0.9519        0.9962      0.9794       0.9904    0.9922   0.9727   0.9956                                                                                                                                                       
+   D  2023         calm   257   1.0566      1.0339     1.0634        1.1015      1.2137       1.1050    1.0350   1.0658   1.0689                                                                                                                                                       
+   D  2024 intermediate   259   0.9893      0.9953     0.9803        0.9764      1.0092       0.9625    1.0212   1.0019   0.9813                                                                                                                                                       
+
+=== registered decision ===
+ grid                                                                                           DOM_mechanism                                                                                         ISING_mechanism                                                                       quantum_vs_best_network
+   H         explained by a classical stand-in (ESNq_t: no detectable difference; SAS28_t: detectably worse)   explained by a classical stand-in (ESNq_t: detectable, below band; SAS28_t: no detectable difference)                         DOM: detectably worse; ISING: detectably worse; QRC: detectably worse
+   M                         not explained (ESNq_t: detectable, below band; SAS28_t: detectable, below band)                         not explained (ESNq_t: detectable, below band; SAS28_t: detectable, below band)                         DOM: detectably worse; ISING: detectably worse; QRC: detectably worse
+   F explained by a classical stand-in (ESNq_t: no detectable difference; SAS28_t: no detectable difference)                         not explained (ESNq_t: detectable, below band; SAS28_t: detectable, below band)                         DOM: detectably worse; ISING: detectably worse; QRC: detectably worse
+   D   explained by a classical stand-in (ESNq_t: no detectable difference; SAS28_t: detectable, below band) explained by a classical stand-in (ESNq_t: no detectable difference; SAS28_t: no detectable difference) DOM: no detectable difference; ISING: no detectable difference; QRC: no detectable difference

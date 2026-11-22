@@ -1,0 +1,22 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any registered dataset of this run was generated or scored. Hashes of this file and of rmap2_lib.py, rmap2_run.py, rmap2_report.py, rmap_lib.py, rmap_jobs.txt, run_rmap2.sh and the frozen libraries are in long_prereg_rmap2.sha256. Any later change must be a dated addendum.",
+  "approval": "Student's words, 2026-11-18: 'yes register and run the corrected map'.",
+  "extends": "long_prereg_rmap.json. That run (500 datasets, 10:15-12:35) was INCONCLUSIVE by its own pipeline check because of a generator defect (long_prereg_rmap_addendum_2026-11-18.md). Its stop rule forbade further runs on that map; the student decided to run this corrected map. The paper must report both runs.",
+  "only_changes_from_long_prereg_rmap.json": [
+    "Generator (rmap2_lib.py): the planted signal no longer feeds back into x. The input x is the linear process of rmap_lib (a = 0). The target is y[t+1] = x[t+1] + a g_t.",
+    "g_t has its linear projection on [1, x_t, mean10, mean50] removed (so HAR cannot pick it up) and is scaled to unit variance on the same path; a = sqrt(s/(1-s)).",
+    "Output folders rmap2_preds/, rmap2_logs/, report files rmap2_report.*.",
+    "Everything else unchanged and diff-checked: cells, reps, seeds, students, tuning, readout, splits, statistics, categories, Holm families, decision rules W0-W3, pipeline check, copper placement rule, captured-gain table."
+  ],
+  "generator_check_before_registration": "Generator only, no student model: realised share on test rows (1 - MSE(oracle)/MSE(HAR)) at target 0.15, long memory, reps 0 and 6: QDOM 0.165, 0.120; QISING 0.100, 0.211; CESN 0.150, 0.161; CSAS 0.122, 0.093; POLY2 0.215, 0.181; POLY3 0.096, 0.125.",
+  "pilot_disclosure": "One dataset outside the registered set (long, QDOM, s = 0.15, rep 98) was generated and SCORED to check that the signal now reaches the models (output in rmap2_pilot/). Ratios to HAR: DOM 0.8575, ISING 0.8582, ESN28u_t 0.8673, SAS28_t 0.8661, LSTM1 0.8620, ORACLE 0.8508, teacher circuit 0.8594. No design change was made after it. Note: in this pilot the teacher circuit is only about 0.3% better than LSTM1, so the pipeline check may fail again; if it does, the registered rule (W0 inconclusive) applies unchanged.",
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. The student answered 'yes register and run the corrected map'. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "No meaningful edge anywhere (W1 if the pipeline check passes). DOM 'detectable, below band' against the best classical model on QDOM cells at s >= 0.15 and possibly on CSAS cells; ISING weaker. Pipeline check: about even odds of passing (the pilot gap between teacher circuit and LSTM1 is only 0.3%). Copper-like cells show no detectable quantum edge. Informed by both pilots and the first run, so not blind."}
+  },
+  "known_limits": "All limits of long_prereg_rmap.json, plus: second attempt at the same map after an inconclusive first run (a forking path the paper must disclose); the target is the input plus a planted signal, not the next input itself; two pilot datasets were scored in total.",
+  "cost_estimate": "About 2.5 hours on up to 10 cores (first run: 2 h 20 min).",
+  "stop_rule": "One run of the 500 registered datasets, report and stop. No further generators, structures, shares, memories, models or categories on this map after results, whatever the outcome. A crashed job is re-run unchanged.",
+  "outputs": "rmap2_preds/; rmap2_logs/; rmap2_report.txt; rmap2_report.csv; rmap2_map.png; run_rmap2.out"
+}

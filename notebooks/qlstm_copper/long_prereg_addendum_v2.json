@@ -1,0 +1,8 @@
+{
+  "written_on": "2026-10-14",
+  "status": "Addendum 2, written BEFORE any TimesFM forecast on the v2 (zero-variance-as-missing) data. Student-requested. Does not replace or change any earlier result.",
+  "addition_1_timesfm_v2": "Run TimesFM 2.5 (same model, same ForecastConfig as long_prereg_addendum.json: max_context=512, max_horizon=5, normalize_inputs=True, use_continuous_quantile_head=True, force_flip_invariance=True, infer_is_positive=False, fix_quantile_crossing=True, batch 32) zero-shot on the v2 versions range_m and gap_m, 3 origins, validation and test rows. Input = log of the v2 variance series (missing days stay missing); because TimesFM cannot take NaN, missing values are filled by carrying the previous valid log variance forward inside the context window (decided before running; the first rows of a window are back-filled). No tuning of context length or flags. One run per version, deterministic.",
+  "addition_2_scoring_vs_ewma": "Every model in the univariate (range, gap, range_m, gap_m) and multivariate (range_m, gap_m) families is additionally scored against tuned EWMA as the reference: same QLIKE, validation-calibrated scale, DM with HAC lag 10 pooled over the 3 windows, 95% CI, +/-3% margin. Holm correction over the family of comparisons vs EWMA within each version (model list: HARq, GARCH11_t, LSTM, QLSTMT, TimesFM25, and for B also HARx, LSTMx, QLSTMTx). These are SECONDARY comparisons; the HAR-referenced families already reported are not recomputed.",
+  "environment": "scratch venv (CPU torch) outside the project venv; project venv unchanged",
+  "stop_rule": "One run, report and stop. 2025-26 not scored."
+}

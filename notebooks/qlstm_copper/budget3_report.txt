@@ -1,0 +1,49 @@
+CL_F refs (best, worst by validation): ('EWMA', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 3s
+GC_F refs (best, worst by validation): ('LSTM', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 4s
+HG_F refs (best, worst by validation): ('EWMA', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 4s
+HO_F refs (best, worst by validation): ('EWMA', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 4s
+NG_F refs (best, worst by validation): ('KAN_ctrl_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 5s
+PA_F refs (best, worst by validation): ('GARCH11_t', 'KAN_ctrl_q') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 5s
+PL_F refs (best, worst by validation): ('LSTM', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 5s
+SI_F refs (best, worst by validation): ('MLP_ctrl_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 6s
+ZC_F refs (best, worst by validation): ('RBF_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 6s
+ZS_F refs (best, worst by validation): ('RandFeat_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 6s
+ZW_F refs (best, worst by validation): ('RBF_q', 'GARCH11_t') quarters [np.int32(20252), np.int32(20253), np.int32(20254), np.int32(20261), np.int32(20262), np.int32(20263)] 7s
+null 0 15s
+null 200 93s
+null 400 171s
+null 600 251s
+null 800 330s
+
+== Part A: 11 commodity futures, hourly, QLSTMT and five other quantum models ==
+  control ratio 0.9280  apparent advantage +7.20%
+  SEED    best +14.94%   typical  +4.71%
+  WINDOW  best +33.04%   typical  +4.16%
+  ASSET   best +68.11%   typical  +7.20%
+  LOSS    best +13.84%   typical  +3.17%
+  QMODEL  best +12.92%   typical -2891327.59%
+  ALL5    best +85.96%   typical -19.64%
+  ALL6    best +92.51%   typical +33.09%
+  Shapley shares (best): {'ASSET': np.float64(40.7), 'REF': np.float64(29.5), 'WINDOW': np.float64(21.8), 'LOSS': np.float64(3.4), 'SEED': np.float64(3.1), 'QMODEL': np.float64(1.4)}
+  month-block null, gain over control (log points): observed | null median | null 95th | verdict
+    SEED      8.71 |   4.94 |   6.69 | beyond chance
+    WINDOW   32.63 |  29.74 |  39.15 | within chance
+    ASSET   106.82 |  20.83 |  67.73 | beyond chance
+    LOSS      7.42 |   5.23 |  11.17 | within chance
+    QMODEL    6.36 |  48.07 | 196.03 | within chance
+    ALL5    188.87 | 40031.52 | 42641.95 | within chance
+  replication rule: DOES NOT REPLICATE (ALL5 best +85.96%, top-2 Shapley factors ['ASSET', 'REF'])
+
+== Part B: copper, typical researcher (random option) ==
+  control typical apparent advantage -3.49%
+  SEED    typical apparent advantage -3.56%
+  WINDOW  typical apparent advantage -3.39%
+  GRID    typical apparent advantage -3.49%
+  LOSS    typical apparent advantage -1.50%
+  QMODEL  typical apparent advantage -3.39%
+  REF     typical apparent advantage +0.17%
+  ALL5    typical apparent advantage -2.64%
+  ALL6    typical apparent advantage +0.42%
+
+done 470s
+exit 0

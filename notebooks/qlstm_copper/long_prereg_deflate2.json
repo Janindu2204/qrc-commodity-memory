@@ -1,0 +1,19 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any number on these datasets was computed (loaders run for counts only). Hashes in long_prereg_deflate2.sha256.",
+  "why": "long_prereg_deflate.json: H2 supported (3 of 3), H1 not supported (67%). Confirmatory step on datasets not used there. A tail-adjusted H1 was considered and DROPPED before any data were read: for unit-variance Student-t the expected maximum of 17 draws is only about 5% above the normal one (1.79 vs 1.88), so it cannot repair single-outlier failures.",
+  "datasets_new": ["smalln_tuned and smalln_fixed: daily copper training-size study (long_preds_smalln), new choice TRAINSIZE (n = 50..1000, control 1000)", "roll_daily: daily copper rolling QLSTMT, range target (long_preds_rolling; gap target has no QLSTMT)", "mc_daily: daily multi-commodity rolling origins (mc_daily_preds), reference fixed in advance as HAR_anch because no validation forecasts are saved"],
+  "controls": "As in deflate2_lib.py docstring (quantum controls QRC / QRC_L2 / QLSTMT / IsingMem_anch; loss control QLIKE).",
+  "decision_rules": {
+    "H2_replication": "Spearman across choices between unit-averaged G_pred and G_obs per dataset; REPLICATED if >= 0.6 in at least 3 of the 4 datasets.",
+    "H1_retest": "Same cell rule as long_prereg_deflate.json (|deflated - honest| <= max(0.01, 0.3 G_pred)), non-seed cells with N >= 4; SUPPORTED if >= 75% pass.",
+    "bound": "Descriptive: the Samuelson bound min + s (N-1)/sqrt(N) is always at least the mean of the options; reported as bound - honest for every cell."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "H2 replicated in 3 or 4 of 4 datasets (WINDOW largest in the daily datasets). H1 re-test about 4 of 6 cells pass, i.e. not supported, consistent with the first test."}
+  },
+  "known_limits": ["Few H1 cells (6).", "These datasets' headline comparisons were seen in earlier work; their budgets were not.", "mc_daily has only 3 windows, so WINDOW there is outside H1."],
+  "stop_rule": "One run, report, stop. After this, no further deflation rules or datasets for this paper.",
+  "outputs": "deflate2_out.json; deflate2_report.txt"
+}

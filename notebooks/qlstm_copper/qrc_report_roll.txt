@@ -1,0 +1,61 @@
+set roll models with complete output: ['EWMA', 'HARq', 'QRC_angle', 'QRC_noent', 'ESN', 'RandFeat', 'LSTM', 'QLSTMT']
+ unit  n_test  EWMA  HARq  QRC_angle  QRC_noent   ESN  RandFeat  LSTM  QLSTMT  EWMA/HAR  HARq/HAR  QRC_angle/HAR  QRC_noent/HAR  ESN/HAR  RandFeat/HAR  LSTM/HAR  QLSTMT/HAR   vol       regime
+ 2008     247 0.334 0.319      0.316      0.313 0.346     0.312 0.337   0.428     1.046       1.0          0.990          0.980    1.083         0.978     1.057       1.341 0.303    turbulent
+ 2009     252 0.191 0.168      0.197      0.192 0.179     0.172 0.192   0.199     1.137       1.0          1.175          1.144    1.064         1.021     1.143       1.182 0.299    turbulent
+ 2010     238 0.289 0.271      0.270      0.268 0.275     0.265 0.261   0.257     1.067       1.0          0.999          0.992    1.017         0.979     0.967       0.951 0.219    turbulent
+ 2011     252 0.342 0.319      0.343      0.329 0.316     0.321 0.323   0.323     1.071       1.0          1.074          1.032    0.992         1.008     1.011       1.013 0.212    turbulent
+ 2012     250 0.266 0.303      0.304      0.304 0.275     0.304 0.287   0.291     0.878       1.0          1.005          1.005    0.908         1.003     0.947       0.960 0.149 intermediate
+ 2013     252 0.268 0.253      0.258      0.258 0.230     0.253 0.251   0.255     1.061       1.0          1.022          1.022    0.910         1.003     0.993       1.009 0.135         calm
+ 2014     252 0.303 0.281      0.260      0.266 0.262     0.259 0.265   0.264     1.075       1.0          0.924          0.944    0.931         0.920     0.940       0.939 0.121         calm
+ 2015     252 0.422 0.425      0.429      0.425 0.386     0.427 0.441   0.431     0.994       1.0          1.010          1.001    0.909         1.006     1.038       1.015 0.178 intermediate
+ 2016     250 0.281 0.224      0.218      0.216 0.226     0.217 0.217   0.237     1.257       1.0          0.977          0.969    1.012         0.969     0.969       1.059 0.154 intermediate
+ 2017     251 0.282 0.323      0.320      0.294 0.283     0.294 0.294   0.335     0.875       1.0          0.992          0.912    0.877         0.913     0.913       1.040 0.135         calm
+ 2018     250 0.212 0.176      0.174      0.174 0.179     0.174 0.179   0.184     1.204       1.0          0.988          0.989    1.021         0.991     1.018       1.045 0.146         calm
+ 2019     252 0.332 0.338      0.315      0.308 0.323     0.309 0.312   0.302     0.981       1.0          0.932          0.911    0.955         0.912     0.922       0.893 0.110         calm
+ 2020     253 0.709 0.561      0.543      0.543 0.580     0.556 0.565   0.561     1.263       1.0          0.968          0.967    1.033         0.990     1.006       1.000 0.173 intermediate
+ 2021     252 0.414 0.426      0.403      0.404 0.457     0.423 0.411   0.398     0.970       1.0          0.946          0.949    1.072         0.992     0.964       0.935 0.184    turbulent
+ 2022     251 0.407 0.378      0.370      0.367 0.332     0.372 0.374   0.365     1.076       1.0          0.979          0.971    0.877         0.985     0.988       0.966 0.194    turbulent
+ 2023     251 0.354 0.261      0.253      0.253 0.214     0.253 0.260   0.255     1.359       1.0          0.971          0.971    0.819         0.969     0.998       0.977 0.134         calm
+ 2024     252 0.384 0.344      0.341      0.340 0.375     0.338 0.341   0.365     1.116       1.0          0.992          0.990    1.091         0.983     0.991       1.062 0.159 intermediate
+
+blocks with ratio<1 vs HAR, exact binomial p vs 0.5:
+  EWMA: 5/17  p=0.143
+  QRC_angle: 12/17  p=0.143
+  QRC_noent: 12/17  p=0.143
+  ESN: 9/17  p=1.000
+  RandFeat: 12/17  p=0.143
+  LSTM: 11/17  p=0.332
+  QLSTMT: 7/17  p=0.629
+    model       ref  ratio  ci_lo  ci_hi      p                      verdict    n  p_holm                                             set
+QRC_angle       ESN 1.0150 0.9741 1.0559 0.4722                 inconclusive 4257  0.6741                roll: all, primary family (Holm)
+QRC_angle QRC_noent 1.0113 1.0051 1.0176 0.0004 equivalent (CI inside +/-3%) 4257  0.0015                roll: all, primary family (Holm)
+QRC_angle  RandFeat 1.0128 1.0004 1.0252 0.0436 equivalent (CI inside +/-3%) 4257  0.1307                roll: all, primary family (Holm)
+QRC_angle      HARq 0.9901 0.9699 1.0103 0.3371                 inconclusive 4257  0.6741                roll: all, primary family (Holm)
+QRC_angle      EWMA 0.9183 0.8583 0.9783 0.0077                       better 4257  0.0306          roll: all, secondary family (own Holm)
+QRC_angle      LSTM 1.0013 0.9841 1.0185 0.8836 equivalent (CI inside +/-3%) 4257  0.8836          roll: all, secondary family (own Holm)
+QRC_angle    QLSTMT 0.9754 0.9538 0.9970 0.0253                       better 4257  0.0760          roll: all, secondary family (own Holm)
+      ESN      HARq 0.9755 0.9398 1.0112 0.1788                 inconclusive 4257  0.3576          roll: all, secondary family (own Holm)
+QRC_angle       ESN 1.0597 1.0043 1.1151 0.0347                        worse 1508  0.0694               roll: calm, primary family (Holm)
+QRC_angle QRC_noent 1.0174 1.0006 1.0342 0.0422                        worse 1508  0.0694               roll: calm, primary family (Holm)
+QRC_angle  RandFeat 1.0246 1.0074 1.0418 0.0050                        worse 1508  0.0200               roll: calm, primary family (Holm)
+QRC_angle      HARq 0.9686 0.9430 0.9942 0.0161                       better 1508  0.0482               roll: calm, primary family (Holm)
+QRC_angle      EWMA 0.9029 0.8145 0.9912 0.0312                       better 1508  0.0936         roll: calm, secondary family (own Holm)
+QRC_angle      LSTM 1.0125 0.9897 1.0354 0.2830                 inconclusive 1508  0.5661         roll: calm, secondary family (own Holm)
+QRC_angle    QLSTMT 0.9908 0.9717 1.0099 0.3463 equivalent (CI inside +/-3%) 1508  0.5661         roll: calm, secondary family (own Holm)
+      ESN      HARq 0.9140 0.8732 0.9549 0.0000                       better 1508  0.0001         roll: calm, secondary family (own Holm)
+QRC_angle       ESN 0.9965 0.9143 1.0786 0.9325                 inconclusive 1257  1.0000       roll: intermediate, primary family (Holm)
+QRC_angle QRC_noent 1.0038 0.9976 1.0099 0.2308 equivalent (CI inside +/-3%) 1257  0.9232       roll: intermediate, primary family (Holm)
+QRC_angle  RandFeat 0.9971 0.9848 1.0094 0.6444 equivalent (CI inside +/-3%) 1257  1.0000       roll: intermediate, primary family (Holm)
+QRC_angle      HARq 0.9890 0.9560 1.0220 0.5134                 inconclusive 1257  1.0000       roll: intermediate, primary family (Holm)
+QRC_angle      EWMA 0.8901 0.7575 1.0227 0.1042                 inconclusive 1257  0.3127 roll: intermediate, secondary family (own Holm)
+QRC_angle      LSTM 0.9925 0.9667 1.0183 0.5679                 inconclusive 1257  1.0000 roll: intermediate, secondary family (own Holm)
+QRC_angle    QLSTMT 0.9739 0.9457 1.0020 0.0688                 inconclusive 1257  0.2753 roll: intermediate, secondary family (own Holm)
+      ESN      HARq 0.9925 0.9129 1.0721 0.8540                 inconclusive 1257  1.0000 roll: intermediate, secondary family (own Holm)
+QRC_angle       ESN 0.9978 0.9322 1.0633 0.9469                 inconclusive 1492  1.0000          roll: turbulent, primary family (Holm)
+QRC_angle QRC_noent 1.0137 1.0049 1.0226 0.0024 equivalent (CI inside +/-3%) 1492  0.0096          roll: turbulent, primary family (Holm)
+QRC_angle  RandFeat 1.0185 0.9890 1.0480 0.2188                 inconclusive 1492  0.6564          roll: turbulent, primary family (Holm)
+QRC_angle      HARq 1.0101 0.9682 1.0520 0.6372                 inconclusive 1492  1.0000          roll: turbulent, primary family (Holm)
+QRC_angle      EWMA 0.9619 0.8886 1.0352 0.3089                 inconclusive 1492  0.9267    roll: turbulent, secondary family (own Holm)
+QRC_angle      LSTM 1.0006 0.9642 1.0371 0.9728                 inconclusive 1492  1.0000    roll: turbulent, secondary family (own Holm)
+QRC_angle    QLSTMT 0.9643 0.9131 1.0154 0.1706                 inconclusive 1492  0.6822    roll: turbulent, secondary family (own Holm)
+      ESN      HARq 1.0123 0.9605 1.0641 0.6406                 inconclusive 1492  1.0000    roll: turbulent, secondary family (own Holm)

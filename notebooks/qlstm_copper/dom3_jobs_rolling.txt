@@ -1,0 +1,49 @@
+dom3_run.py F 2025
+dom3_run.py F 2024
+dom3_run.py F 2023
+dom3_run.py F 2022
+dom3_run.py F 2021
+dom3_run.py F 2020
+dom3_run.py F 2019
+dom3_run.py F 2018
+dom3_run.py F 2017
+dom3_run.py F 2016
+dom3_run.py F 2015
+dom3_run.py F 2014
+dom3_run.py F 2013
+dom3_run.py M 2025
+dom3_run.py M 2024
+dom3_run.py M 2023
+dom3_run.py M 2022
+dom3_run.py M 2021
+dom3_run.py M 2020
+dom3_run.py M 2019
+dom3_run.py M 2018
+dom3_run.py M 2017
+dom3_run.py M 2016
+dom3_run.py M 2015
+dom3_run.py M 2014
+dom3_run.py M 2013
+dom3_run.py H 2025
+dom3_run.py H 2024
+dom3_run.py H 2023
+dom3_run.py H 2022
+dom3_run.py H 2021
+dom3_run.py H 2020
+dom3_run.py H 2019
+dom3_run.py H 2018
+dom3_run.py H 2017
+dom3_run.py H 2016
+dom3_run.py H 2015
+dom3_run.py H 2014
+dom3_run.py H 2013
+dom3_daily.py 2015
+dom3_daily.py 2016
+dom3_daily.py 2017
+dom3_daily.py 2018
+dom3_daily.py 2019
+dom3_daily.py 2020
+dom3_daily.py 2021
+dom3_daily.py 2022
+dom3_daily.py 2023
+dom3_daily.py 2024

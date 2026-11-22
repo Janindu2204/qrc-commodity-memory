@@ -1,0 +1,40 @@
+Databento block volatility / regime: {2015: (0.243, 'intermediate'), 2016: (0.225, 'intermediate'), 2017: (0.19, 'calm'), 2018: (0.21, 'intermediate'), 2019: (0.159, 'calm'), 2020: (0.257, 'turbulent'), 2021: (0.25, 'turbulent'), 2022: (0.285, 'turbulent'), 2023: (0.203, 'calm'), 2024: (0.223, 'intermediate')}
+TARGET range: years 2015-2024; ratio<1 favours the first model; db = Databento target, yahoo = earlier run on the same years
+                                                       (ratio, db)  (ratio, yahoo)  (p_holm, db)  (p_holm, yahoo)    verdict_db verdict_yahoo
+stratum      family               model     ref                                                                                              
+all          primary (Holm)       QRC_angle ESN              1.022           1.004         0.944            1.000  inconclusive  inconclusive
+                                            QRC_noent        0.995           1.013         0.493            0.014    equivalent    equivalent
+                                            RandFeat         1.001           1.001         1.000            1.000    equivalent    equivalent
+                                            TrigFeat         1.000           1.008         1.000            0.331    equivalent    equivalent
+                                            HARq             0.995           0.975         1.000            0.168  inconclusive        better
+             secondary (own Holm) QRC_angle EWMA             0.814           0.887         0.034            0.026        better        better
+                                  ESN       HARq             0.974           0.971         0.195            0.253  inconclusive  inconclusive
+                                  TrigFeat  HARq             0.995           0.966         0.755            0.026  inconclusive        better
+                                  EWMA      HARq             1.222           1.099         0.020            0.059         worse         worse
+calm         primary (Holm)       QRC_angle ESN              1.041           1.084         0.409            0.071  inconclusive         worse
+                                            QRC_noent        1.008           1.038         0.339            0.022    equivalent         worse
+                                            RandFeat         1.000           1.038         0.998            0.022    equivalent         worse
+                                            TrigFeat         0.994           1.042         0.611            0.003    equivalent         worse
+                                            HARq             1.030           0.964         0.111            0.071         worse  inconclusive
+             secondary (own Holm) QRC_angle EWMA             0.798           0.918         0.007            0.302        better  inconclusive
+                                  ESN       HARq             0.989           0.890         0.703            0.000  inconclusive        better
+                                  TrigFeat  HARq             1.036           0.925         0.054            0.007         worse        better
+                                  EWMA      HARq             1.291           1.050         0.004            0.465         worse  inconclusive
+intermediate primary (Holm)       QRC_angle ESN              1.077           0.996         0.112            1.000         worse  inconclusive
+                                            QRC_noent        0.986           1.005         0.112            0.572    equivalent    equivalent
+                                            RandFeat         0.998           1.005         1.000            1.000    equivalent    equivalent
+                                            TrigFeat         0.996           1.006         1.000            1.000    equivalent    equivalent
+                                            HARq             1.003           0.995         1.000            1.000    equivalent  inconclusive
+             secondary (own Holm) QRC_angle EWMA             0.898           0.895         0.682            0.289  inconclusive  inconclusive
+                                  ESN       HARq             0.932           0.999         0.027            0.984        better  inconclusive
+                                  TrigFeat  HARq             1.007           0.989         0.682            0.932  inconclusive  inconclusive
+                                  EWMA      HARq             1.117           1.111         0.682            0.289  inconclusive  inconclusive
+turbulent    primary (Holm)       QRC_angle ESN              0.944           0.962         0.048            0.983        better  inconclusive
+                                            QRC_noent        0.997           1.002         1.000            0.983    equivalent    equivalent
+                                            RandFeat         1.005           0.975         1.000            0.581    equivalent  inconclusive
+                                            TrigFeat         1.011           0.989         1.000            0.648  inconclusive    equivalent
+                                            HARq             0.962           0.964         1.000            0.648  inconclusive  inconclusive
+             secondary (own Holm) QRC_angle EWMA             0.733           0.861         0.381            0.360  inconclusive  inconclusive
+                                  ESN       HARq             1.020           1.002         0.549            0.965  inconclusive  inconclusive
+                                  TrigFeat  HARq             0.952           0.975         0.549            0.548  inconclusive  inconclusive
+                                  EWMA      HARq             1.313           1.120         0.381            0.509  inconclusive  inconclusive

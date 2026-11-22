@@ -1,0 +1,37 @@
+ratio < 1 favours the first model. H, M, F: mean squared error of ln RV; D: QLIKE.
+grid stratum        family    model      ref  ratio  ci_lo  ci_hi  p_holm      verdict                 category     n
+   H     all     A primary      DOM ESN28u_t 0.9957 0.9908 1.0006  0.0837   equivalent no detectable difference  4151
+   H     all     A primary    ISING ESN28u_t 0.9887 0.9840 0.9934  0.0000   equivalent   detectable, below band  4151
+   H     all     A primary      DOM    ISING 1.0071 1.0048 1.0093  0.0000   equivalent         detectably worse  4151
+   H     all C descriptive ESN28u_t   ESN28u 0.9981 0.9964 0.9997  0.0205   equivalent                           4151
+   H     all C descriptive ESN28u_t      HAR 0.9926 0.9886 0.9966  0.0005   equivalent                           4151
+   H     all C descriptive    ISING      HAR 0.9814 0.9762 0.9866  0.0000   equivalent                           4151
+   H     all C descriptive      DOM      HAR 0.9883 0.9831 0.9936  0.0000   equivalent                           4151
+   M     all     A primary      DOM ESN28u_t 0.9913 0.9866 0.9960  0.0005   equivalent   detectable, below band 17908
+   M     all     A primary    ISING ESN28u_t 0.9896 0.9846 0.9946  0.0002   equivalent   detectable, below band 17908
+   M     all     A primary      DOM    ISING 1.0017 1.0001 1.0034  0.0399   equivalent         detectably worse 17908
+   M     all C descriptive ESN28u_t   ESN28u 0.9977 0.9960 0.9994  0.0067   equivalent                          17908
+   M     all C descriptive ESN28u_t      HAR 0.9892 0.9841 0.9944  0.0001   equivalent                          17908
+   M     all C descriptive    ISING      HAR 0.9789 0.9736 0.9843  0.0000   equivalent                          17908
+   M     all C descriptive      DOM      HAR 0.9806 0.9755 0.9858  0.0000   equivalent                          17908
+   F     all     A primary      DOM ESN28u_t 0.9948 0.9925 0.9971  0.0000   equivalent   detectable, below band 49865
+   F     all     A primary    ISING ESN28u_t 0.9959 0.9932 0.9986  0.0055   equivalent   detectable, below band 49865
+   F     all     A primary      DOM    ISING 0.9989 0.9980 0.9998  0.0226   equivalent   detectable, below band 49865
+   F     all C descriptive ESN28u_t   ESN28u 1.0000 0.9993 1.0007  0.9722   equivalent                          49865
+   F     all C descriptive ESN28u_t      HAR 0.9918 0.9887 0.9949  0.0000   equivalent                          49865
+   F     all C descriptive    ISING      HAR 0.9878 0.9847 0.9908  0.0000   equivalent                          49865
+   F     all C descriptive      DOM      HAR 0.9867 0.9836 0.9897  0.0000   equivalent                          49865
+   D     all     A primary      DOM ESN28u_t 0.8834 0.6950 1.0718  0.4504 inconclusive no detectable difference   455
+   D     all     A primary    ISING ESN28u_t 0.9546 0.8936 1.0157  0.4354 inconclusive no detectable difference   455
+   D     all     A primary      DOM    ISING 0.9254 0.7809 1.0699  0.4504 inconclusive no detectable difference   455
+   D     all C descriptive ESN28u_t   ESN28u 1.0844 0.9498 1.2191  0.8767 inconclusive                            455
+   D     all C descriptive ESN28u_t      HAR 1.1810 0.8263 1.5357  0.9519 inconclusive                            455
+   D     all C descriptive    ISING      HAR 1.1274 0.8308 1.4240  0.9519 inconclusive                            455
+   D     all C descriptive      DOM      HAR 1.0433 0.9068 1.1798  0.9519 inconclusive                            455
+
+=== registered decision ===
+ grid                                DOM_vs_tuned_ESN                              ISING_vs_tuned_ESN
+   H 0.9957 [0.9908,1.0006] no detectable difference   0.9887 [0.9840,0.9934] detectable, below band
+   M   0.9913 [0.9866,0.9960] detectable, below band   0.9896 [0.9846,0.9946] detectable, below band
+   F   0.9948 [0.9925,0.9971] detectable, below band   0.9959 [0.9932,0.9986] detectable, below band
+   D 0.8834 [0.6950,1.0718] no detectable difference 0.9546 [0.8936,1.0157] no detectable difference

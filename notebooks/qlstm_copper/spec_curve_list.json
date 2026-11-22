@@ -1,0 +1,43 @@
+{
+  "written_on": "2026-11-14",
+  "status": "FROZEN 2026-11-14 before spec_curve.py was run on any prediction file. Hashes of this file and spec_curve.py are in spec_curve_list.sha256. A later change must be a dated addendum.",
+  "approval": "Specification curve chosen by the student on 2026-11-13 (option 2) and listed as a next step on 2026-11-14; student's words: 'run the next steps'. The list below is the assistant's proposal, not a student design.",
+  "what_it_is": "A descriptive summary. Every reasonable way of asking 'quantum reservoir versus a classical model' on the copper frequency ladder is computed from SAVED forecasts (no model is fitted) and shown together, so that no single favourable comparison can be picked. It is NOT a new test: no p-values are combined, no multiplicity correction is applied, and the specifications are strongly dependent (same rows, same models).",
+  "not_blind": "Every primary-loss comparison in this list, or a close relative, has already been seen in dom_report, dom2_report, dom3_report, dom4_report or hf2_report. The second loss and some pairs (for example QRC against the networks under the second loss) have not been computed before.",
+  "scope": "The frequency ladder only (Databento copper; grids F 5-minute, M 15-minute, H hourly, D daily). The older long-daily Yahoo results and the 2020-2026 hourly price-change results use different rows and file formats and are reported in the evidence table, not in this curve.",
+  "dimensions": {
+    "quantum_model": ["DOM (Domingo et al. G3 circuit reservoir, one input)", "ISING (Domingo et al. Ising reservoir, one input)", "QRC (the project's earlier angle-encoded reservoir; fixed configuration on H, M, F with 8 inputs; tuned QRC_angle on D with 6 inputs)"],
+    "reference_for_DOM_and_ISING": {
+      "matched reservoir or stand-in (same single input, 28 features, same readout)": ["ESN28u", "ESN28u_t", "ESNq_t", "SAS28_t", "ESNb_t", "SASb_t"],
+      "network, same single input": ["LSTM1", "GRU1"],
+      "network, more inputs": ["LSTM", "GRU"],
+      "benchmark": ["HAR"]
+    },
+    "reference_for_QRC": {
+      "matched classical feature model (same inputs, same readout)": ["ESN_s", "RandFeat", "TrigFeat"],
+      "network, different inputs": ["LSTM", "GRU"],
+      "benchmark": ["HAR"]
+    },
+    "grid": ["F", "M", "H", "D"],
+    "period_and_stratum": ["rolling/all", "rolling/calm", "rolling/intermediate", "rolling/turbulent", "heldout/all"],
+    "loss": {"primary": "H, M, F: squared error of ln RV; D: QLIKE with validation-calibrated scale (as registered)", "second": "H, M, F: absolute error of ln RV; D: squared error of ln variance with the same calibrated scale"}
+  },
+  "count": "28 model pairs x 4 grids x 5 strata x 2 losses = 1120 specifications.",
+  "sources": "long_preds_dom (DOM, ESN28u; D_old for stored daily models in 2025-26), long_preds_dom2 (ISING, ESN28u_t), long_preds_dom3 (ESNq_t, SAS28_t, LSTM, GRU), long_preds_dom4 (ESNb_t, SASb_t, LSTM1, GRU1), long_preds_hf and long_preds_hf2/fixed (QRC, ESN_s = stored ESN, RandFeat, TrigFeat on H, M, F), long_preds_qrc/dbdaily/range (QRC_angle, ESN, RandFeat, TrigFeat, HARq on D 2015-2024). Rolling blocks: H, M, F 2013-2025; D 2015-2024. Held-out: H, M, F 2026; D 2025-2026. Regimes as in the registered reports (tertiles of the block volatility measure, 4/5/4 or 3/4/3).",
+  "statistic": "ratio = mean loss of the quantum model / mean loss of the reference (below 1 favours the quantum model), with a 95% interval from the Newey-West (Bartlett) variance of the loss difference, lags H 24, M 96, F 288, D 10, as in the registered reports. spec_curve.py first reproduces four published report numbers and stops if any differs by more than 0.0002.",
+  "labels_per_specification": "'interval below 0.97' (the registered practical band), 'interval below 1', 'interval contains 1', 'interval above 1'. Raw intervals, no Holm correction (see what_it_is).",
+  "summaries_fixed_now": [
+    "Number and share of specifications in each label, overall and by reference class, by quantum model, by grid, by period (rolling vs held-out) and by loss.",
+    "Median, 5th and 95th percentile of the ratio, overall and by reference class.",
+    "The curve: all specifications sorted by ratio, coloured by reference class, with their intervals (spec_curve.png).",
+    "The lowest 15 and highest 15 ratios listed in full."
+  ],
+  "reading_rules_fixed_now": {
+    "advantage": "The curve would support a quantum advantage only if most specifications against matched classical models AND against networks had 'interval below 0.97'. Any 'interval below 0.97' specification is listed individually with its row count; a small stratum or the daily grid is not read as an advantage on its own.",
+    "expected_if_no_advantage": "Ratios close to 1 against matched classical models, above 1 against networks, with any 'interval below 1' cases inside the band.",
+    "claude_prediction_recorded_for_transparency_not_the_student": "Against matched reservoirs and stand-ins: median ratio about 0.998, roughly half the specifications 'interval below 1', none 'interval below 0.97' on intraday grids. Against networks: nearly all intraday specifications 'interval above 1'. A few daily specifications 'interval below 0.97' against the single-input networks (as in dom4_report). The second loss does not change the picture.",
+    "student_prediction": null
+  },
+  "known_limits": ["Dependent specifications; descriptive only.", "Copper only; the ladder only.", "Reference sets differ by quantum model because the inputs differ; classes are reported separately for that reason.", "The classes 'network, more inputs' and 'network, different inputs' are not like-for-like comparisons.", "AI-written code, not re-derived by the student. Licensed data are not committed."],
+  "outputs": "spec_curve.csv, spec_curve_summary.txt, spec_curve.png"
+}

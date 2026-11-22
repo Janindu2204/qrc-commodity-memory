@@ -1,0 +1,50 @@
+ratio < 1 favours the first model. H, M, F: mean squared error of ln RV; D: QLIKE.
+grid stratum                                family     model       ref  ratio  ci_lo  ci_hi  p_holm      verdict     n
+   H     all                             A primary       DOM    ESN28u 0.9938 0.9893 0.9983  0.0068   equivalent  4151
+   H     all                             A primary       DOM     DOMG1 0.9883 0.9831 0.9936  0.0000   equivalent  4151
+   H     all                             A primary       DOM       HAR 0.9883 0.9831 0.9936  0.0000   equivalent  4151
+   H     all                         C descriptive    ESN28u       HAR 0.9945 0.9911 0.9979  0.0034   equivalent  4151
+   H     all                         C descriptive     DOMG1       HAR 1.0000 1.0000 1.0000  0.9251   equivalent  4151
+   H     all                       B stored models       DOM       QRC 1.0109 1.0054 1.0165  0.0002   equivalent  4151
+   H     all                       B stored models       DOM  RandFeat 1.0261 1.0177 1.0345  0.0000        worse  4151
+   H     all                       B stored models       DOM       ESN 1.0106 1.0045 1.0167  0.0007   equivalent  4151
+   H     all                       B stored models       DOM  TrigFeat 1.0203 1.0132 1.0275  0.0000   equivalent  4151
+   M     all                             A primary       DOM    ESN28u 0.9890 0.9846 0.9935  0.0000   equivalent 17908
+   M     all                             A primary       DOM     DOMG1 0.9806 0.9755 0.9858  0.0000   equivalent 17908
+   M     all                             A primary       DOM       HAR 0.9806 0.9755 0.9858  0.0000   equivalent 17908
+   M     all                         C descriptive    ESN28u       HAR 0.9915 0.9873 0.9957  0.0001   equivalent 17908
+   M     all                         C descriptive     DOMG1       HAR 1.0000 1.0000 1.0000  0.0251   equivalent 17908
+   M     all                       B stored models       DOM       QRC 1.0033 0.9985 1.0082  0.1756   equivalent 17908
+   M     all                       B stored models       DOM  RandFeat 1.0148 1.0081 1.0216  0.0001   equivalent 17908
+   M     all                       B stored models       DOM       ESN 1.0119 1.0063 1.0175  0.0001   equivalent 17908
+   M     all                       B stored models       DOM  TrigFeat 1.0120 1.0065 1.0176  0.0001   equivalent 17908
+   F     all                             A primary       DOM    ESN28u 0.9948 0.9928 0.9969  0.0000   equivalent 49865
+   F     all                             A primary       DOM     DOMG1 0.9867 0.9836 0.9897  0.0000   equivalent 49865
+   F     all                             A primary       DOM       HAR 0.9867 0.9836 0.9897  0.0000   equivalent 49865
+   F     all                         C descriptive    ESN28u       HAR 0.9918 0.9891 0.9946  0.0000   equivalent 49865
+   F     all                         C descriptive     DOMG1       HAR 1.0000 1.0000 1.0000  0.0157   equivalent 49865
+   F     all                       B stored models       DOM       QRC 1.0070 1.0045 1.0095  0.0000   equivalent 49865
+   F     all                       B stored models       DOM  RandFeat 1.0134 1.0106 1.0162  0.0000   equivalent 49865
+   F     all                       B stored models       DOM       ESN 1.0167 1.0138 1.0196  0.0000   equivalent 49865
+   F     all                       B stored models       DOM  TrigFeat 1.0125 1.0099 1.0150  0.0000   equivalent 49865
+   D     all                             A primary       DOM    ESN28u 0.9580 0.8831 1.0329  0.8145 inconclusive   455
+   D     all                             A primary       DOM     DOMG1 1.0425 0.9082 1.1767  1.0000 inconclusive   455
+   D     all                             A primary       DOM       HAR 1.0433 0.9068 1.1798  1.0000 inconclusive   455
+   D     all                         C descriptive    ESN28u       HAR 1.0890 0.8768 1.3012  0.8217 inconclusive   455
+   D     all                         C descriptive     DOMG1       HAR 1.0008 0.9984 1.0032  0.8217   equivalent   455
+   D     all                       B stored models       DOM QRC_angle 0.9646 0.9016 1.0277  0.8149 inconclusive   455
+   D     all                       B stored models       DOM  RandFeat 0.8668 0.6859 1.0476  0.5951 inconclusive   455
+   D     all                       B stored models       DOM       ESN 0.9766 0.9068 1.0465  1.0000 inconclusive   455
+   D     all                       B stored models       DOM  TrigFeat 0.9837 0.9056 1.0618  1.0000 inconclusive   455
+   D     all H earlier quantum reservoir, held-out QRC_angle       ESN 1.0124 0.9678 1.0570  1.0000 inconclusive   455
+   D     all H earlier quantum reservoir, held-out QRC_angle QRC_noent 1.0018 0.9921 1.0115  1.0000   equivalent   455
+   D     all H earlier quantum reservoir, held-out QRC_angle  RandFeat 0.8986 0.7463 1.0508  0.5761 inconclusive   455
+   D     all H earlier quantum reservoir, held-out QRC_angle  TrigFeat 1.0197 0.9933 1.0462  0.5761 inconclusive   455
+   D     all H earlier quantum reservoir, held-out QRC_angle       HAR 1.0815 0.9861 1.1770  0.4706 inconclusive   455
+
+=== registered decision ===
+ grid  quantum_edge  pooled_rule turbulent_rule  complexity_claim                           dom_vs_g1
+   H          True         True           None              True   0.9883 [0.9831,0.9936] equivalent
+   M          True         True           None              True   0.9806 [0.9755,0.9858] equivalent
+   F          True         True           None              True   0.9867 [0.9836,0.9897] equivalent
+   D         False        False           None             False 1.0425 [0.9082,1.1767] inconclusive

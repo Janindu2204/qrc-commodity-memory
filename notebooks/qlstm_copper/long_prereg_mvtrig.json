@@ -1,0 +1,67 @@
+{
+  "written_on": "2026-11-08",
+  "status": "REGISTERED 2026-11-08: frozen BEFORE any block of this design was run. Hashes of this file and of the two scripts are in long_prereg_mvtrig.sha256. Any later change must be a dated addendum, not an edit.",
+  "extends": "long_prereg_qrc.json (registered 2026-10-16; its results are not recomputed or changed) and long_prereg_rolling.json. Same data, target, blocks, regime labels, tuning protocol, readout, statistics.",
+  "motivation": {
+    "part_A": "long_prereg_qrc.json was univariate and explicitly did not retest the multivariate hypothesis with a reservoir (H2, Maheshwari et al.). This part runs the multivariate QRC against a matched multivariate echo state network on the same 17 rolling blocks.",
+    "part_B": "Mechanism control. The project's hypothesis is that QRC with angle encoding behaves like a bounded trigonometric feature map (each input enters once through an RY angle, so every expectation value is a trigonometric polynomial of degree <= 1 in each encoded angle). If so, classical cosine features with the same input angles and the same one- and two-input structure should match QRC. The earlier controls (ESN, tanh random features) used different function classes, so they cannot test this."
+  },
+  "hypotheses": {
+    "H_A": "Multivariate QRC does not beat the matched multivariate ESN (Fellner et al. restated), and a quantum edge, if any, does not concentrate in the multivariate setting (Maheshwari et al.).",
+    "H_B": "A classical trigonometric-feature model (TrigFeat) is statistically equivalent to QRC_angle (the existing univariate run of long_prereg_qrc.json), i.e. the trigonometric feature-map hypothesis."
+  },
+  "data": "Identical to long_prereg_qrc.json: range_m version, data/daily_long/flagged_v2/HG_F_1d.csv, target = log of 5-day forward mean daily variance, 17 rolling one-year test blocks 2008-2024 (expanding window, validation = 2 years before, purge 5 rows), regime tertiles exactly as in long_prereg_rolling.json. 2025-26 not scored. Checked 2026-11-08 (blocks 2008, 2015, 2024): the multivariate and univariate preparation give the SAME train, validation and test rows, so multivariate and univariate models are compared on identical rows. The three original 6-year origins are NOT run in this registration.",
+  "part_A_models": {
+    "inputs": "6 inputs per day, standardised on train rows: lvR1, lvR5, lvR22 (own range variance) and the three outside inputs of long_core.prepare(mv=True): lagged VIX level, crude-oil and dollar-index 5-day log range variance (all lagged strictly one day). Today's values only (no extra lag copy; this differs from the univariate QRC, whose 6 inputs were today and yesterday of the 3 own features). 6 inputs map one-to-one to the 6 qubits.",
+    "QRCmv_angle": "Same circuit as QRC_angle (6 qubits, angle encoding arctan(scale * input), random RX/RY/RZ layers plus CZ ring, 6 Z + 15 ZZ = 21 features), on the 6 inputs above. Layers {1,2,3} x input scale {0.1,0.25,0.5,1.0}.",
+    "QRCmv_noent": "Same without the CZ layer, same grid.",
+    "ESNmv": "21-unit echo state network (hourly_tune_qrc.esn) fed the same 6 inputs, recurrent over the series. Spectral radius {0.6,0.9,1.2} x leak {0.1,0.2,0.5,1.0}.",
+    "RandFeatmv": "tanh(arctan(scale * 6 inputs) W + b), 21 features. Input scale {0.1,0.25,0.5,1.0} x W scale {0.5,1.0,2.0}.",
+    "HARx": "HAR plus the three outside inputs, linear QLIKE readout (the multivariate reference; same construction as long_mv_base.py), computed per block inside qrc_mvtrig.py.",
+    "readout": "As long_prereg_qrc.json: the 6 standardised inputs M plus the 21 reservoir features, standardised on train rows, linear QLIKE model anchored on lvR5, ridge strength from {1e-3,1e-2,1e-1,1,10} chosen on validation, forecasts averaged over 10 final seeds, validation-calibrated scale. Note that in Part A the readout always contains the outside inputs linearly, so every Part A model is HARx plus a reservoir; a quantum edge must show up on top of HARx."
+  },
+  "part_B_models": {
+    "TrigFeat": "Classical trigonometric features on the SAME 6 univariate inputs as QRC_angle (today and yesterday of lvR1, lvR5, lvR22; theta = arctan(scale * input)). 21 features: 6 one-input terms cos(freq * theta_i + phi_i) and the 15 pairwise terms cos(freq * (theta_i + s_ij * theta_j) + phi_ij), s_ij random sign, phi random phase uniform on [0, 2 pi), drawn per seed (seed 2000+s). The 6 + 15 structure mirrors the 6 single-qubit Z and 15 ZZ features of the QRC. Grid: input scale {0.1,0.25,0.5,1.0} x frequency {0.5,1,2} = 12 configurations. Same readout, tuning seeds (100-102), 10 final seeds and equal 12-configuration budget as every other model.",
+    "compared_against": "QRC_angle, QRC_noent, ESN, RandFeat, HARq and EWMA outputs of long_prereg_qrc.json / long_prereg_rolling.json are read as they stand (they were run on 2026-10-16 in an earlier Python environment; see environment note)."
+  },
+  "comparisons": {
+    "A_primary_holm_per_stratum": ["QRCmv_angle vs ESNmv", "QRCmv_angle vs QRCmv_noent", "QRCmv_angle vs RandFeatmv", "QRCmv_angle vs HARx"],
+    "A_secondary_own_holm_per_stratum": ["QRCmv_angle vs QRC_angle", "ESNmv vs ESN", "RandFeatmv vs RandFeat", "HARx vs HARq"],
+    "A_difference_in_differences_single_test": "(QRCmv_angle - QRC_angle) minus (ESNmv - ESN) per-row QLIKE: does going multivariate help QRC more than the matched ESN? This is the direct test of 'quantum concentrates in multivariate' and is reported without Holm (one test).",
+    "B_primary_holm_per_stratum": ["TrigFeat vs QRC_angle", "TrigFeat vs RandFeat", "TrigFeat vs ESN", "TrigFeat vs HARq"],
+    "statistics": "Pooled per-row QLIKE differences, Diebold-Mariano with HAC lag 10, 95% CI on the ratio, +/-3% equivalence band, Holm within each family and stratum (all, calm, intermediate, turbulent). Per-block ratio vs HARq and binomial sign counts are descriptive. Verdict words as in qrc_report.py."
+  },
+  "decision_rules": {
+    "A": "A quantum edge in the multivariate setting is claimed only if QRCmv_angle vs ESNmv has its whole 95% interval below 1 AND the pooled Holm p is below 0.05 AND QRCmv_angle vs QRCmv_noent also favours entanglement AND the result holds in the turbulent stratum (the same rule as long_prereg_qrc.json). The claim that quantum 'concentrates in the multivariate setting' additionally needs the difference-in-differences interval to lie below 1. Anything else is reported as a tie, inconclusive or worse.",
+    "B": "The trigonometric feature-map hypothesis is SUPPORTED if TrigFeat vs QRC_angle, pooled over all 17 blocks, has its whole 95% interval inside +/-3% ('equivalent'). If TrigFeat is 'better' the hypothesis is supported a fortiori (a simpler classical model does at least as well). If TrigFeat is 'worse' (interval entirely above 1) it is NOT supported, and the QRC's behaviour is not explained by this feature class. 'Inconclusive' means no claim either way. The stratum results are reported, not used for the decision."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction_part_A": {
+      "written_on": "2026-11-08",
+      "before_registration": true,
+      "student_words": "there would be no significant advantage seen",
+      "reading": "No significant quantum advantage for multivariate QRC over the multivariate ESN. Regime and entanglement effect not stated separately."
+    },
+    "student_prediction_part_B": {
+      "written_on": null,
+      "student_words": null,
+      "reading": "NOT stated. The student asked for the mechanism control to be run ('run the optional lever as well') but gave no separate prediction for it. Left null and not filled in on the student's behalf."
+    },
+    "claude_prediction_recorded_for_transparency_not_the_student": {
+      "written_on": "2026-11-08",
+      "part_A": "QRCmv_angle vs ESNmv: tie or inconclusive in every stratum; no entanglement effect; multivariate inputs do not help any model beyond HARx (long_prereg_v2.json part B found multivariate hurt).",
+      "part_B": "TrigFeat vs QRC_angle: equivalent or inconclusive (not worse); the control does not produce a clear win in either direction because the pooled intervals in the earlier QRC run were already wide."
+    }
+  },
+  "known_limits": [
+    "Not blind: the student and Claude had seen the univariate QRC results (QRC about equal to ESN and RandFeat, no entanglement effect) and the v2 multivariate result (multivariate hurt) before this registration. Part B in particular was designed after seeing that QRC_angle, ESN and RandFeat tie.",
+    "TrigFeat is a stylised surrogate for the QRC function class, not an exact one: the real QRC mixes inputs through random rotations and multi-body products of the encoded angles; TrigFeat uses random phases and at most two inputs per feature. 'Equivalent' therefore supports the feature-map hypothesis but does not prove it, and 'not equivalent' could reflect the surrogate rather than the hypothesis. The TrigFeat grid (frequency, scale) is the author's choice and equal in size to the other grids.",
+    "Part A inputs (today only, 6 raw inputs) differ from the univariate QRC inputs (today and yesterday of 3); the multivariate-vs-univariate contrasts therefore change both information and input layout.",
+    "Exact simulation of 6 qubits: no hardware or shot noise. Small tuning budget (12 configurations per model), validation windows also used by the readout. 10 seeds, 17 overlapping blocks: wide intervals, low power below roughly 3-5% effects. The turbulent stratum is 4-6 blocks.",
+    "Environment: the 2026-10-16 QRC outputs were produced in an earlier Python environment that no longer exists on this machine. New outputs are produced in a fresh repository-local environment (numpy 2.5.2 and the pinned requirements.txt, plus torch CPU, pennylane and arch installed unpinned for imports). Pre-run reproducibility check: re-running the univariate QRC_angle for block 2008 in the new environment must reproduce the stored lv_te to a maximum relative difference below 1e-6; if it does not, this is reported with the Part B comparison and the cause is investigated before any result is interpreted. This check is code-only and scores nothing.",
+    "AI-written code, not independently re-derived by the student."
+  ],
+  "cost_estimate": "Estimates, not measurements: the earlier univariate run of 4 tuned models took up to about 5 min per block under load. This run tunes 5 models (4 in Part A, 1 in Part B) plus HARx per block; with blocks run in parallel on a 22-core machine I expect 30-90 min in total.",
+  "stop_rule": "One run of the registered design (17 blocks), report and stop. No new variants, blocks, hyperparameters, models or grids after results; 2025-26 scored only in a separate final step. A crashed block is re-run unchanged; a code change after the hash requires a dated addendum.",
+  "outputs": "long_preds_qrc/mvtrig/range_m/<year>/*.npz; qrc_mvtrig_configs.csv (chosen configurations); qrc_mvtrig_report.txt, qrc_mvtrig_report.csv, qrc_mvtrig_report_blocks.csv."
+}

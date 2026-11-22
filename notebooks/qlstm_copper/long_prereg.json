@@ -1,0 +1,19 @@
+{
+  "written_on": "2026-10-12",
+  "status": "Written BEFORE any long-daily model run. Change = new version; old results stay reported.",
+  "question": "On 26 years of daily COMEX copper (HG=F, Yahoo), does any model beat HAR on 5-day-ahead range-based variance, and is QLSTMT different from LSTM? Goal: a BOUNDED null (confidence intervals), option B.",
+  "data": "data/daily_long/flagged/HG_F_1d.csv (6,557 rows 2000-08-30..2026-10-09). 2 roll-suspect days (2004-10-13, 2005-05-27): ret and gap set to NaN, prices kept. 3 ambiguous days only marked. 2025-2026 NOT scored (held out for one final check).",
+  "target": "y_t = log(mean of daily variance rv over days t+1..t+5); univariate (copper only).",
+  "versions": {"range": "MAIN. rv = ln(H/L)^2/(4 ln2)", "gap": "BACKGROUND SENSITIVITY. rv = range variance + gap_clean^2 (gap term 0 on roll-suspect days)"},
+  "floor": "rv <= 0 replaced by the 1st percentile of positive rv computed on 2000-2006 only (per version). Floored days are flagged. Range version: 172 zero-range days affected (about 2.6%); gap version: far fewer.",
+  "features": "log rv_t, log mean rv over 5 days, log mean rv over 22 days, standardised on TRAIN rows per origin; anchor = log 5-day mean.",
+  "origins": {"2007": "train 2000-08..2004-12, val 2005-2006, test 2007-2012", "2013": "train ..2010, val 2011-2012, test 2013-2018", "2019": "train ..2016, val 2017-2018, test 2019-2024"},
+  "purge": "last 5 rows of train (before val) and last 5 rows of val (before test) are dropped because 5-day forward labels would reach into the next block. Fitted once per origin, no refit in test.",
+  "models": {"EWMA": "decay grid .90/.94/.97/.99/.995 chosen on val QLIKE", "HARq": "QLIKE-trained linear on the 3 features, ridge lambda on val  (PRIMARY BENCHMARK)", "GARCH11_t": "GARCH(1,1)-t on close-to-close returns (%), roll-suspect returns set to 0; caveat: close-to-close, calibrated for level only", "LSTM": "hidden 8, seq 5, QLIKE loss, lr .02, 10 seeds", "QLSTMT": "4 qubits, 1 layer, hidden 8, seq 5, QLIKE loss, lr .005, 10 seeds"},
+  "seeds": "10 for each network; seed-averaged level forecasts; LSTM and QLSTMT always compared at equal seed counts.",
+  "scoring": "per-model scale calibrated on val; QLIKE on test rows; ratio vs HAR (primary) and vs EWMA.",
+  "tests": "Diebold-Mariano on daily QLIKE differences pooled over the 3 test windows, HAC lag 10 (5-day label overlap), two-sided, alpha .05, Holm over the 5 comparisons: EWMA, GARCH, LSTM, QLSTMT vs HAR, and QLSTMT vs LSTM. Seed-level Wilcoxon is NOT used (it measures seed noise, not forecast skill) - departure from the AGENTS.md protocol, to be shown to the supervisor.",
+  "bounded_null": "95% CI of relative QLIKE difference (model vs reference). Equivalence margin +/-3%: if the whole CI lies inside it, report 'no difference larger than 3%'.",
+  "sensitivity": ["exclude test rows whose feature or label window touches a floored day or an ambiguous day", "per-origin tables", "run with gap vs range version"],
+  "stop_rule": "Report and stop. No new model variants. 2025-26 is scored only in a separate final step after the above is reported."
+}

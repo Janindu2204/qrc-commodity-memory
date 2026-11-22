@@ -1,0 +1,33 @@
+{
+  "written_on": "2026-11-09",
+  "status": "REGISTERED 2026-11-09: frozen BEFORE any block of this design was scored. Hashes of this file and of hf2_build.py, hf2_run.py, hf2_report.py, hf2_jobs_rolling.txt, hf2_jobs_heldout.txt, run_hf2.sh are in long_prereg_hf2.sha256. Any later change must be a dated addendum, not an edit.",
+  "extends": "long_prereg_hf.json (and its addendum). Same data, target, task, benchmark, readout, models, blocks, regimes, statistics, decision rule. Fixed-configuration outputs of H and M (2013-2025) are read from that run; hf2_run.py in fixed mode reproduced the stored H 2013 forecasts exactly (maximum absolute difference 0.0, checked before registration; a code check, nothing scored).",
+  "three_parts": {
+    "part_1_finer_grid": "A 5-minute grid (F), built from the 1-minute file by hf2_build.py (1,150,233 bins; 1,092,996 usable targets with rv>0 and at least 2 one-minute bars), run in fixed (untuned) configuration on the 13 rolling blocks 2013-2025. Why 5 minutes and not 1: a 1-minute bin holds at most one price change, so its realised variance is a single squared return; about a third of such bins are exactly zero (tick size), so ln(RV) is undefined or heavily selected. The 5-minute bin is the finest grid with a usable ln RV target. HAR lags: 288 bins (1 day) and 1440 bins (5 days); HAC lag 288.",
+    "part_2_tuning": "Tuned configuration on H (60 min) and M (15 min), 13 blocks each. Each model picks ONE configuration from a 12-point grid by validation MSE (2 tuning seeds 100 and 101, features on train and validation only), then 10 final seeds. Grids: QRC and QRC_noent: input scale {0.25,0.5,1,2} x layers {1,2,3}; RandFeat: input scale {0.25,0.5,1,2} x W-scale {0.5,1,2}; ESN: spectral radius {0.6,0.9,1.2} x leak {0.1,0.2,0.5,1.0}; TrigFeat: input scale {0.25,0.5,1,2} x frequency {0.5,1,2}. All models have 12 configurations, so the tuning budget is equal. The ridge strength is selected on validation inside the readout as before (so the validation MSE used for tuning is slightly optimistic equally for all configs and models). Descriptive family C: tuned vs fixed for each model on the same rows.",
+    "part_3_heldout_2026": "ONE-SHOT confirmation. After the rolling report (parts 1 and 2) has been written, the single block with test year 2026 (targets 2026-01-01 to 2026-10-16; validation 2025; training 2022-2024) is run ONCE for: fixed H, fixed M, fixed F, tuned H, tuned M. It is scored only by 'hf2_report.py heldout'. No re-run, re-tune or model change after seeing it; a crashed job is re-run unchanged. 2026 outputs are not read before the rolling report is written. Daily models are not part of this step (they need their own registration)."
+  },
+  "statistics": "As long_prereg_hf.json: pooled per-row squared error, ratio of mean squared errors, HAC Diebold-Mariano interval, +/-3% equivalence band, Holm within family and stratum; families A (each model vs HAR+hod) and B (QRC vs four controls); strata all, calm, intermediate, turbulent (rolling only). The 2026 block has a single stratum.",
+  "decision_rules": {
+    "quantum_edge_rolling": "Per (mode, grid): claimed only if QRC beats RandFeat, ESN, TrigFeat AND HAR+hod pooled over all 13 blocks (whole 95% interval below 1, Holm p<0.05 for each) AND QRC's ratio is below 1 against all four in the turbulent stratum. Otherwise no edge. The tuned result is the main answer to the objection that the fixed configuration was unfair to the quantum model.",
+    "quantum_edge_heldout": "In 2026 the same pooled condition (no turbulent condition, one block). A 2026 'edge' without the rolling-block edge would be reported as an isolated result, not as confirmation.",
+    "confirmation": "The held-out step CONFIRMS a no-edge conclusion if the pooled rule is not met in 2026 for any of the five configurations; otherwise the exception is reported as it stands.",
+    "tuning_effect": "Descriptive: ratio of each model's tuned to fixed error."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated (the student said 'run 1 2 and 3'). Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-09", "text": "Part 1: no quantum edge at 5 minutes; QRC about equal to or slightly worse than controls, as at 15 minutes. Part 2: tuning helps every model by less than 1% and helps classical models at least as much; no quantum edge when tuned. Part 3: 2026 shows the same no-edge pattern; ratios vs the benchmark within about 3% for all models."}
+  },
+  "known_limits": [
+    "Not blind: results of the untuned hourly and 15-minute runs were seen before this design.",
+    "Copper only; four to five turbulent blocks; overlapping training windows.",
+    "Tuning uses 2 seeds and 12 configurations per model; the grids are the author's choice and equal in size across models. A larger search might change small differences.",
+    "5-minute bins are the finest grid; 1-minute forecasting is not done (see part_1).",
+    "Another process on the same machine used about 3.7 GB during the run; the launcher starts jobs only when memory is available. This does not change results.",
+    "The 2026 block is partial (to 2026-10-16) and is the only held-out block; it is scored once.",
+    "HAC intervals are very narrow at this sample size; differences of a fraction of a percent are not economically meaningful.",
+    "AI-written code, not independently re-derived by the student. Licensed data are not committed."
+  ],
+  "stop_rule": "One run of the registered jobs (13 tuned M, 13 fixed F, 13 tuned H rolling blocks, then 5 held-out jobs), report and stop. No new grids, models, seeds or blocks after results. A crashed job is re-run unchanged.",
+  "outputs": "long_preds_hf2/<mode>/<grid>/<year>.npz; hf2_report_rolling.txt/.csv; hf2_report_heldout.txt/.csv"
+}

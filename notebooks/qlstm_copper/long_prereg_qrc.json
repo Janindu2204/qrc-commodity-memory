@@ -1,0 +1,86 @@
+{
+  "written_on": "2026-10-16",
+  "status": "REGISTERED 2026-10-16: D1-D5 answered by the student; frozen BEFORE any QRC block was run and BEFORE the rolling-origin results were graded. The hash is in long_prereg_qrc.sha256. Any later change must be a dated addendum, not an edit.",
+  "extends": "long_prereg_rolling.json (registered 2026-10-15) and long_prereg_v2.json. No earlier result is recomputed or changed.",
+  "motivation": "QRC is missing from the long-daily design (long_prereg.json lists EWMA, HAR, GARCH, LSTM, QLSTMT only), although the strongest published positive claim for quantum models in volatility forecasting concerns a quantum reservoir (Li, Mukhopadhyay, Bayat, Habibnia, arXiv:2505.13933, abstract-level reading only). Hourly and v2 rounds showed the angle QRC tying a classical echo state network. This registration tests that on the long daily copper series with the same strict protocol.",
+  "hypotheses": {
+    "H1_fellner": "A quantum model does not beat a matched classical model on copper volatility (Fellner et al. 2026, restated for volatility). Primary test: QRC_angle vs ESN.",
+    "H3_li": "A quantum reservoir beats strong classical benchmarks (HAR, EWMA) on realised volatility (Li et al.). Test: QRC_angle vs HARq and vs EWMA.",
+    "note": "H2 (multivariate concentration, Maheshwari) was already tested with QLSTMT in long_prereg_v2.json part B and is NOT retested here; this run is univariate."
+  },
+  "data": "range_m version only (zero-variance days treated as missing; same cleaning as v2), data/daily_long/flagged_v2/HG_F_1d.csv, target = log of 5-day forward mean daily variance. 2025-26 not scored.",
+  "models": {
+    "QRC_angle": "Angle-encoded random-circuit quantum reservoir on 6 qubits, simulated exactly (numpy statevector, hourly_qrc.reservoir_features), random RX/RY/RZ layers plus a CZ ring, features = 6 single-qubit Z + 15 two-qubit ZZ expectations = 21 features. Inputs: today's and yesterday's standardised (lvR1, lvR5, lvR22) = 6 inputs, scaled then arctan-encoded. Number of layers and input scale are TUNED (see tuning). Fixed random circuit per seed.",
+    "QRC_noent": "Same as QRC_angle without the CZ entangling layer (isolates entanglement); tuned separately with the same grid.",
+    "ESN": "Matched classical echo state network: 21 units, input = standardised (lvR1, lvR5, lvR22), recurrent across the whole series, same 21-dimensional feature count (hourly_tune_qrc.esn). Spectral radius and leak are TUNED (see tuning).",
+    "RandFeat": "Matched classical random features: tanh(arctan(scale * 6 inputs) W + b), W 6x21 scaled by wscale, b uniform on [0, 2 pi), 21 features. Input scale and W scale are TUNED (see tuning).",
+    "readout": "For every model: HAR features (standardised lvR1, lvR5, lvR22) plus the 21 reservoir features, standardised on training rows, linear model trained with the QLIKE loss and anchored on lvR5, ridge strength chosen on the validation window from (1e-3, 1e-2, 1e-1, 1, 10) (v2_core.best_lambda_linear). Forecasts averaged over 10 seeds (levels). Scoring: validation-calibrated scale, as for every other model.",
+    "hyperparameters": "TUNED per block on the validation window only (see tuning). The earlier fixed values (QRC 3 layers, scale 0.25, ESN radius 1.2, leak 0.2) are simply inside the grids.",
+    "seeds": "Final: 10 (QRC seeds 0-9; ESN seeds 5000+s; RandFeat seeds 1000+s). Tuning uses disjoint seeds 100, 101, 102."
+  },
+  "blocks": {
+    "primary": "The 17 rolling one-year test blocks 2008-2024 of long_prereg_rolling.json (expanding window, validation 2 years before, purge 5 rows).",
+    "secondary_reported_separately": "The three 6-year long-daily origins 2007, 2013, 2019 (as long_prereg_v2.json part A), so QRC sits beside the existing QLSTMT results. Separate Holm family; not mixed into the primary claim."
+  },
+  "comparisons": {
+    "primary": "QRC_angle vs ESN (matched classical reservoir), pooled over the 17 blocks and within each regime stratum (regime tertile labels exactly as in long_prereg_rolling.json). Decision band: +/-3% equivalence, 95% CI from Diebold-Mariano with HAC lag 10.",
+    "holm_family_per_stratum": [
+      "QRC_angle vs ESN",
+      "QRC_angle vs QRC_noent",
+      "QRC_angle vs RandFeat",
+      "QRC_angle vs HARq"
+    ],
+    "secondary_own_holm_family": [
+      "QRC_angle vs EWMA",
+      "QRC_angle vs LSTM",
+      "QRC_angle vs QLSTMT",
+      "ESN vs HARq"
+    ],
+    "descriptive": "Per-block ratio vs HAR for every model; count of blocks with ratio < 1 and exact binomial p (blocks are not independent)."
+  },
+  "decision_rule": "A quantum edge is claimed only if QRC_angle vs ESN has its whole 95% interval below 1 (and the pooled Holm p is below 0.05) AND QRC_angle vs QRC_noent also favours entanglement, AND the result holds in the turbulent stratum. Anything else is reported as a tie, inconclusive or worse, with the verdict words of the report script.",
+  "known_limits": [
+    "Exact simulation of 6 qubits: no hardware noise, no shot noise.",
+    "The reservoir here is a feed-forward random circuit with a one-day lag input, not an Ising reservoir with memory qubits as in Li et al.; the comparison to that paper is to the idea of a quantum reservoir, not an exact reproduction. Memory comes from the lagged inputs and the HAR features.",
+    "Small equal tuning budget (12 configurations per model) on validation windows only.",
+    "10 seeds and 17 overlapping blocks; intervals will be wide; power below about 3-5% effects is low.",
+    "AI-written code, not independently re-derived by the student; the student's own classical reservoir notebook (Colab) is separate learning work.",
+    "Registered after the student and Claude had seen earlier hourly/v2 results in which the angle QRC tied a classical echo state network; not blind to that."
+  ],
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {
+      "written_on": "2026-10-16",
+      "before_registration": true,
+      "student_words": "idk if it will beat but this will be a good comparison will come clos to match network and har as this is a good use case in qrc",
+      "reading": "Unsure whether QRC will beat its matched network; expects it to come close to the matched classical network and to HAR (a tie-like outcome) and sees volatility as a good use case for a quantum reservoir. Entanglement effect (QRC vs no-entanglement): not stated."
+    },
+    "instructions": "Student writes in plain words BEFORE registration: (a) does QRC_angle beat its matched ESN, and in which regime? (b) does QRC_angle beat HAR? (c) does removing entanglement change anything? Leave null until written; do not edit after the run starts.",
+    "earlier_stated_expectation_2026-10-14": "A quantum reservoir should be a better competitor because of memory and a linear readout. Note: fading memory also exists in the classical reservoir; hourly runs showed ties."
+  },
+  "open_decisions": {
+    "D1": "ANSWERED 2026-10-16: tune the reservoirs (protocol in 'tuning').",
+    "D2": "ANSWERED 2026-10-16: yes, 17 rolling blocks primary, three original origins secondary.",
+    "D3": "ANSWERED 2026-10-16: yes for now, primary comparison QRC_angle vs the matched ESN with the +/-3% band (the student said 'for now', so revisit before submission, but not after seeing results).",
+    "D4": "ANSWERED 2026-10-16: prediction recorded.",
+    "D5": "ANSWERED 2026-10-16: yes, automatic chain approved (grading first, then QRC only if registered with matching hash)."
+  },
+  "cost_estimate": "Estimates, not measurements: one block with tuning took 282 s measured once while the CPU was fully loaded by 8 other jobs; 20 runs (17 blocks + 3 origins) is therefore up to about 1.5 h under load and probably 40-60 min on an idle machine.",
+  "stop_rule": "One run of the registered design, report and stop. No new variants, blocks, hyperparameters or models after results; 2025-26 scored only in a separate final step.",
+  "tuning": {
+    "student_decision": "D1 answered 2026-10-16: tune the reservoirs on this series.",
+    "rule": "Per block, per model, 12 configurations (equal budget for every model). Each configuration is fitted with tuning seeds 100-102, forecasts averaged over those seeds, scored on the VALIDATION window only with the validation-calibrated QLIKE; the configuration with the lowest validation QLIKE wins (ties: first in grid order). The winner is refit with the 10 final seeds. Test rows are never used for any choice.",
+    "grids": {
+      "QRC_angle": "layers {1,2,3} x input scale {0.1, 0.25, 0.5, 1.0}",
+      "QRC_noent": "layers {1,2,3} x input scale {0.1, 0.25, 0.5, 1.0}",
+      "ESN": "spectral radius {0.6, 0.9, 1.2} x leak {0.1, 0.2, 0.5, 1.0}",
+      "RandFeat": "input scale {0.1, 0.25, 0.5, 1.0} x W scale {0.5, 1.0, 2.0}"
+    },
+    "fixed": "6 qubits, 21 features/units, readout (HAR features + reservoir features, QLIKE linear, ridge strength from {1e-3,1e-2,1e-1,1,10} chosen on validation), 10 final seeds.",
+    "audit_trail": "Chosen configurations are appended to qrc_tuned_configs.csv (tag, year, model, config).",
+    "caveats": [
+      "Validation windows are also used inside the readout to choose the ridge strength and the calibration scale; this is the same for every model.",
+      "A larger tuning budget would help every model; the budget is small and equal on purpose.",
+      "Tuning per block means the configuration can differ across blocks; that variation is reported, not hidden."
+    ]
+  }
+}

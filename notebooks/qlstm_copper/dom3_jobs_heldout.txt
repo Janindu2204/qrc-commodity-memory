@@ -1,0 +1,5 @@
+dom3_run.py F 2026
+dom3_run.py M 2026
+dom3_run.py H 2026
+dom3_daily.py 2025
+dom3_daily.py 2026

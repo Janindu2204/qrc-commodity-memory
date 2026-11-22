@@ -1,0 +1,39 @@
+{
+  "status": "FROZEN 2026-11-10 after the student's prediction and approval; amend only by dated addendum. Frozen BEFORE any block was run for real (only dry runs and fake-data tests of the scripts).",
+  "drafted": "2026-11-10",
+  "id": "long_prereg_smalln",
+  "question": "Is there a small-training-sample regime in which the quantum reservoir beats equally tuned classical reservoirs and the exact trigonometric surrogate? (Prieto-Garcia et al., arXiv:2602.15474, report a QRC advantage when data is limited, on a synthetic classification task.)",
+  "blocks": "Same 17 daily copper range_m blocks 2008-2024 and splits as long_prereg_surrogate, except that the TRAINING set is cut to the last n eligible training rows before the validation window (after the 5-row purge), n in {50, 100, 250, 500, 1000}. Validation (2 years) and test (1 year) unchanged. Note: for small n the validation window is larger than the training set; lambda and the variance scale are chosen on it identically for every model.",
+  "models": [
+    "TUNED ARM: QRC (entangled; layers (1,2,3) x scale (0.1,0.25,0.5,1.0) tuned on validation, the primary quantum model), QRC_noent (same grid, no CZ), RandFeat, ESN, TrigFeat, Basis2 (exact degree-2 trig basis, scale 1.0), HAR_only",
+    "FIXED ARM: QRC_L2 (entangled, 2 layers), QRC_L1, QRC_noent_L2, RandFeat, ESN, TrigFeat, Basis2, HAR_only"
+  ],
+  "arms": {
+    "tuned (PRIMARY)": "each model picks one of 12 configurations on validation only (grids as in qrc_roll.py: QRC layers (1,2,3) x scale (0.1,0.25,0.5,1.0); QRC_noent same; ESN radius (0.6,0.9,1.2) x leak (0.1,0.2,0.5,1.0); RandFeat scale (0.1,0.25,0.5,1.0) x wscale (0.5,1,2); TrigFeat scale x freq; Basis2 and HAR_only have lambda only), tuning seeds 100-102, final seeds 0-9; primary controls in this arm are QRC_noent, RandFeat, ESN, Basis2, HAR_only",
+    "fixed (secondary)": "scale 1.0; QRC layers as named; ESN radius 0.9 leak 0.5; RandFeat scale 1 wscale 1"
+  },
+  "readout_and_statistics": "As long_prereg_surrogate: same QLIKE-trained linear readout, DM with HAC lag 10 pooled over the 17 blocks, ratio interval, +/-3% band, Holm over n x control pairs (5 sizes x 5 controls: ESN, RandFeat, QRC_noent_L2, Basis2, HAR_only; 25 tests; TrigFeat reported but outside the primary family).",
+  "decision_rule": {
+    "small-sample niche supported": "at some n <= 500, tuned QRC has upper interval bound < 1 and Holm < 0.05 against ALL five primary controls, AND the point ratio is < 1 against all five at the adjacent larger n (so a single lucky size does not count)",
+    "otherwise": "no small-sample niche found; report the learning curve (ratio vs n) for each control"
+  },
+  "predictions": {
+    "assistant": "No niche. At n <= 100 every flexible model is worse than HAR_only because ridge on tiny samples overfits; at n >= 500 all models are within a few percent of each other and QRC is equivalent to controls. Not blind: see seen_before_drafting.",
+    "student_prediction": "I don't know whether quantum will win. (Student, 2026-11-10, in the student's words.) The student's stated main concern: quantum advantage comes with a lot of complicated data."
+  },
+  "limits": "Single asset and series; 6-qubit exact simulation; the classification task of Prieto-Garcia et al. is different from forecasting; a null covers these designs only. Student concern recorded: the data here is simple (6 inputs, one asset, daily); quantum advantage may need much more complicated data. A small-sample null does not speak to complicated or high-dimensional data.",
+  "compute": "Small training sets make every fit cheap; the 12-configuration tuning is the main cost; local only.",
+  "seen_before_drafting": [
+    "Exploratory numerical check on 6000 random inputs (2026-11-10, not a registered result): 1-layer QRC features lie exactly in the degree<=2 trigonometric span (R2 1.000000, 73-dim basis incl. constant), with or without entanglement; without entanglement this holds at every depth; with entanglement at 2 and 3 layers the minimum R2 on degree<=2 is 0.35 and 0.69, on degree<=4 0.91 and 0.996.",
+    "The existing 21-feature TrigFeat control spans only part of the 1-layer QRC feature space (R2 min 0.37, mean 0.81) on the same random-input check.",
+    "Earlier registered results (PROGRESS/19 sections 1-17): QRC tied matched controls and TrigFeat in every round; entanglement removal changed nothing at the tuned configs. No forecast from any model in this draft has been seen.",
+    "Dry run of smalln_run.py on the 2018 block, n=100, tuned arm, 1 tuning seed and 2 final seeds (2026-11-10): timing and finiteness only, nothing scored or printed."
+  ],
+  "primary_controls_note": "Primary family: tuned QRC vs {ESN, RandFeat, QRC_noent, Basis2, HAR_only} at each n (25 tests, Holm). TrigFeat and the fixed arm are secondary and reported separately. (Wording clarified 2026-11-10 before freezing.)",
+  "script_tests": "Run scripts dry-run clean. Report scripts tested end to end on FAKE forecasts only (noise around the truth, in a scratch folder): they run and return 'no edge' as they should; no real forecast has been scored. Script sha256 values go into the frozen file at freeze time.",
+  "script_sha256": {
+    "sur_lib.py": "a7650ce692c56ef7ac0c09ffbb3b3ad3bcf8ef121289674c65aca90607673a15",
+    "smalln_run.py": "ff36f5612d07f02775a62df3945cf2e7e81bbcc78406f36a11a9a7f8b195bd7e",
+    "smalln_report.py": "567cf167eb2b50bc42277e9fd3edb93c45569ce409b6eecd0e5009e101155b3c"
+  }
+}

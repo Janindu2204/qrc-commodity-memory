@@ -1,0 +1,388 @@
+ratio < 1 favours the first model. H, M, F: mean squared error of ln RV; D: QLIKE.
+grid      stratum                              family  model      ref  ratio  ci_lo  ci_hi  p_holm      verdict                 category      n
+   H          all      M2 mechanism, larger stand-ins    DOM   ESNb_t 1.0005 0.9983 1.0027  0.6649   equivalent no detectable difference  67567
+   H          all      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0085 1.0063 1.0106  0.0000   equivalent         detectably worse  67567
+   H          all      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9955 0.9933 0.9978  0.0004   equivalent   detectable, below band  67567
+   H          all      M2 mechanism, larger stand-ins  ISING   SASb_t 1.0035 1.0014 1.0055  0.0021   equivalent         detectably worse  67567
+   H          all T1 quantum vs single-input networks    DOM    LSTM1 1.0040 1.0024 1.0055  0.0000   equivalent         detectably worse  67567
+   H          all T1 quantum vs single-input networks    DOM     GRU1 1.0063 1.0047 1.0080  0.0000   equivalent         detectably worse  67567
+   H          all T1 quantum vs single-input networks  ISING    LSTM1 0.9990 0.9971 1.0009  0.3357   equivalent no detectable difference  67567
+   H          all T1 quantum vs single-input networks  ISING     GRU1 1.0014 0.9994 1.0033  0.3357   equivalent no detectable difference  67567
+   H          all            L1 single-input networks  LSTM1      HAR 0.9860 0.9834 0.9887  0.0000   equivalent   detectable, below band  67567
+   H          all            L1 single-input networks   GRU1      HAR 0.9837 0.9808 0.9866  0.0000   equivalent   detectable, below band  67567
+   H          all            L1 single-input networks  LSTM1     LSTM 1.0196 1.0163 1.0228  0.0000   equivalent         detectably worse  67567
+   H          all            L1 single-input networks   GRU1      GRU 1.0157 1.0126 1.0189  0.0000   equivalent         detectably worse  67567
+   H          all                       C descriptive ESNb_t   ESNq_t 0.9988 0.9977 1.0000  0.1388   equivalent                           67567
+   H          all                       C descriptive SASb_t  SAS28_t 0.9981 0.9972 0.9991  0.0011   equivalent                           67567
+   H          all                       C descriptive ESNb_t ESN28u_t 1.0011 0.9981 1.0042  0.4633   equivalent                           67567
+   H          all                       C descriptive SASb_t ESN28u_t 0.9932 0.9899 0.9966  0.0006   equivalent                           67567
+   H          all                       C descriptive  LSTM1 ESN28u_t 0.9977 0.9951 1.0003  0.1574   equivalent                           67567
+   H          all                       C descriptive   GRU1 ESN28u_t 0.9953 0.9926 0.9980  0.0033   equivalent                           67567
+   H          all                       C descriptive  LSTM1   ESNb_t 0.9965 0.9942 0.9988  0.0120   equivalent                           67567
+   H          all                       C descriptive  LSTM1   SASb_t 1.0045 1.0021 1.0069  0.0015   equivalent                           67567
+   H         calm      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9974 0.9928 1.0019  0.2584   equivalent no detectable difference  20774
+   H         calm      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0113 1.0070 1.0155  0.0000   equivalent         detectably worse  20774
+   H         calm      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9897 0.9850 0.9945  0.0001   equivalent   detectable, below band  20774
+   H         calm      M2 mechanism, larger stand-ins  ISING   SASb_t 1.0035 0.9993 1.0077  0.2049   equivalent no detectable difference  20774
+   H         calm T1 quantum vs single-input networks    DOM    LSTM1 1.0084 1.0057 1.0110  0.0000   equivalent         detectably worse  20774
+   H         calm T1 quantum vs single-input networks    DOM     GRU1 1.0117 1.0089 1.0145  0.0000   equivalent         detectably worse  20774
+   H         calm T1 quantum vs single-input networks  ISING    LSTM1 1.0006 0.9973 1.0039  0.7087   equivalent no detectable difference  20774
+   H         calm T1 quantum vs single-input networks  ISING     GRU1 1.0039 1.0004 1.0074  0.0560   equivalent no detectable difference  20774
+   H         calm            L1 single-input networks  LSTM1      HAR 0.9848 0.9801 0.9896  0.0000   equivalent   detectable, below band  20774
+   H         calm            L1 single-input networks   GRU1      HAR 0.9816 0.9762 0.9870  0.0000   equivalent   detectable, below band  20774
+   H         calm            L1 single-input networks  LSTM1     LSTM 1.0333 1.0273 1.0393  0.0000        worse         detectably worse  20774
+   H         calm            L1 single-input networks   GRU1      GRU 1.0217 1.0171 1.0263  0.0000   equivalent         detectably worse  20774
+   H         calm                       C descriptive ESNb_t   ESNq_t 1.0022 0.9999 1.0045  0.3337   equivalent                           20774
+   H         calm                       C descriptive SASb_t  SAS28_t 0.9990 0.9969 1.0011  1.0000   equivalent                           20774
+   H         calm                       C descriptive ESNb_t ESN28u_t 1.0113 1.0052 1.0174  0.0020   equivalent                           20774
+   H         calm                       C descriptive SASb_t ESN28u_t 0.9974 0.9917 1.0031  1.0000   equivalent                           20774
+   H         calm                       C descriptive  LSTM1 ESN28u_t 1.0003 0.9958 1.0048  1.0000   equivalent                           20774
+   H         calm                       C descriptive   GRU1 ESN28u_t 0.9970 0.9921 1.0019  0.9169   equivalent                           20774
+   H         calm                       C descriptive  LSTM1   ESNb_t 0.9891 0.9846 0.9936  0.0000   equivalent                           20774
+   H         calm                       C descriptive  LSTM1   SASb_t 1.0029 0.9987 1.0070  0.8577   equivalent                           20774
+   H intermediate      M2 mechanism, larger stand-ins    DOM   ESNb_t 1.0035 1.0010 1.0060  0.0134   equivalent         detectably worse  25852
+   H intermediate      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0085 1.0061 1.0108  0.0000   equivalent         detectably worse  25852
+   H intermediate      M2 mechanism, larger stand-ins  ISING   ESNb_t 1.0023 0.9996 1.0050  0.0906   equivalent no detectable difference  25852
+   H intermediate      M2 mechanism, larger stand-ins  ISING   SASb_t 1.0073 1.0049 1.0097  0.0000   equivalent         detectably worse  25852
+   H intermediate T1 quantum vs single-input networks    DOM    LSTM1 0.9990 0.9969 1.0011  0.9365   equivalent no detectable difference  25852
+   H intermediate T1 quantum vs single-input networks    DOM     GRU1 0.9996 0.9967 1.0024  0.9365   equivalent no detectable difference  25852
+   H intermediate T1 quantum vs single-input networks  ISING    LSTM1 0.9979 0.9953 1.0005  0.4332   equivalent no detectable difference  25852
+   H intermediate T1 quantum vs single-input networks  ISING     GRU1 0.9984 0.9953 1.0015  0.9365   equivalent no detectable difference  25852
+   H intermediate            L1 single-input networks  LSTM1      HAR 0.9924 0.9883 0.9964  0.0002   equivalent   detectable, below band  25852
+   H intermediate            L1 single-input networks   GRU1      HAR 0.9918 0.9881 0.9955  0.0000   equivalent   detectable, below band  25852
+   H intermediate            L1 single-input networks  LSTM1     LSTM 1.0089 1.0051 1.0128  0.0000   equivalent         detectably worse  25852
+   H intermediate            L1 single-input networks   GRU1      GRU 1.0114 1.0070 1.0157  0.0000   equivalent         detectably worse  25852
+   H intermediate                       C descriptive ESNb_t   ESNq_t 0.9978 0.9964 0.9993  0.0123   equivalent                           25852
+   H intermediate                       C descriptive SASb_t  SAS28_t 0.9957 0.9941 0.9973  0.0000   equivalent                           25852
+   H intermediate                       C descriptive ESNb_t ESN28u_t 0.9945 0.9906 0.9984  0.0179   equivalent                           25852
+   H intermediate                       C descriptive SASb_t ESN28u_t 0.9896 0.9848 0.9945  0.0001   equivalent                           25852
+   H intermediate                       C descriptive  LSTM1 ESN28u_t 0.9990 0.9951 1.0028  0.7784   equivalent                           25852
+   H intermediate                       C descriptive   GRU1 ESN28u_t 0.9984 0.9948 1.0020  0.7784   equivalent                           25852
+   H intermediate                       C descriptive  LSTM1   ESNb_t 1.0045 1.0024 1.0065  0.0001   equivalent                           25852
+   H intermediate                       C descriptive  LSTM1   SASb_t 1.0094 1.0070 1.0119  0.0000   equivalent                           25852
+   H    turbulent      M2 mechanism, larger stand-ins    DOM   ESNb_t 1.0009 0.9969 1.0048  1.0000   equivalent no detectable difference  20941
+   H    turbulent      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0051 1.0006 1.0096  0.0779   equivalent no detectable difference  20941
+   H    turbulent      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9950 0.9910 0.9990  0.0548   equivalent no detectable difference  20941
+   H    turbulent      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9992 0.9954 1.0030  1.0000   equivalent no detectable difference  20941
+   H    turbulent T1 quantum vs single-input networks    DOM    LSTM1 1.0043 1.0012 1.0074  0.0212   equivalent         detectably worse  20941
+   H    turbulent T1 quantum vs single-input networks    DOM     GRU1 1.0076 1.0046 1.0106  0.0000   equivalent         detectably worse  20941
+   H    turbulent T1 quantum vs single-input networks  ISING    LSTM1 0.9984 0.9943 1.0025  0.6922   equivalent no detectable difference  20941
+   H    turbulent T1 quantum vs single-input networks  ISING     GRU1 1.0017 0.9982 1.0052  0.6922   equivalent no detectable difference  20941
+   H    turbulent            L1 single-input networks  LSTM1      HAR 0.9804 0.9753 0.9856  0.0000   equivalent   detectable, below band  20941
+   H    turbulent            L1 single-input networks   GRU1      HAR 0.9772 0.9715 0.9829  0.0000   equivalent   detectable, below band  20941
+   H    turbulent            L1 single-input networks  LSTM1     LSTM 1.0156 1.0089 1.0224  0.0000   equivalent         detectably worse  20941
+   H    turbulent            L1 single-input networks   GRU1      GRU 1.0136 1.0062 1.0210  0.0003   equivalent         detectably worse  20941
+   H    turbulent                       C descriptive ESNb_t   ESNq_t 0.9960 0.9940 0.9980  0.0009   equivalent                           20941
+   H    turbulent                       C descriptive SASb_t  SAS28_t 0.9998 0.9991 1.0006  1.0000   equivalent                           20941
+   H    turbulent                       C descriptive ESNb_t ESN28u_t 0.9965 0.9912 1.0019  0.6219   equivalent                           20941
+   H    turbulent                       C descriptive SASb_t ESN28u_t 0.9923 0.9855 0.9992  0.1470   equivalent                           20941
+   H    turbulent                       C descriptive  LSTM1 ESN28u_t 0.9932 0.9880 0.9983  0.0529   equivalent                           20941
+   H    turbulent                       C descriptive   GRU1 ESN28u_t 0.9899 0.9844 0.9953  0.0018   equivalent                           20941
+   H    turbulent                       C descriptive  LSTM1   ESNb_t 0.9966 0.9919 1.0013  0.6219   equivalent                           20941
+   H    turbulent                       C descriptive  LSTM1   SASb_t 1.0008 0.9953 1.0063  1.0000   equivalent                           20941
+   M          all      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9948 0.9942 0.9955  0.0000   equivalent   detectable, below band 283953
+   M          all      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9965 0.9957 0.9974  0.0000   equivalent   detectable, below band 283953
+   M          all      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9945 0.9937 0.9953  0.0000   equivalent   detectable, below band 283953
+   M          all      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9962 0.9955 0.9970  0.0000   equivalent   detectable, below band 283953
+   M          all T1 quantum vs single-input networks    DOM    LSTM1 1.0057 1.0051 1.0064  0.0000   equivalent         detectably worse 283953
+   M          all T1 quantum vs single-input networks    DOM     GRU1 1.0065 1.0059 1.0072  0.0000   equivalent         detectably worse 283953
+   M          all T1 quantum vs single-input networks  ISING    LSTM1 1.0054 1.0046 1.0061  0.0000   equivalent         detectably worse 283953
+   M          all T1 quantum vs single-input networks  ISING     GRU1 1.0062 1.0055 1.0070  0.0000   equivalent         detectably worse 283953
+   M          all            L1 single-input networks  LSTM1      HAR 0.9760 0.9746 0.9775  0.0000   equivalent   detectable, below band 283953
+   M          all            L1 single-input networks   GRU1      HAR 0.9752 0.9738 0.9767  0.0000   equivalent   detectable, below band 283953
+   M          all            L1 single-input networks  LSTM1     LSTM 1.0496 1.0474 1.0517  0.0000        worse         detectably worse 283953
+   M          all            L1 single-input networks   GRU1      GRU 1.0488 1.0465 1.0510  0.0000        worse         detectably worse 283953
+   M          all                       C descriptive ESNb_t   ESNq_t 1.0004 1.0000 1.0008  0.0383   equivalent                          283953
+   M          all                       C descriptive SASb_t  SAS28_t 0.9996 0.9992 0.9999  0.0383   equivalent                          283953
+   M          all                       C descriptive ESNb_t ESN28u_t 1.0035 1.0027 1.0044  0.0000   equivalent                          283953
+   M          all                       C descriptive SASb_t ESN28u_t 1.0018 1.0006 1.0029  0.0064   equivalent                          283953
+   M          all                       C descriptive  LSTM1 ESN28u_t 0.9927 0.9915 0.9938  0.0000   equivalent                          283953
+   M          all                       C descriptive   GRU1 ESN28u_t 0.9919 0.9908 0.9930  0.0000   equivalent                          283953
+   M          all                       C descriptive  LSTM1   ESNb_t 0.9892 0.9882 0.9901  0.0000   equivalent                          283953
+   M          all                       C descriptive  LSTM1   SASb_t 0.9909 0.9899 0.9919  0.0000   equivalent                          283953
+   M         calm      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9955 0.9945 0.9965  0.0000   equivalent   detectable, below band  83439
+   M         calm      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9998 0.9989 1.0006  0.5934   equivalent no detectable difference  83439
+   M         calm      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9944 0.9932 0.9955  0.0000   equivalent   detectable, below band  83439
+   M         calm      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9986 0.9978 0.9995  0.0035   equivalent   detectable, below band  83439
+   M         calm T1 quantum vs single-input networks    DOM    LSTM1 1.0058 1.0047 1.0069  0.0000   equivalent         detectably worse  83439
+   M         calm T1 quantum vs single-input networks    DOM     GRU1 1.0084 1.0072 1.0096  0.0000   equivalent         detectably worse  83439
+   M         calm T1 quantum vs single-input networks  ISING    LSTM1 1.0047 1.0034 1.0059  0.0000   equivalent         detectably worse  83439
+   M         calm T1 quantum vs single-input networks  ISING     GRU1 1.0072 1.0059 1.0085  0.0000   equivalent         detectably worse  83439
+   M         calm            L1 single-input networks  LSTM1      HAR 0.9805 0.9785 0.9826  0.0000   equivalent   detectable, below band  83439
+   M         calm            L1 single-input networks   GRU1      HAR 0.9780 0.9759 0.9802  0.0000   equivalent   detectable, below band  83439
+   M         calm            L1 single-input networks  LSTM1     LSTM 1.0338 1.0306 1.0371  0.0000        worse         detectably worse  83439
+   M         calm            L1 single-input networks   GRU1      GRU 1.0349 1.0314 1.0385  0.0000        worse         detectably worse  83439
+   M         calm                       C descriptive ESNb_t   ESNq_t 1.0006 1.0001 1.0012  0.0910   equivalent                           83439
+   M         calm                       C descriptive SASb_t  SAS28_t 0.9999 0.9998 1.0000  0.2064   equivalent                           83439
+   M         calm                       C descriptive ESNb_t ESN28u_t 1.0055 1.0040 1.0070  0.0000   equivalent                           83439
+   M         calm                       C descriptive SASb_t ESN28u_t 1.0012 0.9998 1.0026  0.1617   equivalent                           83439
+   M         calm                       C descriptive  LSTM1 ESN28u_t 0.9952 0.9936 0.9968  0.0000   equivalent                           83439
+   M         calm                       C descriptive   GRU1 ESN28u_t 0.9927 0.9910 0.9943  0.0000   equivalent                           83439
+   M         calm                       C descriptive  LSTM1   ESNb_t 0.9898 0.9882 0.9913  0.0000   equivalent                           83439
+   M         calm                       C descriptive  LSTM1   SASb_t 0.9940 0.9926 0.9954  0.0000   equivalent                           83439
+   M intermediate      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9950 0.9940 0.9959  0.0000   equivalent   detectable, below band 112120
+   M intermediate      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9943 0.9926 0.9961  0.0000   equivalent   detectable, below band 112120
+   M intermediate      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9958 0.9948 0.9967  0.0000   equivalent   detectable, below band 112120
+   M intermediate      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9951 0.9935 0.9967  0.0000   equivalent   detectable, below band 112120
+   M intermediate T1 quantum vs single-input networks    DOM    LSTM1 1.0075 1.0064 1.0085  0.0000   equivalent         detectably worse 112120
+   M intermediate T1 quantum vs single-input networks    DOM     GRU1 1.0081 1.0069 1.0092  0.0000   equivalent         detectably worse 112120
+   M intermediate T1 quantum vs single-input networks  ISING    LSTM1 1.0083 1.0071 1.0095  0.0000   equivalent         detectably worse 112120
+   M intermediate T1 quantum vs single-input networks  ISING     GRU1 1.0088 1.0076 1.0101  0.0000   equivalent         detectably worse 112120
+   M intermediate            L1 single-input networks  LSTM1      HAR 0.9737 0.9715 0.9760  0.0000   equivalent   detectable, below band 112120
+   M intermediate            L1 single-input networks   GRU1      HAR 0.9732 0.9709 0.9754  0.0000   equivalent   detectable, below band 112120
+   M intermediate            L1 single-input networks  LSTM1     LSTM 1.0556 1.0522 1.0591  0.0000        worse         detectably worse 112120
+   M intermediate            L1 single-input networks   GRU1      GRU 1.0519 1.0486 1.0553  0.0000        worse         detectably worse 112120
+   M intermediate                       C descriptive ESNb_t   ESNq_t 1.0002 0.9998 1.0007  0.6124   equivalent                          112120
+   M intermediate                       C descriptive SASb_t  SAS28_t 0.9997 0.9990 1.0004  0.6124   equivalent                          112120
+   M intermediate                       C descriptive ESNb_t ESN28u_t 1.0048 1.0034 1.0063  0.0000   equivalent                          112120
+   M intermediate                       C descriptive SASb_t ESN28u_t 1.0055 1.0038 1.0072  0.0000   equivalent                          112120
+   M intermediate                       C descriptive  LSTM1 ESN28u_t 0.9924 0.9907 0.9941  0.0000   equivalent                          112120
+   M intermediate                       C descriptive   GRU1 ESN28u_t 0.9918 0.9901 0.9935  0.0000   equivalent                          112120
+   M intermediate                       C descriptive  LSTM1   ESNb_t 0.9876 0.9862 0.9890  0.0000   equivalent                          112120
+   M intermediate                       C descriptive  LSTM1   SASb_t 0.9870 0.9850 0.9889  0.0000   equivalent                          112120
+   M    turbulent      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9939 0.9924 0.9953  0.0000   equivalent   detectable, below band  88394
+   M    turbulent      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9958 0.9944 0.9971  0.0000   equivalent   detectable, below band  88394
+   M    turbulent      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9931 0.9911 0.9951  0.0000   equivalent   detectable, below band  88394
+   M    turbulent      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9950 0.9937 0.9963  0.0000   equivalent   detectable, below band  88394
+   M    turbulent T1 quantum vs single-input networks    DOM    LSTM1 1.0034 1.0022 1.0047  0.0000   equivalent         detectably worse  88394
+   M    turbulent T1 quantum vs single-input networks    DOM     GRU1 1.0027 1.0016 1.0037  0.0000   equivalent         detectably worse  88394
+   M    turbulent T1 quantum vs single-input networks  ISING    LSTM1 1.0027 1.0012 1.0041  0.0008   equivalent         detectably worse  88394
+   M    turbulent T1 quantum vs single-input networks  ISING     GRU1 1.0019 1.0006 1.0032  0.0034   equivalent         detectably worse  88394
+   M    turbulent            L1 single-input networks  LSTM1      HAR 0.9740 0.9707 0.9773  0.0000   equivalent   detectable, below band  88394
+   M    turbulent            L1 single-input networks   GRU1      HAR 0.9747 0.9716 0.9779  0.0000   equivalent   detectable, below band  88394
+   M    turbulent            L1 single-input networks  LSTM1     LSTM 1.0594 1.0550 1.0639  0.0000        worse         detectably worse  88394
+   M    turbulent            L1 single-input networks   GRU1      GRU 1.0600 1.0553 1.0647  0.0000        worse         detectably worse  88394
+   M    turbulent                       C descriptive ESNb_t   ESNq_t 1.0004 0.9995 1.0012  0.7970   equivalent                           88394
+   M    turbulent                       C descriptive SASb_t  SAS28_t 0.9990 0.9982 0.9998  0.0555   equivalent                           88394
+   M    turbulent                       C descriptive ESNb_t ESN28u_t 0.9998 0.9984 1.0012  0.8022   equivalent                           88394
+   M    turbulent                       C descriptive SASb_t ESN28u_t 0.9979 0.9952 1.0007  0.4158   equivalent                           88394
+   M    turbulent                       C descriptive  LSTM1 ESN28u_t 0.9903 0.9877 0.9929  0.0000   equivalent                           88394
+   M    turbulent                       C descriptive   GRU1 ESN28u_t 0.9910 0.9886 0.9934  0.0000   equivalent                           88394
+   M    turbulent                       C descriptive  LSTM1   ESNb_t 0.9905 0.9884 0.9926  0.0000   equivalent                           88394
+   M    turbulent                       C descriptive  LSTM1   SASb_t 0.9924 0.9907 0.9940  0.0000   equivalent                           88394
+   F          all      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9998 0.9994 1.0002  0.2536   equivalent no detectable difference 673104
+   F          all      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0005 1.0002 1.0009  0.0087   equivalent         detectably worse 673104
+   F          all      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9989 0.9985 0.9993  0.0000   equivalent   detectable, below band 673104
+   F          all      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9996 0.9993 1.0000  0.1117   equivalent no detectable difference 673104
+   F          all T1 quantum vs single-input networks    DOM    LSTM1 1.0035 1.0032 1.0038  0.0000   equivalent         detectably worse 673104
+   F          all T1 quantum vs single-input networks    DOM     GRU1 1.0032 1.0029 1.0035  0.0000   equivalent         detectably worse 673104
+   F          all T1 quantum vs single-input networks  ISING    LSTM1 1.0026 1.0022 1.0030  0.0000   equivalent         detectably worse 673104
+   F          all T1 quantum vs single-input networks  ISING     GRU1 1.0023 1.0019 1.0027  0.0000   equivalent         detectably worse 673104
+   F          all            L1 single-input networks  LSTM1      HAR 0.9840 0.9830 0.9850  0.0000   equivalent   detectable, below band 673104
+   F          all            L1 single-input networks   GRU1      HAR 0.9843 0.9833 0.9853  0.0000   equivalent   detectable, below band 673104
+   F          all            L1 single-input networks  LSTM1     LSTM 1.0186 1.0177 1.0195  0.0000   equivalent         detectably worse 673104
+   F          all            L1 single-input networks   GRU1      GRU 1.0196 1.0187 1.0205  0.0000   equivalent         detectably worse 673104
+   F          all                       C descriptive ESNb_t   ESNq_t 1.0004 1.0001 1.0007  0.0036   equivalent                          673104
+   F          all                       C descriptive SASb_t  SAS28_t 0.9998 0.9997 0.9999  0.0001   equivalent                          673104
+   F          all                       C descriptive ESNb_t ESN28u_t 0.9977 0.9973 0.9981  0.0000   equivalent                          673104
+   F          all                       C descriptive SASb_t ESN28u_t 0.9970 0.9963 0.9976  0.0000   equivalent                          673104
+   F          all                       C descriptive  LSTM1 ESN28u_t 0.9940 0.9935 0.9946  0.0000   equivalent                          673104
+   F          all                       C descriptive   GRU1 ESN28u_t 0.9943 0.9938 0.9949  0.0000   equivalent                          673104
+   F          all                       C descriptive  LSTM1   ESNb_t 0.9963 0.9959 0.9967  0.0000   equivalent                          673104
+   F          all                       C descriptive  LSTM1   SASb_t 0.9970 0.9967 0.9974  0.0000   equivalent                          673104
+   F         calm      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9981 0.9975 0.9987  0.0000   equivalent   detectable, below band 169862
+   F         calm      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0014 1.0010 1.0019  0.0000   equivalent         detectably worse 169862
+   F         calm      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9966 0.9959 0.9974  0.0000   equivalent   detectable, below band 169862
+   F         calm      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9999 0.9995 1.0004  0.7884   equivalent no detectable difference 169862
+   F         calm T1 quantum vs single-input networks    DOM    LSTM1 1.0023 1.0018 1.0029  0.0000   equivalent         detectably worse 169862
+   F         calm T1 quantum vs single-input networks    DOM     GRU1 1.0024 1.0018 1.0029  0.0000   equivalent         detectably worse 169862
+   F         calm T1 quantum vs single-input networks  ISING    LSTM1 1.0009 1.0003 1.0015  0.0066   equivalent         detectably worse 169862
+   F         calm T1 quantum vs single-input networks  ISING     GRU1 1.0009 1.0003 1.0015  0.0066   equivalent         detectably worse 169862
+   F         calm            L1 single-input networks  LSTM1      HAR 0.9854 0.9841 0.9868  0.0000   equivalent   detectable, below band 169862
+   F         calm            L1 single-input networks   GRU1      HAR 0.9854 0.9841 0.9867  0.0000   equivalent   detectable, below band 169862
+   F         calm            L1 single-input networks  LSTM1     LSTM 1.0141 1.0125 1.0157  0.0000   equivalent         detectably worse 169862
+   F         calm            L1 single-input networks   GRU1      GRU 1.0151 1.0134 1.0167  0.0000   equivalent         detectably worse 169862
+   F         calm                       C descriptive ESNb_t   ESNq_t 0.9998 0.9995 1.0002  0.3270   equivalent                          169862
+   F         calm                       C descriptive SASb_t  SAS28_t 0.9998 0.9997 0.9999  0.0015   equivalent                          169862
+   F         calm                       C descriptive ESNb_t ESN28u_t 0.9979 0.9972 0.9986  0.0000   equivalent                          169862
+   F         calm                       C descriptive SASb_t ESN28u_t 0.9946 0.9938 0.9954  0.0000   equivalent                          169862
+   F         calm                       C descriptive  LSTM1 ESN28u_t 0.9937 0.9928 0.9946  0.0000   equivalent                          169862
+   F         calm                       C descriptive   GRU1 ESN28u_t 0.9937 0.9927 0.9946  0.0000   equivalent                          169862
+   F         calm                       C descriptive  LSTM1   ESNb_t 0.9958 0.9950 0.9966  0.0000   equivalent                          169862
+   F         calm                       C descriptive  LSTM1   SASb_t 0.9991 0.9986 0.9996  0.0005   equivalent                          169862
+   F intermediate      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9990 0.9984 0.9995  0.0011   equivalent   detectable, below band 292871
+   F intermediate      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0003 0.9999 1.0006  0.1859   equivalent no detectable difference 292871
+   F intermediate      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9980 0.9974 0.9986  0.0000   equivalent   detectable, below band 292871
+   F intermediate      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9993 0.9988 0.9997  0.0015   equivalent   detectable, below band 292871
+   F intermediate T1 quantum vs single-input networks    DOM    LSTM1 1.0039 1.0034 1.0044  0.0000   equivalent         detectably worse 292871
+   F intermediate T1 quantum vs single-input networks    DOM     GRU1 1.0033 1.0028 1.0038  0.0000   equivalent         detectably worse 292871
+   F intermediate T1 quantum vs single-input networks  ISING    LSTM1 1.0029 1.0023 1.0035  0.0000   equivalent         detectably worse 292871
+   F intermediate T1 quantum vs single-input networks  ISING     GRU1 1.0023 1.0017 1.0029  0.0000   equivalent         detectably worse 292871
+   F intermediate            L1 single-input networks  LSTM1      HAR 0.9838 0.9826 0.9851  0.0000   equivalent   detectable, below band 292871
+   F intermediate            L1 single-input networks   GRU1      HAR 0.9844 0.9832 0.9856  0.0000   equivalent   detectable, below band 292871
+   F intermediate            L1 single-input networks  LSTM1     LSTM 1.0221 1.0207 1.0234  0.0000   equivalent         detectably worse 292871
+   F intermediate            L1 single-input networks   GRU1      GRU 1.0230 1.0218 1.0243  0.0000   equivalent         detectably worse 292871
+   F intermediate                       C descriptive ESNb_t   ESNq_t 1.0010 1.0007 1.0013  0.0000   equivalent                          292871
+   F intermediate                       C descriptive SASb_t  SAS28_t 0.9998 0.9997 0.9999  0.0029   equivalent                          292871
+   F intermediate                       C descriptive ESNb_t ESN28u_t 0.9983 0.9977 0.9990  0.0000   equivalent                          292871
+   F intermediate                       C descriptive SASb_t ESN28u_t 0.9971 0.9962 0.9980  0.0000   equivalent                          292871
+   F intermediate                       C descriptive  LSTM1 ESN28u_t 0.9935 0.9927 0.9943  0.0000   equivalent                          292871
+   F intermediate                       C descriptive   GRU1 ESN28u_t 0.9941 0.9932 0.9949  0.0000   equivalent                          292871
+   F intermediate                       C descriptive  LSTM1   ESNb_t 0.9951 0.9946 0.9957  0.0000   equivalent                          292871
+   F intermediate                       C descriptive  LSTM1   SASb_t 0.9964 0.9959 0.9969  0.0000   equivalent                          292871
+   F    turbulent      M2 mechanism, larger stand-ins    DOM   ESNb_t 1.0021 1.0014 1.0028  0.0000   equivalent         detectably worse 210371
+   F    turbulent      M2 mechanism, larger stand-ins    DOM   SASb_t 1.0002 0.9993 1.0010  1.0000   equivalent no detectable difference 210371
+   F    turbulent      M2 mechanism, larger stand-ins  ISING   ESNb_t 1.0019 1.0010 1.0027  0.0000   equivalent         detectably worse 210371
+   F    turbulent      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9999 0.9990 1.0008  1.0000   equivalent no detectable difference 210371
+   F    turbulent T1 quantum vs single-input networks    DOM    LSTM1 1.0039 1.0032 1.0046  0.0000   equivalent         detectably worse 210371
+   F    turbulent T1 quantum vs single-input networks    DOM     GRU1 1.0037 1.0031 1.0044  0.0000   equivalent         detectably worse 210371
+   F    turbulent T1 quantum vs single-input networks  ISING    LSTM1 1.0036 1.0028 1.0044  0.0000   equivalent         detectably worse 210371
+   F    turbulent T1 quantum vs single-input networks  ISING     GRU1 1.0035 1.0027 1.0042  0.0000   equivalent         detectably worse 210371
+   F    turbulent            L1 single-input networks  LSTM1      HAR 0.9831 0.9807 0.9855  0.0000   equivalent   detectable, below band 210371
+   F    turbulent            L1 single-input networks   GRU1      HAR 0.9833 0.9809 0.9856  0.0000   equivalent   detectable, below band 210371
+   F    turbulent            L1 single-input networks  LSTM1     LSTM 1.0179 1.0162 1.0196  0.0000   equivalent         detectably worse 210371
+   F    turbulent            L1 single-input networks   GRU1      GRU 1.0188 1.0172 1.0204  0.0000   equivalent         detectably worse 210371
+   F    turbulent                       C descriptive ESNb_t   ESNq_t 1.0001 0.9994 1.0008  0.7925   equivalent                          210371
+   F    turbulent                       C descriptive SASb_t  SAS28_t 0.9998 0.9995 1.0000  0.1195   equivalent                          210371
+   F    turbulent                       C descriptive ESNb_t ESN28u_t 0.9968 0.9959 0.9976  0.0000   equivalent                          210371
+   F    turbulent                       C descriptive SASb_t ESN28u_t 0.9987 0.9973 1.0002  0.1609   equivalent                          210371
+   F    turbulent                       C descriptive  LSTM1 ESN28u_t 0.9950 0.9939 0.9961  0.0000   equivalent                          210371
+   F    turbulent                       C descriptive   GRU1 ESN28u_t 0.9952 0.9940 0.9963  0.0000   equivalent                          210371
+   F    turbulent                       C descriptive  LSTM1   ESNb_t 0.9982 0.9975 0.9990  0.0000   equivalent                          210371
+   F    turbulent                       C descriptive  LSTM1   SASb_t 0.9963 0.9954 0.9972  0.0000   equivalent                          210371
+   D          all      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9845 0.9569 1.0122  0.5447 inconclusive no detectable difference   2580
+   D          all      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9582 0.9254 0.9910  0.0496       better   detectable, below band   2580
+   D          all      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9881 0.9554 1.0209  0.5447 inconclusive no detectable difference   2580
+   D          all      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9617 0.9285 0.9949  0.0709       better no detectable difference   2580
+   D          all T1 quantum vs single-input networks    DOM    LSTM1 0.9324 0.9082 0.9565  0.0000       better          meaningful edge   2580
+   D          all T1 quantum vs single-input networks    DOM     GRU1 0.9517 0.9236 0.9798  0.0008       better   detectable, below band   2580
+   D          all T1 quantum vs single-input networks  ISING    LSTM1 0.9358 0.9128 0.9587  0.0000       better          meaningful edge   2580
+   D          all T1 quantum vs single-input networks  ISING     GRU1 0.9552 0.9318 0.9786  0.0004       better   detectable, below band   2580
+   D          all            L1 single-input networks  LSTM1      HAR 1.0420 0.9986 1.0854  0.1734 inconclusive no detectable difference   2580
+   D          all            L1 single-input networks   GRU1      HAR 1.0208 0.9691 1.0725  0.4297 inconclusive no detectable difference   2580
+   D          all            L1 single-input networks  LSTM1     LSTM 1.0541 1.0218 1.0864  0.0041        worse         detectably worse   2580
+   D          all            L1 single-input networks   GRU1      GRU 1.0380 0.9987 1.0773  0.1734 inconclusive no detectable difference   2580
+   D          all                       C descriptive ESNb_t   ESNq_t 0.9964 0.9771 1.0157  1.0000   equivalent                            2580
+   D          all                       C descriptive SASb_t  SAS28_t 1.0012 0.9939 1.0085  1.0000   equivalent                            2580
+   D          all                       C descriptive ESNb_t ESN28u_t 1.0139 0.9782 1.0495  1.0000 inconclusive                            2580
+   D          all                       C descriptive SASb_t ESN28u_t 1.0417 1.0037 1.0798  0.1585        worse                            2580
+   D          all                       C descriptive  LSTM1 ESN28u_t 1.0706 1.0380 1.1031  0.0002        worse                            2580
+   D          all                       C descriptive   GRU1 ESN28u_t 1.0488 1.0107 1.0869  0.0723        worse                            2580
+   D          all                       C descriptive  LSTM1   ESNb_t 1.0559 1.0158 1.0960  0.0439        worse                            2580
+   D          all                       C descriptive  LSTM1   SASb_t 1.0277 0.9931 1.0623  0.4665 inconclusive                            2580
+   D         calm      M2 mechanism, larger stand-ins    DOM   ESNb_t 1.0118 0.9738 1.0498  1.0000 inconclusive no detectable difference    772
+   D         calm      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9991 0.9726 1.0257  1.0000   equivalent no detectable difference    772
+   D         calm      M2 mechanism, larger stand-ins  ISING   ESNb_t 1.0111 0.9670 1.0552  1.0000 inconclusive no detectable difference    772
+   D         calm      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9984 0.9716 1.0252  1.0000   equivalent no detectable difference    772
+   D         calm T1 quantum vs single-input networks    DOM    LSTM1 0.8958 0.8582 0.9333  0.0000       better          meaningful edge    772
+   D         calm T1 quantum vs single-input networks    DOM     GRU1 0.9166 0.8836 0.9496  0.0000       better          meaningful edge    772
+   D         calm T1 quantum vs single-input networks  ISING    LSTM1 0.8951 0.8489 0.9413  0.0000       better          meaningful edge    772
+   D         calm T1 quantum vs single-input networks  ISING     GRU1 0.9159 0.8789 0.9529  0.0000       better          meaningful edge    772
+   D         calm            L1 single-input networks  LSTM1      HAR 1.1242 1.0741 1.1742  0.0000        worse         detectably worse    772
+   D         calm            L1 single-input networks   GRU1      HAR 1.0986 1.0456 1.1517  0.0003        worse         detectably worse    772
+   D         calm            L1 single-input networks  LSTM1     LSTM 1.1100 1.0614 1.1585  0.0000        worse         detectably worse    772
+   D         calm            L1 single-input networks   GRU1      GRU 1.0887 1.0513 1.1261  0.0000        worse         detectably worse    772
+   D         calm                       C descriptive ESNb_t   ESNq_t 0.9615 0.9190 1.0040  0.3027 inconclusive                             772
+   D         calm                       C descriptive SASb_t  SAS28_t 1.0000 0.9916 1.0084  1.0000   equivalent                             772
+   D         calm                       C descriptive ESNb_t ESN28u_t 0.9930 0.9559 1.0300  1.0000 inconclusive                             772
+   D         calm                       C descriptive SASb_t ESN28u_t 1.0055 0.9835 1.0276  1.0000   equivalent                             772
+   D         calm                       C descriptive  LSTM1 ESN28u_t 1.1216 1.0783 1.1649  0.0000        worse                             772
+   D         calm                       C descriptive   GRU1 ESN28u_t 1.0961 1.0607 1.1316  0.0000        worse                             772
+   D         calm                       C descriptive  LSTM1   ESNb_t 1.1295 1.0709 1.1882  0.0001        worse                             772
+   D         calm                       C descriptive  LSTM1   SASb_t 1.1154 1.0695 1.1613  0.0000        worse                             772
+   D intermediate      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9705 0.9208 1.0203  0.5204 inconclusive no detectable difference   1033
+   D intermediate      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9484 0.8925 1.0044  0.2827 inconclusive no detectable difference   1033
+   D intermediate      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9834 0.9297 1.0370  0.5433 inconclusive no detectable difference   1033
+   D intermediate      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9609 0.9047 1.0172  0.5204 inconclusive no detectable difference   1033
+   D intermediate T1 quantum vs single-input networks    DOM    LSTM1 0.9470 0.9190 0.9749  0.0008       better   detectable, below band   1033
+   D intermediate T1 quantum vs single-input networks    DOM     GRU1 0.9576 0.9166 0.9986  0.0849       better no detectable difference   1033
+   D intermediate T1 quantum vs single-input networks  ISING    LSTM1 0.9595 0.9357 0.9833  0.0025       better   detectable, below band   1033
+   D intermediate T1 quantum vs single-input networks  ISING     GRU1 0.9702 0.9344 1.0060  0.1028 inconclusive no detectable difference   1033
+   D intermediate            L1 single-input networks  LSTM1      HAR 1.0154 0.9829 1.0480  0.7049 inconclusive no detectable difference   1033
+   D intermediate            L1 single-input networks   GRU1      HAR 1.0042 0.9558 1.0526  0.8651 inconclusive no detectable difference   1033
+   D intermediate            L1 single-input networks  LSTM1     LSTM 1.0258 0.9922 1.0594  0.3976 inconclusive no detectable difference   1033
+   D intermediate            L1 single-input networks   GRU1      GRU 1.0339 0.9952 1.0726  0.3451 inconclusive no detectable difference   1033
+   D intermediate                       C descriptive ESNb_t   ESNq_t 1.0028 0.9715 1.0342  1.0000 inconclusive                            1033
+   D intermediate                       C descriptive SASb_t  SAS28_t 1.0023 0.9864 1.0182  1.0000   equivalent                            1033
+   D intermediate                       C descriptive ESNb_t ESN28u_t 1.0525 0.9805 1.1244  0.7650 inconclusive                            1033
+   D intermediate                       C descriptive SASb_t ESN28u_t 1.0770 0.9961 1.1580  0.3724 inconclusive                            1033
+   D intermediate                       C descriptive  LSTM1 ESN28u_t 1.0787 1.0347 1.1227  0.0036        worse                            1033
+   D intermediate                       C descriptive   GRU1 ESN28u_t 1.0667 1.0178 1.1157  0.0530        worse                            1033
+   D intermediate                       C descriptive  LSTM1   ESNb_t 1.0249 0.9661 1.0837  1.0000 inconclusive                            1033
+   D intermediate                       C descriptive  LSTM1   SASb_t 1.0015 0.9449 1.0581  1.0000 inconclusive                            1033
+   D    turbulent      M2 mechanism, larger stand-ins    DOM   ESNb_t 0.9848 0.9421 1.0275  0.9719 inconclusive no detectable difference    775
+   D    turbulent      M2 mechanism, larger stand-ins    DOM   SASb_t 0.9444 0.8840 1.0048  0.2136 inconclusive no detectable difference    775
+   D    turbulent      M2 mechanism, larger stand-ins  ISING   ESNb_t 0.9791 0.9186 1.0397  0.9719 inconclusive no detectable difference    775
+   D    turbulent      M2 mechanism, larger stand-ins  ISING   SASb_t 0.9389 0.8772 1.0007  0.2101 inconclusive no detectable difference    775
+   D    turbulent T1 quantum vs single-input networks    DOM    LSTM1 0.9397 0.8830 0.9964  0.1114       better no detectable difference    775
+   D    turbulent T1 quantum vs single-input networks    DOM     GRU1 0.9694 0.9079 1.0308  0.3284 inconclusive no detectable difference    775
+   D    turbulent T1 quantum vs single-input networks  ISING    LSTM1 0.9343 0.8825 0.9860  0.0511       better no detectable difference    775
+   D    turbulent T1 quantum vs single-input networks  ISING     GRU1 0.9638 0.9183 1.0093  0.2375 inconclusive no detectable difference    775
+   D    turbulent            L1 single-input networks  LSTM1      HAR 1.0231 0.9072 1.1389  1.0000 inconclusive no detectable difference    775
+   D    turbulent            L1 single-input networks   GRU1      HAR 0.9917 0.8577 1.1258  1.0000 inconclusive no detectable difference    775
+   D    turbulent            L1 single-input networks  LSTM1     LSTM 1.0536 0.9744 1.1328  0.7373 inconclusive no detectable difference    775
+   D    turbulent            L1 single-input networks   GRU1      GRU 1.0094 0.9079 1.1110  1.0000 inconclusive no detectable difference    775
+   D    turbulent                       C descriptive ESNb_t   ESNq_t 1.0122 0.9848 1.0397  1.0000 inconclusive                             775
+   D    turbulent                       C descriptive SASb_t  SAS28_t 1.0006 0.9973 1.0039  1.0000   equivalent                             775
+   D    turbulent                       C descriptive ESNb_t ESN28u_t 0.9801 0.9355 1.0246  1.0000 inconclusive                             775
+   D    turbulent                       C descriptive SASb_t ESN28u_t 1.0220 0.9796 1.0645  1.0000 inconclusive                             775
+   D    turbulent                       C descriptive  LSTM1 ESN28u_t 1.0271 0.9563 1.0979  1.0000 inconclusive                             775
+   D    turbulent                       C descriptive   GRU1 ESN28u_t 0.9957 0.9077 1.0837  1.0000 inconclusive                             775
+   D    turbulent                       C descriptive  LSTM1   ESNb_t 1.0480 0.9664 1.1296  1.0000 inconclusive                             775
+   D    turbulent                       C descriptive  LSTM1   SASb_t 1.0050 0.9427 1.0673  1.0000 inconclusive                             775
+
+=== mean loss relative to the benchmark, all blocks pooled (descriptive) ===
+ grid    DOM  ESN28u  ISING  ESN28u_t  ESNq_t  SAS28_t   LSTM    GRU  ESNb_t  SASb_t  LSTM1   GRU1    QRC
+   H 0.9900  0.9883 0.9851    0.9883  0.9906   0.9835 0.9671 0.9685  0.9895  0.9817  0.986 0.9837 0.9894
+   M 0.9816  0.9852 0.9813    0.9832  0.9863   0.9854 0.9299 0.9299  0.9867  0.9850  0.976 0.9752 0.9838
+   F 0.9874  0.9898 0.9866    0.9899  0.9872   0.9871 0.9660 0.9654  0.9877  0.9869  0.984 0.9843 0.9818
+   D 0.9715  0.9817 0.9751    0.9733  0.9904   1.0127 0.9886 0.9834  0.9868  1.0139  1.042 1.0208 0.9952
+
+=== per-year ratio to the benchmark and chosen configurations (descriptive) ===
+ grid  year       regime     n  DOM/HAR  ESN28u/HAR  ISING/HAR  ESN28u_t/HAR  ESNq_t/HAR  SAS28_t/HAR  LSTM/HAR  GRU/HAR  ESNb_t/HAR  SASb_t/HAR  LSTM1/HAR  GRU1/HAR  QRC/HAR                                                                                                                                                   config
+   H  2013         calm  5247   0.9752      0.9735     0.9666        0.9754      0.9824       0.9773    0.9366   0.9534      0.9987      0.9726     0.9695    0.9600   0.9769   {"ESNb_t": {"rho": 0.9, "leak": 0.2}, "SASb_t": {"gain": 0.65, "leak": 0.1}, "LSTM1": {"hidden": 32, "lr": 0.001}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   H  2014         calm  5176   0.9921      0.9743     0.9784        0.9753      0.9974       0.9649    0.9056   0.9192      0.9912      0.9663     0.9752    0.9766   0.9815     {"ESNb_t": {"rho": 0.9, "leak": 0.2}, "SASb_t": {"gain": 0.5, "leak": 0.2}, "LSTM1": {"hidden": 32, "lr": 0.01}, "GRU1": {"hidden": 16, "lr": 0.01}}
+   H  2015    turbulent  5303   0.9584      0.9571     0.9473        0.9694      0.9672       0.9467    0.9156   0.9189      0.9572      0.9473     0.9420    0.9370   0.9803    {"ESNb_t": {"rho": 0.9, "leak": 0.2}, "SASb_t": {"gain": 0.65, "leak": 0.2}, "LSTM1": {"hidden": 32, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   H  2016 intermediate  5191   0.9803      0.9927     0.9845        0.9927      0.9918       0.9829    0.9833   0.9950      0.9897      0.9854     0.9838    0.9887   0.9931   {"ESNb_t": {"rho": 1.2, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.001}}
+   H  2017         calm  5186   1.0120      1.0185     1.0110        1.0001      0.9964       1.0008    0.9946   0.9954      0.9945      1.0002     1.0043    1.0053   0.9951    {"ESNb_t": {"rho": 0.9, "leak": 0.2}, "SASb_t": {"gain": 0.65, "leak": 0.1}, "LSTM1": {"hidden": 32, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   H  2018 intermediate  5054   0.9869      0.9887     0.9899        0.9956      0.9891       0.9958    0.9821   0.9827      0.9896      0.9962     0.9951    0.9988   0.9980     {"ESNb_t": {"rho": 1.2, "leak": 0.1}, "SASb_t": {"gain": 0.3, "leak": 0.5}, "LSTM1": {"hidden": 8, "lr": 0.01}, "GRU1": {"hidden": 8, "lr": 0.0003}}
+   H  2019         calm  5165   0.9981      0.9932     0.9928        0.9932      1.0007       0.9971    0.9990   0.9923      0.9996      0.9975     0.9987    0.9925   0.9930  {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.001}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   H  2020 intermediate  5205   1.0015      0.9998     1.0007        1.0019      0.9964       0.9962    0.9933   0.9853      0.9963      0.9964     0.9987    0.9992   0.9930    {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.3, "leak": 1.0}, "LSTM1": {"hidden": 32, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.001}}
+   H  2021    turbulent  5220   1.0025      1.0026     0.9984        1.0010      0.9953       0.9945    0.9834   0.9852      0.9939      0.9943     0.9975    0.9991   0.9939 {"ESNb_t": {"rho": 1.2, "leak": 0.1}, "SASb_t": {"gain": 0.3, "leak": 0.1}, "LSTM1": {"hidden": 32, "lr": 0.0003}, "GRU1": {"hidden": 32, "lr": 0.0003}}
+   H  2022    turbulent  5221   0.9978      1.0002     0.9986        0.9981      1.0005       0.9982    1.0087   1.0156      0.9972      0.9978     0.9988    0.9972   1.0029     {"ESNb_t": {"rho": 0.9, "leak": 0.1}, "SASb_t": {"gain": 0.5, "leak": 0.1}, "LSTM1": {"hidden": 8, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   H  2023 intermediate  5180   0.9888      0.9831     0.9833        0.9845      0.9949       0.9953    0.9877   0.9850      0.9860      0.9684     0.9861    0.9839   0.9831   {"ESNb_t": {"rho": 1.2, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 0.1}, "LSTM1": {"hidden": 16, "lr": 0.001}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   H  2024 intermediate  5222   1.0020      0.9912     0.9927        0.9906      0.9772       0.9643    0.9705   0.9502      0.9760      0.9632     0.9989    0.9867   0.9941     {"ESNb_t": {"rho": 1.2, "leak": 0.1}, "SASb_t": {"gain": 0.3, "leak": 0.1}, "LSTM1": {"hidden": 8, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   H  2025    turbulent  5197   0.9907      0.9928     0.9847        0.9883      0.9960       0.9929    0.9752   0.9591      0.9967      0.9919     0.9980    0.9915   0.9895     {"ESNb_t": {"rho": 0.6, "leak": 0.1}, "SASb_t": {"gain": 0.3, "leak": 0.1}, "LSTM1": {"hidden": 8, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   M  2013         calm 19869   0.9891      0.9845     0.9878        0.9833      0.9913       0.9876    0.9856   0.9859      0.9922      0.9872     0.9861    0.9846   0.9896    {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 8, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   M  2014         calm 19005   0.9866      0.9820     0.9831        0.9820      0.9941       0.9877    0.9595   0.9358      0.9947      0.9878     0.9821    0.9770   0.9857   {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 16, "lr": 0.003}, "GRU1": {"hidden": 16, "lr": 0.01}}
+   M  2015    turbulent 20182   0.9792      0.9829     0.9761        0.9829      0.9858       0.9828    0.9118   0.9061      0.9846      0.9825     0.9744    0.9731   0.9798   {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   M  2016 intermediate 21368   0.9803      0.9852     0.9803        0.9843      0.9780       0.9873    0.9259   0.9266      0.9808      0.9858     0.9749    0.9725   0.9780    {"ESNb_t": {"rho": 0.6, "leak": 0.2}, "SASb_t": {"gain": 0.65, "leak": 0.2}, "LSTM1": {"hidden": 16, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   M  2017         calm 22261   0.9796      0.9874     0.9802        0.9863      0.9874       0.9847    0.9036   0.9053      0.9878      0.9847     0.9693    0.9673   0.9860  {"ESNb_t": {"rho": 1.2, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   M  2018 intermediate 22427   0.9895      0.9943     0.9896        0.9923      0.9937       0.9923    0.9302   0.9361      0.9929      0.9927     0.9856    0.9865   0.9918   {"ESNb_t": {"rho": 1.2, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 16, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   M  2019         calm 22304   0.9910      0.9934     0.9906        0.9900      0.9873       0.9864    0.9498   0.9595      0.9878      0.9862     0.9868    0.9856   0.9927  {"ESNb_t": {"rho": 0.6, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 1.0}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 16, "lr": 0.003}}
+   M  2020 intermediate 22637   0.9892      0.9888     0.9901        0.9911      0.9919       0.9925    0.9546   0.9460      0.9918      0.9924     0.9872    0.9881   0.9835    {"ESNb_t": {"rho": 0.6, "leak": 1.0}, "SASb_t": {"gain": 0.3, "leak": 1.0}, "LSTM1": {"hidden": 16, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   M  2021    turbulent 22807   0.9796      0.9870     0.9817        0.9855      0.9853       0.9854    0.9072   0.9128      0.9844      0.9853     0.9736    0.9778   0.9829   {"ESNb_t": {"rho": 1.2, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 16, "lr": 0.003}, "GRU1": {"hidden": 8, "lr": 0.003}}
+   M  2022    turbulent 22762   0.9803      0.9862     0.9818        0.9862      0.9858       0.9843    0.9413   0.9426      0.9876      0.9845     0.9786    0.9791   0.9875   {"ESNb_t": {"rho": 1.2, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 16, "lr": 0.01}}
+   M  2023 intermediate 22671   0.9690      0.9757     0.9705        0.9661      0.9799       0.9772    0.8962   0.9100      0.9807      0.9769     0.9584    0.9584   0.9755   {"ESNb_t": {"rho": 0.6, "leak": 1.0}, "SASb_t": {"gain": 0.5, "leak": 1.0}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   M  2024 intermediate 23017   0.9753      0.9761     0.9769        0.9686      0.9860       0.9834    0.9003   0.9033      0.9836      0.9838     0.9591    0.9574   0.9801     {"ESNb_t": {"rho": 1.2, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 1.0}, "LSTM1": {"hidden": 16, "lr": 0.01}, "GRU1": {"hidden": 8, "lr": 0.01}}
+   M  2025    turbulent 22643   0.9706      0.9833     0.9677        0.9799      0.9753       0.9776    0.9200   0.9207      0.9772      0.9741     0.9698    0.9699   0.9760    {"ESNb_t": {"rho": 0.9, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 1.0}, "LSTM1": {"hidden": 16, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   F  2013         calm 45374   0.9882      0.9929     0.9862        0.9925      0.9942       0.9863    0.9784   0.9766      0.9936      0.9862     0.9852    0.9844   0.9864  {"ESNb_t": {"rho": 1.2, "leak": 1.0}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.001}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   F  2014         calm 35788   0.9897      0.9943     0.9893        0.9940      0.9911       0.9891    0.9739   0.9739      0.9914      0.9889     0.9875    0.9878   0.9876   {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 16, "lr": 0.01}}
+   F  2015    turbulent 43846   0.9879      0.9899     0.9867        0.9896      0.9875       0.9868    0.9664   0.9655      0.9873      0.9868     0.9858    0.9858   0.9799  {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.001}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   F  2016    turbulent 41581   0.9861      0.9845     0.9862        0.9845      0.9850       0.9853    0.9667   0.9665      0.9841      0.9853     0.9834    0.9842   0.9786  {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.001}, "GRU1": {"hidden": 16, "lr": 0.001}}
+   F  2017         calm 44300   0.9838      0.9867     0.9820        0.9867      0.9843       0.9822    0.9627   0.9603      0.9838      0.9819     0.9815    0.9820   0.9788     {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 8, "lr": 0.01}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   F  2018 intermediate 54187   0.9897      0.9924     0.9875        0.9921      0.9898       0.9885    0.9683   0.9680      0.9904      0.9881     0.9882    0.9886   0.9866   {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 16, "lr": 0.01}}
+   F  2019         calm 44400   0.9895      0.9940     0.9882        0.9940      0.9889       0.9892    0.9711   0.9719      0.9892      0.9889     0.9881    0.9881   0.9848  {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 16, "lr": 0.001}, "GRU1": {"hidden": 32, "lr": 0.001}}
+   F  2020 intermediate 56329   0.9877      0.9902     0.9868        0.9900      0.9869       0.9883    0.9603   0.9592      0.9868      0.9881     0.9852    0.9855   0.9791   {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 16, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.01}}
+   F  2021 intermediate 63199   0.9835      0.9843     0.9854        0.9860      0.9794       0.9833    0.9542   0.9555      0.9840      0.9834     0.9769    0.9773   0.9762   {"ESNb_t": {"rho": 0.6, "leak": 0.2}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.001}, "GRU1": {"hidden": 8, "lr": 0.001}}
+   F  2022    turbulent 64313   0.9904      0.9892     0.9909        0.9892      0.9863       0.9916    0.9743   0.9707      0.9867      0.9907     0.9846    0.9843   0.9876   {"ESNb_t": {"rho": 0.9, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 8, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.003}}
+   F  2023 intermediate 58431   0.9891      0.9927     0.9865        0.9930      0.9915       0.9897    0.9647   0.9648      0.9918      0.9895     0.9864    0.9873   0.9794  {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 32, "lr": 0.001}}
+   F  2024 intermediate 60725   0.9891      0.9913     0.9874        0.9913      0.9921       0.9888    0.9672   0.9651      0.9912      0.9887     0.9840    0.9851   0.9803  {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 32, "lr": 0.003}, "GRU1": {"hidden": 16, "lr": 0.001}}
+   F  2025    turbulent 60631   0.9834      0.9879     0.9828        0.9879      0.9812       0.9838    0.9569   0.9587      0.9818      0.9839     0.9796    0.9800   0.9797    {"ESNb_t": {"rho": 0.6, "leak": 0.5}, "SASb_t": {"gain": 0.65, "leak": 0.5}, "LSTM1": {"hidden": 8, "lr": 0.01}, "GRU1": {"hidden": 16, "lr": 0.003}}
+   D  2015 intermediate   258   0.9616      0.9865     1.0079        0.9670      0.9278       1.0293    1.0032   0.9904      0.9633      1.0256     1.0454    1.0542   1.0555                                                                                                                                                         
+   D  2016 intermediate   258   0.9469      0.9102     0.9323        0.9102      1.0588       1.0270    0.9653   0.9392      1.0808      1.0520     0.9714    0.9203   0.9624                                                                                                                                                         
+   D  2017         calm   257   0.9469      0.9430     0.9083        0.9430      0.9640       0.9232    0.9822   0.9757      0.9693      0.9305     1.0237    0.9800   1.0134                                                                                                                                                         
+   D  2018 intermediate   258   0.9485      0.8801     0.9593        0.8801      0.9730       1.0078    0.9551   0.9370      1.0004      0.9584     1.0125    1.0096   0.9766                                                                                                                                                         
+   D  2019         calm   258   1.0482      1.0598     1.0920        1.0034      0.9893       1.0445    1.0361   1.0091      0.9944      1.0248     1.1381    1.1272   1.0212                                                                                                                                                         
+   D  2020    turbulent   259   0.9330      0.9920     0.9379        0.9920      0.9272       1.0377    0.9469   0.9614      0.9365      1.0401     1.0235    0.9747   0.9274                                                                                                                                                         
+   D  2021    turbulent   258   1.0020      1.0556     0.9942        1.0037      1.0202       1.0063    0.9952   1.0332      1.0438      1.0049     1.0822    1.0764   0.9946                                                                                                                                                         
+   D  2022    turbulent   258   0.9747      0.9814     0.9519        0.9962      0.9794       0.9904    0.9922   0.9727      0.9844      0.9897     0.9653    0.9417   0.9956                                                                                                                                                         
+   D  2023         calm   257   1.0566      1.0339     1.0634        1.1015      1.2137       1.1050    1.0350   1.0658      1.0402      1.1174     1.2768    1.2634   1.0689                                                                                                                                                         
+   D  2024 intermediate   259   0.9893      0.9953     0.9803        0.9764      1.0092       0.9625    1.0212   1.0019      0.9139      0.9781     1.0229    1.0241   0.9813                                                                                                                                                         
+
+=== registered decision ===
+ grid                                                                                        DOM_mechanism                                                                                        ISING_mechanism                       quantum_vs_best_single_input_network
+   H       explained by a classical stand-in (ESNb_t: no detectable difference; SASb_t: detectably worse)           explained by a classical stand-in (ESNb_t: detectable, below band; SASb_t: detectably worse)     DOM: detectably worse; ISING: no detectable difference
+   M                       not explained (ESNb_t: detectable, below band; SASb_t: detectable, below band)                         not explained (ESNb_t: detectable, below band; SASb_t: detectable, below band)             DOM: detectably worse; ISING: detectably worse
+   F       explained by a classical stand-in (ESNb_t: no detectable difference; SASb_t: detectably worse)   explained by a classical stand-in (ESNb_t: detectable, below band; SASb_t: no detectable difference)             DOM: detectably worse; ISING: detectably worse
+   D explained by a classical stand-in (ESNb_t: no detectable difference; SASb_t: detectable, below band) explained by a classical stand-in (ESNb_t: no detectable difference; SASb_t: no detectable difference) DOM: detectable, below band; ISING: detectable, below band

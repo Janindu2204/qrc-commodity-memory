@@ -1,0 +1,92 @@
+
+== F rolling (n = 673104) ==
+  B1 LIN200    vs HAR    0.9880 [0.9874, 0.9886]  p_holm 0  detectable, below band
+  B1 LIN50     vs HAR    0.9901 [0.9896, 0.9906]  p_holm 0  detectable, below band
+  B2 DOM       vs LIN200 0.9995 [0.9986, 1.0003]  p_holm 0.429  no detectable difference
+  B2 ISING     vs LIN200 0.9986 [0.9977, 0.9995]  p_holm 0.007  detectable, below band
+  B2 ESN28u_t  vs LIN200 1.0020 [1.0012, 1.0027]  p_holm 8.92e-07  detectably worse
+  B2 SAS28_t   vs LIN200 0.9991 [0.9982, 1.0001]  p_holm 0.246  no detectable difference
+  B2 LSTM      vs LIN200 0.9778 [0.9763, 0.9792]  p_holm 1.61e-206  detectable, below band
+  B2 GRU       vs LIN200 0.9771 [0.9758, 0.9785]  p_holm 3.32e-234  detectable, below band
+  B2 ESNb_t    vs LIN200 0.9997 [0.9988, 1.0005]  p_holm 0.468  no detectable difference
+  B2 SASb_t    vs LIN200 0.9989 [0.9980, 0.9999]  p_holm 0.129  no detectable difference
+  B2 LSTM1     vs LIN200 0.9960 [0.9950, 0.9970]  p_holm 4.14e-15  detectable, below band
+  B2 GRU1      vs LIN200 0.9963 [0.9953, 0.9972]  p_holm 1.36e-13  detectable, below band
+
+== F heldout (n = 49865) ==
+  B1 LIN200    vs HAR    0.9902 [0.9879, 0.9925]  p_holm 1.53e-16  detectable, below band
+  B1 LIN50     vs HAR    0.9922 [0.9902, 0.9942]  p_holm 7.01e-14  detectable, below band
+  B2 DOM       vs LIN200 0.9965 [0.9932, 0.9998]  p_holm 0.185  no detectable difference
+  B2 ISING     vs LIN200 0.9976 [0.9941, 1.0010]  p_holm 0.65  no detectable difference
+  B2 ESN28u_t  vs LIN200 1.0017 [0.9986, 1.0048]  p_holm 0.874  no detectable difference
+  B2 SAS28_t   vs LIN200 0.9986 [0.9949, 1.0022]  p_holm 0.874  no detectable difference
+  B2 LSTM      vs LIN200 0.9646 [0.9593, 0.9700]  p_holm 3.56e-37  detectable, below band
+  B2 GRU       vs LIN200 0.9666 [0.9617, 0.9716]  p_holm 8.12e-39  detectable, below band
+  B2 ESNb_t    vs LIN200 0.9958 [0.9922, 0.9994]  p_holm 0.142  no detectable difference
+  B2 SASb_t    vs LIN200 0.9983 [0.9946, 1.0019]  p_holm 0.874  no detectable difference
+  B2 LSTM1     vs LIN200 0.9903 [0.9865, 0.9941]  p_holm 3.8e-06  detectable, below band
+  B2 GRU1      vs LIN200 0.9914 [0.9877, 0.9951]  p_holm 3.58e-05  detectable, below band
+
+== M rolling (n = 283953) ==
+  B1 LIN200    vs HAR    0.9546 [0.9526, 0.9566]  p_holm 0  meaningful edge
+  B1 LIN50     vs HAR    0.9781 [0.9771, 0.9792]  p_holm 0  detectable, below band
+  B2 DOM       vs LIN200 1.0283 [1.0262, 1.0304]  p_holm 7.5e-147  detectably worse
+  B2 ISING     vs LIN200 1.0280 [1.0257, 1.0302]  p_holm 1.18e-131  detectably worse
+  B2 ESN28u_t  vs LIN200 1.0300 [1.0281, 1.0319]  p_holm 1.75e-210  detectably worse
+  B2 SAS28_t   vs LIN200 1.0323 [1.0300, 1.0347]  p_holm 5.97e-158  detectably worse
+  B2 LSTM      vs LIN200 0.9742 [0.9711, 0.9773]  p_holm 4.06e-60  detectable, below band
+  B2 GRU       vs LIN200 0.9741 [0.9710, 0.9772]  p_holm 4.06e-60  detectable, below band
+  B2 ESNb_t    vs LIN200 1.0337 [1.0315, 1.0358]  p_holm 1.08e-202  detectably worse
+  B2 SASb_t    vs LIN200 1.0319 [1.0296, 1.0342]  p_holm 8.03e-160  detectably worse
+  B2 LSTM1     vs LIN200 1.0225 [1.0202, 1.0247]  p_holm 2.07e-86  detectably worse
+  B2 GRU1      vs LIN200 1.0216 [1.0194, 1.0238]  p_holm 5.26e-82  detectably worse
+
+== M heldout (n = 17908) ==
+  B1 LIN200    vs HAR    0.9505 [0.9420, 0.9590]  p_holm 7.47e-30  meaningful edge
+  B1 LIN50     vs HAR    0.9823 [0.9771, 0.9874]  p_holm 1.39e-11  detectable, below band
+  B2 DOM       vs LIN200 1.0316 [1.0231, 1.0402]  p_holm 3.31e-12  detectably worse
+  B2 ISING     vs LIN200 1.0299 [1.0209, 1.0389]  p_holm 3.34e-10  detectably worse
+  B2 ESN28u_t  vs LIN200 1.0407 [1.0316, 1.0498]  p_holm 2.53e-17  detectably worse
+  B2 SAS28_t   vs LIN200 1.0357 [1.0260, 1.0454]  p_holm 3.82e-12  detectably worse
+  B2 LSTM      vs LIN200 0.9512 [0.9366, 0.9658]  p_holm 2.86e-10  meaningful edge
+  B2 GRU       vs LIN200 0.9555 [0.9410, 0.9701]  p_holm 5.81e-09  detectable, below band
+  B2 ESNb_t    vs LIN200 1.0346 [1.0245, 1.0446]  p_holm 9.23e-11  detectably worse
+  B2 SASb_t    vs LIN200 1.0350 [1.0254, 1.0446]  p_holm 5.76e-12  detectably worse
+  B2 LSTM1     vs LIN200 1.0244 [1.0143, 1.0345]  p_holm 4.68e-06  detectably worse
+  B2 GRU1      vs LIN200 1.0233 [1.0134, 1.0333]  p_holm 4.68e-06  detectably worse
+
+== H rolling (n = 57144) ==
+  B1 LIN200    vs HAR    0.9740 [0.9696, 0.9785]  p_holm 4.03e-30  detectable, below band
+  B1 LIN50     vs HAR    0.9781 [0.9742, 0.9821]  p_holm 8.4e-28  detectable, below band
+  B2 DOM       vs LIN200 1.0180 [1.0133, 1.0227]  p_holm 6.3e-13  detectably worse
+  B2 ISING     vs LIN200 1.0147 [1.0098, 1.0196]  p_holm 2.19e-08  detectably worse
+  B2 ESN28u_t  vs LIN200 1.0182 [1.0137, 1.0226]  p_holm 7.47e-15  detectably worse
+  B2 SAS28_t   vs LIN200 1.0130 [1.0079, 1.0182]  p_holm 2.99e-06  detectably worse
+  B2 LSTM      vs LIN200 1.0052 [1.0000, 1.0104]  p_holm 0.104  no detectable difference
+  B2 GRU       vs LIN200 1.0029 [0.9976, 1.0083]  p_holm 0.284  no detectable difference
+  B2 ESNb_t    vs LIN200 1.0144 [1.0098, 1.0190]  p_holm 5.98e-09  detectably worse
+  B2 SASb_t    vs LIN200 1.0111 [1.0060, 1.0161]  p_holm 4.8e-05  detectably worse
+  B2 LSTM1     vs LIN200 1.0160 [1.0115, 1.0205]  p_holm 2.21e-11  detectably worse
+  B2 GRU1      vs LIN200 1.0140 [1.0097, 1.0184]  p_holm 2.26e-09  detectably worse
+
+== H heldout (n = 4151) ==
+  B1 LIN200    vs HAR    0.9725 [0.9577, 0.9874]  p_holm 0.000598  detectable, below band
+  B1 LIN50     vs HAR    0.9794 [0.9665, 0.9922]  p_holm 0.0017  detectable, below band
+  B2 DOM       vs LIN200 1.0162 [1.0013, 1.0312]  p_holm 0.199  no detectable difference
+  B2 ISING     vs LIN200 1.0091 [0.9946, 1.0236]  p_holm 0.429  no detectable difference
+  B2 ESN28u_t  vs LIN200 1.0206 [1.0057, 1.0355]  p_holm 0.0537  no detectable difference
+  B2 SAS28_t   vs LIN200 1.0161 [0.9998, 1.0323]  p_holm 0.261  no detectable difference
+  B2 LSTM      vs LIN200 0.9470 [0.9257, 0.9683]  p_holm 1.12e-05  meaningful edge
+  B2 GRU       vs LIN200 0.9545 [0.9325, 0.9764]  p_holm 0.000415  detectable, below band
+  B2 ESNb_t    vs LIN200 1.0194 [1.0022, 1.0366]  p_holm 0.187  no detectable difference
+  B2 SASb_t    vs LIN200 1.0160 [0.9996, 1.0323]  p_holm 0.261  no detectable difference
+  B2 LSTM1     vs LIN200 1.0101 [0.9962, 1.0241]  p_holm 0.429  no detectable difference
+  B2 GRU1      vs LIN200 1.0104 [0.9965, 1.0244]  p_holm 0.429  no detectable difference
+
+== decision ==
+  F rolling: LIN200 vs HAR detectable, below band (0.9880); models that beat LIN200 detectably: ISING, LSTM, GRU, LSTM1, GRU1; meaningful edge over LIN200: none
+  F heldout: LIN200 vs HAR detectable, below band (0.9902); models that beat LIN200 detectably: LSTM, GRU, LSTM1, GRU1; meaningful edge over LIN200: none
+  M rolling: LIN200 vs HAR meaningful edge (0.9546); models that beat LIN200 detectably: LSTM, GRU; meaningful edge over LIN200: none
+  M heldout: LIN200 vs HAR meaningful edge (0.9505); models that beat LIN200 detectably: LSTM, GRU; meaningful edge over LIN200: LSTM
+  H rolling: LIN200 vs HAR detectable, below band (0.9740); models that beat LIN200 detectably: none; meaningful edge over LIN200: none
+  H heldout: LIN200 vs HAR detectable, below band (0.9725); models that beat LIN200 detectably: LSTM, GRU; meaningful edge over LIN200: LSTM

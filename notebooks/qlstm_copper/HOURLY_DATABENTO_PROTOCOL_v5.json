@@ -1,0 +1,36 @@
+{
+ "frozen_on": "2026-11-04",
+ "status": "FROZEN once hashed. v1-v4 protocols and results unchanged. Any change here = v6. The GARCH audit gets its own protocol (v5b) frozen before it runs.",
+ "questions": [
+  "A. Seed power: with 50 seeds at the 2-year span, is the QLSTMT-vs-LSTM/GRU gap on next-hour ln RV (2026 test) still positive (QLSTMT worse), null, or reversed? v3 used 5 seeds.",
+  "B. Rolling origin under stress: does the same comparison hold on the 4 highest-volatility calendar years, each with a 2-year training span?"
+ ],
+ "data": "hourly_ext_windows.csv; target ln realized variance of next hour; inputs last 10 bars x [ret, lrv1m, lvol, hod sin, hod cos]; models and training exactly as v3 (Adam lr 0.005, batch 32, max 25 epochs, patience 5, validation-only early stopping, every 5th block of 500 windows as validation, purge 10)",
+ "part_A_seeds": {
+  "span": "2 years before 2026-01-01, test = 2026 (4,155 windows), identical to v3 S2",
+  "models": "LSTM (hidden 5, 233-param matched), GRU (hidden 6), QLSTMT (4 qubits, 1 layer, hidden 16, 233 params)",
+  "seeds": "0-49 fresh under the v5 package versions; N = 50 FIXED in advance, all 50 reported, no stopping on results. If compute runs out the first 30 seeds (0-29) are reported and the cut is stated.",
+  "v3_check": "v3 seeds 0-4 (older library versions) kept as a version-comparison check only, not pooled"
+ },
+ "part_B_rolling": {
+  "origin_rule": "the 4 calendar years with highest mean ln RV of the next-hour target among years with a full 2-year history (2012-2025): 2022 (-11.608), 2025 (-11.790), 2021 (-11.964), 2015 (-11.970). 2011 excluded (under 2 years of history). Next ranked: 2020 (-12.010).",
+  "selection_note": "Origins are chosen by their own outcome volatility (selection on test-period characteristics), so the result is a STRESS test, not an unbiased average. Not claimed as typical performance.",
+  "train": "the 2 calendar years before the test year, train/val rows purged 10 bars before the first test window",
+  "seeds": "5 per model per origin (0-4)",
+  "models": "LSTM, GRU, QLSTMT as Part A"
+ },
+ "benchmarks": "HAR + hour-of-day (OLS on the same training span); EWMA reported for reference",
+ "primary_outcome": "seed-ensemble MSE ratio to HAR+hod; gap = QLSTMT ratio minus LSTM (and GRU) ratio",
+ "tests": "Part A: DM (squared error, HAC lag 24) on seed-ensembles; plus Wilcoxon rank-sum on 50 per-seed ratios QLSTMT vs LSTM and vs GRU and bootstrap 95% CI of the mean per-seed ratio gap, Holm over the 2 comparisons. Part B: DM per origin, Holm across the 4 origins within each comparison; no pooled significance claim",
+ "equivalence_band": "+/-3% of the benchmark MSE (as v3)",
+ "environment_note": "v5 runs use torch 2.15.0, pennylane 0.45.1, arch 8.0.0, numpy and pandas as installed in the scratch venv; v3 used older, unrecorded versions. Wall time per fit measured in a single-process timing run first (not scored).",
+ "parallelism": "8 concurrent single-thread jobs (peak ~0.5 GB each)",
+ "files_sha256": {
+  "hourly_databento_v5.py": "3eb8265cbe844136b675969e7ea0b0c57484223e38a780a65e82921fda49fe42",
+  "hourly_databento_scale.py": "e106355103554da716c0f0ed769152caf2621c780cfd5b9db92469fd8bd6a567",
+  "hourly_databento_nn.py": "0489650305e1d9ef7812b4e80be6ea838c7c77a5bc9db2354386d12cc1520cb5",
+  "hourly_databento_nn2.py": "9c908dae8723e27b05287e25fafc72e14d10f1641504d7986c857d3e24c404ad",
+  "returns_lib.py": "b8e2a889a548816a1f5033279e1a6c37c68e2ab3e1d2b17ede47ce19599d9e2a",
+  "../../data/databento/hourly_ext_windows.csv": "8ffd43fe9e9934c21c6b30ab44ab35ce4ebcc9f32788ce85a4e726cd06454976"
+ }
+}

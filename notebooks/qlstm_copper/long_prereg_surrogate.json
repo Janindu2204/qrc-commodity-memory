@@ -1,0 +1,60 @@
+{
+  "status": "FROZEN 2026-11-10 after the student's prediction and approval; amend only by dated addendum. Frozen BEFORE any block was run for real (only dry runs and fake-data tests of the scripts).",
+  "drafted": "2026-11-10",
+  "id": "long_prereg_surrogate",
+  "question": "Does an exact classical surrogate built from the trigonometric basis reproduce the forecasts of an angle-encoded, CZ-ring, Z/ZZ-readout quantum reservoir, and does anything beyond that surrogate (entangled depth >= 2) give a forecasting edge?",
+  "blocks": "Daily copper, version range_m, 17 rolling one-year test blocks 2008-2024, identical splits to qrc_roll.py (long_core.prepare(...,length=1): training, 2-year validation, 1-year test, 5-row purge). 2025-26 is never read.",
+  "inputs": "The 6 inputs G of qrc_roll.py (today and previous day of standardised lvR1, lvR5, lvR22); theta = arctan(G * scale), scale FIXED at 1.0 (untuned).",
+  "readout": "Identical to qrc_roll.py for every model: X = [M, F] standardised with training statistics, QLIKE-trained linear model (v2_core.fit_linear_qlike), lambda in (1e-3,1e-2,1e-1,1,10) chosen on validation, validation-calibrated scale.",
+  "models": {
+    "QRC_L1, QRC_L2, QRC_L3": "6 qubits, entangled CZ ring, layers 1/2/3, 21 features (Z_i, Z_iZ_j), reservoir seeds 0-9, forecasts averaged",
+    "QRC_noent_L2": "same without CZ, layers 2 (control)",
+    "Basis2, Basis3, Basis4": "exact trigonometric bases: all products of up to 2/3/4 distinct inputs of {cos theta_i, sin theta_i} (72, 232, 472 non-constant columns); deterministic, no seed",
+    "RandProj_d (d=2,3,4)": "21 random linear combinations of the Basis_d columns (Gaussian weights), standardised; capacity-matched to QRC; seeds 0-9 averaged",
+    "TrigFeat": "the existing 21-feature cosine control of hf2_run.py/qrc_mvtrig, seeds 0-9",
+    "HAR_only": "same readout on M alone (no reservoir features)"
+  },
+  "span_diagnostic": "Deterministic, no forecasting. On the inputs of ALL training, validation and test rows of each block (about 6000 rows; the test rows alone, about 250, are fewer than the 473 columns of Basis4 and would make R2 trivially 1), regress each of the 21 QRC features (each seed, each layer count) on Basis2/3/4 (with constant) and report minimum and mean R2 per layer count. Expectation recorded in advance: L1 >= 0.999999; entangled L2, L3 < 1 on Basis2. (Wording corrected 2026-11-10 before freezing.)",
+  "comparisons": {
+    "Family A (exact surrogate)": [
+      "QRC_L1 vs Basis2",
+      "QRC_L2 vs Basis4",
+      "QRC_L3 vs Basis4"
+    ],
+    "Family B (capacity-matched)": [
+      "QRC_L1 vs RandProj_2",
+      "QRC_L2 vs RandProj_4",
+      "QRC_L3 vs RandProj_4"
+    ],
+    "Family C (existing controls)": [
+      "QRC_Lk vs TrigFeat",
+      "QRC_Lk vs HAR_only",
+      "QRC_L2 vs QRC_noent_L2"
+    ]
+  },
+  "statistics": "Pooled over the 17 blocks: per-row QLIKE loss differences, Diebold-Mariano with HAC lag 10, ratio interval, +/-3% equivalence band, Holm within each family. Verdict words computed on the ratio interval with a self-test (as in x_report.py / hf_report.py). Secondary: calm/intermediate/turbulent tertile strata by block volatility.",
+  "decision_rules": {
+    "exact-surrogate equivalence for layer k": "QRC_Lk vs its Family A basis is 'equivalent' (interval inside [0.97,1.03]) AND QRC_Lk is not better than RandProj (upper bound >= 1)",
+    "quantum-specific edge for layer k": "upper bound < 1 and Holm < 0.05 against ALL of: Family A basis, RandProj, TrigFeat, HAR_only",
+    "capacity artifact flag": "a Basis model worse than QRC while RandProj is equivalent to QRC is reported as a capacity effect, not as a quantum edge",
+    "otherwise": "no edge; surrogate equivalence not established for that layer"
+  },
+  "predictions": {
+    "assistant": "L1: QRC equivalent to Basis2 and to RandProj_2 (the span is exact). L2/L3: no edge, QRC equivalent to Basis4 or Basis4 slightly better; entanglement removal (QRC_noent_L2) equivalent to QRC_L2. Not blind: see seen_before_drafting.",
+    "student_prediction": "With the data I have, I would say they [the quantum reservoir and the classical formula] should have the same result. (Student, 2026-11-10, in the student's words.)"
+  },
+  "limits": "Daily copper only; fixed untuned scale; the exact bases are supersets of the QRC feature space at L1 and only approximate it at L2/L3; equivalence in forecast loss is not equivalence of functions; a null supports 'no edge found', not 'no edge exists'. Student concern recorded: the data here is simple (6 inputs, one asset, daily); quantum advantage may need much more complicated data. This experiment cannot test that.",
+  "compute": "6 qubits, 17 blocks, up to 472-column convex readouts: minutes to a few hours locally; no hardware, no purchases.",
+  "seen_before_drafting": [
+    "Exploratory numerical check on 6000 random inputs (2026-11-10, not a registered result): 1-layer QRC features lie exactly in the degree<=2 trigonometric span (R2 1.000000, 73-dim basis incl. constant), with or without entanglement; without entanglement this holds at every depth; with entanglement at 2 and 3 layers the minimum R2 on degree<=2 is 0.35 and 0.69, on degree<=4 0.91 and 0.996.",
+    "The existing 21-feature TrigFeat control spans only part of the 1-layer QRC feature space (R2 min 0.37, mean 0.81) on the same random-input check.",
+    "Earlier registered results (PROGRESS/19 sections 1-17): QRC tied matched controls and TrigFeat in every round; entanglement removal changed nothing at the tuned configs. No forecast from any model in this draft has been seen.",
+    "Dry run of sur_run.py on the 2018 block with 2 seeds (2026-11-10, no forecast scores printed): the deterministic span check on that block's real inputs gave minimum R2 on Basis2/3/4 of 1.0 at L1 (entangled or not), 0.87/0.99/0.9997 at entangled L2 and 0.84/0.98/0.9997 at entangled L3, and 0.86 for the 21 TrigFeat features explaining 1-layer QRC (mean 0.97). These are structure checks, not outcomes."
+  ],
+  "script_tests": "Run scripts dry-run clean. Report scripts tested end to end on FAKE forecasts only (noise around the truth, in a scratch folder): they run and return 'no edge' as they should; no real forecast has been scored. Script sha256 values go into the frozen file at freeze time.",
+  "script_sha256": {
+    "sur_lib.py": "a7650ce692c56ef7ac0c09ffbb3b3ad3bcf8ef121289674c65aca90607673a15",
+    "sur_run.py": "de03aaaa01682980cf3148a3ac687a74c828164d2053b3d692af6b445a42a317",
+    "sur_report.py": "5459a51cfc5d791908c2936492ccf673881480f52f3732b9cfb6b9522ce28579"
+  }
+}

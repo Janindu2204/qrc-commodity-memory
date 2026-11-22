@@ -1,0 +1,40 @@
+{
+  "written_on": "2026-11-14",
+  "status": "REGISTERED 2026-11-14: frozen BEFORE any block of this follow-up was run or scored. Hashes of this file and of dom2_lib.py, dom2_run.py, dom2_daily.py, dom2_report.py, dom2_jobs_rolling.txt, dom2_jobs_heldout.txt, run_dom2.sh are in long_prereg_dom2.sha256. Any later change must be a dated addendum, not an edit.",
+  "approval": "Proposed in chat on 2026-11-13 and 2026-11-14: give the matched classical reservoir the same 12-setting tuning as the other models, and replace the uninformative simple-gate control by the paper's Ising reservoir, in one registration. Student's words: 'yes run'.",
+  "extends": "long_prereg_dom.json (registered and run 2026-11-13). That run and its reports are not changed; its stop rule ('no new models after results') applies to that registration. This is a NEW, separately registered follow-up designed AFTER seeing its results.",
+  "why": "In long_prereg_dom.json the Domingo G3 reservoir (DOM) beat the matched echo state network (ESN28u) by 0.2 to 1.1% on intraday grids, and the registered rule fired. Three problems: (1) ESN28u had fixed, untuned settings; (2) the rule had no minimum size, and every interval was inside the +/-3% band; (3) the G1 control did not respond to the input (0 or 1 of 28 features), so it tested nothing. This follow-up asks whether the gap survives a tuned matched control, and adds a quantum comparison model that works.",
+  "question": "Does the Domingo G3 reservoir still beat the matched single-input echo state network on copper volatility when that network is tuned on validation data? Does the paper's Ising reservoir behave like the G3 reservoir?",
+  "models": {
+    "DOM": "Unchanged; forecasts are READ from long_preds_dom (not re-run). Fixed at the paper's stated optimum, not tuned.",
+    "ESN28u": "Unchanged untuned network; READ from long_preds_dom. Used only to show the effect of tuning.",
+    "ESN28u_t": "Same network (dom_lib.esn1, 28 units, one input, input scale 0.5), now tuned per block: 12 configurations, spectral radius {0.6, 0.9, 1.2} x leak {0.1, 0.2, 0.5, 1.0} (the grid of the stored ESN in long_prereg_hf2.json). Intraday: chosen by validation mean squared error with tuning seeds 100, 101; daily: by validation QLIKE with tuning seeds 100-102 (as db_run.py). Then 10 final seeds 0-9.",
+    "ISING": "dom2_lib.ising_features: the paper's Eq. 8, H = sum_{i<j} J_ij Z_i Z_j + h sum_i X_i on the same 7 qubits, J_ij uniform on (-Js/2, Js/2), h = 0.1 Js, evolution time T = 10 with Js = 1, exact matrix exponential; same input encoding, memory, 28 features (readout at T/2 and T), seeds 0-9. Not tuned. Setting Js = 1 and all pairs i<j coupled is my reading of the preprint.",
+    "everything_else": "Input series, scaling, rows, splits, benchmark, readouts, seeds averaging: exactly as long_prereg_dom.json (dom2_run.py keeps the row-building code of dom_run.py unchanged; checked by diff)."
+  },
+  "asymmetry": "The classical network is tuned and the quantum reservoirs are not. This favours the classical side. It is deliberate: a claim of a quantum edge has to survive a tuned control. If DOM does not survive, the conclusion is 'the gap is not robust to tuning the control', not 'the quantum design is worse'; a tuned DOM is not tested.",
+  "blocks": "As long_prereg_dom.json: intraday H, M, F test years 2013-2025; daily D test years 2015-2024; held-out intraday 2026 and daily 2025, 2026, run after the rolling report is written.",
+  "statistics": "As long_prereg_dom.json (loss, HAC interval, lags, +/-3% band, verdict words, Holm within family and stratum, regimes). Families: A primary (Holm over 3) = DOM vs ESN28u_t, ISING vs ESN28u_t, DOM vs ISING; C descriptive = ESN28u_t vs ESN28u (tuning effect), ESN28u_t vs benchmark, ISING vs benchmark, DOM vs benchmark.",
+  "size_categories": "Every family A comparison is put in one of four categories, printed by dom2_report.py: 'meaningful edge' = Holm p < 0.05 and the whole 95% interval below 0.97; 'detectable, below band' = Holm p < 0.05 and the whole interval below 1 but not below 0.97; 'detectably worse' = Holm p < 0.05 and the whole interval above 1; otherwise 'no detectable difference'.",
+  "decision_rules": {
+    "quantum_edge": "Claimed on a grid only if DOM vs ESN28u_t (or ISING vs ESN28u_t) is a 'meaningful edge' pooled over all blocks AND its ratio is below 1 in the turbulent stratum.",
+    "small_gain": "'Detectable, below band' is reported as a small, statistically detectable gain of no practical size. It is NOT called a quantum edge or advantage.",
+    "robustness_of_the_2026_11_13_result": "The earlier gap is called ROBUST to tuning on a grid if DOM vs ESN28u_t pooled is still 'detectable, below band' or 'meaningful edge'; NOT ROBUST if it is 'no detectable difference' or 'detectably worse'.",
+    "heldout": "Same categories on the held-out data, one stratum. A held-out result is read together with the rolling result, not on its own.",
+    "ising": "Descriptive: whether ISING and DOM fall in the same category against ESN28u_t, and DOM vs ISING."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. The student answered 'yes run'. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-14", "text": "Tuning improves the echo state network by about 0.3 to 1%, which is as large as or larger than the earlier gap. So NOT ROBUST on most grids: DOM vs ESN28u_t is 'no detectable difference' or 'detectably worse' on F and M rolling; no 'meaningful edge' anywhere. ISING is within about 0.5% of DOM and in the same category. My previous prediction (no edge under the first rule) was wrong, so this one deserves little weight."}
+  },
+  "checks_done_before_registration": "Nothing scored. (1) dom2_lib.selftest on random numbers: features_u reproduces the frozen dom_lib.features exactly; the Ising propagation equals the direct 7-qubit simulation to 1e-10; 28 of 28 Ising features respond to a random input (seeds 0-2). (2) dom2_run.py H 2015 with DRY=1: shapes only. (3) diff: the row-building section of dom2_run.py is identical to dom_run.py. (4) dom2_report.py category and verdict assertions.",
+  "known_limits": [
+    "Designed after seeing the results of long_prereg_dom.json, including its held-out 2025-26 scores for DOM and ESN28u. The held-out period is therefore no longer unseen for those two models; it is unseen for ISING and ESN28u_t.",
+    "One-sided tuning (see asymmetry). The tuning grid is the author's choice (12 points, 2 or 3 tuning seeds); a larger search could move small differences.",
+    "Two Ising details are my reading of the preprint (Js = 1; all pairs coupled). The paper's 9000-gate Ising circuit is replaced by its exact evolution operator.",
+    "All limits of long_prereg_dom.json remain: not the authors' experiment, one input, min-max scaling, exact simulation, copper only, overlapping blocks, narrow HAC intervals at intraday sample sizes, AI-written code not re-derived by the student, licensed data not committed."
+  ],
+  "cost_estimate": "Estimate from the measured first run (about 2.3 h per 5-minute block for 20 reservoir runs, eight jobs side by side): about half of that run, roughly 2.5 to 3 hours.",
+  "stop_rule": "One run of the registered jobs (39 intraday and 10 daily rolling blocks, then 5 held-out jobs), report and stop. No new models, grids, seeds or categories after results. A crashed job is re-run unchanged.",
+  "outputs": "long_preds_dom2/<GRID>/<YEAR>.npz; long_preds_dom2/D/<YEAR>/*.npz; dom2_daily_configs.csv; dom2_report_rolling.txt/.csv; dom2_report_heldout.txt/.csv; long_preds_dom2_logs/"
+}

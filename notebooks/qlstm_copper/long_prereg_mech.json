@@ -1,0 +1,24 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any capacity or copper task-profile number was computed. Hashes in long_prereg_mech.sha256. Later changes only as dated addenda.",
+  "approval": "Part 4 ('why') of the five-part plan. Student's words, 2026-11-18: 'I approve of the 5 parts'.",
+  "question": "Why can the quantum reservoirs not win on copper? Is it memory (their useful memory is too short for where copper's remaining signal sits), nonlinearity, or lack of signal?",
+  "A_capacity": "mech_lib.capacity on i.i.d. U(0,1) input, T = 20000, washout 500, readout fitted on rows 500-12499, scored by R^2 on rows 12500-19999. Linear memory function MF(k), k = 0..400; total MC; H90 = smallest K with 90% of MC in lags 0..K; degree-2 capacity C2 = squared Legendre terms of lags 0..20 plus cross products of lags 0..10. Models: DOM (G3) seeds 0-9, DOMG1 seeds 0-9, ISING seeds 0-9 (as used on copper); ESN28u_t and SAS28_t, all 12 configurations of dom3_lib grids, seeds 0-4; ESNb_t and SASb_t (dom4_lib), all 12 configurations, seeds 0-2. Code mech_run.py.",
+  "B_copper_task_profile": "mech_copper.py, grids H, M, F. Rows, target and HAR benchmark built exactly as dom_run.py; one split: fit 2013-2022, evaluate 2023-2025 (24 h purge); 2026 NOT read. The HAR residual is regressed (ridge, lambda 1e-3 n) on the last K standardised ln RV values, K in {1,2,5,10,20,50,100,200} (L), and on those plus degree-2 products, K in {2,5,10} (Q). Reported: out-of-sample R^2 and implied MSE ratio vs HAR.",
+  "stop_rule_note": "Part B reads the copper data again. It fits only descriptive ridge regressions on lagged values (no stand-ins, networks, seeds or categories of the comparison) and its numbers are never compared statistically with the quantum models. This is a disclosed exception to the stop rule of long_prereg_dom4.json, approved as part of Part 4.",
+  "decision_rules": {
+    "K_star": "Per grid, K* = smallest K among the L fits whose R^2 reaches 90% of the largest L R^2 (if the largest R^2 <= 0, K* is undefined and the grid has 'no linear lag signal left').",
+    "memory_reading": "Compare K* with the H90 of DOM and ISING (median over seeds). If K* <= H90 on a grid: 'copper's remaining linear signal lies within the reservoirs' memory reach; memory is not what limits them'. If K* > H90: 'copper's remaining linear signal lies beyond the reservoirs' memory; their memory is too short'.",
+    "nonlinearity_reading": "If Q(10) improves the implied MSE ratio over L(10) by more than 0.5% on a grid: 'there is short-lag degree-2 structure', and the reservoirs' C2 is compared with the classical stand-ins' C2 (descriptive). Otherwise 'no short-lag degree-2 structure detectable'.",
+    "signal_reading": "If the best implied MSE ratio over all L and Q fits is above 0.99 on a grid: 'less than 1% of HAR's error is predictable from lagged ln RV by these regressions'.",
+    "DOMG1": "If DOMG1 MC < 0.5 for all seeds, the paper states that DOMG1 is not a memory control and corrects every earlier reading of 'DOM vs DOMG1'."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated. Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "DOM H90 about 10-20, ISING about 100-200 (scout check on one seed). DOMG1 MC about 0 (scout). Copper residual: small R^2 (best implied ratio 0.98-0.995), K* small (<= 10) on H and M, so 'memory is not what limits them' on H/M; F unclear. Degree-2 adds under 0.5%. So the main reason is little signal left after HAR, not memory."}
+  },
+  "known_limits": ["Capacity uses i.i.d. uniform input, not copper's distribution (Dambre's IPC assumes independent inputs).", "Ridge on lagged values is one simple probe; a nonlinear signal outside degree 2 or beyond lag 10 would be missed.", "One split for part B.", "AI-written code not re-derived by the student."],
+  "cost_estimate": "A: about 15 minutes per quantum family, minutes for the classical ones. B: minutes (H) to about 30 minutes (F).",
+  "stop_rule": "One run of each job, report, stop. No further capacity targets, lags or models after results.",
+  "outputs": "mech_out/cap_<FAMILY>.json, mech_out/copper_<GRID>.json, mech_logs/, mech_report.txt"
+}

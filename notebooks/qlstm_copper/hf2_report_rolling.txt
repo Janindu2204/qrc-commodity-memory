@@ -1,0 +1,125 @@
+ mode grid      stratum                         family           model             ref  ratio  ci_lo  ci_hi  p_holm    verdict      n
+tuned    H          all             A model vs HAR+hod             QRC             HAR 0.9868 0.9841 0.9894  0.0000 equivalent  67567
+tuned    H          all             A model vs HAR+hod       QRC_noent             HAR 0.9866 0.9839 0.9893  0.0000 equivalent  67567
+tuned    H          all             A model vs HAR+hod        RandFeat             HAR 0.9868 0.9838 0.9898  0.0000 equivalent  67567
+tuned    H          all             A model vs HAR+hod             ESN             HAR 0.9914 0.9895 0.9933  0.0000 equivalent  67567
+tuned    H          all             A model vs HAR+hod        TrigFeat             HAR 0.9897 0.9865 0.9929  0.0000 equivalent  67567
+tuned    H          all              B QRC vs controls             QRC       QRC_noent 1.0002 0.9995 1.0008  1.0000 equivalent  67567
+tuned    H          all              B QRC vs controls             QRC        RandFeat 0.9999 0.9990 1.0009  1.0000 equivalent  67567
+tuned    H          all              B QRC vs controls             QRC             ESN 0.9953 0.9934 0.9972  0.0000 equivalent  67567
+tuned    H          all              B QRC vs controls             QRC        TrigFeat 0.9970 0.9960 0.9981  0.0000 equivalent  67567
+tuned    H         calm             A model vs HAR+hod             QRC             HAR 0.9859 0.9819 0.9898  0.0000 equivalent  20774
+tuned    H         calm             A model vs HAR+hod       QRC_noent             HAR 0.9835 0.9796 0.9874  0.0000 equivalent  20774
+tuned    H         calm             A model vs HAR+hod        RandFeat             HAR 0.9844 0.9799 0.9889  0.0000 equivalent  20774
+tuned    H         calm             A model vs HAR+hod             ESN             HAR 0.9916 0.9883 0.9949  0.0000 equivalent  20774
+tuned    H         calm             A model vs HAR+hod        TrigFeat             HAR 0.9933 0.9885 0.9981  0.0058 equivalent  20774
+tuned    H         calm              B QRC vs controls             QRC       QRC_noent 1.0024 1.0010 1.0038  0.0013 equivalent  20774
+tuned    H         calm              B QRC vs controls             QRC        RandFeat 1.0015 0.9999 1.0031  0.0675 equivalent  20774
+tuned    H         calm              B QRC vs controls             QRC             ESN 0.9942 0.9920 0.9965  0.0000 equivalent  20774
+tuned    H         calm              B QRC vs controls             QRC        TrigFeat 0.9925 0.9906 0.9945  0.0000 equivalent  20774
+tuned    H intermediate             A model vs HAR+hod             QRC             HAR 0.9906 0.9864 0.9947  0.0000 equivalent  25852
+tuned    H intermediate             A model vs HAR+hod       QRC_noent             HAR 0.9898 0.9857 0.9939  0.0000 equivalent  25852
+tuned    H intermediate             A model vs HAR+hod        RandFeat             HAR 0.9923 0.9876 0.9971  0.0015 equivalent  25852
+tuned    H intermediate             A model vs HAR+hod             ESN             HAR 0.9924 0.9897 0.9952  0.0000 equivalent  25852
+tuned    H intermediate             A model vs HAR+hod        TrigFeat             HAR 0.9904 0.9854 0.9955  0.0004 equivalent  25852
+tuned    H intermediate              B QRC vs controls             QRC       QRC_noent 1.0008 0.9999 1.0017  0.3066 equivalent  25852
+tuned    H intermediate              B QRC vs controls             QRC        RandFeat 0.9982 0.9965 0.9999  0.1623 equivalent  25852
+tuned    H intermediate              B QRC vs controls             QRC             ESN 0.9981 0.9953 1.0010  0.3929 equivalent  25852
+tuned    H intermediate              B QRC vs controls             QRC        TrigFeat 1.0001 0.9984 1.0018  0.9020 equivalent  25852
+tuned    H    turbulent             A model vs HAR+hod             QRC             HAR 0.9836 0.9777 0.9895  0.0000 equivalent  20941
+tuned    H    turbulent             A model vs HAR+hod       QRC_noent             HAR 0.9867 0.9806 0.9927  0.0000 equivalent  20941
+tuned    H    turbulent             A model vs HAR+hod        RandFeat             HAR 0.9835 0.9770 0.9901  0.0000 equivalent  20941
+tuned    H    turbulent             A model vs HAR+hod             ESN             HAR 0.9901 0.9862 0.9939  0.0000 equivalent  20941
+tuned    H    turbulent             A model vs HAR+hod        TrigFeat             HAR 0.9847 0.9779 0.9916  0.0000 equivalent  20941
+tuned    H    turbulent              B QRC vs controls             QRC       QRC_noent 0.9969 0.9958 0.9980  0.0000 equivalent  20941
+tuned    H    turbulent              B QRC vs controls             QRC        RandFeat 1.0001 0.9983 1.0019  0.9176 equivalent  20941
+tuned    H    turbulent              B QRC vs controls             QRC             ESN 0.9935 0.9889 0.9980  0.0144 equivalent  20941
+tuned    H    turbulent              B QRC vs controls             QRC        TrigFeat 0.9989 0.9971 1.0006  0.3828 equivalent  20941
+tuned    H          all C tuned vs fixed (descriptive)       QRC tuned       QRC fixed 0.9973 0.9958 0.9989     NaN equivalent  67567
+tuned    H          all C tuned vs fixed (descriptive) QRC_noent tuned QRC_noent fixed 0.9948 0.9933 0.9962     NaN equivalent  67567
+tuned    H          all C tuned vs fixed (descriptive)  RandFeat tuned  RandFeat fixed 0.9956 0.9942 0.9970     NaN equivalent  67567
+tuned    H          all C tuned vs fixed (descriptive)       ESN tuned       ESN fixed 0.9993 0.9982 1.0005     NaN equivalent  67567
+tuned    H          all C tuned vs fixed (descriptive)  TrigFeat tuned  TrigFeat fixed 0.9966 0.9950 0.9981     NaN equivalent  67567
+tuned    M          all             A model vs HAR+hod             QRC             HAR 0.9782 0.9769 0.9794  0.0000 equivalent 283953
+tuned    M          all             A model vs HAR+hod       QRC_noent             HAR 0.9809 0.9797 0.9820  0.0000 equivalent 283953
+tuned    M          all             A model vs HAR+hod        RandFeat             HAR 0.9766 0.9750 0.9781  0.0000 equivalent 283953
+tuned    M          all             A model vs HAR+hod             ESN             HAR 0.9798 0.9787 0.9808  0.0000 equivalent 283953
+tuned    M          all             A model vs HAR+hod        TrigFeat             HAR 0.9766 0.9751 0.9780  0.0000 equivalent 283953
+tuned    M          all              B QRC vs controls             QRC       QRC_noent 0.9972 0.9968 0.9977  0.0000 equivalent 283953
+tuned    M          all              B QRC vs controls             QRC        RandFeat 1.0016 1.0012 1.0021  0.0000 equivalent 283953
+tuned    M          all              B QRC vs controls             QRC             ESN 0.9984 0.9975 0.9992  0.0002 equivalent 283953
+tuned    M          all              B QRC vs controls             QRC        TrigFeat 1.0016 1.0012 1.0021  0.0000 equivalent 283953
+tuned    M         calm             A model vs HAR+hod             QRC             HAR 0.9850 0.9833 0.9868  0.0000 equivalent  83439
+tuned    M         calm             A model vs HAR+hod       QRC_noent             HAR 0.9873 0.9857 0.9889  0.0000 equivalent  83439
+tuned    M         calm             A model vs HAR+hod        RandFeat             HAR 0.9844 0.9825 0.9864  0.0000 equivalent  83439
+tuned    M         calm             A model vs HAR+hod             ESN             HAR 0.9851 0.9834 0.9868  0.0000 equivalent  83439
+tuned    M         calm             A model vs HAR+hod        TrigFeat             HAR 0.9843 0.9825 0.9860  0.0000 equivalent  83439
+tuned    M         calm              B QRC vs controls             QRC       QRC_noent 0.9977 0.9971 0.9983  0.0000 equivalent  83439
+tuned    M         calm              B QRC vs controls             QRC        RandFeat 1.0006 1.0001 1.0011  0.0645 equivalent  83439
+tuned    M         calm              B QRC vs controls             QRC             ESN 0.9999 0.9988 1.0011  0.9169 equivalent  83439
+tuned    M         calm              B QRC vs controls             QRC        TrigFeat 1.0008 1.0000 1.0016  0.1128 equivalent  83439
+tuned    M intermediate             A model vs HAR+hod             QRC             HAR 0.9765 0.9746 0.9785  0.0000 equivalent 112120
+tuned    M intermediate             A model vs HAR+hod       QRC_noent             HAR 0.9791 0.9774 0.9808  0.0000 equivalent 112120
+tuned    M intermediate             A model vs HAR+hod        RandFeat             HAR 0.9754 0.9732 0.9776  0.0000 equivalent 112120
+tuned    M intermediate             A model vs HAR+hod             ESN             HAR 0.9771 0.9753 0.9790  0.0000 equivalent 112120
+tuned    M intermediate             A model vs HAR+hod        TrigFeat             HAR 0.9750 0.9728 0.9771  0.0000 equivalent 112120
+tuned    M intermediate              B QRC vs controls             QRC       QRC_noent 0.9974 0.9967 0.9981  0.0000 equivalent 112120
+tuned    M intermediate              B QRC vs controls             QRC        RandFeat 1.0011 1.0006 1.0017  0.0001 equivalent 112120
+tuned    M intermediate              B QRC vs controls             QRC             ESN 0.9994 0.9982 1.0006  0.3088 equivalent 112120
+tuned    M intermediate              B QRC vs controls             QRC        TrigFeat 1.0016 1.0010 1.0022  0.0000 equivalent 112120
+tuned    M    turbulent             A model vs HAR+hod             QRC             HAR 0.9728 0.9700 0.9757  0.0000     better  88394
+tuned    M    turbulent             A model vs HAR+hod       QRC_noent             HAR 0.9762 0.9734 0.9789  0.0000 equivalent  88394
+tuned    M    turbulent             A model vs HAR+hod        RandFeat             HAR 0.9696 0.9660 0.9733  0.0000     better  88394
+tuned    M    turbulent             A model vs HAR+hod             ESN             HAR 0.9773 0.9755 0.9791  0.0000 equivalent  88394
+tuned    M    turbulent             A model vs HAR+hod        TrigFeat             HAR 0.9703 0.9669 0.9738  0.0000     better  88394
+tuned    M    turbulent              B QRC vs controls             QRC       QRC_noent 0.9966 0.9957 0.9974  0.0000 equivalent  88394
+tuned    M    turbulent              B QRC vs controls             QRC        RandFeat 1.0033 1.0021 1.0045  0.0000 equivalent  88394
+tuned    M    turbulent              B QRC vs controls             QRC             ESN 0.9954 0.9933 0.9975  0.0000 equivalent  88394
+tuned    M    turbulent              B QRC vs controls             QRC        TrigFeat 1.0026 1.0016 1.0035  0.0000 equivalent  88394
+tuned    M          all C tuned vs fixed (descriptive)       QRC tuned       QRC fixed 0.9943 0.9936 0.9950     NaN equivalent 283953
+tuned    M          all C tuned vs fixed (descriptive) QRC_noent tuned QRC_noent fixed 0.9983 0.9978 0.9988     NaN equivalent 283953
+tuned    M          all C tuned vs fixed (descriptive)  RandFeat tuned  RandFeat fixed 0.9969 0.9963 0.9975     NaN equivalent 283953
+tuned    M          all C tuned vs fixed (descriptive)       ESN tuned       ESN fixed 0.9987 0.9981 0.9992     NaN equivalent 283953
+tuned    M          all C tuned vs fixed (descriptive)  TrigFeat tuned  TrigFeat fixed 0.9956 0.9950 0.9963     NaN equivalent 283953
+fixed    F          all             A model vs HAR+hod             QRC             HAR 0.9818 0.9811 0.9825  0.0000 equivalent 673104
+fixed    F          all             A model vs HAR+hod       QRC_noent             HAR 0.9811 0.9803 0.9819  0.0000 equivalent 673104
+fixed    F          all             A model vs HAR+hod        RandFeat             HAR 0.9769 0.9759 0.9780  0.0000 equivalent 673104
+fixed    F          all             A model vs HAR+hod             ESN             HAR 0.9773 0.9763 0.9783  0.0000 equivalent 673104
+fixed    F          all             A model vs HAR+hod        TrigFeat             HAR 0.9778 0.9768 0.9787  0.0000 equivalent 673104
+fixed    F          all              B QRC vs controls             QRC       QRC_noent 1.0007 1.0005 1.0009  0.0000 equivalent 673104
+fixed    F          all              B QRC vs controls             QRC        RandFeat 1.0050 1.0045 1.0054  0.0000 equivalent 673104
+fixed    F          all              B QRC vs controls             QRC             ESN 1.0046 1.0041 1.0051  0.0000 equivalent 673104
+fixed    F          all              B QRC vs controls             QRC        TrigFeat 1.0041 1.0038 1.0045  0.0000 equivalent 673104
+fixed    F         calm             A model vs HAR+hod             QRC             HAR 0.9844 0.9830 0.9857  0.0000 equivalent 169862
+fixed    F         calm             A model vs HAR+hod       QRC_noent             HAR 0.9833 0.9819 0.9847  0.0000 equivalent 169862
+fixed    F         calm             A model vs HAR+hod        RandFeat             HAR 0.9804 0.9785 0.9822  0.0000 equivalent 169862
+fixed    F         calm             A model vs HAR+hod             ESN             HAR 0.9839 0.9820 0.9858  0.0000 equivalent 169862
+fixed    F         calm             A model vs HAR+hod        TrigFeat             HAR 0.9811 0.9793 0.9828  0.0000 equivalent 169862
+fixed    F         calm              B QRC vs controls             QRC       QRC_noent 1.0011 1.0008 1.0014  0.0000 equivalent 169862
+fixed    F         calm              B QRC vs controls             QRC        RandFeat 1.0041 1.0034 1.0048  0.0000 equivalent 169862
+fixed    F         calm              B QRC vs controls             QRC             ESN 1.0005 0.9994 1.0015  0.3665 equivalent 169862
+fixed    F         calm              B QRC vs controls             QRC        TrigFeat 1.0034 1.0028 1.0039  0.0000 equivalent 169862
+fixed    F intermediate             A model vs HAR+hod             QRC             HAR 0.9801 0.9792 0.9811  0.0000 equivalent 292871
+fixed    F intermediate             A model vs HAR+hod       QRC_noent             HAR 0.9795 0.9784 0.9805  0.0000 equivalent 292871
+fixed    F intermediate             A model vs HAR+hod        RandFeat             HAR 0.9746 0.9732 0.9760  0.0000 equivalent 292871
+fixed    F intermediate             A model vs HAR+hod             ESN             HAR 0.9736 0.9723 0.9750  0.0000 equivalent 292871
+fixed    F intermediate             A model vs HAR+hod        TrigFeat             HAR 0.9754 0.9741 0.9767  0.0000 equivalent 292871
+fixed    F intermediate              B QRC vs controls             QRC       QRC_noent 1.0007 1.0004 1.0010  0.0000 equivalent 292871
+fixed    F intermediate              B QRC vs controls             QRC        RandFeat 1.0056 1.0050 1.0063  0.0000 equivalent 292871
+fixed    F intermediate              B QRC vs controls             QRC             ESN 1.0067 1.0059 1.0074  0.0000 equivalent 292871
+fixed    F intermediate              B QRC vs controls             QRC        TrigFeat 1.0048 1.0043 1.0054  0.0000 equivalent 292871
+fixed    F    turbulent             A model vs HAR+hod             QRC             HAR 0.9819 0.9805 0.9833  0.0000 equivalent 210371
+fixed    F    turbulent             A model vs HAR+hod       QRC_noent             HAR 0.9814 0.9798 0.9831  0.0000 equivalent 210371
+fixed    F    turbulent             A model vs HAR+hod        RandFeat             HAR 0.9772 0.9749 0.9794  0.0000 equivalent 210371
+fixed    F    turbulent             A model vs HAR+hod             ESN             HAR 0.9768 0.9748 0.9788  0.0000 equivalent 210371
+fixed    F    turbulent             A model vs HAR+hod        TrigFeat             HAR 0.9782 0.9762 0.9802  0.0000 equivalent 210371
+fixed    F    turbulent              B QRC vs controls             QRC       QRC_noent 1.0004 0.9999 1.0010  0.0902 equivalent 210371
+fixed    F    turbulent              B QRC vs controls             QRC        RandFeat 1.0048 1.0038 1.0058  0.0000 equivalent 210371
+fixed    F    turbulent              B QRC vs controls             QRC             ESN 1.0052 1.0042 1.0061  0.0000 equivalent 210371
+fixed    F    turbulent              B QRC vs controls             QRC        TrigFeat 1.0038 1.0031 1.0045  0.0000 equivalent 210371
+
+=== registered decision ===
+  mode grid  quantum_edge  pooled_rule  turbulent_rule                                           trig
+tuned    H         False        False           False QRC vs TrigFeat 0.997 [0.996,0.998] equivalent
+tuned    M         False        False           False QRC vs TrigFeat 1.002 [1.001,1.002] equivalent
+fixed    F         False        False           False QRC vs TrigFeat 1.004 [1.004,1.004] equivalent

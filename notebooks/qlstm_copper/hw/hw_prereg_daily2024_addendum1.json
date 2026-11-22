@@ -1,0 +1,42 @@
+{
+  "addendum_to": "hw_prereg_daily2024.json (sha256 5e772454e451cc53823515c3bb9c7bb5fad0e548484be8e1b926ae98022b11a9)",
+  "date": "2026-11-10",
+  "reason": "Two probe jobs were run after freezing, to learn the cost unit and per-job overhead, as stated in the registration's budget note. No main-run job has been submitted.",
+  "probes": [
+    {
+      "script": "hw/run_probe.py",
+      "job_id": "dbphep0qtr0c738ee23g",
+      "backend": "ibm_fez",
+      "circuits": 1,
+      "shots": 2000,
+      "test_rows": [
+        0
+      ],
+      "mean_abs_feature_error": 0.022,
+      "dashboard_usage_after_RU": 0.04
+    },
+    {
+      "script": "hw/run_probe2.py",
+      "job_id": "dbphgfc4148s739ukc60",
+      "backend": "ibm_fez",
+      "circuits": 10,
+      "shots": 2000,
+      "test_rows": "1-10",
+      "mean_abs_feature_error": 0.035,
+      "dashboard_usage_after_RU": 0.15
+    }
+  ],
+  "cost_model": "Dashboard cumulative usage 0.04 then 0.15 RU, read to 2 decimals. Linear fit: about 0.032 RU fixed per job plus 0.0078 RU per circuit (rounding makes the per-circuit figure uncertain: 0.006 to 0.009). The RU unit itself is still not confirmed to equal one minute.",
+  "main_run_plan": {
+    "backend": "ibm_fez",
+    "shots": 2000,
+    "rows": "all 252 test rows, shuffled with numpy default_rng(2024) permutation, split into 4 jobs of 63 circuits",
+    "repeat_job": "one extra job of 20 circuits: test rows 0,12,24,...,228 (every 12th), submitted after the four main jobs",
+    "probe_rows": "rows 0-10 are measured again in the main run; probe results are kept and reported separately as additional repeats, not pooled into the primary outcome",
+    "transpile": "one transpile of all circuits, optimization_level 3, seed_transpiler 1, no mitigation",
+    "estimated_cost_RU": "5 jobs x 0.032 + 272 x 0.0078 = about 2.3 (plausible range 1.8 to 2.7)",
+    "stop_rule": "registered limit stands: if cumulative usage would pass 6 RU, stop and report what ran. After each job the assistant reads job usage/dashboard figure given by the student and stops if the running total exceeds the estimate by 50 percent."
+  },
+  "predictions_unchanged": true,
+  "observation_seen_before_main_run": "Probe feature errors 0.022 (1 row) and 0.035 (10 rows) versus 0.021 in the fake-chip simulation. The real chip may be noisier than IBM's noise model, consistent with the student's prediction."
+}

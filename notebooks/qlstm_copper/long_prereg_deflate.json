@@ -1,0 +1,25 @@
+{
+  "written_on": "2026-11-18",
+  "status": "REGISTERED 2026-11-18: frozen BEFORE any deflation number was computed. Loaders were run for counts only (windows per unit; no losses, ratios or gains printed). Hashes in long_prereg_deflate.sha256.",
+  "approval": "Research-focused idea v3 (PROGRESS/27, 'Idea gate, research-focused idea v3'); student's word: 'go'.",
+  "theory": "PROGRESS/32_theory_deflated_quantum_advantage_2026-11-18.md: manufactured gain of best-of-N selection G = r_control - min r_o; prediction G_pred = s x E[M_N] with s the sample standard deviation of the N option results; deflated result = min r_o + G_pred.",
+  "datasets": {
+    "in_sample (budgets already seen)": ["copper ladder, DOM/ISING (budget_lib tables; reference chosen on the previous year)", "commodity panel, six quantum models (budget3_lib tables, quarters)"],
+    "out_of_sample (never budgeted)": ["kernels: daily quantum kernels Q_L1-Q_L3 vs 7 classical kernels, 12 assets, 2008-2024 (kern_preds)", "adaptive: daily QRC fixed and adaptive vs 7 classical, HG + 7 commodities, eligible years (long_preds_qrc)", "hourly_roll: QLSTMT vs LSTM/GRU, Databento copper hourly, roll years with 5 seeds (hourly_databento_preds_v5 roll*)"]
+  },
+  "controls_fixed_now": "Quantum control: DOM (copper), QLSTMT (panel, hourly_roll), Q_L2 (kernels), QRC_angle (adaptive). Loss control: MSE (copper, hourly_roll), QLIKE (others). Reference: past-year best (copper), validation-best classical per asset (panel), validation-best classical per block (kernels, adaptive, hourly_roll).",
+  "cells": "Single-choice protocols with the others at control: WINDOW per unit (options = test windows), SEED per unit where seeded (3-seed subsets), LOSS per unit (3 losses), QMODEL per unit (quantum models), UNIT per dataset (options = units, control = mean).",
+  "decision_rules": {
+    "H1": "A cell passes if |deflated - r_control| <= max(0.01, 0.3 x G_pred) in log units; only cells with N >= 4 count. H1 SUPPORTED if at least 75% of out-of-sample cells pass AND each out-of-sample dataset has at least 50% passing. In-sample pass rates are reported, labelled.",
+    "H2": "Per dataset, Spearman correlation across choices between unit-averaged G_pred and G_obs. H2 SUPPORTED if Spearman >= 0.6 in at least 2 of the 3 out-of-sample datasets.",
+    "H1a": "Descriptive: sign-flip null median of G vs rms(r) x E[M_N] for every cell.",
+    "wording": "If H1 is supported: 'a simple expected-maximum deflation, computed from the spread of the options alone, recovers the honest result in X% of out-of-sample cells'. If not: report where it fails (heavy tails, small N, asymmetric control) and do not propose the rule as a deflation tool."
+  },
+  "hypotheses_recorded_before_run": {
+    "student_prediction": {"written_on": null, "student_words": null, "reading": "NOT stated (student answered 'go'). Left null."},
+    "claude_prediction_recorded_for_transparency_not_the_student": {"written_on": "2026-11-18", "text": "H1 supported: about 75-85% of out-of-sample cells pass; failures where one year is extreme (2008, 2020) or N is small. H2 supported in 2 of 3 datasets (WINDOW and UNIT have the largest G in kernels and adaptive; hourly_roll has only 3 choices). H1a: the rms rule is within 20% of the sign-flip median."}
+  },
+  "known_limits": ["The out-of-sample datasets were analysed in earlier work (their headline comparisons are known; their budgets are not).", "Single-choice protocols only; joint protocols are not predicted.", "N < 4 cells are excluded from H1.", "The tolerance (1 log point or 30%) is a judgement fixed now."],
+  "stop_rule": "One run, report, stop. No change of tolerance, controls, datasets or cells after results.",
+  "outputs": "deflate_out.json; deflate_report.txt"
+}

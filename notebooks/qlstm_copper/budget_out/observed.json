@@ -1,0 +1,578 @@
+[
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 1.0348985359107752
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9983134496175546
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 1.032992245111791
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9964745488195809
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9864366700413704
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.992232942245117
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9847125221181001
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9904212993712745
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 1.0230459889356216
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9955609792591018
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 1.0192146538254105
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9953277195592669
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9610448840236473
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.985154182858977
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9574823177160322
+ },
+ {
+  "SEED": false,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.983643827512648
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 1.0034450421905061
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9900450445717085
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 1.0021101380446293
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.98854433995912
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9162650953724314
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9586246588648013
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9151896803776167
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9531090651736719
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9895689801895665
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9870880044763475
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9895689801895665
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9841552890018563
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.8368798744636854
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9535200931237013
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.8339366085892074
+ },
+ {
+  "SEED": false,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9486586571405404
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 1.0337911012733416
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9972451643173446
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 1.0313616535918286
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9949016009520122
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9809119406779289
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9859233171462327
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9779025808036707
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.982019900895343
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 1.0218124909990942
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9945838642884309
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 1.0156304746264873
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9936201657258942
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9511247636291134
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9792571003044447
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9447060602445093
+ },
+ {
+  "SEED": true,
+  "WINDOW": false,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9768642814116764
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 1.0004417109410926
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.985729411055551
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9998057040184367
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9845056500832773
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.8958966555584654
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9525138382640581
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.8919587356464626
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": false,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9417357815460344
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.9872752135250946
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9781395513080317
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.9872752135250946
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": false,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9781395513080317
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": false,
+  "ratio": 0.8097462976171945
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": false,
+  "REF": true,
+  "ratio": 0.9440927683854188
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": false,
+  "ratio": 0.8016029280338254
+ },
+ {
+  "SEED": true,
+  "WINDOW": true,
+  "GRID": true,
+  "LOSS": true,
+  "QMODEL": true,
+  "REF": true,
+  "ratio": 0.9323517868650791
+ }
+]
